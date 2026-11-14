@@ -21,3 +21,16 @@ def test_validate_rejects_error_body():
 
 def test_validate_accepts_csv_header():
     fetch_firms.validate("latitude,longitude,frp\n30,75,4\n")
+
+
+def test_sources_for_season_uses_nrt_only_for_current_season():
+    assert fetch_firms.sources_for_season(2026, current_year=2026) == (
+        "MODIS_NRT", "VIIRS_NOAA20_NRT", "VIIRS_SNPP_NRT"
+    )
+    for season in range(2020, 2026):
+        assert fetch_firms.sources_for_season(season, current_year=2026) == (
+            "MODIS_SP", "VIIRS_NOAA20_SP", "VIIRS_SNPP_SP"
+        )
+    assert fetch_firms.sources_for_season(2026, current_year=2027) == (
+        "MODIS_SP", "VIIRS_NOAA20_SP", "VIIRS_SNPP_SP"
+    )

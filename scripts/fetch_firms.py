@@ -1,6 +1,7 @@
-"""Download raw FIRMS standard-product CSVs for the study seasons."""
+"""Download FIRMS SP archives and NRT data for the current UTC season."""
 
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
+import argparse
 import csv
 import io
 import json
@@ -13,6 +14,15 @@ from dotenv import dotenv_values
 ROOT = Path(__file__).resolve().parents[1]
 BBOX = "73.8,27.6,77.6,32.6"
 SOURCES = ("MODIS_SP", "VIIRS_NOAA20_SP", "VIIRS_SNPP_SP")
+
+
+def sources_for_season(season, *, current_year=None):
+    """Use NRT for the current year and standard products for archives."""
+    if current_year is None:
+        current_year = datetime.now(timezone.utc).year
+    if season == current_year:
+        return ("MODIS_NRT", "VIIRS_NOAA20_NRT", "VIIRS_SNPP_NRT")
+    return SOURCES
 
 
 def validate(body):
@@ -32,14 +42,19 @@ def chunk_ranges(start, end, days=10):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--season", type=int, choices=range(2020, 2027))
+    args = parser.parse_args()
     key = dotenv_values(ROOT / ".env").get("FIRMS_MAP_KEY")
     if not key:
         raise ValueError("Set FIRMS_MAP_KEY in the repository .env file")
     output = ROOT / "data" / "raw"
     output.mkdir(parents=True, exist_ok=True)
-    manifest = []
-    for year in range(2020, 2027):
-        for source in SOURCES:
+    manifest_path = output / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else []
+    seasons = [args.season] if args.season is not None else range(2020, 2027)
+    for year in seasons:
+        for source in sources_for_season(year):
             for start, end in chunk_ranges(date(year, 10, 1), date(year, 11, 15)):
                 rows = []
                 header = None
@@ -66,10 +81,11 @@ def main():
                     writer = csv.writer(handle)
                     writer.writerow(header)
                     writer.writerows(rows)
+                manifest = [entry for entry in manifest if entry["file"] != filename]
                 manifest.append({
                     "source": source, "season": year,
                     "start": str(start), "end": str(end), "bbox": BBOX,
-                    "historical_only": source == "VIIRS_SNPP_SP",
+                    "historical_only": source.startswith("VIIRS_SNPP_"),
                     "rows": len(rows), "file": filename,
                 })
                 temporary = output / "manifest.json.tmp"
