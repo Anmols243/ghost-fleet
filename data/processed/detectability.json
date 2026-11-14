@@ -1,0 +1,109 @@
+{
+  "published_constants": {
+    "modis_limit_night_mw": 3.7,
+    "modis_limit_day_mw": 5.7,
+    "modis_limit_edge_mw": 40.0,
+    "viirs_min_mw": 0.5,
+    "strong_fire_detection_probability": {
+      "MODIS": 0.78,
+      "VIIRS": 0.88
+    },
+    "source": "Sofiev & Kouznetsov 2026, GMD"
+  },
+  "method": {
+    "grid": "harmonize.build_events: fixed ~1 km grid",
+    "frp_band_intervals": "lower inclusive, upper exclusive; 40+ includes 40",
+    "frp_statistic": "maximum VIIRS FRP per cell-day within day/night stratum",
+    "match": "any MODIS detection in the same cell and UTC day",
+    "mixed_daynight": "cell-days with both D and N contribute once to each stratum",
+    "empty_bins": "null share; not zero",
+    "snpp_historical_only": true,
+    "limitations": "Co-detection share is not a calibrated detection probability; no overpass or cloud adjustment."
+  },
+  "bins": [
+    {
+      "frp_band": "0-0.5",
+      "daynight": "D",
+      "viirs_cell_days": 7,
+      "modis_seen_cell_days": 0,
+      "modis_seen_share": 0.0
+    },
+    {
+      "frp_band": "0.5-1",
+      "daynight": "D",
+      "viirs_cell_days": 489,
+      "modis_seen_cell_days": 4,
+      "modis_seen_share": 0.0081799591002045
+    },
+    {
+      "frp_band": "1-3.7",
+      "daynight": "D",
+      "viirs_cell_days": 137146,
+      "modis_seen_cell_days": 2813,
+      "modis_seen_share": 0.020510988289851692
+    },
+    {
+      "frp_band": "3.7-10",
+      "daynight": "D",
+      "viirs_cell_days": 202073,
+      "modis_seen_cell_days": 7028,
+      "modis_seen_share": 0.034779510374963504
+    },
+    {
+      "frp_band": "10-40",
+      "daynight": "D",
+      "viirs_cell_days": 71825,
+      "modis_seen_cell_days": 4073,
+      "modis_seen_share": 0.05670727462582666
+    },
+    {
+      "frp_band": "40+",
+      "daynight": "D",
+      "viirs_cell_days": 2863,
+      "modis_seen_cell_days": 260,
+      "modis_seen_share": 0.09081383164512749
+    },
+    {
+      "frp_band": "0-0.5",
+      "daynight": "N",
+      "viirs_cell_days": 1119,
+      "modis_seen_cell_days": 5,
+      "modis_seen_share": 0.004468275245755138
+    },
+    {
+      "frp_band": "0.5-1",
+      "daynight": "N",
+      "viirs_cell_days": 2475,
+      "modis_seen_cell_days": 10,
+      "modis_seen_share": 0.00404040404040404
+    },
+    {
+      "frp_band": "1-3.7",
+      "daynight": "N",
+      "viirs_cell_days": 1827,
+      "modis_seen_cell_days": 32,
+      "modis_seen_share": 0.01751505199781062
+    },
+    {
+      "frp_band": "3.7-10",
+      "daynight": "N",
+      "viirs_cell_days": 152,
+      "modis_seen_cell_days": 24,
+      "modis_seen_share": 0.15789473684210525
+    },
+    {
+      "frp_band": "10-40",
+      "daynight": "N",
+      "viirs_cell_days": 50,
+      "modis_seen_cell_days": 13,
+      "modis_seen_share": 0.26
+    },
+    {
+      "frp_band": "40+",
+      "daynight": "N",
+      "viirs_cell_days": 3,
+      "modis_seen_cell_days": 3,
+      "modis_seen_share": 1.0
+    }
+  ]
+}

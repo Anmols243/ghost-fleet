@@ -1,0 +1,433 @@
+{
+  "season": 2026,
+  "timezone": "UTC",
+  "p": 0.5,
+  "full_total": 14296,
+  "sameeyes_total": 5097,
+  "gate_passed": true,
+  "snpp_historical_only": true,
+  "baseline_seasons": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "windows_minutes_utc": [
+    [
+      173,
+      304
+    ],
+    [
+      544,
+      711
+    ],
+    [
+      860,
+      969
+    ],
+    [
+      1342,
+      1432
+    ]
+  ],
+  "window_method": "season-pooled MODIS times; gaps >60 min; widen ends +/-45 min; inclusive; repeated on each UTC day",
+  "sensitivity": {
+    "approximation": true,
+    "description": "Threshold multipliers are a disclosed approximation, not calibrated detection probabilities.",
+    "scenarios": [
+      {
+        "p": 0.25,
+        "limit_multiplier": 0.6,
+        "night_limit_mw": 2.22,
+        "day_limit_mw": 3.42,
+        "total_events": 5208
+      },
+      {
+        "p": 0.5,
+        "limit_multiplier": 1.0,
+        "night_limit_mw": 3.7,
+        "day_limit_mw": 5.7,
+        "total_events": 5097
+      },
+      {
+        "p": 0.75,
+        "limit_multiplier": 1.6,
+        "night_limit_mw": 5.920000000000001,
+        "day_limit_mw": 9.120000000000001,
+        "total_events": 5014
+      }
+    ]
+  },
+  "days": [
+    {
+      "date": "2026-10-01",
+      "day_index": 1,
+      "events": 1,
+      "median": 34.5,
+      "p90": 100.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-02",
+      "day_index": 2,
+      "events": 4,
+      "median": 50.5,
+      "p90": 117.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-03",
+      "day_index": 3,
+      "events": 8,
+      "median": 80.5,
+      "p90": 144.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-04",
+      "day_index": 4,
+      "events": 5,
+      "median": 67.5,
+      "p90": 118.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-05",
+      "day_index": 5,
+      "events": 24,
+      "median": 61.5,
+      "p90": 162.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-06",
+      "day_index": 6,
+      "events": 2,
+      "median": 85.5,
+      "p90": 135.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-07",
+      "day_index": 7,
+      "events": 2,
+      "median": 54.5,
+      "p90": 121.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-08",
+      "day_index": 8,
+      "events": 15,
+      "median": 98.0,
+      "p90": 197.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-09",
+      "day_index": 9,
+      "events": 0,
+      "median": 64.5,
+      "p90": 139.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-10",
+      "day_index": 10,
+      "events": 27,
+      "median": 41.0,
+      "p90": 249.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-11",
+      "day_index": 11,
+      "events": 1,
+      "median": 83.5,
+      "p90": 217.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-12",
+      "day_index": 12,
+      "events": 0,
+      "median": 105.0,
+      "p90": 257.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-13",
+      "day_index": 13,
+      "events": 46,
+      "median": 160.0,
+      "p90": 274.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-14",
+      "day_index": 14,
+      "events": 2,
+      "median": 128.5,
+      "p90": 449.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-15",
+      "day_index": 15,
+      "events": 0,
+      "median": 137.0,
+      "p90": 638.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-16",
+      "day_index": 16,
+      "events": 13,
+      "median": 165.0,
+      "p90": 593.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-17",
+      "day_index": 17,
+      "events": 0,
+      "median": 99.0,
+      "p90": 503.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-18",
+      "day_index": 18,
+      "events": 119,
+      "median": 105.0,
+      "p90": 568.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-19",
+      "day_index": 19,
+      "events": 2,
+      "median": 335.5,
+      "p90": 695.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-20",
+      "day_index": 20,
+      "events": 13,
+      "median": 173.5,
+      "p90": 664.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-21",
+      "day_index": 21,
+      "events": 104,
+      "median": 240.0,
+      "p90": 989.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-22",
+      "day_index": 22,
+      "events": 0,
+      "median": 290.0,
+      "p90": 1130.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-23",
+      "day_index": 23,
+      "events": 34,
+      "median": 390.5,
+      "p90": 966.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-24",
+      "day_index": 24,
+      "events": 8,
+      "median": 229.5,
+      "p90": 1158.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-25",
+      "day_index": 25,
+      "events": 6,
+      "median": 238.0,
+      "p90": 1098.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-26",
+      "day_index": 26,
+      "events": 140,
+      "median": 427.5,
+      "p90": 1451.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-27",
+      "day_index": 27,
+      "events": 18,
+      "median": 639.5,
+      "p90": 1252.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-28",
+      "day_index": 28,
+      "events": 40,
+      "median": 617.5,
+      "p90": 1895.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-29",
+      "day_index": 29,
+      "events": 157,
+      "median": 1155.0,
+      "p90": 1601.0,
+      "critical": false
+    },
+    {
+      "date": "2026-10-30",
+      "day_index": 30,
+      "events": 0,
+      "median": 1094.0,
+      "p90": 2664.5,
+      "critical": false
+    },
+    {
+      "date": "2026-10-31",
+      "day_index": 31,
+      "events": 360,
+      "median": 1321.5,
+      "p90": 2910.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-01",
+      "day_index": 32,
+      "events": 127,
+      "median": 1696.0,
+      "p90": 2503.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-02",
+      "day_index": 33,
+      "events": 19,
+      "median": 1721.5,
+      "p90": 2898.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-03",
+      "day_index": 34,
+      "events": 611,
+      "median": 1639.5,
+      "p90": 2661.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-04",
+      "day_index": 35,
+      "events": 0,
+      "median": 1933.0,
+      "p90": 3843.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-05",
+      "day_index": 36,
+      "events": 435,
+      "median": 2321.0,
+      "p90": 3962.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-06",
+      "day_index": 37,
+      "events": 333,
+      "median": 1087.0,
+      "p90": 4218.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-07",
+      "day_index": 38,
+      "events": 24,
+      "median": 1652.5,
+      "p90": 4525.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-08",
+      "day_index": 39,
+      "events": 1337,
+      "median": 1331.5,
+      "p90": 3561.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-09",
+      "day_index": 40,
+      "events": 18,
+      "median": 1271.5,
+      "p90": 3594.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-10",
+      "day_index": 41,
+      "events": 219,
+      "median": 1134.5,
+      "p90": 3122.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-11",
+      "day_index": 42,
+      "events": 557,
+      "median": 1305.5,
+      "p90": 3573.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-12",
+      "day_index": 43,
+      "events": 21,
+      "median": 1027.0,
+      "p90": 2995.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-13",
+      "day_index": 44,
+      "events": 245,
+      "median": 1580.5,
+      "p90": 2778.5,
+      "critical": false
+    },
+    {
+      "date": "2026-11-14",
+      "day_index": 45,
+      "events": 0,
+      "median": 390.0,
+      "p90": 1948.0,
+      "critical": false
+    },
+    {
+      "date": "2026-11-15",
+      "day_index": 46,
+      "events": 0,
+      "median": 279.5,
+      "p90": 1796.0,
+      "critical": false
+    }
+  ]
+}

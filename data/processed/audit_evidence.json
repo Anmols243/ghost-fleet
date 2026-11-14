@@ -1,0 +1,145 @@
+{
+  "product_classes_by_season": {
+    "2026": [
+      "NRT"
+    ],
+    "2020": [
+      "SP"
+    ],
+    "2021": [
+      "SP"
+    ],
+    "2022": [
+      "SP"
+    ],
+    "2023": [
+      "SP"
+    ],
+    "2024": [
+      "SP"
+    ],
+    "2025": [
+      "SP"
+    ]
+  },
+  "snpp_after_cessation": {
+    "raw": 0,
+    "standardized": 0,
+    "harmonized_events": 0
+  },
+  "modis_2026_events": 4957,
+  "viirs_2026_rows": 11187,
+  "viirs_in_modis_time_windows": 382,
+  "sensitivity_2026": [
+    {
+      "p": 0.25,
+      "total": 5208,
+      "additional_cell_days_over_modis": 251,
+      "viirs_survivor_rows": 319
+    },
+    {
+      "p": 0.5,
+      "total": 5097,
+      "additional_cell_days_over_modis": 140,
+      "viirs_survivor_rows": 182
+    },
+    {
+      "p": 0.75,
+      "total": 5014,
+      "additional_cell_days_over_modis": 57,
+      "viirs_survivor_rows": 78
+    }
+  ],
+  "detectability_bins": [
+    {
+      "frp_band": "0-0.5",
+      "daynight": "D",
+      "viirs_cell_days": 7,
+      "modis_seen_cell_days": 0,
+      "modis_seen_share": 0.0
+    },
+    {
+      "frp_band": "0.5-1",
+      "daynight": "D",
+      "viirs_cell_days": 489,
+      "modis_seen_cell_days": 4,
+      "modis_seen_share": 0.0081799591002045
+    },
+    {
+      "frp_band": "1-3.7",
+      "daynight": "D",
+      "viirs_cell_days": 137146,
+      "modis_seen_cell_days": 2813,
+      "modis_seen_share": 0.020510988289851692
+    },
+    {
+      "frp_band": "3.7-10",
+      "daynight": "D",
+      "viirs_cell_days": 202073,
+      "modis_seen_cell_days": 7028,
+      "modis_seen_share": 0.034779510374963504
+    },
+    {
+      "frp_band": "10-40",
+      "daynight": "D",
+      "viirs_cell_days": 71825,
+      "modis_seen_cell_days": 4073,
+      "modis_seen_share": 0.05670727462582666
+    },
+    {
+      "frp_band": "40+",
+      "daynight": "D",
+      "viirs_cell_days": 2863,
+      "modis_seen_cell_days": 260,
+      "modis_seen_share": 0.09081383164512749
+    },
+    {
+      "frp_band": "0-0.5",
+      "daynight": "N",
+      "viirs_cell_days": 1119,
+      "modis_seen_cell_days": 5,
+      "modis_seen_share": 0.004468275245755138
+    },
+    {
+      "frp_band": "0.5-1",
+      "daynight": "N",
+      "viirs_cell_days": 2475,
+      "modis_seen_cell_days": 10,
+      "modis_seen_share": 0.00404040404040404
+    },
+    {
+      "frp_band": "1-3.7",
+      "daynight": "N",
+      "viirs_cell_days": 1827,
+      "modis_seen_cell_days": 32,
+      "modis_seen_share": 0.01751505199781062
+    },
+    {
+      "frp_band": "3.7-10",
+      "daynight": "N",
+      "viirs_cell_days": 152,
+      "modis_seen_cell_days": 24,
+      "modis_seen_share": 0.15789473684210525
+    },
+    {
+      "frp_band": "10-40",
+      "daynight": "N",
+      "viirs_cell_days": 50,
+      "modis_seen_cell_days": 13,
+      "modis_seen_share": 0.26
+    },
+    {
+      "frp_band": "40+",
+      "daynight": "N",
+      "viirs_cell_days": 3,
+      "modis_seen_cell_days": 3,
+      "modis_seen_share": 1.0
+    }
+  ],
+  "sensors_present": [
+    "MODIS_AQUA",
+    "MODIS_TERRA",
+    "VIIRS_NOAA20",
+    "VIIRS_SNPP"
+  ]
+}

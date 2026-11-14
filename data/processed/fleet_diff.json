@@ -1,0 +1,45 @@
+{
+  "season": 2026,
+  "timezone": "UTC",
+  "snpp_historical_only": true,
+  "critical_baseline": "2026/calendar_full.json; common p90 for all fleets",
+  "pct_denominator": "full2026 fleet (MODIS + NOAA-20/21; excludes S-NPP)",
+  "fleets": {
+    "terra2000": {
+      "total": 64,
+      "pct_of_full": 0.5555073344327749,
+      "peak_day": "2026-11-05",
+      "critical_days": 0
+    },
+    "terra_aqua2002": {
+      "total": 5030,
+      "pct_of_full": 43.659404565575905,
+      "peak_day": "2026-11-08",
+      "critical_days": 0
+    },
+    "viirs2012": {
+      "total": 8169,
+      "pct_of_full": 70.90530335908342,
+      "peak_day": "2026-11-08",
+      "critical_days": 0
+    },
+    "full2026": {
+      "total": 11521,
+      "pct_of_full": 100.0,
+      "peak_day": "2026-11-08",
+      "critical_days": 0
+    },
+    "post_snpp2026": {
+      "total": 11521,
+      "pct_of_full": 100.0,
+      "peak_day": "2026-11-08",
+      "critical_days": 0
+    }
+  },
+  "peak_shift": {
+    "full_peak_day": "2026-11-08",
+    "terra2000_peak_day": "2026-11-05",
+    "days": 3,
+    "definition": "full2026 peak date minus terra2000 peak date; earliest date breaks ties"
+  }
+}

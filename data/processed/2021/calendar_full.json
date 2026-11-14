@@ -1,0 +1,383 @@
+{
+  "season": 2021,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2020,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2021-10-01",
+      "day_index": 1,
+      "events": 156,
+      "median": 146.5,
+      "p90": 248.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-02",
+      "day_index": 2,
+      "events": 42,
+      "median": 216.0,
+      "p90": 378.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-03",
+      "day_index": 3,
+      "events": 112,
+      "median": 209.5,
+      "p90": 359.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-04",
+      "day_index": 4,
+      "events": 82,
+      "median": 258.5,
+      "p90": 459.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-05",
+      "day_index": 5,
+      "events": 104,
+      "median": 264.5,
+      "p90": 440.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-06",
+      "day_index": 6,
+      "events": 255,
+      "median": 197.5,
+      "p90": 443.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-07",
+      "day_index": 7,
+      "events": 357,
+      "median": 179.5,
+      "p90": 426.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-08",
+      "day_index": 8,
+      "events": 311,
+      "median": 171.0,
+      "p90": 527.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-09",
+      "day_index": 9,
+      "events": 419,
+      "median": 179.5,
+      "p90": 423.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-10",
+      "day_index": 10,
+      "events": 668,
+      "median": 150.5,
+      "p90": 505.0,
+      "critical": true
+    },
+    {
+      "date": "2021-10-11",
+      "day_index": 11,
+      "events": 446,
+      "median": 229.0,
+      "p90": 666.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-12",
+      "day_index": 12,
+      "events": 648,
+      "median": 302.0,
+      "p90": 732.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-13",
+      "day_index": 13,
+      "events": 758,
+      "median": 421.0,
+      "p90": 693.5,
+      "critical": true
+    },
+    {
+      "date": "2021-10-14",
+      "day_index": 14,
+      "events": 1063,
+      "median": 351.0,
+      "p90": 912.0,
+      "critical": true
+    },
+    {
+      "date": "2021-10-15",
+      "day_index": 15,
+      "events": 2161,
+      "median": 331.5,
+      "p90": 960.5,
+      "critical": true
+    },
+    {
+      "date": "2021-10-16",
+      "day_index": 16,
+      "events": 1691,
+      "median": 289.5,
+      "p90": 960.0,
+      "critical": true
+    },
+    {
+      "date": "2021-10-17",
+      "day_index": 17,
+      "events": 169,
+      "median": 409.0,
+      "p90": 1329.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-18",
+      "day_index": 18,
+      "events": 272,
+      "median": 498.5,
+      "p90": 1403.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-19",
+      "day_index": 19,
+      "events": 1188,
+      "median": 454.5,
+      "p90": 1314.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-20",
+      "day_index": 20,
+      "events": 1990,
+      "median": 430.5,
+      "p90": 1279.5,
+      "critical": true
+    },
+    {
+      "date": "2021-10-21",
+      "day_index": 21,
+      "events": 1927,
+      "median": 512.5,
+      "p90": 1585.0,
+      "critical": true
+    },
+    {
+      "date": "2021-10-22",
+      "day_index": 22,
+      "events": 2893,
+      "median": 426.0,
+      "p90": 1723.5,
+      "critical": true
+    },
+    {
+      "date": "2021-10-23",
+      "day_index": 23,
+      "events": 2011,
+      "median": 534.5,
+      "p90": 2112.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-24",
+      "day_index": 24,
+      "events": 127,
+      "median": 741.5,
+      "p90": 2282.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-25",
+      "day_index": 25,
+      "events": 464,
+      "median": 607.5,
+      "p90": 2733.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-26",
+      "day_index": 26,
+      "events": 1138,
+      "median": 921.5,
+      "p90": 2731.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-27",
+      "day_index": 27,
+      "events": 1333,
+      "median": 920.5,
+      "p90": 2731.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-28",
+      "day_index": 28,
+      "events": 2593,
+      "median": 645.5,
+      "p90": 3784.0,
+      "critical": false
+    },
+    {
+      "date": "2021-10-29",
+      "day_index": 29,
+      "events": 2729,
+      "median": 1485.0,
+      "p90": 3447.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-30",
+      "day_index": 30,
+      "events": 3242,
+      "median": 1118.5,
+      "p90": 4925.5,
+      "critical": false
+    },
+    {
+      "date": "2021-10-31",
+      "day_index": 31,
+      "events": 5831,
+      "median": 1548.5,
+      "p90": 4744.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-01",
+      "day_index": 32,
+      "events": 4643,
+      "median": 2178.5,
+      "p90": 4247.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-02",
+      "day_index": 33,
+      "events": 5655,
+      "median": 1377.0,
+      "p90": 4949.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-03",
+      "day_index": 34,
+      "events": 5079,
+      "median": 1954.0,
+      "p90": 4510.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-04",
+      "day_index": 35,
+      "events": 5569,
+      "median": 1561.0,
+      "p90": 5918.0,
+      "critical": false
+    },
+    {
+      "date": "2021-11-05",
+      "day_index": 36,
+      "events": 9205,
+      "median": 2626.5,
+      "p90": 6452.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-06",
+      "day_index": 37,
+      "events": 7352,
+      "median": 1413.0,
+      "p90": 4879.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-07",
+      "day_index": 38,
+      "events": 9182,
+      "median": 1978.5,
+      "p90": 5120.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-08",
+      "day_index": 39,
+      "events": 8327,
+      "median": 1655.5,
+      "p90": 4720.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-09",
+      "day_index": 40,
+      "events": 7812,
+      "median": 1315.0,
+      "p90": 3595.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-10",
+      "day_index": 41,
+      "events": 7383,
+      "median": 623.0,
+      "p90": 4918.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-11",
+      "day_index": 42,
+      "events": 7688,
+      "median": 839.0,
+      "p90": 4899.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-12",
+      "day_index": 43,
+      "events": 7097,
+      "median": 1266.5,
+      "p90": 3189.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-13",
+      "day_index": 44,
+      "events": 7292,
+      "median": 1984.0,
+      "p90": 3705.0,
+      "critical": true
+    },
+    {
+      "date": "2021-11-14",
+      "day_index": 45,
+      "events": 4629,
+      "median": 236.0,
+      "p90": 2159.5,
+      "critical": true
+    },
+    {
+      "date": "2021-11-15",
+      "day_index": 46,
+      "events": 3372,
+      "median": 481.0,
+      "p90": 2056.0,
+      "critical": true
+    }
+  ]
+}

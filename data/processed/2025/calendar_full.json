@@ -1,0 +1,383 @@
+{
+  "season": 2025,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2025-10-01",
+      "day_index": 1,
+      "events": 59,
+      "median": 161.0,
+      "p90": 248.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-02",
+      "day_index": 2,
+      "events": 61,
+      "median": 216.0,
+      "p90": 378.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-03",
+      "day_index": 3,
+      "events": 94,
+      "median": 209.5,
+      "p90": 359.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-04",
+      "day_index": 4,
+      "events": 208,
+      "median": 207.0,
+      "p90": 459.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-05",
+      "day_index": 5,
+      "events": 49,
+      "median": 264.5,
+      "p90": 440.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-06",
+      "day_index": 6,
+      "events": 10,
+      "median": 257.5,
+      "p90": 443.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-07",
+      "day_index": 7,
+      "events": 6,
+      "median": 275.5,
+      "p90": 426.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-08",
+      "day_index": 8,
+      "events": 36,
+      "median": 272.5,
+      "p90": 527.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-09",
+      "day_index": 9,
+      "events": 83,
+      "median": 234.5,
+      "p90": 515.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-10",
+      "day_index": 10,
+      "events": 138,
+      "median": 214.0,
+      "p90": 706.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-11",
+      "day_index": 11,
+      "events": 202,
+      "median": 318.5,
+      "p90": 698.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-12",
+      "day_index": 12,
+      "events": 159,
+      "median": 454.0,
+      "p90": 792.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-13",
+      "day_index": 13,
+      "events": 147,
+      "median": 569.5,
+      "p90": 776.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-14",
+      "day_index": 14,
+      "events": 288,
+      "median": 388.5,
+      "p90": 1246.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-15",
+      "day_index": 15,
+      "events": 272,
+      "median": 491.0,
+      "p90": 1721.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-16",
+      "day_index": 16,
+      "events": 299,
+      "median": 485.0,
+      "p90": 1460.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-17",
+      "day_index": 17,
+      "events": 260,
+      "median": 363.5,
+      "p90": 1329.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-18",
+      "day_index": 18,
+      "events": 227,
+      "median": 498.5,
+      "p90": 1403.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-19",
+      "day_index": 19,
+      "events": 467,
+      "median": 703.0,
+      "p90": 1426.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-20",
+      "day_index": 20,
+      "events": 435,
+      "median": 543.0,
+      "p90": 1944.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-21",
+      "day_index": 21,
+      "events": 521,
+      "median": 748.0,
+      "p90": 2052.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-22",
+      "day_index": 22,
+      "events": 501,
+      "median": 753.5,
+      "p90": 2592.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-23",
+      "day_index": 23,
+      "events": 198,
+      "median": 1281.5,
+      "p90": 2143.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-24",
+      "day_index": 24,
+      "events": 329,
+      "median": 741.5,
+      "p90": 2282.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-25",
+      "day_index": 25,
+      "events": 390,
+      "median": 644.5,
+      "p90": 2733.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-26",
+      "day_index": 26,
+      "events": 559,
+      "median": 1211.0,
+      "p90": 2731.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-27",
+      "day_index": 27,
+      "events": 506,
+      "median": 1331.0,
+      "p90": 2731.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-28",
+      "day_index": 28,
+      "events": 209,
+      "median": 1692.0,
+      "p90": 3784.0,
+      "critical": false
+    },
+    {
+      "date": "2025-10-29",
+      "day_index": 29,
+      "events": 516,
+      "median": 2494.0,
+      "p90": 3447.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-30",
+      "day_index": 30,
+      "events": 562,
+      "median": 2458.5,
+      "p90": 4925.5,
+      "critical": false
+    },
+    {
+      "date": "2025-10-31",
+      "day_index": 31,
+      "events": 735,
+      "median": 3149.0,
+      "p90": 5580.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-01",
+      "day_index": 32,
+      "events": 1148,
+      "median": 3221.5,
+      "p90": 4769.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-02",
+      "day_index": 33,
+      "events": 646,
+      "median": 3095.5,
+      "p90": 5538.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-03",
+      "day_index": 34,
+      "events": 532,
+      "median": 3665.0,
+      "p90": 4885.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-04",
+      "day_index": 35,
+      "events": 678,
+      "median": 3561.0,
+      "p90": 6363.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-05",
+      "day_index": 36,
+      "events": 458,
+      "median": 5079.5,
+      "p90": 8229.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-06",
+      "day_index": 37,
+      "events": 860,
+      "median": 2554.0,
+      "p90": 6984.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-07",
+      "day_index": 38,
+      "events": 572,
+      "median": 3102.5,
+      "p90": 8127.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-08",
+      "day_index": 39,
+      "events": 694,
+      "median": 2698.5,
+      "p90": 7065.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-09",
+      "day_index": 40,
+      "events": 1021,
+      "median": 2298.0,
+      "p90": 6008.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-10",
+      "day_index": 41,
+      "events": 518,
+      "median": 2424.5,
+      "p90": 6501.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-11",
+      "day_index": 42,
+      "events": 960,
+      "median": 2246.0,
+      "p90": 6856.5,
+      "critical": false
+    },
+    {
+      "date": "2025-11-12",
+      "day_index": 43,
+      "events": 383,
+      "median": 2264.5,
+      "p90": 5548.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-13",
+      "day_index": 44,
+      "events": 344,
+      "median": 3214.0,
+      "p90": 5637.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-14",
+      "day_index": 45,
+      "events": 372,
+      "median": 732.0,
+      "p90": 3792.0,
+      "critical": false
+    },
+    {
+      "date": "2025-11-15",
+      "day_index": 46,
+      "events": 319,
+      "median": 612.5,
+      "p90": 3380.5,
+      "critical": false
+    }
+  ]
+}
