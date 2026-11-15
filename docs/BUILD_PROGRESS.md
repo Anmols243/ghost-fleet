@@ -432,3 +432,10 @@ hardcoded-number greps clean; audit.json blob faee77ab... untouched. Smoke at 12
 hides when back, mini top equals app bar bottom (62/62, 71/71, no overlap), two download
 buttons with the same label enabled, scroll-spy marks Method checks, no horizontal scroll.
 Reduced motion verified from the CSS rules only, not by emulation. Status: DONE. Not pushed.
+
+## Frontend: owner design feedback (download note links, footer)
+
+2026-11-15 IST - Claude Code (Opus 5.5). OWNER-REQUESTED. Download-note links now underline
+in their own text colour instead of vermilion. Removed the footer AI-assistance line from
+the app; the AI-use disclosure remains in docs/PROJECT_PAGE.md (Gate 8 lists it for the
+submission). Node tests 38/38. Status: DONE. Not pushed.
