@@ -37,3 +37,16 @@ see TEAM_BRIEF). Remaining: P9 frontend, P10 demo + submission.
 scripts/ pipeline (fetch, harmonize, detectability, degrade,
 fleets) · tests/ · docs/ · data/processed/ = the JSON contract the
 frontend reads.
+
+## PIVOT 2026-11-15 — Fire Trend Audit (read @docs/AUDIT_SPEC.md FIRST)
+
+AUDIT_SPEC.md is the plan of record and supersedes TEAM_BRIEF.md where
+they conflict. The product is an audit of observation-dependent counts:
+all-satellite change vs shared-satellite change, decomposed W = U + C.
+Degradation FAILED its 2021 benchmark (MAE 1,162 vs ratio 323) — it is
+experimental Method-checks material only, never a trusted measurement.
+Language law: never "MODIS-equivalent", "harmonised", "continuous
+record", "same-eyes" (outside qualified Method-checks context), or any
+claim about change in actual burning. Say "shared satellites" and
+"S-NPP data delivery ceased". Every percentage shows its denominator.
+Frontend renders only the frozen audit.json. Scope freeze at 12:00 IST.
