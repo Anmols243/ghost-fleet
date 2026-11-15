@@ -394,3 +394,9 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
   #system .pipe li:not(:last-child)::before { right: auto; left: 14px; top: auto; bottom: -18px; border-left-color: transparent; border-top-color: var(--accent); }
 }
 @media screen and (max-width: 960px) { #system { padding: 18px 14px 22px; } }
+#system .pipe a { color: inherit; text-decoration: none; display: block; }
+#system .pipe a:hover { color: var(--accent); }
+#system .pipe li:last-child a:hover { color: var(--accent); }
+#system .pipe-n { display: block; margin-top: 4px; font-size: 10.5px; text-transform: none; letter-spacing: 0.02em; color: var(--accent); font-weight: 700; }
+#system .pipe-n:empty { display: none; }
+.repro { margin: 6px 0 0; padding: 14px 16px; background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 12.5px; line-height: 1.7; overflow-x: auto; border-left: 0; }

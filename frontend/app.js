@@ -374,6 +374,25 @@
     return L.join('\n');
   }
 
+  // Stage counts for Appendix B, all from audit.json. Cell-days are the all-satellite
+  // union per season (the W key for that season's fleet), summed over non-null days.
+  function systemCounts(a) {
+    var dc = a && a.dataset_counts, sp = a && a.sensors_present, d = a && a.daily;
+    if (!dc || !isCount(dc.retrieved_detections) || !isCount(dc.standardized_verified_detections) || !sp || !d) return null;
+    var seasons = Object.keys(sp), cells = 0;
+    for (var k = 0; k < seasons.length; k++) {
+      var arr = d[seasons[k]] && d[seasons[k]][subsetKey(sp[seasons[k]])];
+      if (!Array.isArray(arr)) return null;
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === null) continue;
+        if (!isCount(arr[i])) return null;
+        cells += arr[i];
+      }
+    }
+    return { retrieved: dc.retrieved_detections, retained: dc.standardized_verified_detections, cellDays: cells,
+      seasons: seasons.length, presets: Array.isArray(a.presets) ? a.presets.length : 0, schema: a.schema };
+  }
+
   function buildEvidence(p, a) {
     var report = buildReport(p, a), s = presetSeries(p, a.daily);
     if (!report || !s) return null;
@@ -386,7 +405,7 @@
     label: label, sharedLabel: sharedLabel, COPY: COPY,
     presetSeries: presetSeries, cumulative: cumulative, heatColor: heatColor, heatDark: heatDark, strata: strata, caseFacts: caseFacts,
     methodFacts: methodFacts, limitations: limitations, seasonText: seasonText, buildCsv: buildCsv, buildReport: buildReport,
-    buildEvidence: buildEvidence, subsetKey: subsetKey, fmtNum: fmtNum
+    buildEvidence: buildEvidence, systemCounts: systemCounts, subsetKey: subsetKey, fmtNum: fmtNum
   };
   if (typeof module !== 'undefined' && module.exports) { module.exports = api; }
   if (typeof document === 'undefined') return;
@@ -747,6 +766,24 @@
     body.appendChild(h('div', { class: 'table-wrap' }, h('h3', { class: 'mc-h', text: '(c) Known limitations' }), ul));
   }
 
+  function renderSystem(a) {
+    var c = systemCounts(a);
+    if (!c) return;
+    var txt = {
+      retrieved: fmtInt(c.retrieved) + ' detections retrieved',
+      retained: fmtInt(c.retained) + ' retained',
+      cellDays: fmtInt(c.cellDays) + ' recorded cell-days, ' + c.seasons + ' seasons',
+      presets: c.presets + ' preset comparisons',
+      schema: 'schema ' + c.schema,
+      page: 'rendered in this browser'
+    };
+    var els = document.querySelectorAll('#system .pipe-n');
+    for (var i = 0; i < els.length; i++) {
+      var k = els[i].getAttribute('data-n');
+      if (txt[k]) els[i].textContent = txt[k];
+    }
+  }
+
   /* ---------- downloads ---------- */
   var urls = [];
   function blobUrl(text, mime) {
@@ -945,6 +982,7 @@
         render();
         renderCase(a);
         renderMethod(a);
+        renderSystem(a);
       })
       .catch(function (e) {
         showError('Could not load audit.json (' + e.message + ').');

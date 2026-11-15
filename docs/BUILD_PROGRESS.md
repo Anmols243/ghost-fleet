@@ -392,3 +392,17 @@ Checks: node tests 32/32 (26 existing + 6 new in frontend/tests/system.test.js: 
 present with nav link, freeze hash equals sha256 of the LF audit.json, both totals match
 audit.json dataset_counts, no number outside the supplied list, wording law, static only).
 Banned-word grep clean. 360px: scrollWidth 360/360. Status: DONE.
+
+## Frontend: Appendix B shows the pipeline at work
+
+2026-11-15 IST - Claude Code (Opus 5.5). Owner-approved. Each Appendix B pipeline step now
+links to its source file on GitHub (backend/scripts/fetch_firms.py, harmonize.py,
+audit.py, frontend/audit.json, frontend/app.js) and shows a count rendered from
+audit.json: 1,601,380 retrieved, 1,482,211 retained, all-satellite recorded cell-days
+summed over the 26 seasons, preset count, schema. Added a "Reproduce it" command block
+(commands read from the scripts' entry points and backend/.env.example). Links to the repo
+outside the footer are a deliberate, owner-approved exception to the build plan's
+footer-only rule; they fetch nothing on load.
+Checks: node tests 34/34 (8 in system.test.js: hrefs only to this repo, linked files exist,
+cell-days equal an independent sum, null data gives no counts). Banned-word grep clean;
+360px scrollWidth 360/360. Backend not modified. Status: DONE. Not pushed.

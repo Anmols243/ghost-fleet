@@ -42,6 +42,36 @@ test('wording law holds in the section', () => {
   assert.doesNotMatch(text, /MODIS-equivalent|harmoni[sz]ed|homogenised|continuous record|same-eyes|satellite died|agreement|corrected|true fire|caus/i);
 });
 
-test('static: no script, fetch, link or image inside the section', () => {
-  assert.doesNotMatch(section, /<script|<img|<link|<iframe|fetch\(|http/i);
+test('no script, fetch, stylesheet or image inside the section; links only to this repo', () => {
+  assert.doesNotMatch(section, /<script|<img|<link|<iframe|fetch\(/i);
+  const hrefs = section.match(/href="[^"]*"/g) || [];
+  assert.ok(hrefs.length >= 6, 'each pipeline step links to its source');
+  hrefs.forEach((h) => assert.match(h, /^href="https:\/\/github\.com\/Anmols243\/ghost-fleet\/blob\/main\/(backend\/scripts|frontend)\/[\w.]+"$/));
+});
+
+test('linked source files exist in the repo', () => {
+  const repo = path.join(__dirname, '..', '..');
+  (section.match(/blob\/main\/([\w./]+)"/g) || []).forEach((m2) => {
+    const rel = m2.replace(/^blob\/main\//, '').replace(/"$/, '');
+    assert.ok(fs.existsSync(path.join(repo, rel)), rel);
+  });
+});
+
+test('stage counts derive from audit.json, cell-days equal an independent sum', () => {
+  const app = require('../app.js');
+  const a = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'audit.json'), 'utf8'));
+  const c = app.systemCounts(a);
+  assert.equal(c.retrieved, a.dataset_counts.retrieved_detections);
+  assert.equal(c.retained, a.dataset_counts.standardized_verified_detections);
+  const order = ['MODIS_TERRA', 'MODIS_AQUA', 'VIIRS_SNPP', 'VIIRS_NOAA20'];
+  let sum = 0;
+  for (const yr of Object.keys(a.sensors_present)) {
+    const key = order.filter((x) => a.sensors_present[yr].includes(x)).join('+');
+    for (const v of a.daily[yr][key]) if (v !== null) sum += v;
+  }
+  assert.equal(c.cellDays, sum);
+  assert.equal(c.seasons, Object.keys(a.sensors_present).length);
+  assert.equal(c.presets, a.presets.length);
+  const bad = JSON.parse(JSON.stringify(a)); bad.dataset_counts = null;
+  assert.equal(app.systemCounts(bad), null);
 });

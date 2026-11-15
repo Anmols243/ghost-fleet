@@ -55,13 +55,14 @@
     <p class="kicker" id="h-system">APP. B / SYSTEM</p>
     <h2>Appendix B: The system behind the audit</h2>
     <ol class="pipe" aria-label="Pipeline from FIRMS to this page">
-      <li>FIRMS area API</li>
-      <li>Standardize</li>
-      <li>Harmonize to ~1 km cell-days</li>
-      <li>Audit decomposition (W = U + C)</li>
-      <li>Frozen audit.json</li>
-      <li>This page</li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/fetch_firms.py">FIRMS area API</a><span class="pipe-n" data-n="retrieved"></span></li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/harmonize.py">Standardize</a><span class="pipe-n" data-n="retained"></span></li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/harmonize.py">Harmonize to ~1 km cell-days</a><span class="pipe-n" data-n="cellDays"></span></li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/audit.py">Audit decomposition (W = U + C)</a><span class="pipe-n" data-n="presets"></span></li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/frontend/audit.json">Frozen audit.json</a><span class="pipe-n" data-n="schema"></span></li>
+      <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/frontend/app.js">This page</a><span class="pipe-n" data-n="page"></span></li>
     </ol>
+    <p class="fig-note">Each step links to its source file. Counts under the steps render from audit.json.</p>
     <dl class="sys-facts">
       <div class="sys-row"><dt>Retrieval</dt><dd>1,601,380 detections retrieved; 1,482,211 retained after confidence rules (VIIRS nominal + high; MODIS confidence ≥ 50). 26 seasons, 2001–2026.</dd></div>
       <div class="sys-row"><dt>Access rules handled</dt><dd>FIRMS area API in 5-day chunks; archive (SP) products for 2001–2025, near-real-time (NRT) for 2026.</dd></div>
@@ -70,6 +71,14 @@
       <div class="sys-row"><dt>Verification</dt><dd>An independent re-aggregation from the raw archive reproduced all 9,568 daily counts exactly. 50 automated tests (24 pipeline, 26 frontend) cover the decomposition, the downloads, and malformed-data behaviour.</dd></div>
       <div class="sys-row"><dt>Stack</dt><dd>Python pipeline (pandas); this page is vanilla JS + inline SVG with zero external requests and no backend.</dd></div>
     </dl>
+    <h3 class="mc-h">Reproduce it</h3>
+    <p class="fig-note">From a clone of the repository. Fetching needs a FIRMS map key in backend/.env (see backend/.env.example).</p>
+<pre class="repro"><code>cd backend
+pip install -r requirements.txt
+python scripts/fetch_firms.py
+python scripts/harmonize.py
+python scripts/audit.py        # writes frontend/audit.json
+python -m pytest -q</code></pre>
   </section>
 </main>
 
