@@ -258,3 +258,13 @@ Sweep changed only docs/AUDIT_SPEC.md:39 (1601319->1601380).
 README and COPY_PACK needed no changes; validation spatial blocks untouched.
 Approved text/banned-phrase/frozen-total checks passed. Full suite:24passed.
 Status: verified, committing. Commit locator: git log -1 -- docs/PROJECT_PAGE.md.
+
+## Gate 7 usability kit prepared
+
+2026-11-15 11:09:59 IST - Codex, GPT-6.1 Sol (effort not exposed).
+Created docs/GATE7.md with COPY_PACK section7 script/rules verbatim,
+setup/timer/evidence-download checks, two tester scorecard rows and fail/retest
+protocol. Kit status NOT RUN: Gate7 is not passed and demo capture remains
+blocked until two qualifying unaided first-exposure non-builder passes.
+Verification: source block exact; full suite24passed. Commit locator:
+git log -1 -- docs/GATE7.md. Status: kit prepared; usability run NOT STARTED.
