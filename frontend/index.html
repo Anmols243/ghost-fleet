@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghost Fleet - Fire Trend Audit</title>
+<meta name="description" content="Compares recorded active-fire cell-days between Punjab-Haryana burning seasons. It does not estimate the change in actual burning.">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#compare">Skip to the comparison</a>
+<header class="top">
+  <div class="wrap">
+    <p class="wordmark">GHOST FLEET - FIRE TREND AUDIT</p>
+    <p class="tagline">Dead satellites, honest calendars.</p>
+  </div>
+  <nav class="nav" aria-label="Sections">
+    <div class="wrap nav-in">
+      <a href="#comparison">1.0 Comparison</a>
+      <a href="#case-study">2.0 Case study</a>
+      <a href="#method">App. A Method checks</a>
+      <a href="#evidence">Evidence &darr;</a>
+    </div>
+  </nav>
+</header>
+
+<div class="docket" id="docket" aria-label="Docket"><div class="wrap"></div></div>
+
+<main class="wrap">
+  <section id="comparison" aria-labelledby="h-comparison">
+    <p class="kicker" id="h-comparison">1.0 / COMPARISON</p>
+    <p class="claim" id="claim"></p>
+    <div id="coverage"></div>
+    <div id="app">
+      <div id="compare"><p class="state" id="loading">Loading audit.json ...</p></div>
+    </div>
+  </section>
+
+  <section id="case-study" aria-labelledby="h-case">
+    <p class="kicker" id="h-case">2.0 / CASE STUDY</p>
+    <h2>S-NPP, 2026</h2>
+    <p class="ph-note">Section arrives in the next build phase.</p>
+  </section>
+
+  <section id="method" aria-labelledby="h-method">
+    <p class="kicker" id="h-method">APP. A / METHOD CHECKS</p>
+    <h2>Method checks</h2>
+    <p class="ph-note">Section arrives in the next build phase.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-line">Actual-fire change: not measured</p>
+    <p>Built with AI assistance (Claude Code, Codex, ChatGPT reviews); every number traces to the frozen audit.json.</p>
+    <p><a href="https://github.com/Anmols243/ghost-fleet">Repository</a> &middot; Source: NASA FIRMS active-fire data (<a href="https://firms.modaps.eosdis.nasa.gov/">firms.modaps.eosdis.nasa.gov</a>).</p>
+  </div>
+</footer>
+<noscript><p class="wrap state">This audit needs JavaScript to render the figures from audit.json.</p></noscript>
+<script src="app.js"></script>
+</body>
+</html>

@@ -279,3 +279,20 @@ backend/. Added backend/.env (gitignored) and backend/.env.example. Updated
 entries in this log and TEAM_BRIEF keep old paths. Tests: 24 passed, run from
 backend/ with python -m pytest -q. Commit locator: git log -1 -- backend/scripts/audit.py.
 Status: DONE. Not pushed.
+
+## Frontend Phase 1 (shape): shell, conclusion renderer, coverage strip
+
+2026-11-15 10:49 IST - Claude Code, Sonnet 5.5 (medium effort), per the build plan.
+Added frontend/index.html, app.css, app.js and tests/conclusion.test.js.
+Header, docket bar, coverage strip, preset tabs, one staged headline with
+fleet switch, chips, snapshot section (P3), U/C/W table, FINDING, permanent
+shared warning, footer. Fig. 1/Fig. 2, case study, method checks and the
+download are labelled placeholders for Phase 2. Conclusion lines are rendered
+by rule and byte-match the three frozen strings.
+Checks: node --test frontend/tests/conclusion.test.js 11 passed; audit.json
+sha256 unchanged (3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a);
+hardcoded-number grep empty; banned-word grep empty; no external requests;
+3 presets x 2 views render with no console errors; 360px no horizontal scroll.
+Code review (low) findings fixed: snapshot dates derived from data, load-time
+field validation extended, false "1 Oct" start guarded, dead parameter removed.
+Commit locator: git log -1 -- frontend/app.js. Status: DONE. Not pushed. Not deployed.
