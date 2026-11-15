@@ -290,7 +290,7 @@ shared warning, footer. Fig. 1/Fig. 2, case study, method checks and the
 download are labelled placeholders for Phase 2. Conclusion lines are rendered
 by rule and byte-match the three frozen strings.
 Checks: node --test frontend/tests/conclusion.test.js 11 passed; audit.json
-sha256 unchanged (3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a);
+sha256 unchanged (faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae (committed LF blob; the CRLF working copy hashes differently));
 hardcoded-number grep empty; banned-word grep empty; no external requests;
 3 presets x 2 views render with no console errors; 360px no horizontal scroll.
 Code review (low) findings fixed: snapshot dates derived from data, load-time
@@ -312,7 +312,33 @@ exact FINDING string, malformed data gives no numbers). Blob files fetched in th
 browser and parsed: sums and FINDING match the screen for P1, P2, P3. Malformed
 scratch copy (null W_b, missing predictor, tampered daily) and a missing audit.json
 show error states with no fabricated numbers. audit.json sha256 unchanged
-(3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a). Banned-word,
+(faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae (committed LF blob; the CRLF working copy hashes differently)). Banned-word,
 hardcoded-number and external-request greps clean. 360px: no horizontal scroll.
 Code review (low): 4 findings (unguarded coverage fields), fixed.
 Commit locator: git log -1 -- frontend/app.js. Status: DONE. Not pushed. Not deployed.
+
+## Frontend Phase 3 (harden): deployed app verified
+
+2026-11-15 IST - Claude Code, Sonnet 5.5 (medium effort) with three Haiku sweep subagents.
+Deployed URL: https://ghost-fleet-chads2.vercel.app/ (Root Directory frontend/, no build).
+Deployed commit: 1350181 (live app.js and audit.json hashes equal the repo blobs).
+audit.json sha256 (committed LF blob, verified with git show HEAD:frontend/audit.json):
+faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae, unchanged. Earlier
+entries had the CRLF working-copy hash; corrected above.
+Sweeps: language-law grep clean (only negated uses of "corrected"; the frozen tagline
+"Dead satellites, honest calendars." is kept as specified, flagged for Anmol); external
+requests: only local css/js, relative audit.json fetch, footer anchors; number
+cross-check: three conclusion lines byte-match, 26/26 node tests pass.
+Deployed browser run (agent-browser, signed-out) at 1280px and 390px: 3 presets x both
+fleet views show +455.2/+5.3, +99.0/+11.4, -19.0/-19.0 with denominators; warning shown
+in the shared view; 3 figures, download button enabled (report + CSV links), method
+checks and 4 case-study strips render; scrollWidth equals clientWidth; footer line present.
+Hostile readings: "fires rose 455.2%" and "real rise was 5.3%" are met by the denominator
+line "recorded cell-days", the permanent warning and the FINDING tail; "caused 449.8
+points" by "selection difference, not a causal attribution"; "app corrects the record" by
+the approved claim and "Neither percentage is a corrected estimate"; "2026 fires fell
+19.0%" by the P3 interruption template and snapshot banner; "S-NPP died" by "data delivery
+ceased" (no "died" anywhere). No copy changes were needed.
+Not done by the build: Gate 7 usability (human only), the under-2-minute timing, phone
+hardware check. URL filled in PROJECT_PAGE.md and GATE7.md; SUBMISSION_CHECKLIST Gates 1,
+2, 5 updated as frontend verified. Status: DONE. Not pushed.

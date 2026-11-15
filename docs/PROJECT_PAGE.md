@@ -66,7 +66,7 @@ AI assistants were used to build the software and draft text. All data processin
 
 ## Links and team
 
-- App: [APP URL — placeholder]
+- App: https://ghost-fleet-chads2.vercel.app/
 - Repository: https://github.com/Anmols243/ghost-fleet
 - Team: MONOLITH-builders — Anmol Singh and Shabeeh Ahmad Khan
 - Local Event: Delhi

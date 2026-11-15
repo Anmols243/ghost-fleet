@@ -4,13 +4,13 @@ The 8 gates from docs/AUDIT_SPEC.md, with evidence pointers and status as of 202
 
 ## Gate 1 — Complete public workflow
 Gate: complete public workflow, no login, desktop + mobile, all 3 presets, comparison → evidence download unaided.
-Status: PENDING FRONTEND. Evidence: frontend build in progress (frontend/ reads only the frozen frontend/audit.json).
-Remains: deployed URL, unaided end-to-end run on desktop and mobile widths.
+Status: FRONTEND VERIFIED (mechanical), human run pending. Evidence: deployed at https://ghost-fleet-chads2.vercel.app/ (serves commit 1350181; live app.js and audit.json hashes match the repo). Browser run on the deployed URL at 1280px and 390px: 3 presets x both fleet views render the frozen values, download button enabled with report and CSV, method checks and case study render, no horizontal scroll. See BUILD_PROGRESS Phase 3.
+Remains: unaided human run signed-out on real devices, and the under-2-minute task timing (not measured by the build); both belong to Gate 7.
 
 ## Gate 2 — Measurement contract and coverage
 Gate: measurement contract explicit and identical everywhere; incomplete pulls flagged; 2026 cutoff / NRT status / missing satellites visible; zero means "no detections in these retrieved records".
-Status: BACKEND FIXED — commit a7d9cc1. audit.json carries retrieval timestamp, requested interval, per-season coverage status, source/product per season, grid and bounding box. Verified common cutoff for 2026 is Nov 14; Nov 15 is null (unverified) and excluded from all totals. NOAA-21 absence is disclosed in the data and copy.
-Remains: frontend must render the metadata, cutoff, NRT status, NOAA-21 exclusion and the unverified day visibly, and include them in the evidence download.
+Status: FRONTEND VERIFIED (backend side: commit a7d9cc1). audit.json metadata is rendered in the coverage strip (requested vs comparison interval, per-season status, cutoff, product, sources, retrieval timestamp with scope, bounding box, grid, confidence rules, NOAA-21 note, zero definition) and repeated in the evidence report. Both Nov 15 cells in P3 are distinct from zero.
+Remains: human review of the deployed page.
 
 ## Gate 3 — Exact arithmetic
 Gate: independent aggregation reproduces U, C, W for all presets; downloads match screen.
@@ -24,8 +24,8 @@ Remains: review of the rendered UI and demo for causal phrasing or visuals (no "
 
 ## Gate 5 — No hidden method outcome
 Gate: the 2021 validation failure and the sensor-addition results are one click away; degradation labelled experimental.
-Status: DATA READY, UI PENDING. audit.json method_checks contains the 2021 benchmark failure and the sensor-addition results on the common interval (mean |ΔJ|, transitions 2018→2019 … 2024→2025: raw 0.403, degraded 0.252, ratio control 0.086), labelled as archived reference-implementation results.
-Remains: Method checks panel in the frontend, one click from the comparison, with the BUILD_BRIEF §6 framing line.
+Status: FRONTEND VERIFIED. Appendix A (nav, one click) renders the framing line, the 2021 benchmark table with the failed-degradation stamp and the verbatim validation disclosure, and the sensor-addition results (0.403 / 0.252 / 0.086 common-interval values only, ranges, provenance), all from audit.json method_checks.
+Remains: human review of the deployed page.
 
 ## Gate 6 — The audit reveals something
 Gate: P1/P2 gaps ≥ 10 pp plus the P3 interruption, with the statement requiring qualification shown.

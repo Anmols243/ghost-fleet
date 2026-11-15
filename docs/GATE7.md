@@ -15,7 +15,7 @@ and BUILD_BRIEF.md's Gate 7/demo-capture sequencing.
 
 ## Setup checklist
 
-- [ ] Deployed app URL: [URL]
+- [ ] Deployed app URL: https://ghost-fleet-chads2.vercel.app/
 - [ ] Record tested version/commit and device/browser before the session.
 - [ ] Open the deployed app's Compare view and preselect P1: 2011 vs 2012.
       Record the exact preselected route or selection path: [P1 PATH].
@@ -69,7 +69,7 @@ to answer.
 Copy the full report and follow-up answer exactly; do not summarize or
 improve the tester's wording. Preserve failed attempts as well as retests.
 
-Tested URL: [URL]
+Tested URL: https://ghost-fleet-chads2.vercel.app/
 Version/commit: [COMMIT]
 Session date and timezone: [DATE / TIMEZONE]
 Device/browser: [DEVICE / BROWSER]
