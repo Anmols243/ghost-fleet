@@ -75,7 +75,7 @@ rerun on canonical data; the earlier mixed-period E summary is superseded.
 
 ## 7. Who touches what
 
-- `frontend/` — Shabeeh only. `scripts/`, `data/`, `docs/` — Anmol /
+- `frontend/` — Shabeeh only. `backend/`, `docs/` — Anmol /
   Codex / Arlo. Pull before every push; plain push only; no force
   pushes today; one topic per commit.
 - The conclusion line is rendered by rule from audit.json, never

@@ -32,13 +32,13 @@ causes isolated by this pipeline. Small fires in the VIIRS denominator, clouds,
 and unequal coverage also make the two statistics non-comparable. We do not
 rescale or smooth the empirical shares to approach the published probability.
 
-The current [detectability output](../data/processed/detectability.json) spans
+The current [detectability output](../backend/data/processed/detectability.json) spans
 0–9.08% by day and about 0.40–100% by night; the 100% night bin is only 3/3
 cell-days. The externally supplied 0.1–10.6% range is not reproduced by this
 checkout and must not be used as its result without the originating artifact.
 
 ## Why the 2026 sensitivity band is nearly flat
-The 2026 band is nearly flat because 4,957 real MODIS cell-days are retained at every threshold and only 382 of 11,187 VIIRS detections pass the reconstructed time windows before FRP filtering, so changing the threshold adds only 57–251 cell-days and yields totals of 5,014–5,208 (see [audit evidence](../data/processed/audit_evidence.json) and [2026 same-eyes output](../data/processed/2026/calendar_sameeyes.json)).
+The 2026 band is nearly flat because 4,957 real MODIS cell-days are retained at every threshold and only 382 of 11,187 VIIRS detections pass the reconstructed time windows before FRP filtering, so changing the threshold adds only 57–251 cell-days and yields totals of 5,014–5,208 (see [audit evidence](../backend/data/processed/audit_evidence.json) and [2026 same-eyes output](../backend/data/processed/2026/calendar_sameeyes.json)).
 
 ## Independent implementation limitation
 The project owner reports an approximately 1% harmonization divergence versus
@@ -52,7 +52,7 @@ accuracy claim.
 ## Audit status and remaining guards
 Current raw and standardized data and saved harmonized events contain no S-NPP
 detections after 2026-11-02, and current raw products are SP-only for 2020–2025
-and NRT-only for 2026 ([audit evidence](../data/processed/audit_evidence.json)).
+and NRT-only for 2026 ([audit evidence](../backend/data/processed/audit_evidence.json)).
 However, standardization does not enforce the S-NPP cutoff, and a later fetch
 can leave both product classes in a season because filenames differ; neither
 is currently rejected by the raw-CSV ingestion step. These are open robustness

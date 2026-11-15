@@ -18,7 +18,7 @@ five satellite fleets. Backend pipeline is DONE (phases P0′–P7,
 see TEAM_BRIEF). Remaining: P9 frontend, P10 demo + submission.
 
 ## Hard rules
-- Every number shown anywhere comes from data/processed/*.json —
+- Every number shown anywhere comes from backend/data/processed/*.json —
   never hand-type a number into UI or text. Headline percentages
   come only from fleet_diff.json.
 - FRP is never summed across sensors. S-NPP is historical-only:
@@ -34,8 +34,8 @@ see TEAM_BRIEF). Remaining: P9 frontend, P10 demo + submission.
   progress-log protocol in TEAM_BRIEF.
 
 ## Layout
-scripts/ pipeline (fetch, harmonize, detectability, degrade,
-fleets) · tests/ · docs/ · data/processed/ = the JSON contract the
+backend/scripts/ pipeline (fetch, harmonize, detectability, degrade,
+fleets) · backend/tests/ · docs/ · backend/data/processed/ = the JSON contract the
 frontend reads.
 
 ## PIVOT 2026-11-15 — Fire Trend Audit (read @docs/AUDIT_SPEC.md FIRST)
@@ -59,4 +59,4 @@ Frontend renders only the frozen audit.json. Scope freeze at 12:00 IST.
 
 AUDIT_SPEC is the plan of record; BUILD_BRIEF holds the binding build decisions (data freeze, deploy, acceptance lines); COPY_PACK is final copy — use it unchanged. TEAM_BRIEF.md and METHOD.md are pre-pivot history except METHOD's measurement contract (grid, window, confidence rules), which stays in force.
 
-OLD CODE: do not delete and do not extend the pre-pivot machinery. fetch_firms.py + harmonize.py are load-bearing. degrade.py, fleets.py, detectability.py and docs/DEGRADATION.md, FLEETS.md, PIPELINE_AUDIT.md are Method-checks evidence — the degradation method FAILED its held-out 2021 benchmark and is never a measurement. PITCH.md, DEMO_SCRIPT.md, TEAM_BRIEF.md are superseded framing. The only new pipeline code is scripts/audit.py producing frontend/audit.json, the app's only data file.
+OLD CODE: do not delete and do not extend the pre-pivot machinery. fetch_firms.py + harmonize.py are load-bearing. degrade.py, fleets.py, detectability.py and docs/DEGRADATION.md, FLEETS.md, PIPELINE_AUDIT.md are Method-checks evidence — the degradation method FAILED its held-out 2021 benchmark and is never a measurement. PITCH.md, DEMO_SCRIPT.md, TEAM_BRIEF.md are superseded framing. The only new pipeline code is backend/scripts/audit.py producing frontend/audit.json, the app's only data file.

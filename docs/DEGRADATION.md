@@ -2,9 +2,9 @@
 
 # Degradation outputs — calendar_sameeyes.json
 
-Run `.venv/Scripts/python.exe scripts/degrade.py` after harmonization.
-Input is `data/processed/standardized.parquet`; outputs are
-`data/processed/<season>/calendar_sameeyes.json` for 2020–2026.
+Run `.venv/Scripts/python.exe backend/scripts/degrade.py` after harmonization.
+Input is `backend/data/processed/standardized.parquet`; outputs are
+`backend/data/processed/<season>/calendar_sameeyes.json` for 2020–2026.
 
 For each season separately, pool unique UTC acquisition minutes from its
 confidence-filtered MODIS Terra and Aqua detections. Sort and split where the

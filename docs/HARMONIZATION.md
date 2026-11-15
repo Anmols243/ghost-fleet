@@ -1,9 +1,9 @@
 # Harmonization
 
-Run `.venv/Scripts/python.exe scripts/harmonize.py` from the repository.
-Inputs are all CSVs in `data/raw`; keep only the intended source products there.
-Outputs are `data/processed/standardized.parquet`, `season_totals.json`, and
-`data/processed/<season>/{harmonized_events.csv,calendar_full.json}` for 2020–2026.
+Run `.venv/Scripts/python.exe backend/scripts/harmonize.py` from the repository.
+Inputs are all CSVs in `backend/data/raw`; keep only the intended source products there.
+Outputs are `backend/data/processed/standardized.parquet`, `season_totals.json`, and
+`backend/data/processed/<season>/{harmonized_events.csv,calendar_full.json}` for 2020–2026.
 
 Standardized dates are UTC midnight timestamps. Acquisition times are UTC HH:MM.
 MODIS satellites Terra/Aqua are split; VIIRS N/N20/N21 map to S-NPP/NOAA-20/21.

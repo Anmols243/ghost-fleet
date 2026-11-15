@@ -26,4 +26,4 @@ Canonical docs, read in order before any task: docs/AUDIT_SPEC.md (plan of recor
 
 Language law: "same named satellites" / "satellites present in both periods" — never "same eyes" or "MODIS-equivalent". No corrected counts, no causal claims; every conclusion ends "Actual-fire change is not measured." Gaps are computed from unrounded counts.
 
-Old code: do not delete, do not extend. fetch_firms.py + harmonize.py are load-bearing. degrade.py / fleets.py / detectability.py and their docs are Method-checks evidence (degradation FAILED its held-out benchmark; exhibit only). PITCH.md / DEMO_SCRIPT.md are superseded. Only new pipeline code: scripts/audit.py -> frontend/audit.json (the app's only data file), frozen per BUILD_BRIEF.
+Old code: do not delete, do not extend. fetch_firms.py + harmonize.py are load-bearing. degrade.py / fleets.py / detectability.py and their docs are Method-checks evidence (degradation FAILED its held-out benchmark; exhibit only). PITCH.md / DEMO_SCRIPT.md are superseded. Only new pipeline code: backend/scripts/audit.py -> frontend/audit.json (the app's only data file), frozen per BUILD_BRIEF.

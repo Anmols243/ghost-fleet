@@ -127,7 +127,7 @@ def validate_presets(presets):
 
 
 def main():
-    path = BASE / "frontend" / "audit.json"
+    path = BASE.parent / "frontend" / "audit.json"
     reference = json.loads(json.dumps(REFERENCE))
     df = pd.read_parquet(BASE / "data/processed/standardized.parquet")
     daily, present = aggregate(df)

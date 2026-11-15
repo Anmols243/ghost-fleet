@@ -2,9 +2,9 @@
 
 # Fleet comparison for 2026
 
-Run `.venv/Scripts/python.exe scripts/fleets.py` after harmonization.
-Inputs: `data/processed/standardized.parquet` and
-`data/processed/2026/calendar_full.json`. Outputs in `data/processed`:
+Run `.venv/Scripts/python.exe backend/scripts/fleets.py` after harmonization.
+Inputs: `backend/data/processed/standardized.parquet` and
+`backend/data/processed/2026/calendar_full.json`. Outputs in `backend/data/processed`:
 `fleets_2026.json` (46 daily records per fleet) and `fleet_diff.json`.
 
 Fleet definitions:

@@ -1,8 +1,8 @@
 # Empirical MODIS co-detection
 
-Run `.venv/Scripts/python.exe scripts/detectability.py` after harmonization.
-Input: `data/processed/standardized.parquet` (already confidence-filtered).
-Output: `data/processed/detectability.json`.
+Run `.venv/Scripts/python.exe backend/scripts/detectability.py` after harmonization.
+Input: `backend/data/processed/standardized.parquet` (already confidence-filtered).
+Output: `backend/data/processed/detectability.json`.
 
 Each denominator is unique VIIRS cell-days within one day/night stratum, pooled
 across seasons and VIIRS satellites. Repeated detections and multiple VIIRS

@@ -268,3 +268,14 @@ protocol. Kit status NOT RUN: Gate7 is not passed and demo capture remains
 blocked until two qualifying unaided first-exposure non-builder passes.
 Verification: source block exact; full suite24passed. Commit locator:
 git log -1 -- docs/GATE7.md. Status: kit prepared; usability run NOT STARTED.
+
+## Repo restructure: backend/ and frontend/ split
+
+2026-11-15 IST - Claude Code. Moved scripts/, tests/, data/, requirements.txt
+and audit_reference.py (now backend/scripts/audit_reference.py) under backend/.
+Removed empty backend/app. audit.py now writes ../frontend/audit.json from
+backend/. Added backend/.env (gitignored) and backend/.env.example. Updated
+.gitignore and path references in README, CLAUDE, AGENTS and docs; historical
+entries in this log and TEAM_BRIEF keep old paths. Tests: 24 passed, run from
+backend/ with python -m pytest -q. Commit locator: git log -1 -- backend/scripts/audit.py.
+Status: DONE. Not pushed.

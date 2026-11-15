@@ -56,7 +56,7 @@ with its provenance caveat. It also discloses the two missing guards and absent
 NOAA-21 coverage. No thresholds, grid, observations, or computed shares changed.
 
 ## Verification
-Evidence: `data/processed/audit_evidence.json`. All current raw files are SP-only
+Evidence: `backend/data/processed/audit_evidence.json`. All current raw files are SP-only
 for 2020–2025 and NRT-only for 2026. No late S-NPP rows were found in raw data,
 standardized data, or event CSVs. Degraded results select original rows only;
 fleet selectors exclude S-NPP for full2026/post_snpp2026.

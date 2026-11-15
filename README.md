@@ -47,10 +47,10 @@ Read in this order — this is the complete context, nothing else is required:
 
 This repo began as a different product ("same-eyes" degradation). The pivot keeps its machinery as evidence:
 
-- **Load-bearing, still used:** `scripts/fetch_firms.py`, `scripts/harmonize.py`, the harmonized event data, `docs/HARMONIZATION.md`, `docs/DETECTABILITY.md`, and the measurement contract in `docs/METHOD.md` (grid, season window, confidence rules).
-- **Method-checks evidence:** `scripts/degrade.py`, `scripts/fleets.py`, `scripts/detectability.py`, `docs/DEGRADATION.md`, `docs/FLEETS.md`, `docs/PIPELINE_AUDIT.md`. The degradation method failed its held-out benchmark; it is exhibited, never used as a measurement.
+- **Load-bearing, still used:** `backend/scripts/fetch_firms.py`, `backend/scripts/harmonize.py`, the harmonized event data, `docs/HARMONIZATION.md`, `docs/DETECTABILITY.md`, and the measurement contract in `docs/METHOD.md` (grid, season window, confidence rules).
+- **Method-checks evidence:** `backend/scripts/degrade.py`, `backend/scripts/fleets.py`, `backend/scripts/detectability.py`, `docs/DEGRADATION.md`, `docs/FLEETS.md`, `docs/PIPELINE_AUDIT.md`. The degradation method failed its held-out benchmark; it is exhibited, never used as a measurement.
 - **Superseded framing (bannered, kept for provenance):** `docs/PITCH.md`, `docs/DEMO_SCRIPT.md`, `docs/TEAM_BRIEF.md`.
-- **New pipeline code:** only the audit aggregation (`scripts/audit.py`, ported per AUDIT_SPEC), which produces the app's single data file, `frontend/audit.json`.
+- **New pipeline code:** only the audit aggregation (`backend/scripts/audit.py`, ported per AUDIT_SPEC), which produces the app's single data file, `frontend/audit.json`.
 - **`frontend/`** is built fresh for the audit app per BUILD_BRIEF; anything pre-pivot in it is disposable.
 
 ## Running the app

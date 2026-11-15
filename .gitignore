@@ -1,9 +1,9 @@
 .env
-data/raw/*
-!data/raw/.gitkeep
+backend/data/raw/*
+!backend/data/raw/.gitkeep
 __pycache__/
 .venv/
 *.pyc
 .pytest_cache/
-data/processed/*
-!data/processed/.gitkeep
+backend/data/processed/*
+!backend/data/processed/.gitkeep
