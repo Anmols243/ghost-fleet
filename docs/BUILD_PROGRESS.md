@@ -859,3 +859,60 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Also: removed three unresolved merge-conflict marker lines from this file (content kept).
 - Open for Anmol: 9db1a07 committed the root data/ folder including raw FIRMS CSVs.
 - Status: IN PROGRESS (not pushed).
+
+## Geographic extension - sections 8/9 builder side (2026-11-15 22:50 IST)
+
+- Model: Claude Opus 5.5 (Claude Code). Tested commit: 1c80289 (main, also deployed).
+- Authority: owner override recorded in docs/BUILD_BRIEF.md "Geographic-extension amendment"
+  (docs/INDIA_EXTENSION_PROMPT.md sections 1-2 and 8-9). It does not override frozen hero
+  values, language law or evidence rules.
+- Manifest summary (extensions/india/data/manifests/pull.json, git blob 3303b52c..., schema
+  india-pull v1): status "RETRIEVED - completeness not asserted"; 132/132 chunks retrieved,
+  DAY_RANGE 5, bbox [68, 6.5, 97.5, 37.5]; 692,393 rows (2011 19,399; 2012 121,451;
+  2017 107,562; 2018 224,142; 2025 113,188; 2026 106,651). 102 MODAPS outage entries
+  disclosed; S-NPP NRT expected cessation from 2026-11-02T15:40Z (non-blocking, hero canon);
+  2026-11-15 unverified and excluded. NOAA-21 excluded. No unresolved anomaly recorded.
+- Tests: frontend 57/57 before the fix, 58/58 after (node --test frontend/tests/*.test.js). Backend 45/45
+  (python -m pytest -q in backend/, system Python 3.14.4, pandas 2.3.3, pytest 9.2.0).
+- india.json content checks (builder, reads only frontend/india.json and audit.json):
+  2155/2155 pass. 7 rectangles x 3 comparisons; daily U <= W and C = W - U every day;
+  totals equal the in-window daily sums; 2026-11-15 null; no NaN/Infinity; selections equal
+  the frozen presets; stored percentages and gaps equal 1-dp rounding of values computed
+  from unrounded integers; hero W/U/C equal audit.json exactly (embedded hero gate: 73
+  checks passed). Full-rectangle W differs from the sum of the five regions (e.g. P1 2012:
+  92,653 vs 92,348), consistent with direct computation. This is not Arlo's independent check.
+- Regeneration byte-identity: NOT DONE. (1) The pinned raw snapshot (132 CSVs) is not on
+  this machine: extensions/india/data/raw/ holds only .gitkeep (bulk is gitignored by design).
+  (2) backend/scripts/india_audit.py writes provenance.generated_at_utc = datetime.now(), so
+  any rerun differs in bytes by construction. (3) Its provenance hashes exact checkout bytes:
+  recorded india_audit.py 6b717ccf... equals the LF git blob, while harmonize.py 31ec4c6b...
+  and audit.py 23e8272e... and audit.json 3b7d0234... are CRLF checkout bytes. A rerun on
+  another checkout changes those fields too. Arlo should compare with generated_at_utc and
+  provenance.sha256_exact_bytes excluded, or the generator needs a pinned timestamp. Backend
+  not modified here.
+- Hashes, git blob (canonical LF): audit.json faee77ab..., ledger.json 5fb06216...,
+  timing.json 3c658ea3..., transitions.json 3e8e372d..., ledger.csv d9083232...,
+  india.json 84ec208e... (equals extensions/india/data/outputs/india.json and geography.js
+  DATA_SHA256). All unchanged.
+- Deployed (https://ghost-fleet-chads2.vercel.app/, fetched 22:45 IST): india.json 84ec208e...,
+  audit.json faee77ab..., geography.js equals git blob 99900d01... File identity only; the
+  deployed UI has not been verified.
+- Deployed-candidate checklist prepared: docs/GEOGRAPHY_RELEASE_CHECKLIST.md (data identity;
+  7 selections x 3 cases desktop + mobile with expected W/U/C; exact expected regional
+  conclusions generated from geography.js; map, keyboard, captions; failure injection;
+  network and console; sign-off table). Not executed: agent-browser is still unreachable.
+- Commits in this extension's UI review: 67c21fd, 72a59f8, 1c80289 (pushed). This entry and
+  the checklist are uncommitted.
+- Fixed (frontend/geography.js, uncommitted): regional conclusion interval now reads
+  "Oct 1 through Nov 15" (was raw "10-01 through 11-15"); regional percentages and gaps use
+  U+2212 for negatives like the hero. Reports and CSVs carry the same string. New test in
+  frontend/tests/geography.test.js; frontend 58/58. Checklist conclusions regenerated.
+  india.json and every frozen file untouched.
+- Gate 7: approved on automated evidence by Arlo (see entry above); no human run took place.
+  The original human-comprehension criterion and Astra's original full seal are not claimed.
+- Abort gate: section 9 required approval, deployment and deployed verification by 22:30 IST.
+  That time has passed without Arlo's reproduction or sign-off, and the extension has been
+  live since 9db1a07 by owner decision. Under section 9 as written this is an ABORT condition;
+  the owner has directed that the decision be held for Arlo.
+- Independent result: PENDING (Arlo).
+- SHIP/ABORT: PENDING Arlo's independent reproduction. Release is NOT authorized by this phase.
