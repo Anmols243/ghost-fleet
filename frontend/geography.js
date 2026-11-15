@@ -57,16 +57,20 @@
     return true;
   }
   var LABELS = { MODIS_TERRA: 'Terra', MODIS_AQUA: 'Aqua', VIIRS_SNPP: 'Suomi NPP', VIIRS_NOAA20: 'NOAA-20' };
-  function pct(x) { return x === null ? 'unavailable (zero baseline)' : (x > 0 ? '+' : '') + x.toFixed(1) + '%'; }
+  var MINUS = '−', MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  // Signed one-decimal number in the hero style: U+2212 for negatives, no sign on zero.
+  function signed(x, plus) { var t = Math.abs(x).toFixed(1); return t === '0.0' ? t : (x < 0 ? MINUS : plus) + t; }
+  function pct(x) { return x === null ? 'unavailable (zero baseline)' : signed(x, '+') + '%'; }
+  function day(iso) { return MONTHS[Number(iso.slice(5, 7)) - 1] + ' ' + Number(iso.slice(8, 10)); }
   function regionalConclusion(region, p) {
     var w = change(p.W_a, p.W_b), u = change(p.U_a, p.U_b);
-    var interval = p.periods.a.interval[0].slice(5) + ' through ' + p.periods.a.interval[1].slice(5) + ' in both periods';
+    var interval = day(p.periods.a.interval[0]) + ' through ' + day(p.periods.a.interval[1]) + ' in both periods';
     var text = 'Recorded change, ' + region.label + ', ' + p.a + ' → ' + p.b +
       ': all included satellites, ' + pct(rounded(w)) + ' (base ' + p.W_a +
       ' recorded cell-days); ' + p.shared.map(s => LABELS[s]).join('+') + ', ' + pct(rounded(u)) +
       ' (base ' + p.U_a + ' recorded cell-days). Interval: ' + interval + '. ';
     text += w === null || u === null ? 'The dependent selection gap is unavailable. ' :
-      'Difference: ' + rounded(w - u).toFixed(1) + ' percentage points. ';
+      'Difference: ' + signed(rounded(w - u), '') + ' percentage points. ';
     text += w !== null && u !== null && Math.abs(w - u) >= 10 ?
       'Requires qualification: neither percentage is a corrected fire estimate, and the difference is not a causal attribution. ' :
       'A small or zero selection gap does not establish comparability: this calculation cannot expose changes within the shared fleet. ';

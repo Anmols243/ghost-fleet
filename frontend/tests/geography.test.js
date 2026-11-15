@@ -121,3 +121,17 @@ test('hero entry initializes without requesting or awaiting geographic data', ()
   assert.deepEqual(requests, ['audit.json']);
   assert.equal(window.GhostFleetUI.getHero(), null);
 });
+
+test('regional conclusions use readable dates and the hero minus sign', () => {
+  for (const region of data.rectangles) {
+    if (region.id === 'hero') continue;
+    for (const p of region.comparisons) {
+      const text = geo.regionalConclusion(region, p);
+      assert.match(text, /Interval: Oct 1 through Nov 1[45] in both periods\./);
+      assert.doesNotMatch(text, /\d{2}-\d{2} through/);
+      assert.doesNotMatch(text, /, -\d|\(-|: -\d/, 'no hyphen-minus before a number');
+    }
+  }
+  const ne = data.rectangles.find((r) => r.id === 'northeast');
+  assert.match(geo.regionalConclusion(ne, ne.comparisons[0]), /Terra\+Aqua, \u221212\.7%/);
+});
