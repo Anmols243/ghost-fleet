@@ -1,0 +1,2502 @@
+[
+  {
+    "source": "MODIS_SP",
+    "season": 2020,
+    "start": "2020-10-01",
+    "end": "2020-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 459,
+    "file": "MODIS_SP_2020-10-01_2020-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2020,
+    "start": "2020-10-11",
+    "end": "2020-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1612,
+    "file": "MODIS_SP_2020-10-11_2020-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2020,
+    "start": "2020-10-21",
+    "end": "2020-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5574,
+    "file": "MODIS_SP_2020-10-21_2020-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2020,
+    "start": "2020-10-31",
+    "end": "2020-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 8161,
+    "file": "MODIS_SP_2020-10-31_2020-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2020,
+    "start": "2020-11-10",
+    "end": "2020-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2632,
+    "file": "MODIS_SP_2020-11-10_2020-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2020,
+    "start": "2020-10-01",
+    "end": "2020-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3266,
+    "file": "VIIRS_NOAA20_SP_2020-10-01_2020-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2020,
+    "start": "2020-10-11",
+    "end": "2020-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 9032,
+    "file": "VIIRS_NOAA20_SP_2020-10-11_2020-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2020,
+    "start": "2020-10-21",
+    "end": "2020-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 21273,
+    "file": "VIIRS_NOAA20_SP_2020-10-21_2020-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2020,
+    "start": "2020-10-31",
+    "end": "2020-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 39852,
+    "file": "VIIRS_NOAA20_SP_2020-10-31_2020-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2020,
+    "start": "2020-11-10",
+    "end": "2020-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 11180,
+    "file": "VIIRS_NOAA20_SP_2020-11-10_2020-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2020,
+    "start": "2020-10-01",
+    "end": "2020-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2989,
+    "file": "VIIRS_SNPP_SP_2020-10-01_2020-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2020,
+    "start": "2020-10-11",
+    "end": "2020-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 9118,
+    "file": "VIIRS_SNPP_SP_2020-10-11_2020-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2020,
+    "start": "2020-10-21",
+    "end": "2020-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 19771,
+    "file": "VIIRS_SNPP_SP_2020-10-21_2020-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2020,
+    "start": "2020-10-31",
+    "end": "2020-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 39421,
+    "file": "VIIRS_SNPP_SP_2020-10-31_2020-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2020,
+    "start": "2020-11-10",
+    "end": "2020-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 11340,
+    "file": "VIIRS_SNPP_SP_2020-11-10_2020-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2021,
+    "start": "2021-10-01",
+    "end": "2021-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 253,
+    "file": "MODIS_SP_2021-10-01_2021-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2021,
+    "start": "2021-10-11",
+    "end": "2021-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 974,
+    "file": "MODIS_SP_2021-10-11_2021-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2021,
+    "start": "2021-10-21",
+    "end": "2021-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2549,
+    "file": "MODIS_SP_2021-10-21_2021-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2021,
+    "start": "2021-10-31",
+    "end": "2021-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 11310,
+    "file": "MODIS_SP_2021-10-31_2021-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2021,
+    "start": "2021-11-10",
+    "end": "2021-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4286,
+    "file": "MODIS_SP_2021-11-10_2021-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2021,
+    "start": "2021-10-01",
+    "end": "2021-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1331,
+    "file": "VIIRS_NOAA20_SP_2021-10-01_2021-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2021,
+    "start": "2021-10-11",
+    "end": "2021-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6031,
+    "file": "VIIRS_NOAA20_SP_2021-10-11_2021-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2021,
+    "start": "2021-10-21",
+    "end": "2021-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 11436,
+    "file": "VIIRS_NOAA20_SP_2021-10-21_2021-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2021,
+    "start": "2021-10-31",
+    "end": "2021-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 43057,
+    "file": "VIIRS_NOAA20_SP_2021-10-31_2021-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2021,
+    "start": "2021-11-10",
+    "end": "2021-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 25754,
+    "file": "VIIRS_NOAA20_SP_2021-11-10_2021-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2021,
+    "start": "2021-10-01",
+    "end": "2021-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1527,
+    "file": "VIIRS_SNPP_SP_2021-10-01_2021-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2021,
+    "start": "2021-10-11",
+    "end": "2021-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 6858,
+    "file": "VIIRS_SNPP_SP_2021-10-11_2021-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2021,
+    "start": "2021-10-21",
+    "end": "2021-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 10218,
+    "file": "VIIRS_SNPP_SP_2021-10-21_2021-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2021,
+    "start": "2021-10-31",
+    "end": "2021-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 44343,
+    "file": "VIIRS_SNPP_SP_2021-10-31_2021-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2021,
+    "start": "2021-11-10",
+    "end": "2021-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 25839,
+    "file": "VIIRS_SNPP_SP_2021-11-10_2021-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2022,
+    "start": "2022-10-01",
+    "end": "2022-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 184,
+    "file": "MODIS_SP_2022-10-01_2022-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2022,
+    "start": "2022-10-11",
+    "end": "2022-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 546,
+    "file": "MODIS_SP_2022-10-11_2022-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2022,
+    "start": "2022-10-21",
+    "end": "2022-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2918,
+    "file": "MODIS_SP_2022-10-21_2022-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2022,
+    "start": "2022-10-31",
+    "end": "2022-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5198,
+    "file": "MODIS_SP_2022-10-31_2022-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2022,
+    "start": "2022-11-10",
+    "end": "2022-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2275,
+    "file": "MODIS_SP_2022-11-10_2022-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2022,
+    "start": "2022-10-01",
+    "end": "2022-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1400,
+    "file": "VIIRS_NOAA20_SP_2022-10-01_2022-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2022,
+    "start": "2022-10-11",
+    "end": "2022-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3233,
+    "file": "VIIRS_NOAA20_SP_2022-10-11_2022-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2022,
+    "start": "2022-10-21",
+    "end": "2022-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 13924,
+    "file": "VIIRS_NOAA20_SP_2022-10-21_2022-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2022,
+    "start": "2022-10-31",
+    "end": "2022-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 22406,
+    "file": "VIIRS_NOAA20_SP_2022-10-31_2022-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2022,
+    "start": "2022-11-10",
+    "end": "2022-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 11702,
+    "file": "VIIRS_NOAA20_SP_2022-11-10_2022-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2022,
+    "start": "2022-10-01",
+    "end": "2022-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1196,
+    "file": "VIIRS_SNPP_SP_2022-10-01_2022-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2022,
+    "start": "2022-10-11",
+    "end": "2022-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 3069,
+    "file": "VIIRS_SNPP_SP_2022-10-11_2022-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2022,
+    "start": "2022-10-21",
+    "end": "2022-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 13814,
+    "file": "VIIRS_SNPP_SP_2022-10-21_2022-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2022,
+    "start": "2022-10-31",
+    "end": "2022-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 20335,
+    "file": "VIIRS_SNPP_SP_2022-10-31_2022-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2022,
+    "start": "2022-11-10",
+    "end": "2022-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 11006,
+    "file": "VIIRS_SNPP_SP_2022-11-10_2022-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2023,
+    "start": "2023-10-01",
+    "end": "2023-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 342,
+    "file": "MODIS_SP_2023-10-01_2023-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2023,
+    "start": "2023-10-11",
+    "end": "2023-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 337,
+    "file": "MODIS_SP_2023-10-11_2023-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2023,
+    "start": "2023-10-21",
+    "end": "2023-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1284,
+    "file": "MODIS_SP_2023-10-21_2023-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2023,
+    "start": "2023-10-31",
+    "end": "2023-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4089,
+    "file": "MODIS_SP_2023-10-31_2023-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2023,
+    "start": "2023-11-10",
+    "end": "2023-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2236,
+    "file": "MODIS_SP_2023-11-10_2023-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2023,
+    "start": "2023-10-01",
+    "end": "2023-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1934,
+    "file": "VIIRS_NOAA20_SP_2023-10-01_2023-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2023,
+    "start": "2023-10-11",
+    "end": "2023-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1540,
+    "file": "VIIRS_NOAA20_SP_2023-10-11_2023-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2023,
+    "start": "2023-10-21",
+    "end": "2023-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6090,
+    "file": "VIIRS_NOAA20_SP_2023-10-21_2023-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2023,
+    "start": "2023-10-31",
+    "end": "2023-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 17482,
+    "file": "VIIRS_NOAA20_SP_2023-10-31_2023-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2023,
+    "start": "2023-11-10",
+    "end": "2023-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6797,
+    "file": "VIIRS_NOAA20_SP_2023-11-10_2023-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2023,
+    "start": "2023-10-01",
+    "end": "2023-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1873,
+    "file": "VIIRS_SNPP_SP_2023-10-01_2023-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2023,
+    "start": "2023-10-11",
+    "end": "2023-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1456,
+    "file": "VIIRS_SNPP_SP_2023-10-11_2023-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2023,
+    "start": "2023-10-21",
+    "end": "2023-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 5638,
+    "file": "VIIRS_SNPP_SP_2023-10-21_2023-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2023,
+    "start": "2023-10-31",
+    "end": "2023-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 15319,
+    "file": "VIIRS_SNPP_SP_2023-10-31_2023-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2023,
+    "start": "2023-11-10",
+    "end": "2023-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 6730,
+    "file": "VIIRS_SNPP_SP_2023-11-10_2023-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2024,
+    "start": "2024-10-01",
+    "end": "2024-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 92,
+    "file": "MODIS_SP_2024-10-01_2024-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2024,
+    "start": "2024-10-11",
+    "end": "2024-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 228,
+    "file": "MODIS_SP_2024-10-11_2024-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2024,
+    "start": "2024-10-21",
+    "end": "2024-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 504,
+    "file": "MODIS_SP_2024-10-21_2024-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2024,
+    "start": "2024-10-31",
+    "end": "2024-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1839,
+    "file": "MODIS_SP_2024-10-31_2024-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2024,
+    "start": "2024-11-10",
+    "end": "2024-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1101,
+    "file": "MODIS_SP_2024-11-10_2024-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2024,
+    "start": "2024-10-01",
+    "end": "2024-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1155,
+    "file": "VIIRS_NOAA20_SP_2024-10-01_2024-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2024,
+    "start": "2024-10-11",
+    "end": "2024-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2835,
+    "file": "VIIRS_NOAA20_SP_2024-10-11_2024-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2024,
+    "start": "2024-10-21",
+    "end": "2024-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2677,
+    "file": "VIIRS_NOAA20_SP_2024-10-21_2024-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2024,
+    "start": "2024-10-31",
+    "end": "2024-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6048,
+    "file": "VIIRS_NOAA20_SP_2024-10-31_2024-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2024,
+    "start": "2024-11-10",
+    "end": "2024-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1341,
+    "file": "VIIRS_NOAA20_SP_2024-11-10_2024-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2024,
+    "start": "2024-10-01",
+    "end": "2024-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 986,
+    "file": "VIIRS_SNPP_SP_2024-10-01_2024-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2024,
+    "start": "2024-10-11",
+    "end": "2024-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2564,
+    "file": "VIIRS_SNPP_SP_2024-10-11_2024-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2024,
+    "start": "2024-10-21",
+    "end": "2024-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2496,
+    "file": "VIIRS_SNPP_SP_2024-10-21_2024-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2024,
+    "start": "2024-10-31",
+    "end": "2024-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 4263,
+    "file": "VIIRS_SNPP_SP_2024-10-31_2024-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2024,
+    "start": "2024-11-10",
+    "end": "2024-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1416,
+    "file": "VIIRS_SNPP_SP_2024-11-10_2024-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2025,
+    "start": "2025-10-01",
+    "end": "2025-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 69,
+    "file": "MODIS_SP_2025-10-01_2025-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2025,
+    "start": "2025-10-11",
+    "end": "2025-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 305,
+    "file": "MODIS_SP_2025-10-11_2025-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2025,
+    "start": "2025-10-21",
+    "end": "2025-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 958,
+    "file": "MODIS_SP_2025-10-21_2025-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2025,
+    "start": "2025-10-31",
+    "end": "2025-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2065,
+    "file": "MODIS_SP_2025-10-31_2025-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2025,
+    "start": "2025-11-10",
+    "end": "2025-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 716,
+    "file": "MODIS_SP_2025-11-10_2025-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2025,
+    "start": "2025-10-01",
+    "end": "2025-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 367,
+    "file": "VIIRS_NOAA20_SP_2025-10-01_2025-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2025,
+    "start": "2025-10-11",
+    "end": "2025-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1566,
+    "file": "VIIRS_NOAA20_SP_2025-10-11_2025-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2025,
+    "start": "2025-10-21",
+    "end": "2025-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2347,
+    "file": "VIIRS_NOAA20_SP_2025-10-21_2025-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2025,
+    "start": "2025-10-31",
+    "end": "2025-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3765,
+    "file": "VIIRS_NOAA20_SP_2025-10-31_2025-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2025,
+    "start": "2025-11-10",
+    "end": "2025-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1531,
+    "file": "VIIRS_NOAA20_SP_2025-11-10_2025-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2025,
+    "start": "2025-10-01",
+    "end": "2025-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 492,
+    "file": "VIIRS_SNPP_SP_2025-10-01_2025-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2025,
+    "start": "2025-10-11",
+    "end": "2025-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1714,
+    "file": "VIIRS_SNPP_SP_2025-10-11_2025-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2025,
+    "start": "2025-10-21",
+    "end": "2025-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2112,
+    "file": "VIIRS_SNPP_SP_2025-10-21_2025-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2025,
+    "start": "2025-10-31",
+    "end": "2025-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 3565,
+    "file": "VIIRS_SNPP_SP_2025-10-31_2025-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2025,
+    "start": "2025-11-10",
+    "end": "2025-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1371,
+    "file": "VIIRS_SNPP_SP_2025-11-10_2025-11-15.csv"
+  },
+  {
+    "source": "MODIS_NRT",
+    "season": 2026,
+    "start": "2026-10-01",
+    "end": "2026-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 96,
+    "file": "MODIS_NRT_2026-10-01_2026-10-10.csv"
+  },
+  {
+    "source": "MODIS_NRT",
+    "season": 2026,
+    "start": "2026-10-11",
+    "end": "2026-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 216,
+    "file": "MODIS_NRT_2026-10-11_2026-10-20.csv"
+  },
+  {
+    "source": "MODIS_NRT",
+    "season": 2026,
+    "start": "2026-10-21",
+    "end": "2026-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 558,
+    "file": "MODIS_NRT_2026-10-21_2026-10-30.csv"
+  },
+  {
+    "source": "MODIS_NRT",
+    "season": 2026,
+    "start": "2026-10-31",
+    "end": "2026-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3959,
+    "file": "MODIS_NRT_2026-10-31_2026-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_NRT",
+    "season": 2026,
+    "start": "2026-10-01",
+    "end": "2026-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 665,
+    "file": "VIIRS_NOAA20_NRT_2026-10-01_2026-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_NRT",
+    "season": 2026,
+    "start": "2026-10-11",
+    "end": "2026-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 985,
+    "file": "VIIRS_NOAA20_NRT_2026-10-11_2026-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_NRT",
+    "season": 2026,
+    "start": "2026-10-21",
+    "end": "2026-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1771,
+    "file": "VIIRS_NOAA20_NRT_2026-10-21_2026-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_NRT",
+    "season": 2026,
+    "start": "2026-10-31",
+    "end": "2026-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3422,
+    "file": "VIIRS_NOAA20_NRT_2026-10-31_2026-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_NRT",
+    "season": 2026,
+    "start": "2026-10-01",
+    "end": "2026-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 652,
+    "file": "VIIRS_SNPP_NRT_2026-10-01_2026-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_NRT",
+    "season": 2026,
+    "start": "2026-10-11",
+    "end": "2026-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 706,
+    "file": "VIIRS_SNPP_NRT_2026-10-11_2026-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_NRT",
+    "season": 2026,
+    "start": "2026-10-21",
+    "end": "2026-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1808,
+    "file": "VIIRS_SNPP_NRT_2026-10-21_2026-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_NRT",
+    "season": 2026,
+    "start": "2026-10-31",
+    "end": "2026-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 709,
+    "file": "VIIRS_SNPP_NRT_2026-10-31_2026-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2001,
+    "start": "2001-10-01",
+    "end": "2001-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 243,
+    "file": "MODIS_SP_2001-10-01_2001-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2001,
+    "start": "2001-10-11",
+    "end": "2001-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 855,
+    "file": "MODIS_SP_2001-10-11_2001-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2001,
+    "start": "2001-10-21",
+    "end": "2001-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 201,
+    "file": "MODIS_SP_2001-10-21_2001-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2001,
+    "start": "2001-10-31",
+    "end": "2001-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 45,
+    "file": "MODIS_SP_2001-10-31_2001-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2001,
+    "start": "2001-11-10",
+    "end": "2001-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 21,
+    "file": "MODIS_SP_2001-11-10_2001-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2002,
+    "start": "2002-10-01",
+    "end": "2002-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1981,
+    "file": "MODIS_SP_2002-10-01_2002-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2002,
+    "start": "2002-10-11",
+    "end": "2002-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4534,
+    "file": "MODIS_SP_2002-10-11_2002-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2002,
+    "start": "2002-10-21",
+    "end": "2002-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3435,
+    "file": "MODIS_SP_2002-10-21_2002-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2002,
+    "start": "2002-10-31",
+    "end": "2002-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 647,
+    "file": "MODIS_SP_2002-10-31_2002-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2002,
+    "start": "2002-11-10",
+    "end": "2002-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 126,
+    "file": "MODIS_SP_2002-11-10_2002-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2003,
+    "start": "2003-10-01",
+    "end": "2003-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1364,
+    "file": "MODIS_SP_2003-10-01_2003-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2003,
+    "start": "2003-10-11",
+    "end": "2003-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4582,
+    "file": "MODIS_SP_2003-10-11_2003-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2003,
+    "start": "2003-10-21",
+    "end": "2003-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4499,
+    "file": "MODIS_SP_2003-10-21_2003-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2003,
+    "start": "2003-10-31",
+    "end": "2003-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1297,
+    "file": "MODIS_SP_2003-10-31_2003-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2003,
+    "start": "2003-11-10",
+    "end": "2003-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 128,
+    "file": "MODIS_SP_2003-11-10_2003-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2004,
+    "start": "2004-10-01",
+    "end": "2004-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1393,
+    "file": "MODIS_SP_2004-10-01_2004-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2004,
+    "start": "2004-10-11",
+    "end": "2004-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2869,
+    "file": "MODIS_SP_2004-10-11_2004-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2004,
+    "start": "2004-10-21",
+    "end": "2004-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4773,
+    "file": "MODIS_SP_2004-10-21_2004-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2004,
+    "start": "2004-10-31",
+    "end": "2004-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1432,
+    "file": "MODIS_SP_2004-10-31_2004-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2004,
+    "start": "2004-11-10",
+    "end": "2004-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 269,
+    "file": "MODIS_SP_2004-11-10_2004-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2005,
+    "start": "2005-10-01",
+    "end": "2005-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1403,
+    "file": "MODIS_SP_2005-10-01_2005-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2005,
+    "start": "2005-10-11",
+    "end": "2005-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4481,
+    "file": "MODIS_SP_2005-10-11_2005-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2005,
+    "start": "2005-10-21",
+    "end": "2005-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5880,
+    "file": "MODIS_SP_2005-10-21_2005-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2005,
+    "start": "2005-10-31",
+    "end": "2005-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4696,
+    "file": "MODIS_SP_2005-10-31_2005-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2005,
+    "start": "2005-11-10",
+    "end": "2005-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1435,
+    "file": "MODIS_SP_2005-11-10_2005-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2006,
+    "start": "2006-10-01",
+    "end": "2006-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2053,
+    "file": "MODIS_SP_2006-10-01_2006-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2006,
+    "start": "2006-10-11",
+    "end": "2006-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3482,
+    "file": "MODIS_SP_2006-10-11_2006-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2006,
+    "start": "2006-10-21",
+    "end": "2006-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2942,
+    "file": "MODIS_SP_2006-10-21_2006-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2006,
+    "start": "2006-10-31",
+    "end": "2006-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3285,
+    "file": "MODIS_SP_2006-10-31_2006-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2006,
+    "start": "2006-11-10",
+    "end": "2006-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 118,
+    "file": "MODIS_SP_2006-11-10_2006-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2007,
+    "start": "2007-10-01",
+    "end": "2007-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2031,
+    "file": "MODIS_SP_2007-10-01_2007-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2007,
+    "start": "2007-10-11",
+    "end": "2007-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4832,
+    "file": "MODIS_SP_2007-10-11_2007-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2007,
+    "start": "2007-10-21",
+    "end": "2007-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5523,
+    "file": "MODIS_SP_2007-10-21_2007-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2007,
+    "start": "2007-10-31",
+    "end": "2007-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4368,
+    "file": "MODIS_SP_2007-10-31_2007-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2007,
+    "start": "2007-11-10",
+    "end": "2007-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 442,
+    "file": "MODIS_SP_2007-11-10_2007-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2008,
+    "start": "2008-10-01",
+    "end": "2008-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 646,
+    "file": "MODIS_SP_2008-10-01_2008-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2008,
+    "start": "2008-10-11",
+    "end": "2008-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2922,
+    "file": "MODIS_SP_2008-10-11_2008-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2008,
+    "start": "2008-10-21",
+    "end": "2008-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5217,
+    "file": "MODIS_SP_2008-10-21_2008-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2008,
+    "start": "2008-10-31",
+    "end": "2008-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6353,
+    "file": "MODIS_SP_2008-10-31_2008-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2008,
+    "start": "2008-11-10",
+    "end": "2008-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 955,
+    "file": "MODIS_SP_2008-11-10_2008-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2009,
+    "start": "2009-10-01",
+    "end": "2009-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 454,
+    "file": "MODIS_SP_2009-10-01_2009-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2009,
+    "start": "2009-10-11",
+    "end": "2009-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2763,
+    "file": "MODIS_SP_2009-10-11_2009-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2009,
+    "start": "2009-10-21",
+    "end": "2009-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5988,
+    "file": "MODIS_SP_2009-10-21_2009-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2009,
+    "start": "2009-10-31",
+    "end": "2009-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5015,
+    "file": "MODIS_SP_2009-10-31_2009-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2009,
+    "start": "2009-11-10",
+    "end": "2009-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 971,
+    "file": "MODIS_SP_2009-11-10_2009-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2010,
+    "start": "2010-10-01",
+    "end": "2010-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 596,
+    "file": "MODIS_SP_2010-10-01_2010-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2010,
+    "start": "2010-10-11",
+    "end": "2010-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2088,
+    "file": "MODIS_SP_2010-10-11_2010-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2010,
+    "start": "2010-10-21",
+    "end": "2010-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3153,
+    "file": "MODIS_SP_2010-10-21_2010-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2010,
+    "start": "2010-10-31",
+    "end": "2010-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 7596,
+    "file": "MODIS_SP_2010-10-31_2010-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2010,
+    "start": "2010-11-10",
+    "end": "2010-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1632,
+    "file": "MODIS_SP_2010-11-10_2010-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2011,
+    "start": "2011-10-01",
+    "end": "2011-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 496,
+    "file": "MODIS_SP_2011-10-01_2011-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2011,
+    "start": "2011-10-11",
+    "end": "2011-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3002,
+    "file": "MODIS_SP_2011-10-11_2011-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2011,
+    "start": "2011-10-21",
+    "end": "2011-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6241,
+    "file": "MODIS_SP_2011-10-21_2011-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2011,
+    "start": "2011-10-31",
+    "end": "2011-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6335,
+    "file": "MODIS_SP_2011-10-31_2011-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2011,
+    "start": "2011-11-10",
+    "end": "2011-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 858,
+    "file": "MODIS_SP_2011-11-10_2011-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2012,
+    "start": "2012-10-01",
+    "end": "2012-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 629,
+    "file": "MODIS_SP_2012-10-01_2012-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2012,
+    "start": "2012-10-11",
+    "end": "2012-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1971,
+    "file": "MODIS_SP_2012-10-11_2012-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2012,
+    "start": "2012-10-21",
+    "end": "2012-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4375,
+    "file": "MODIS_SP_2012-10-21_2012-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2012,
+    "start": "2012-10-31",
+    "end": "2012-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 9034,
+    "file": "MODIS_SP_2012-10-31_2012-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2012,
+    "start": "2012-11-10",
+    "end": "2012-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1890,
+    "file": "MODIS_SP_2012-11-10_2012-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2012,
+    "start": "2012-10-01",
+    "end": "2012-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 3509,
+    "file": "VIIRS_SNPP_SP_2012-10-01_2012-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2012,
+    "start": "2012-10-11",
+    "end": "2012-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 8619,
+    "file": "VIIRS_SNPP_SP_2012-10-11_2012-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2012,
+    "start": "2012-10-21",
+    "end": "2012-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 18905,
+    "file": "VIIRS_SNPP_SP_2012-10-21_2012-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2012,
+    "start": "2012-10-31",
+    "end": "2012-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 38700,
+    "file": "VIIRS_SNPP_SP_2012-10-31_2012-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2012,
+    "start": "2012-11-10",
+    "end": "2012-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 9926,
+    "file": "VIIRS_SNPP_SP_2012-11-10_2012-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2013,
+    "start": "2013-10-01",
+    "end": "2013-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 211,
+    "file": "MODIS_SP_2013-10-01_2013-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2013,
+    "start": "2013-10-11",
+    "end": "2013-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1481,
+    "file": "MODIS_SP_2013-10-11_2013-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2013,
+    "start": "2013-10-21",
+    "end": "2013-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5845,
+    "file": "MODIS_SP_2013-10-21_2013-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2013,
+    "start": "2013-10-31",
+    "end": "2013-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4855,
+    "file": "MODIS_SP_2013-10-31_2013-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2013,
+    "start": "2013-11-10",
+    "end": "2013-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3323,
+    "file": "MODIS_SP_2013-11-10_2013-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2013,
+    "start": "2013-10-01",
+    "end": "2013-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1505,
+    "file": "VIIRS_SNPP_SP_2013-10-01_2013-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2013,
+    "start": "2013-10-11",
+    "end": "2013-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 6406,
+    "file": "VIIRS_SNPP_SP_2013-10-11_2013-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2013,
+    "start": "2013-10-21",
+    "end": "2013-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 24209,
+    "file": "VIIRS_SNPP_SP_2013-10-21_2013-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2013,
+    "start": "2013-10-31",
+    "end": "2013-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 27728,
+    "file": "VIIRS_SNPP_SP_2013-10-31_2013-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2013,
+    "start": "2013-11-10",
+    "end": "2013-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 13499,
+    "file": "VIIRS_SNPP_SP_2013-11-10_2013-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2014,
+    "start": "2014-10-01",
+    "end": "2014-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 435,
+    "file": "MODIS_SP_2014-10-01_2014-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2014,
+    "start": "2014-10-11",
+    "end": "2014-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1521,
+    "file": "MODIS_SP_2014-10-11_2014-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2014,
+    "start": "2014-10-21",
+    "end": "2014-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4925,
+    "file": "MODIS_SP_2014-10-21_2014-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2014,
+    "start": "2014-10-31",
+    "end": "2014-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 8264,
+    "file": "MODIS_SP_2014-10-31_2014-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2014,
+    "start": "2014-11-10",
+    "end": "2014-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3050,
+    "file": "MODIS_SP_2014-11-10_2014-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2014,
+    "start": "2014-10-01",
+    "end": "2014-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2674,
+    "file": "VIIRS_SNPP_SP_2014-10-01_2014-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2014,
+    "start": "2014-10-11",
+    "end": "2014-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 7644,
+    "file": "VIIRS_SNPP_SP_2014-10-11_2014-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2014,
+    "start": "2014-10-21",
+    "end": "2014-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 17844,
+    "file": "VIIRS_SNPP_SP_2014-10-21_2014-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2014,
+    "start": "2014-10-31",
+    "end": "2014-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 39927,
+    "file": "VIIRS_SNPP_SP_2014-10-31_2014-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2014,
+    "start": "2014-11-10",
+    "end": "2014-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 14490,
+    "file": "VIIRS_SNPP_SP_2014-11-10_2014-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2015,
+    "start": "2015-10-01",
+    "end": "2015-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 567,
+    "file": "MODIS_SP_2015-10-01_2015-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2015,
+    "start": "2015-10-11",
+    "end": "2015-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1199,
+    "file": "MODIS_SP_2015-10-11_2015-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2015,
+    "start": "2015-10-21",
+    "end": "2015-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2806,
+    "file": "MODIS_SP_2015-10-21_2015-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2015,
+    "start": "2015-10-31",
+    "end": "2015-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5498,
+    "file": "MODIS_SP_2015-10-31_2015-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2015,
+    "start": "2015-11-10",
+    "end": "2015-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3061,
+    "file": "MODIS_SP_2015-11-10_2015-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2015,
+    "start": "2015-10-01",
+    "end": "2015-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 3782,
+    "file": "VIIRS_SNPP_SP_2015-10-01_2015-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2015,
+    "start": "2015-10-11",
+    "end": "2015-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 5679,
+    "file": "VIIRS_SNPP_SP_2015-10-11_2015-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2015,
+    "start": "2015-10-21",
+    "end": "2015-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 13092,
+    "file": "VIIRS_SNPP_SP_2015-10-21_2015-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2015,
+    "start": "2015-10-31",
+    "end": "2015-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 31113,
+    "file": "VIIRS_SNPP_SP_2015-10-31_2015-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2015,
+    "start": "2015-11-10",
+    "end": "2015-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 16669,
+    "file": "VIIRS_SNPP_SP_2015-11-10_2015-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2016,
+    "start": "2016-10-01",
+    "end": "2016-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 570,
+    "file": "MODIS_SP_2016-10-01_2016-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2016,
+    "start": "2016-10-11",
+    "end": "2016-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2649,
+    "file": "MODIS_SP_2016-10-11_2016-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2016,
+    "start": "2016-10-21",
+    "end": "2016-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5289,
+    "file": "MODIS_SP_2016-10-21_2016-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2016,
+    "start": "2016-10-31",
+    "end": "2016-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 8449,
+    "file": "MODIS_SP_2016-10-31_2016-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2016,
+    "start": "2016-11-10",
+    "end": "2016-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2907,
+    "file": "MODIS_SP_2016-11-10_2016-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2016,
+    "start": "2016-10-01",
+    "end": "2016-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2355,
+    "file": "VIIRS_SNPP_SP_2016-10-01_2016-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2016,
+    "start": "2016-10-11",
+    "end": "2016-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 12828,
+    "file": "VIIRS_SNPP_SP_2016-10-11_2016-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2016,
+    "start": "2016-10-21",
+    "end": "2016-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 23452,
+    "file": "VIIRS_SNPP_SP_2016-10-21_2016-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2016,
+    "start": "2016-10-31",
+    "end": "2016-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 50643,
+    "file": "VIIRS_SNPP_SP_2016-10-31_2016-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2016,
+    "start": "2016-11-10",
+    "end": "2016-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 12292,
+    "file": "VIIRS_SNPP_SP_2016-11-10_2016-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2017,
+    "start": "2017-10-01",
+    "end": "2017-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 317,
+    "file": "MODIS_SP_2017-10-01_2017-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2017,
+    "start": "2017-10-11",
+    "end": "2017-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2333,
+    "file": "MODIS_SP_2017-10-11_2017-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2017,
+    "start": "2017-10-21",
+    "end": "2017-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4623,
+    "file": "MODIS_SP_2017-10-21_2017-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2017,
+    "start": "2017-10-31",
+    "end": "2017-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3215,
+    "file": "MODIS_SP_2017-10-31_2017-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2017,
+    "start": "2017-11-10",
+    "end": "2017-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 495,
+    "file": "MODIS_SP_2017-11-10_2017-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2017,
+    "start": "2017-10-01",
+    "end": "2017-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 2688,
+    "file": "VIIRS_SNPP_SP_2017-10-01_2017-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2017,
+    "start": "2017-10-11",
+    "end": "2017-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 10909,
+    "file": "VIIRS_SNPP_SP_2017-10-11_2017-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2017,
+    "start": "2017-10-21",
+    "end": "2017-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 20787,
+    "file": "VIIRS_SNPP_SP_2017-10-21_2017-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2017,
+    "start": "2017-10-31",
+    "end": "2017-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 22034,
+    "file": "VIIRS_SNPP_SP_2017-10-31_2017-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2017,
+    "start": "2017-11-10",
+    "end": "2017-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 3641,
+    "file": "VIIRS_SNPP_SP_2017-11-10_2017-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2018,
+    "start": "2018-10-01",
+    "end": "2018-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 244,
+    "file": "MODIS_SP_2018-10-01_2018-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2018,
+    "start": "2018-10-11",
+    "end": "2018-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 749,
+    "file": "MODIS_SP_2018-10-11_2018-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2018,
+    "start": "2018-10-21",
+    "end": "2018-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4266,
+    "file": "MODIS_SP_2018-10-21_2018-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2018,
+    "start": "2018-10-31",
+    "end": "2018-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 6448,
+    "file": "MODIS_SP_2018-10-31_2018-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2018,
+    "start": "2018-11-10",
+    "end": "2018-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 2547,
+    "file": "MODIS_SP_2018-11-10_2018-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2018,
+    "start": "2018-10-01",
+    "end": "2018-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1654,
+    "file": "VIIRS_NOAA20_SP_2018-10-01_2018-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2018,
+    "start": "2018-10-11",
+    "end": "2018-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4998,
+    "file": "VIIRS_NOAA20_SP_2018-10-11_2018-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2018,
+    "start": "2018-10-21",
+    "end": "2018-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 15864,
+    "file": "VIIRS_NOAA20_SP_2018-10-21_2018-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2018,
+    "start": "2018-10-31",
+    "end": "2018-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 32197,
+    "file": "VIIRS_NOAA20_SP_2018-10-31_2018-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2018,
+    "start": "2018-11-10",
+    "end": "2018-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 12586,
+    "file": "VIIRS_NOAA20_SP_2018-11-10_2018-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2018,
+    "start": "2018-10-01",
+    "end": "2018-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1524,
+    "file": "VIIRS_SNPP_SP_2018-10-01_2018-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2018,
+    "start": "2018-10-11",
+    "end": "2018-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 4570,
+    "file": "VIIRS_SNPP_SP_2018-10-11_2018-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2018,
+    "start": "2018-10-21",
+    "end": "2018-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 15716,
+    "file": "VIIRS_SNPP_SP_2018-10-21_2018-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2018,
+    "start": "2018-10-31",
+    "end": "2018-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 32330,
+    "file": "VIIRS_SNPP_SP_2018-10-31_2018-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2018,
+    "start": "2018-11-10",
+    "end": "2018-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 9571,
+    "file": "VIIRS_SNPP_SP_2018-11-10_2018-11-15.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2019,
+    "start": "2019-10-01",
+    "end": "2019-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 147,
+    "file": "MODIS_SP_2019-10-01_2019-10-10.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2019,
+    "start": "2019-10-11",
+    "end": "2019-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 839,
+    "file": "MODIS_SP_2019-10-11_2019-10-20.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2019,
+    "start": "2019-10-21",
+    "end": "2019-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4403,
+    "file": "MODIS_SP_2019-10-21_2019-10-30.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2019,
+    "start": "2019-10-31",
+    "end": "2019-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 5044,
+    "file": "MODIS_SP_2019-10-31_2019-11-09.csv"
+  },
+  {
+    "source": "MODIS_SP",
+    "season": 2019,
+    "start": "2019-11-10",
+    "end": "2019-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 380,
+    "file": "MODIS_SP_2019-11-10_2019-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2019,
+    "start": "2019-10-01",
+    "end": "2019-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 916,
+    "file": "VIIRS_NOAA20_SP_2019-10-01_2019-10-10.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2019,
+    "start": "2019-10-11",
+    "end": "2019-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 4244,
+    "file": "VIIRS_NOAA20_SP_2019-10-11_2019-10-20.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2019,
+    "start": "2019-10-21",
+    "end": "2019-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 18278,
+    "file": "VIIRS_NOAA20_SP_2019-10-21_2019-10-30.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2019,
+    "start": "2019-10-31",
+    "end": "2019-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 22588,
+    "file": "VIIRS_NOAA20_SP_2019-10-31_2019-11-09.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_SP",
+    "season": 2019,
+    "start": "2019-11-10",
+    "end": "2019-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 3606,
+    "file": "VIIRS_NOAA20_SP_2019-11-10_2019-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2019,
+    "start": "2019-10-01",
+    "end": "2019-10-10",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 1084,
+    "file": "VIIRS_SNPP_SP_2019-10-01_2019-10-10.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2019,
+    "start": "2019-10-11",
+    "end": "2019-10-20",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 4224,
+    "file": "VIIRS_SNPP_SP_2019-10-11_2019-10-20.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2019,
+    "start": "2019-10-21",
+    "end": "2019-10-30",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 18483,
+    "file": "VIIRS_SNPP_SP_2019-10-21_2019-10-30.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2019,
+    "start": "2019-10-31",
+    "end": "2019-11-09",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 21114,
+    "file": "VIIRS_SNPP_SP_2019-10-31_2019-11-09.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_SP",
+    "season": 2019,
+    "start": "2019-11-10",
+    "end": "2019-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 4320,
+    "file": "VIIRS_SNPP_SP_2019-11-10_2019-11-15.csv"
+  },
+  {
+    "source": "MODIS_NRT",
+    "season": 2026,
+    "start": "2026-11-10",
+    "end": "2026-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 1343,
+    "file": "MODIS_NRT_2026-11-10_2026-11-15.csv"
+  },
+  {
+    "source": "VIIRS_NOAA20_NRT",
+    "season": 2026,
+    "start": "2026-11-10",
+    "end": "2026-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": false,
+    "rows": 987,
+    "file": "VIIRS_NOAA20_NRT_2026-11-10_2026-11-15.csv"
+  },
+  {
+    "source": "VIIRS_SNPP_NRT",
+    "season": 2026,
+    "start": "2026-11-10",
+    "end": "2026-11-15",
+    "bbox": "73.8,27.6,77.6,32.6",
+    "historical_only": true,
+    "rows": 0,
+    "file": "VIIRS_SNPP_NRT_2026-11-10_2026-11-15.csv"
+  }
+]

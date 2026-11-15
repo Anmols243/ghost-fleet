@@ -439,3 +439,18 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
 /* Optional appendices remain below the comparison and scroll within wide tables. */
 .appendix-table { max-height: 32rem; overflow: auto; }
 .appendix-table td, .appendix-table th { padding: .5rem; vertical-align: top; }
+
+.geography-panel { border: 1px solid var(--rule-2); padding: 16px; margin: 16px 0; }
+.geography-panel[hidden], #geography-status[hidden], #claim[hidden], #docket[hidden] { display: none !important; }
+.geo-layout { display: grid; grid-template-columns: minmax(180px, 300px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.geo-map { display: block; width: 100%; height: auto; cursor: pointer; }
+.geo-outline { fill: none; stroke: var(--grey); stroke-width: 1; pointer-events: none; }
+.geo-extent { fill: none; stroke: var(--ink); stroke-width: 1.5; pointer-events: none; vector-effect: non-scaling-stroke; }
+.geo-extent.is-selected { stroke: var(--accent); stroke-width: 4; }
+.geo-choices { display: grid; gap: 6px; }
+.geo-choices button, #geography-refresh { text-align: left; padding: 9px 12px; min-height: 44px; border: 1px solid var(--rule-2); background: var(--paper); cursor: pointer; }
+.geo-choices button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 4px 0 var(--accent); font-weight: bold; }
+.geo-current { font-weight: bold; }
+.geo-scope, .geo-attribution { font-size: 13px; }
+#geography-status { border: 2px solid var(--accent); padding: 12px; }
+@media (max-width: 600px) { .geo-layout { grid-template-columns: 1fr; } .geo-map { max-width: 300px; margin: auto; } }

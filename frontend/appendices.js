@@ -109,6 +109,7 @@
     // Construct off-DOM: malformed data cannot leave a partial section visible.
     var section = element('section'); section.id = item.id;
     section.appendChild(element('h2', item.title));
+    section.appendChild(element('p', 'Punjab–Haryana — frozen study rectangle only. Region selection does not recompute this appendix.'));
     if (item.id === 'ledger') renderLedger(section, data);
     else if (item.id === 'timing') renderTiming(section, data);
     else if (item.id === 'transitions') renderTransitions(section, data);

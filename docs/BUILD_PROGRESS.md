@@ -819,3 +819,16 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   recomputation repeated against final candidate: all 5943 assertions pass;
   all source hashes current, both output copies identical, five frozen files
   and canonical standardized input unchanged. No Arlo release sign-off claimed.
+
+## Geographic extension - sections 6/7 UI handoff
+
+- Time: 2026-11-15 21:42 IST. Model: GPT-6.1 Sol; effort not exposed.
+- User requested a context-limit handoff. Status: IN PROGRESS, uncommitted UI.
+- Handoff: docs/HANDOFF_GEOGRAPHY_UI.md; preserves exact modified/new file list,
+  architecture, verified data hashes, tests, remaining acceptance/review work,
+  independent release gates and the 22:30 IST abort deadline.
+- Fresh checks: Python 45/45 and frontend 53/53 green. Five frozen files and
+  india.json hashes unchanged. No real-browser, independent approval or deployment
+  claim; no UI commit exists yet. Base SHA: 73dd04c.
+- Skills used: tdd, diagnosing-bugs for DOM async harness/optional callback failure,
+  verification-before-completion. UI code-review is still required before commit.

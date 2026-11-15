@@ -32,6 +32,29 @@
 <main class="wrap">
   <section id="comparison" aria-labelledby="h-comparison">
     <p class="kicker" id="h-comparison">1.0 / COMPARISON</p>
+    <p id="geography-status" role="status" aria-live="polite" hidden></p>
+    <section id="geography-panel" class="geography-panel" aria-labelledby="geography-heading" hidden>
+      <h2 id="geography-heading">Choose a study rectangle</h2>
+      <p id="geography-feature"></p>
+      <p id="geography-qualification"></p>
+      <p class="geo-scope">The geographic data are a candidate pending independent release approval. This selector changes the comparison only; Punjab?Haryana reference appendices remain separately scoped.</p>
+      <div class="geo-layout">
+        <div>
+          <svg id="geography-map" class="geo-map" viewBox="0 0 630 660" role="img" aria-labelledby="locator-title locator-description">
+            <title id="locator-title">Study-rectangle locator ? navigation only</title>
+            <desc id="locator-description">Natural Earth India outline is geographic context, not the counting mask. Rectangles are not clipped to it. Click selects the smallest containing rectangle; equivalent keyboard-native buttons are beside the map.</desc>
+            <path id="geography-outline" class="geo-outline" d="M606.542,204.768 L608.051,212.349 L601.040,216.019 L602.680,228.325 L588.387,224.708 L562.495,238.529 L563.103,249.974 L552.065,266.750 L551.053,276.495 L542.135,292.985 L526.504,288.429 L525.727,309.127 L521.206,315.938 L523.323,324.431 L513.454,329.175 L502.921,297.450 L497.399,297.513 L494.129,310.295 L483.179,299.929 L489.355,288.547 L498.302,287.392 L507.524,270.466 L495.992,267.051 L477.444,267.348 L458.414,264.605 L456.650,250.698 L447.102,249.712 L431.261,241.069 L424.196,254.639 L438.631,265.226 L426.127,272.678 L421.688,279.967 L433.999,285.326 L430.595,297.377 L437.526,312.417 L440.639,328.886 L437.775,336.188 L424.170,335.937 L399.514,340.089 L400.663,355.134 L389.987,366.967 L361.205,380.428 L338.820,403.960 L323.784,416.576 L303.856,429.667 L303.825,438.867 L293.854,443.796 L275.840,450.961 L266.498,452.016 L260.501,467.272 L264.665,493.285 L265.726,509.875 L257.251,528.876 L257.160,562.854 L246.810,563.823 L237.707,579.077 L243.794,585.669 L225.559,591.339 L218.823,604.941 L210.798,610.689 L191.860,592.014 L182.601,564.007 L174.929,543.835 L167.922,534.375 L157.296,515.161 L152.334,490.148 L148.877,477.656 L130.684,450.187 L122.398,411.429 L116.418,385.835 L116.490,361.610 L112.611,342.880 L83.505,354.851 L69.409,352.453 L43.283,328.214 L52.899,320.985 L46.992,313.136 L23.533,296.161 L36.852,282.817 L80.865,282.870 L76.894,265.698 L65.657,255.555 L63.379,240.163 L50.288,231.181 L72.330,210.216 L95.553,211.736 L116.475,190.768 L129.013,170.472 L148.428,150.404 L148.119,136.147 L165.173,124.578 L149.031,114.702 L142.086,101.171 L134.999,83.646 L144.804,75.022 L175.141,79.902 L197.434,76.929 L216.749,60.120 L238.245,83.561 L236.222,99.876 L244.178,110.112 L243.523,120.324 L229.169,117.637 L234.778,139.682 L254.427,152.346 L282.225,166.330 L269.534,175.403 L261.769,194.111 L281.144,201.678 L300.000,211.490 L326.085,222.710 L353.500,225.302 L365.036,235.476 L380.488,237.380 L404.549,242.042 L421.205,241.708 L423.496,233.792 L420.863,221.084 L422.409,212.469 L434.607,208.263 L436.285,224.014 L436.713,228.021 L454.891,235.612 L467.466,232.486 L484.350,233.827 L500.670,233.234 L502.074,220.948 L493.933,214.565 L510.062,212.062 L528.267,197.187 L551.320,184.451 L568.096,189.366 L582.354,180.944 L591.732,193.380 L584.977,201.779 L606.542,204.768 Z"></path>
+            <g id="geography-extents"></g>
+          </svg>
+          <p class="geo-attribution">Outline: <a href="https://www.naturalearthdata.com/">Natural Earth</a>, public domain, generalized geographic context only. <a href="assets/INDIA_OUTLINE_LICENSE.md">Source and licence</a>. No count-based colouring.</p>
+        </div>
+        <div>
+          <div id="geography-choices" class="geo-choices" role="group" aria-label="Study rectangle"></div>
+          <p id="geography-current" class="geo-current" aria-live="polite"></p>
+          <button id="geography-refresh" type="button">Refresh geographic data</button>
+        </div>
+      </div>
+    </section>
     <p class="claim" id="claim"></p>
     <div id="steps" class="steps" aria-label="Steps"></div>
     <div id="coverage"></div>
@@ -43,19 +66,22 @@
 
   <section id="case-study" aria-labelledby="h-case">
     <p class="kicker" id="h-case">2.0 / CASE STUDY</p>
-    <h2 id="case-h">Satellite fleet case study</h2>
+    <h2 id="case-h">Punjab?Haryana satellite fleet case study</h2>
+    <p class="geo-scope">Frozen study rectangle only; not recomputed for the selected region.</p>
     <div id="case-body"><p class="state">Loading audit.json ...</p></div>
   </section>
 
   <section id="method" aria-labelledby="h-method">
     <p class="kicker" id="h-method">APP. A / METHOD CHECKS</p>
-    <h2>Method checks</h2>
+    <h2>Punjab?Haryana method checks</h2>
+    <p class="geo-scope">Frozen study rectangle only; not recomputed for the selected region.</p>
     <div id="method-body"><p class="state">Loading audit.json ...</p></div>
   </section>
 
   <section id="system" aria-labelledby="h-system">
     <p class="kicker" id="h-system">APP. B / SYSTEM</p>
     <h2>Appendix B: The system behind the audit</h2>
+    <p class="geo-scope">Punjab?Haryana reference only; not recomputed for the selected region.</p>
     <ol class="pipe" aria-label="Pipeline from FIRMS to this page">
       <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/fetch_firms.py">FIRMS area API</a><span class="pipe-n" data-n="retrieved"></span></li>
       <li><a href="https://github.com/Anmols243/ghost-fleet/blob/main/backend/scripts/harmonize.py">Standardize</a><span class="pipe-n" data-n="retained"></span></li>
@@ -92,6 +118,7 @@ python -m pytest -q</code></pre>
 </footer>
 <noscript><p class="wrap state">This audit needs JavaScript to render the figures from audit.json.</p></noscript>
 <script src="app.js"></script>
+<script src="geography.js"></script>
 <script src="appendices.js"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+[
+  {
+    "id": "viirs_transition",
+    "a": 2011,
+    "b": 2012,
+    "label": "2011 vs 2012 - VIIRS S-NPP joins the record",
+    "W_a": 13581,
+    "U_a": 13581,
+    "C_a": 0,
+    "fleet_a": [
+      "MODIS_TERRA",
+      "MODIS_AQUA"
+    ],
+    "W_b": 75396,
+    "U_b": 14303,
+    "C_b": 61093,
+    "fleet_b": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP"
+    ],
+    "shared": [
+      "MODIS_TERRA",
+      "MODIS_AQUA"
+    ],
+    "change_W_pct": 455.2,
+    "change_U_pct": 5.3,
+    "diff_pp": 449.8,
+    "unrounded_change_W_pct": 455.15794124144026,
+    "unrounded_change_U_pct": 5.31625064428245,
+    "unrounded_diff_pp": 449.8416905971578
+  },
+  {
+    "id": "noaa20_transition",
+    "a": 2017,
+    "b": 2018,
+    "label": "2017 vs 2018 - VIIRS NOAA-20 joins the record",
+    "W_a": 54291,
+    "U_a": 54291,
+    "C_a": 0,
+    "fleet_a": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP"
+    ],
+    "W_b": 108035,
+    "U_b": 60491,
+    "C_b": 47544,
+    "fleet_b": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP",
+      "VIIRS_NOAA20"
+    ],
+    "shared": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP"
+    ],
+    "change_W_pct": 99.0,
+    "change_U_pct": 11.4,
+    "diff_pp": 87.6,
+    "unrounded_change_W_pct": 98.99246652299645,
+    "unrounded_change_U_pct": 11.419940689985442,
+    "unrounded_diff_pp": 87.57252583301101
+  },
+  {
+    "id": "snpp_cessation",
+    "a": 2025,
+    "b": 2026,
+    "label": "2025 vs 2026 - S-NPP data delivery ceases mid-season (2 Nov 2026)",
+    "W_a": 18031,
+    "U_a": 18031,
+    "C_a": 0,
+    "fleet_a": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP",
+      "VIIRS_NOAA20"
+    ],
+    "W_b": 14296,
+    "U_b": 14296,
+    "C_b": 0,
+    "fleet_b": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP",
+      "VIIRS_NOAA20"
+    ],
+    "shared": [
+      "MODIS_TERRA",
+      "MODIS_AQUA",
+      "VIIRS_SNPP",
+      "VIIRS_NOAA20"
+    ],
+    "change_W_pct": -20.7,
+    "change_U_pct": -20.7,
+    "diff_pp": 0.0,
+    "unrounded_change_W_pct": -20.714325328600747,
+    "unrounded_change_U_pct": -20.714325328600747,
+    "unrounded_diff_pp": 0.0
+  }
+]

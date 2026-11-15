@@ -429,7 +429,30 @@
   if (typeof document === 'undefined') return;
 
   /* ---------- DOM ---------- */
-  var state = { audit: null, preset: 0, view: 'all', lastPct: null, pickedPreset: false, pickedFleet: false, download: null };
+  var state = { audit: null, hero: null, region: null, preset: 0, view: 'all', lastPct: null, pickedPreset: false, pickedFleet: false, download: null };
+  var readyCallbacks = [];
+  function notifyOptionalReady(callback) {
+    try { callback(state.hero); }
+    catch (_) {
+      var notice = document.getElementById('geography-status');
+      if (notice) { notice.hidden = false; notice.textContent = 'Optional geographic initialization failed; the frozen hero remains available.'; }
+    }
+  }
+  window.GhostFleetUI = {
+    api: api,
+    getHero: function () { return state.hero; },
+    onReady: function (callback) { if (state.hero) notifyOptionalReady(callback); else readyCallbacks.push(callback); },
+    selectGeography: function (context) {
+      if (!state.hero) return;
+      state.region = context;
+      state.audit = context ? context.audit : state.hero;
+      state.lastPct = null;
+      document.getElementById('claim').hidden = Boolean(context);
+      document.getElementById('docket').hidden = Boolean(context);
+      document.getElementById('h-comparison').textContent = context ? '1.0 / COMPARISON — ' + context.label : '1.0 / COMPARISON';
+      render();
+    }
+  };
   var root;
 
   function h(tag, attrs) {
@@ -536,6 +559,7 @@
   function dayText(yr, d, side, isAll) {
     var x = d[side], when = yr + ' ' + d.label.mon + ' ' + d.label.day;
     if (x.state === 'unverified') return when + ': unverified, not yet retrieved (null, not a zero).';
+    if (x.state === 'excluded' && x.W === null) return when + ': excluded from this comparison and not present in the regional input snapshot; no zero is inferred.';
     if (x.state === 'excluded') return when + ': excluded from this comparison (outside the interval). Retrieved value, not counted: ' +
       fmtInt(x.W) + ' recorded cell-days for all included satellites.';
     return when + ': ' + fmtInt(isAll ? x.W : x.U) + ' recorded cell-days (' + (isAll ? 'all included satellites' : 'same named satellites') +
@@ -817,7 +841,7 @@
   function downloadBlock(p, a) {
     revokeAll();
     state.download = null;
-    var ev = buildEvidence(p, a);
+    var ev = state.region ? state.region.evidence(p) : buildEvidence(p, a);
     if (!ev) {
       return h('div', { class: 'dl-wrap', id: 'evidence' },
         h('button', { type: 'button', class: 'download', disabled: true, 'aria-describedby': 'dl-note', text: COPY.download }),
@@ -967,7 +991,7 @@
       sw.appendChild(b);
     });
 
-    var resultTitle = isAll ? 'All included satellites' : 'Same named satellites — ' + sharedLabel(p.shared, ' + ');
+    var resultTitle = (state.region ? state.region.label + ' — ' : '') + (isAll ? 'All included satellites' : 'Same named satellites — ' + sharedLabel(p.shared, ' + '));
     var denomWho = isAll ? 'all included satellites' : sLabel;
     var result = h('div', { class: 'result' },
       h('p', { class: 'result-title', text: resultTitle }),
@@ -987,12 +1011,12 @@
       p.b === 2026 ? h('p', { class: 'chip-note', text: COPY.noaa21 }) : null);
 
     var snapStmt = snapshotStatement(p, a.daily);
-    var snapshot = p.comparison_end_mm_dd ? h('section', { class: 'snapshot', 'aria-labelledby': 'snap-h' },
+    var snapshot = !state.region && p.comparison_end_mm_dd ? h('section', { class: 'snapshot', 'aria-labelledby': 'snap-h' },
       h('p', { class: 'kicker', id: 'snap-h', text: 'DATA SNAPSHOT' }),
       h('p', { class: 'banner', text: COPY.snapshotBanner }),
       h('p', { text: snapStmt || 'S-NPP cessation details unavailable from the retrieved records.' })) : null;
 
-    var series = presetSeries(p, a.daily);
+    var series = state.region ? state.region.series(p) : presetSeries(p, a.daily);
     var figs = series ? [fig1(p, series, isAll), fig2(p, series, isAll)] :
       [h('div', { class: 'state state-error', role: 'alert' }, h('p', { class: 'kicker', text: 'FIGURES UNAVAILABLE' }),
         h('p', { text: 'The daily series do not reproduce the preset totals, so no calendar or curve is drawn.' }))];
@@ -1024,7 +1048,7 @@
 
     var finding = h('section', { class: 'finding', 'aria-labelledby': 'finding-h' },
       h('p', { class: 'kicker', id: 'finding-h', text: 'FINDING' }),
-      h('p', { class: 'finding-text', text: buildConclusion(p, a.coverage, a.daily) }));
+      h('p', { class: 'finding-text', text: state.region ? state.region.conclusion(p) : buildConclusion(p, a.coverage, a.daily) }));
 
     var dlWrap = downloadBlock(p, a);
 
@@ -1057,6 +1081,7 @@
           throw new Error('audit.json is missing required fields.');
         }
         state.audit = a;
+        state.hero = a;
         var loading = document.getElementById('loading');
         if (loading) loading.remove();
         docket(a);
@@ -1067,6 +1092,7 @@
         scrollSpy();
         placeMini();
         window.addEventListener('resize', placeMini);
+        readyCallbacks.splice(0).forEach(notifyOptionalReady);
       })
       .catch(function (e) {
         showError('Could not load audit.json (' + e.message + ').');
