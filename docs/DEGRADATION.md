@@ -1,6 +1,6 @@
 > **STATUS 2026-11-15: Method-checks exhibit.** This degradation method was tested against held-out 2021 data and FAILED its benchmark (docs/AUDIT_SPEC.md). It is not used as a measurement in the app. Kept as evidence.
 
-# Same-eyes calendars
+# Degradation outputs — calendar_sameeyes.json
 
 Run `.venv/Scripts/python.exe scripts/degrade.py` after harmonization.
 Input is `data/processed/standardized.parquet`; outputs are
