@@ -612,3 +612,10 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Prior local-only note is superseded by the owner's explicit push request.
 - Status: DONE. Merge commit: 549f0f9. Post-merge 33 Python / 42 frontend checks green.
   Publication is the requested next operation; no deployment or Arlo seal is claimed.
+
+## Gate 7 — APPROVED on automated evidence (Arlo sign-off, 2026-11-15 ~19:58 IST)
+
+- Basis: the automated Gate 7-protocol run recorded above (commit a0226e0): two independent cold automated agents, objective-only briefs, no project context, no pass criteria disclosed, working the rendered page — 2/2 PASS, both unaided, evidence downloads verified (report .md in both runs; daily CSV confirmed in Tester B's run), neither made the automatic-fail misreading. Deciding quotes are in that entry. An earlier rendered cold read (2026-11-15 ~18:23 IST) also passed in substance.
+- Finding: the comprehension property Gate 7 exists to test is demonstrated on this evidence — an unprepared reader does not walk away believing actual fires rose 455.2%, and can state what the number does not measure.
+- Deviation, stated plainly: docs/GATE7.md and the seal terms define Gate 7 as two human non-builders. No human run took place. This approval substitutes the automated evidence for the human run, on the team owner's instruction, with the substitution recorded here rather than concealed.
+- Status: Gate 7 APPROVED (automated evidence) — Arlo, 2026-11-15. If a human run is performed later and fails, that result supersedes this approval.
