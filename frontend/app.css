@@ -376,3 +376,21 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
   .fig:has(.strip-wrap) > figcaption, .fig:has(.strip-wrap) > .fig-note { grid-column: 1 / -1; }
   .fig:has(.strip-wrap) .strip { max-width: none; }
 }
+/* Appendix B: system */
+#system .pipe { list-style: none; margin: 18px 0 22px; padding: 0; display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px 26px; }
+#system .pipe li { position: relative; padding: 10px 12px; border: 1px solid var(--ink); font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; background: var(--paper-2); }
+#system .pipe li:last-child { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+#system .pipe li:not(:last-child)::after { content: ""; position: absolute; right: -20px; top: 50%; width: 14px; height: 2px; background: var(--accent); }
+#system .pipe li:not(:last-child)::before { content: ""; position: absolute; right: -22px; top: calc(50% - 4px); border: 5px solid transparent; border-left-color: var(--accent); }
+.sys-facts { margin: 0; border-top: 3px solid var(--ink); }
+.sys-row { display: grid; grid-template-columns: 190px minmax(0, 1fr); border-bottom: 1px solid var(--rule-2); }
+.sys-row dt { padding: 9px 10px; background: var(--paper-2); font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+.sys-row dd { margin: 0; padding: 9px 12px; font-size: 14px; }
+@media screen { #system { background: var(--paper); color: var(--ink); margin-top: 22px; padding: 22px 26px 26px; border-top: 6px solid var(--accent); } }
+@media (max-width: 560px) {
+  .sys-row { grid-template-columns: 1fr; }
+  #system .pipe { flex-direction: column; gap: 14px; }
+  #system .pipe li:not(:last-child)::after { right: auto; left: 18px; top: auto; bottom: -13px; width: 2px; height: 10px; }
+  #system .pipe li:not(:last-child)::before { right: auto; left: 14px; top: auto; bottom: -18px; border-left-color: transparent; border-top-color: var(--accent); }
+}
+@media screen and (max-width: 960px) { #system { padding: 18px 14px 22px; } }

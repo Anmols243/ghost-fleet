@@ -381,3 +381,14 @@ deployed-equivalent local run: 3 presets x both views show the frozen values, P3
 45 rows, download enabled, no horizontal scroll at 1440px and 390px; committed audit.json
 blob hash faee77ab... unchanged (app.js, index.html, app.css only).
 Not verified: print stylesheet against the new layout, real device. Status: DONE. Not pushed.
+
+## Frontend: Appendix B, the system behind the audit
+
+2026-11-15 IST - Claude Code. Added one static section (id="system", nav "B. System"
+after Method checks) to frontend/index.html with the pipeline steps and six stage-fact
+lines exactly as supplied; CSS for the section in app.css. No fetch, no interaction, no
+change to the comparison, case study, method checks or audit.json.
+Checks: node tests 32/32 (26 existing + 6 new in frontend/tests/system.test.js: section
+present with nav link, freeze hash equals sha256 of the LF audit.json, both totals match
+audit.json dataset_counts, no number outside the supplied list, wording law, static only).
+Banned-word grep clean. 360px: scrollWidth 360/360. Status: DONE.
