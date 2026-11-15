@@ -51,40 +51,38 @@ is fire — and which part is just a better camera."
 ## One-liners (pick per audience)
 
 - Judges: "We don't correct the past to match the present. We blind
-the present to match the past — the only honest way to compare."
+  the present to match the past — the only honest way to compare."
 - Scientists: "A harmonized fire record built by degrading VIIRS to
-MODIS-equivalent sensitivity, using Sofiev & Kouznetsov's published
-detection limits — validated against the actual 2000–2011 overlap."
-- Field / policy: "We throw away the fires Terra couldn't see, so
-the comparison is fair."
-- Demo closer: "Now watch the same season through Terra in 2000 —
-that's the honest calendar."
+  MODIS-equivalent sensitivity, using Sofiev & Kouznetsov's published
+  observation operators, validated against our own paired-day data."
+- Anyone: "Dead satellites, honest calendars."
 
-## Failure modes (Q&A ammunition)
+## Judge questions — rehearsed answers
 
-- "Why not use every satellite at full sensitivity?" → Because
-then the instrument, not the fire, drives the trend.
-- "What if VIIRS never launched?" → Show the Terra+Aqua view.
-- "How do you know the degradation is right?" → We tested it
-against real overlap years: 2000–2011 Terra+Aqua vs VIIRS.
-- "Can the app show daily detail?" → The data is daily; the app
-can be extended in the rebuild.
-- "Is it peer-reviewed science?" → No, it's a demo record built
-on published detection limits; see the limits page.
+Q: "Aren't you throwing data away?"
+A: "For a snapshot, the full record is right there. For a 20-year
+trend, comparing different instruments is the error. We show both
+views and the difference — throwing away the *illusion* of precision,
+not the data."
 
-## Closing (one line for the judges)
+Q: "Why not just use a correction ratio like everyone else?"
+A: "A ratio invents detections that never happened and hides them in
+an average. Degrading only removes real detections, so every number
+on screen traces to an actual FIRMS record — and our sensitivity band
+shows exactly where the model is unsure."
 
-"Dead satellites, honest calendars."
+Q: "Hasn't this been done?"
+A: "The detection-limit physics is published — Sofiev & Kouznetsov,
+2026 — and we cite it and validate against it. What's never been
+built is the product: no team in this challenge degrades, and no
+public tool lets a non-scientist re-run a season through historical
+fleets."
 
-## Hard rules
-
-- No invented numbers. Only numbers from `fleet_diff.json` and
-`season_peaks.json` go in the demo.
-- Peak day does not move between full, same-eyes and Terra+Aqua views
-(2026-11-08); never use the old "peak moves" claim.
-- Never say "99.5%": Terra 2000 is not comparable to 2026 at full
-sensitivity — the honest gap is Terra+Aqua 57% or same-eyes 65%.
-- If a judge asks about the data, point to the method page.
+Q: "Who actually uses this?"
+A: "Not the fire officer during the season — FIRMS and FSI alerts
+already serve them, free. Our user is the person who signs off after
+the season: the CAQM reviewer or researcher who must say whether
+burning rose or fell, and today has no honest way to say it."
 
 Q: "What can't it do?"
 A: "It can't tell you burned area — that's MCD64A1's job — and it
