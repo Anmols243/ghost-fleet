@@ -342,3 +342,24 @@ ceased" (no "died" anywhere). No copy changes were needed.
 Not done by the build: Gate 7 usability (human only), the under-2-minute timing, phone
 hardware check. URL filled in PROJECT_PAGE.md and GATE7.md; SUBMISSION_CHECKLIST Gates 1,
 2, 5 updated as frontend verified. Status: DONE. Not pushed.
+
+## Frontend Phase 4 (polish): dossier styling
+
+2026-11-15 IST - Claude Code, Sonnet 5.5 (medium effort), /impeccable polish, CSS only.
+Rewrote frontend/app.css inside the frozen design system (same palette, system fonts,
+no gradients except the hatch pattern that already marks ghost cells). No copy, number,
+or markup changes (index.html and app.js untouched). Changes: report-cover masthead with
+heavy bar, ink docket as ruled field cells, vermilion numbered sections under 4px rules,
+coverage as a ruled form, index-style preset tabs and a segmented fleet switch, result
+panel with the headline number beside its denominator definition, caution-stripe shared
+warning, mono tabular-nums table with slashed zeros, caption-bar figures, calendar rhythm
+and legend box, FINDING sealed box with an ink tab, ink colophon footer, short fade/lift
+on headline, calendars and curves when the selection changes (disabled under
+prefers-reduced-motion), themed selection, caret, scrollbar and accent colour, removed the
+thick coloured side borders, print stylesheet.
+Checks: 26/26 node tests pass; banned-word, hardcoded-number and external-url greps clean;
+audit.json committed blob sha256 faee77ab... unchanged; 1280px and 390px screenshots
+reviewed (P1, P3, shared view); no horizontal scroll at 390px.
+Not verified: the print stylesheet (print media emulation did not take effect in the
+browser tool, so it was written but not seen); no real-device check.
+Status: DONE. Not pushed. Not deployed (Vercel redeploys on push).
