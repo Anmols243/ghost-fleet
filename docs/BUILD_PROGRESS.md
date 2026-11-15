@@ -248,3 +248,13 @@ Status: DONE. 24 tests passed; standards/spec reviews passed after correcting
 the stale J ranges to match the archived amended values. P1/P2 unchanged.
 Common-interval P3 W=U:17,712->14,341 (-19.0%), C0/0.
 Evidence and acceptance line recorded above. Normal push authorized.
+
+## Project-page draft and frozen-value sweep
+
+2026-11-15 11:07:04 IST - Codex, GPT-6.1 Sol (effort not exposed).
+PROJECT_PAGE uses approved passages verbatim, frozen preset counts and
+qualifications, approximately1km pipeline cells, and1601380retrieved/1482211retained.
+Sweep changed only docs/AUDIT_SPEC.md:39 (1601319->1601380).
+README and COPY_PACK needed no changes; validation spatial blocks untouched.
+Approved text/banned-phrase/frozen-total checks passed. Full suite:24passed.
+Status: verified, committing. Commit locator: git log -1 -- docs/PROJECT_PAGE.md.

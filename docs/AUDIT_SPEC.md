@@ -36,7 +36,7 @@ For two periods A and B, same mask, grid, date and confidence rules:
   rule-filtered" inside Method checks), any claim of change in ACTUAL
   burning or emissions, "satellite died" (say "data delivery ceased").
 - Every percentage carries its denominator definition next to it.
-- "1,601,319 detections" describes dataset size only — never evidence
+- "1,601,380 detections" describes dataset size only — never evidence
   about fire.
 - Zero on a calendar means "no detections in these retrieved records".
 
