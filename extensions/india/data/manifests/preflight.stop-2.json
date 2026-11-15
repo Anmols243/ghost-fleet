@@ -1,0 +1,320 @@
+{
+  "schema": "india-pull-preflight v1",
+  "status": "BLOCKED_SECOND_PREFLIGHT_ANOMALY",
+  "checked_at_utc": "2026-11-15T15:18:29.371285+00:00",
+  "base_commit": "a1a1530358bb4222abca1ddd99a9f56ab02a9af9",
+  "bbox_west_south_east_north": [
+    68.0,
+    6.5,
+    97.5,
+    37.5
+  ],
+  "max_days_per_request": 5,
+  "area_data_pull_started": false,
+  "chunk_manifests": [],
+  "required_source_seasons": [
+    {
+      "season": 2011,
+      "source": "MODIS_SP",
+      "requested_start": "2011-10-01",
+      "requested_end": "2011-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2012,
+      "source": "MODIS_SP",
+      "requested_start": "2012-10-01",
+      "requested_end": "2012-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2012,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2012-10-01",
+      "requested_end": "2012-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2017,
+      "source": "MODIS_SP",
+      "requested_start": "2017-10-01",
+      "requested_end": "2017-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2017,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2017-10-01",
+      "requested_end": "2017-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "MODIS_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "VIIRS_NOAA20_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "MODIS_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "VIIRS_NOAA20_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2026,
+      "source": "MODIS_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "global_terra_aqua_outages_found_regional_impact_unresolved",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unresolved_global_outage_impact"
+    },
+    {
+      "season": 2026,
+      "source": "VIIRS_SNPP_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "additional_pre_cessation_gaps_found_regional_impact_unresolved",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "expected_cessation_plus_unresolved_pre_cessation_outages",
+      "expected_cessation_classification": "known missing product data \u2014 expected cessation (official notice; hero canon)"
+    },
+    {
+      "season": 2026,
+      "source": "VIIRS_NOAA20_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "not_completed_second_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    }
+  ],
+  "anomalies": [
+    {
+      "code": "PRE_CESSATION_SNPP_GAPS",
+      "source": "VIIRS_SNPP_NRT",
+      "season": 2026,
+      "published_global_outage_examples": [
+        {
+          "start_utc": "2026-10-12T22:00:00Z",
+          "end_utc": "2026-10-13T11:48:00Z"
+        },
+        {
+          "start_utc": "2026-10-17T07:06:00Z",
+          "end_utc": "2026-10-17T07:30:00Z"
+        }
+      ],
+      "evidence": "https://modaps.modaps.eosdis.nasa.gov/services/production/outages_suomi_npp.html",
+      "page_last_update": "2026-11-14",
+      "qualification": "Published global production gaps, distinct from accepted cessation. Exact FIRMS area-product/rectangle impact is unresolved; cannot certify absence of additional gaps."
+    },
+    {
+      "code": "MODIS_AQUA_OUTAGE_NOT_CLEARED",
+      "source": "MODIS_NRT",
+      "satellite": "AQUA",
+      "season": 2026,
+      "published_global_outage_examples": [
+        {
+          "start_utc": "2026-11-03T09:20:00Z",
+          "end_utc": "2026-11-03T10:10:00Z"
+        }
+      ],
+      "evidence": "https://modaps.modaps.eosdis.nasa.gov/services/production/outages_aqua.html",
+      "page_last_update": "2026-11-14",
+      "qualification": "Published global EDOS outage in required window; impact on FIRMS area product and study rectangle unresolved, not quantified."
+    },
+    {
+      "code": "MODIS_TERRA_OUTAGE_NOT_CLEARED",
+      "source": "MODIS_NRT",
+      "satellite": "TERRA",
+      "season": 2026,
+      "published_global_outage_examples": [
+        {
+          "start_utc": "2026-11-11T19:55:00Z",
+          "end_utc": "2026-11-11T20:45:00Z"
+        }
+      ],
+      "evidence": "https://modaps.modaps.eosdis.nasa.gov/services/production/outages_terra.html",
+      "page_last_update": "2026-11-15",
+      "qualification": "Published global EDOS outage in required window; impact on FIRMS area product and study rectangle unresolved, not quantified."
+    }
+  ],
+  "summary": {
+    "retrieved": {
+      "chunks": 0,
+      "rows": 0
+    },
+    "known_missing": "Post-cessation S-NPP is expected and non-blocking per owner resolution; pre-cessation global gaps are a separate unresolved anomaly.",
+    "zero_detections": "Not observed or inferred; no area CSV was requested.",
+    "unknown_completeness": "Regional effect of published global S-NPP/Terra/Aqua outages unresolved. Other source/season checks not completed after immediate second stop; none is certified clean.",
+    "available_counts": "Unknown for every season; downloaded_rows=0 describes work performed only.",
+    "availability_completion": "Incomplete due to a second-anomaly STOP; no data_availability or area API requests made."
+  },
+  "unverified_excluded_dates": [
+    "2026-11-15"
+  ],
+  "credential_handling": "Stopped before credential loading or keyed API requests; no key stored.",
+  "frozen_sha256_before": {
+    "audit.json": "3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a",
+    "ledger.json": "5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255",
+    "timing.json": "3c658ea3a623265549fcafd9ce9049960de4692e0366bcb1c4dd56eef7330fd0",
+    "transitions.json": "3e8e372d69c3ae915182d5d6c8fc7c8c6faeaf470362d68b0e0c84a95e936218",
+    "ledger.csv": "d9083232d71b42763673febd4a6357f4b06c78de7b2db8b277fb4aa52483d8ef"
+  },
+  "frozen_sha256_after": {
+    "audit.json": "3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a",
+    "ledger.json": "5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255",
+    "timing.json": "3c658ea3a623265549fcafd9ce9049960de4692e0366bcb1c4dd56eef7330fd0",
+    "transitions.json": "3e8e372d69c3ae915182d5d6c8fc7c8c6faeaf470362d68b0e0c84a95e936218",
+    "ledger.csv": "d9083232d71b42763673febd4a6357f4b06c78de7b2db8b277fb4aa52483d8ef"
+  },
+  "original_stop_record": {
+    "path": "preflight.stop-1.json",
+    "sha256": "352d93e53ea5c9ed9205cd08e57074a5cf93936fb4d04db77436846bd6e77cae",
+    "evidence_commit": "0a9945d",
+    "log_commit": "0a24e10",
+    "preserved_byte_identical": true
+  },
+  "owner_resolutions": [
+    {
+      "type": "owner_resolution",
+      "recorded_at_utc": "2026-11-15T15:18:29.371285+00:00",
+      "source": "VIIRS_SNPP_NRT",
+      "effective_from_utc": "2026-11-02T15:40:00Z",
+      "classification": "known missing product data \u2014 expected cessation (official notice; hero canon)",
+      "blocking": false,
+      "notice_issued": "2026-10-30",
+      "evidence": "https://www.nesdis.noaa.gov/news/update-3-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-october-30-2026-1400-utc",
+      "reason": "Owner clarification: expected cessation matches the frozen hero P3 treatment and does not block compatibility. Preserve detections through Nov 2, disclose known missing thereafter; Nov 15 remains excluded."
+    }
+  ],
+  "known_missing_expected_states": [
+    {
+      "type": "owner_resolution",
+      "recorded_at_utc": "2026-11-15T15:18:29.371285+00:00",
+      "source": "VIIRS_SNPP_NRT",
+      "effective_from_utc": "2026-11-02T15:40:00Z",
+      "classification": "known missing product data \u2014 expected cessation (official notice; hero canon)",
+      "blocking": false,
+      "notice_issued": "2026-10-30",
+      "evidence": "https://www.nesdis.noaa.gov/news/update-3-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-october-30-2026-1400-utc",
+      "reason": "Owner clarification: expected cessation matches the frozen hero P3 treatment and does not block compatibility. Preserve detections through Nov 2, disclose known missing thereafter; Nov 15 remains excluded."
+    }
+  ],
+  "history": [
+    {
+      "type": "initial_stop",
+      "snapshot": "preflight.stop-1.json",
+      "status": "BLOCKED"
+    },
+    {
+      "type": "owner_resolution",
+      "recorded_at_utc": "2026-11-15T15:18:29.371285+00:00",
+      "source": "VIIRS_SNPP_NRT",
+      "effective_from_utc": "2026-11-02T15:40:00Z",
+      "classification": "known missing product data \u2014 expected cessation (official notice; hero canon)",
+      "blocking": false,
+      "notice_issued": "2026-10-30",
+      "evidence": "https://www.nesdis.noaa.gov/news/update-3-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-october-30-2026-1400-utc",
+      "reason": "Owner clarification: expected cessation matches the frozen hero P3 treatment and does not block compatibility. Preserve detections through Nov 2, disclose known missing thereafter; Nov 15 remains excluded."
+    },
+    {
+      "type": "second_stop",
+      "reason": "Additional documented pre-cessation S-NPP gaps surfaced; owner instructed any second anomaly stops the pull."
+    }
+  ]
+}

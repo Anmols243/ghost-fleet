@@ -707,3 +707,62 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Checks: history/classification/isolation/frozen hashes green; Python 33/33 and
   frontend 42/42 green. Original stop is retained unchanged in prior commits.
 - Resolution/second-stop evidence commit: a72e079. Standards/spec reviews: 0 findings.
+
+## Geographic extension - outage disclosure ruling and section 3 pull
+
+- Time: 2026-11-15 21:05 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Owner ruling: MODAPS-logged outages intersecting required windows are known
+  missing product data, disclosed and non-blocking. Expected S-NPP cessation
+  remains disclosed/non-blocking. Escalation is limited to whole-season required
+  source absence, unretrievable chunks or unexpected empty responses. Exact
+  daily hero compatibility remains the empirical gate before extension release.
+- Both stop records retained: preflight.stop-1.json and preflight.stop-2.json,
+  original history in Git and BUILD_PROGRESS, and owner resolutions/history in
+  preflight.json. Current status separates those historical findings from blockers.
+- FIRMS advertised availability checked for all 14 required source/season pairs.
+  Successful date-range checks are not completeness claims. SP archives / NRT26;
+  no NOAA-21 substituted. Full bbox [68.0,6.5,97.5,37.5].
+- 102 intersecting MODAPS log entries captured: Terra 46, Aqua 28, S-NPP 24,
+  NOAA-20 4. Per-season counts: 2011=4, 2012=6, 2017=2, 2018=11, 2025=26,
+  2026=53. Full reported UTC/raw intervals, comments, URLs and source hashes
+  preserved. Per-comparison entries: P1=10, P2=13, P3=79; cessation separate.
+- Retrieved 132/132 non-overlapping requests, each at most five days, every
+  response validated for headers/satellite/instrument/bbox/dates. No unexpected
+  empty response, unavailable whole-season source or unretrievable chunk.
+  P3 dates stay Oct 1-Nov 14 in BOTH years. SNPP26 requests stop at Nov 2 only
+  because later product delivery ceased; later dates remain disclosed missing,
+  not a shortened comparison or evidence of no fires. Nov 15, 2026 stays excluded.
+- Raw retrieved rows per season (before confidence filtering):
+  - 2011: 19399
+  - 2012: 121451
+  - 2017: 107562
+  - 2018: 224142
+  - 2025: 113188
+  - 2026: 106651
+- Manifests/log snapshots/availability: extensions/india/data/manifests/;
+  raw chunks: extensions/india/data/raw/ (ignored, never staged).
+  Per-comparison disclosures carried in extensions/india/data/outputs/india.json
+  metadata candidate. This is NOT a published frontend/india.json or completed
+  extension: aggregation, exact hero compatibility, independent sign-off and
+  deployment remain pending; no regional headline measurements generated.
+- TDD: validation, outage overlap, 132-request schedule, bounded/redacted retry,
+  empty-response stop, atomic manifests, resume without duplicate CSV ingestion,
+  partial availability disclosure and refreshed cached outage references tested.
+- Review findings fixed openly: removed partial-range availability abort and
+  refreshed cached outage links before every manifest save/prepare-only return.
+  New regression tests failed before fixes and passed after.
+- Original live retrieval used generator sha256
+  f366eff3d724d926292e1170c0ddf53216bbb1dd53f88ced89be9fc2d4526550;
+  exact source archived as manifests/pull_generator.executed.txt. Final code
+  revalidated all cached data and metadata; its separate version hash is recorded
+  as validation_generator_sha256. Retrieval version was not silently relabelled.
+- Frozen audit/ledger/timing/transitions/ledger.csv exact-byte hashes and canonical
+  standardized input preserved. No existing generator rerun or existing raw
+  ingestion path changed. Credentials loaded only from local .env and redacted.
+- Skills: tdd, diagnosing-bugs (review regressions), code-review,
+  verification-before-completion. Full suites: Python 42/42, frontend 42/42 green.
+  All 132 stored CSV hashes/row counts/headers/sensors/bounds/dates/intervals,
+  102 outage entries/source hashes, per-comparison metadata and frozen input hashes
+  verified. Original NASA HTML snapshots retain upstream blank lines at EOF;
+  formatting checks exclude only those exact source snapshots. No data edited.
+- Status: IN PROGRESS pending final green checks, artifact review and commit SHA.
