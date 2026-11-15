@@ -207,3 +207,36 @@ All 26 standardized season totals match VM exactly. The full preset table,
 locked acceptance lines, gate rationale, and file/line inventory are above.
 App: frontend/audit.json, status FROZEN - repo pipeline.
 No raw CSV or .env committed. Push: authorized, normal push pending this log commit.
+
+## Gate 2 coverage and provenance corrections
+
+2026-11-15 10:59:35 IST - Codex, GPT-6.1 Sol (effort not exposed).
+The original acceptance criterion failed; revised comparison metrics were adopted after examining the failure.
+Cross-check claim: equal seasonal row counts in both implementations;
+not a record-level exact match. Grid-divergence cause remains unknown;
+the VM comparison is archived as a sensitivity note, not a proven explanation.
+
+Re-pulled all three 2026 NRT sources for Nov10-15 using fetch_firms.py.
+Nov14 raw MODIS 0->41, NOAA20 103->122; cell-days89->134.
+Neighbouring Nov12/13 counts100/325 bracket134. This supports a complete-looking
+retrieved snapshot, not a guarantee of orbital or cloud completeness.
+Common verified cutoff Nov14; one partial Nov15 MODIS row is unverified and
+excluded. Daily Nov15 values are null, never ordinary zero. Canonical
+2026 standardized rows16241, events14341. Only2026 was restandardized/rebuilt.
+P3 common Oct1-Nov14:2025 W=U17712,2026 W=U14341,C=0; change
+-19.032294489611566%, display -19.0%, not the approximate -19.3% expectation.
+P1/P2 frozen objects and every historical daily series are unchanged.
+JSON includes retrieval timestamp/scope, interval, coverage/cutoffs, product
+and source lists, grid/bbox. E means .403/.252/.086 refer to transitions
+2018->2019 through2024->2025, mean |Delta J|; archived reference-implementation
+results, not rerun on canonical data. Single-sensor series are recorded
+cell-days and must never be stacked as components of W.
+Legacy2026 method-check calendars were labelled archived; Nov15 values
+set null. No legacy method code changed. All dependent current copy updated.
+Evidence: coverage_retrieval.json and coverage_verification.json.
+Tests:24passed; P1/P2 invariance, cutoff, identities and acceptance copy verified.
+Status: verified, committing; actual correction SHA recorded in following entry.
+
+Locked P3 acceptance line:
+
+Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −19.0%; Terra+Aqua+Suomi NPP+NOAA-20, −19.0%. Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.

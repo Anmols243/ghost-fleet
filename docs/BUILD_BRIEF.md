@@ -49,15 +49,16 @@ P1: "Recorded change, Punjab + Haryana, 2011 → 2012: all included satellites, 
 
 P2: "Recorded change, Punjab + Haryana, 2017 → 2018: all included satellites, +99.0%; Terra+Aqua+Suomi NPP, +11.4%; difference, 87.6 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured."
 
-P3: "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
+P3: "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −19.0%; Terra+Aqua+Suomi NPP+NOAA-20, −19.0%. Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
 
 ## 5. P3 case-study labelling
 
-The daily per-sensor series are single-sensor DETECTION counts. Label
-them "S-NPP detections" (etc.), never "events contributed by S-NPP" —
-a cell-day in the S-NPP series may also appear in another sensor's.
-The cessation fact is about detections: present Oct 1 – Nov 2, zero
-from Nov 3.
+The daily per-sensor series are single-sensor recorded cell-days, never
+"detections". A cell-day may be recorded by multiple sensors: never stack
+these series as components of W. W is the union, not their sum.
+S-NPP recorded cell-days are present through Nov 2 and zero from Nov 3.
+Nov 15, 2026 is unverified / not yet retrieved, represented as null, and
+excluded from totals. P3 uses Oct 1-Nov 14 for both 2025 and 2026.
 
 ## 6. Method checks — framing line + corrected ranges
 
@@ -67,8 +68,10 @@ trusted. None is used as a measurement in this app."
 Amendment to AUDIT_SPEC's sensor-addition summary: the addition
 excess ranges across 2012–2025 are raw +215% to +544% and degraded
 +11% to +177% (the spec's earlier ranges were read from partial
-output). Mean steadiness E stands: raw 0.520, degraded 0.216, ratio
-0.086.
+output). Common-interval mean E: raw 0.403, degraded 0.252, ratio 0.086.
+Formula: mean |J[t] - J[t-1]| over transitions 2018->2019 through
+2024->2025. These are archived reference-implementation results, not
+rerun on canonical data; the earlier mixed-period E summary is superseded.
 
 ## 7. Who touches what
 

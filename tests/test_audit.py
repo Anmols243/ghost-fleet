@@ -47,3 +47,23 @@ def test_derived_c_gate_uses_full_w_scale_and_exact_identity():
     rows[1]["C_b"] += 1
     with pytest.raises(ValueError, match="identity"):
         audit.validate_presets(rows)
+
+
+def test_p3_excludes_nov15_in_both_periods_and_nulls_unverified_day():
+    present = {str(y): ["MODIS_TERRA"] for y in (2011, 2012, 2017, 2018, 2025, 2026)}
+    daily = {y: {"MODIS_TERRA": [100] + [0] * 44 + [1000]} for y in present}
+    daily["2026"]["MODIS_TERRA"] = [80] + [0] * 44 + [None]
+    row = audit.build_presets(daily, present)[2]
+    assert (row["W_a"], row["W_b"], row["U_a"], row["U_b"]) == (100, 80, 100, 80)
+    assert row["change_W_pct"] == -20.0
+    assert "Nov 14" in audit.conclusion(row)
+
+
+def test_2026_aggregation_uses_null_for_nov15():
+    frame = pd.DataFrame({
+        "date": pd.to_datetime(["2026-11-14", "2026-11-15"], utc=True),
+        "sensor": ["MODIS_TERRA"] * 2, "lat": [30.] * 2, "lon": [75.] * 2,
+        "frp": [10.] * 2, "acq_time": ["06:00"] * 2, "daynight": ["D"] * 2,
+    })
+    daily, _ = audit.aggregate(frame, seasons=[2026])
+    assert daily["2026"]["MODIS_TERRA"] == [0] * 44 + [1, None]

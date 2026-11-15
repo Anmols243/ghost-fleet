@@ -424,10 +424,13 @@
     {
       "date": "2026-11-15",
       "day_index": 46,
-      "events": 0,
+      "events": null,
       "median": 279.5,
       "p90": 1796.0,
-      "critical": false
+      "critical": null,
+      "coverage": "not yet retrieved"
     }
-  ]
+  ],
+  "status": "ARCHIVED method-check result; canonical app data is frontend/audit.json",
+  "cutoff": "2026-11-14"
 }

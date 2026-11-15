@@ -27,7 +27,7 @@ The degradation rules, the held-out 2021 benchmark, and a 2012–2025 sensor-add
 ## Data
 
 - Source: NASA FIRMS active-fire detections (MODIS Collection 6.1; VIIRS 375 m), Punjab + Haryana bounding box (73.8–77.6 E, 27.6–32.6 N), Oct 1 – Nov 15 each season.
-- 26 seasons, 2001–2026; 1,601,319 detections retrieved; 1,482,163 after the team's disclosed confidence rules (VIIRS nominal+high; MODIS confidence ≥ 50).
+- 26 seasons, 2001-2026; 1,601,380 detections retrieved; 1,482,211 retained after confidence rules and the verified cutoff. The 2026 interval ends Nov 14; Nov 15 is unverified and excluded.
 - Products: standard processing (SP) for 2001–2025, near-real-time (NRT) for 2026 — the app labels 2026 a snapshot.
 - Suomi NPP data delivery ceased 2 Nov 2026; its last detection in the retrieved records is that date. NOAA-21 data are not in the retrieved records and are not in any comparison.
 - A zero means: no detections in these retrieved records. FRP is never summed across sensors.
@@ -64,3 +64,5 @@ Built with AI assistance (Claude Code, Codex, and ChatGPT design/verdict reviews
 ## License
 
 MIT — see LICENSE.
+
+Coverage: P3 compares Oct 1-Nov 14 in both periods: 17,712 -> 14,341 recorded cell-days (-19.0%, relative to the 2025 common-interval count). Nov 15, 2026 is unverified / not yet retrieved (null, excluded). Actual-fire change is not measured.

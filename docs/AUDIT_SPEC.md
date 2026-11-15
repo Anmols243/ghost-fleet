@@ -72,10 +72,10 @@ P2 noaa20_transition - 2017 vs 2018:
   U: 54,291 -> 60,491 (+11.4%)
   C: 0 -> 47,544; difference 87.6 pp.
 
-P3 snpp_cessation - 2025 vs 2026:
-  W: 18,031 -> 14,296 (-20.7%)
-  U: 18,031 -> 14,296 (-20.7%)
-  C: 0 -> 0; difference 0.0 pp.
+P3 snpp_cessation - 2025 vs 2026, Oct 1-Nov 14 in BOTH periods:
+  W: 17,712 -> 14,341 (-19.0%)
+  U: 17,712 -> 14,341 (-19.0%)
+  C: 0 -> 0; difference 0 pp.
 
 P3 is the within-season interruption case: S-NPP is in both seasonal
 fleets, so C is zero and the seasonal decomposition cannot expose the
@@ -83,6 +83,17 @@ interruption; S-NPP detections end on 2 Nov and are zero from 3 Nov.
 
 Gate 6 (audit reveals something) is met by P1 and P2 (≥10 pp) and by
 P3's documented feed interruption.
+
+## Coverage and comparison interval
+
+Verified common cutoff: Nov 14. P3 compares Oct 1-Nov 14 in BOTH 2025 and
+2026. Nov 15, 2026 is unverified / not yet retrieved, excluded from all
+2026 totals and P3; its daily values are null, never ordinary zeros.
+2025 daily arrays retain Nov 15 for other uses, but P3 omits it.
+Retrieval timestamp, requested interval, per-season cutoff/status/product/
+sources, grid specification and bbox are in frontend/audit.json.
+The 2026 NRT snapshot remains provisional; complete-looking retrieved
+counts do not prove orbital or cloud completeness.
 
 ## Data contract for the frontend
 
@@ -101,20 +112,23 @@ The browser loads audit.json only — never raw detections.
    conclusion line (deterministic rule: state recorded change, shared
    change, difference; if |diff| ≥ 10 pp or interruption present, the
    statement "requires qualification" + the qualifying sentence).
-2. Case study panel: S-NPP 2026 — daily stacked contribution by sensor,
+2. Case study panel: S-NPP 2026 — daily single-sensor recorded cell-days (overlapping, unstacked),
    cessation line at Nov 2/3, "data delivery ceased" wording.
 3. Method checks panel (one click from everywhere): (a) 2021 benchmark —
    ratio MAE 323 / total error −12.4% vs degradation MAE 1,162 /
    +202.1% vs actual MODIS 13,216 events on held-out Oct 24 – Nov 15;
    verdict: degradation FAILED, retained as experimental only.
    (b) Sensor-addition test 2012–2025 (S-NPP only, frozen rules):
-   mean year-to-year steadiness of the addition excess E — raw 0.520,
-   degraded 0.216, ratio control 0.086; levels J remain large for all
-   (raw ≈ +424–540%, degraded ≈ +117–177%): steadier is not accurate.
+   common-interval mean E = mean |Delta J| over transitions 2018->2019
+   through 2024->2025: raw 0.403, degraded 0.252, ratio 0.086; archived
+   reference-implementation results, not rerun on canonical data; levels J remain large for all
+   (raw ≈ +215–544%, degraded ≈ +11–177%): steadier is not accurate.
    (c) Known limitations: NOAA-21 configured but absent from the pull
    (2026 fleet is MODIS + NOAA-20 + S-NPP to Nov 2); 2026 is NRT and
    provisional, season labelled through Nov 15 with data as retrieved;
-   two implementations differ ~1% on event totals (cell rounding).
+   equal seasonal row counts in both implementations, not a record-level
+   exact match; event-total divergence is an archived sensitivity note,
+   with cause unknown, not proven to be cell rounding.
 4. Evidence download: per preset, a readable report (txt/md) + daily CSV
    (date, W, U, C for both periods), generated in the browser from
    audit.json. Must reproduce the screen exactly.

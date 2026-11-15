@@ -1,0 +1,12 @@
+{
+  "retrieved_at_utc": "2026-11-15T05:22:04.795958+00:00",
+  "requested_interval": [
+    "2026-11-10",
+    "2026-11-15"
+  ],
+  "sources": [
+    "MODIS_NRT",
+    "VIIRS_NOAA20_NRT",
+    "VIIRS_SNPP_NRT"
+  ]
+}

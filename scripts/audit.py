@@ -28,7 +28,7 @@ def conclusion(row):
     u = f"{row['change_U_pct']:+.1f}".replace("-", "\u2212")
     line = f"Recorded change, Punjab + Haryana, {row['a']} \u2192 {row['b']}: all included satellites, {w}%; {shared}, {u}%"
     if row["id"] == "snpp_cessation":
-        return line + ". The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct \u2013 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
+        return line + ". Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct \u2013 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
     return line + f"; difference, {row['diff_pp']:.1f} percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured."
 SENSORS = ["MODIS_TERRA", "MODIS_AQUA", "VIIRS_SNPP", "VIIRS_NOAA20"]
 PRESETS = [
@@ -45,6 +45,8 @@ def aggregate(df, seasons=range(2001, 2027)):
     daily, present = {}, {}
     for season in seasons:
         d = df[df.date.dt.year.eq(season)]
+        if season == 2026:
+            d = d[d.date.le("2026-11-14")]
         dates = pd.date_range(f"{season}-10-01", f"{season}-11-15", tz="UTC")
         have = [s for s in SENSORS if d.sensor.eq(s).any()]
         present[str(season)] = have
@@ -53,7 +55,10 @@ def aggregate(df, seasons=range(2001, 2027)):
             for subset in itertools.combinations(have, r):
                 ev = build_events(d[d.sensor.isin(subset)])
                 counts = ev.groupby("date").size()
-                daily[str(season)]["+".join(subset)] = [int(counts.get(dt, 0)) for dt in dates]
+                daily[str(season)]["+".join(subset)] = [
+                    None if season == 2026 and dt.day == 15 and dt.month == 11 else int(counts.get(dt, 0))
+                    for dt in dates
+                ]
         print(season, have, flush=True)
     return daily, present
 
@@ -63,9 +68,13 @@ def build_presets(daily, present):
     for p in PRESETS:
         shared = [s for s in present[str(p["a"])] if s in present[str(p["b"])]]
         row = dict(p)
+        length = 45 if p["id"] == "snpp_cessation" else 46
+        if length == 45:
+            row["comparison_end_mm_dd"] = "11-14"
+            row["comparison_interval"] = "Oct 1 - Nov 14 in both periods"
         for tag, season in (("a", p["a"]), ("b", p["b"])):
-            row["W_" + tag] = sum(daily[str(season)]["+".join(present[str(season)])])
-            row["U_" + tag] = sum(daily[str(season)]["+".join(shared)])
+            row["W_" + tag] = sum(daily[str(season)]["+".join(present[str(season)])][:length])
+            row["U_" + tag] = sum(daily[str(season)]["+".join(shared)][:length])
             row["C_" + tag] = row["W_" + tag] - row["U_" + tag]
             row["fleet_" + tag] = present[str(season)]
         row["shared"] = shared
@@ -82,6 +91,16 @@ def validate_presets(presets):
         raise ValueError("STOP: expected exactly the three canonical presets")
     for actual in presets:
         expected = expected_by_id[actual["id"]]
+        if actual["id"] == "snpp_cessation" and actual.get("comparison_end_mm_dd") == "11-14":
+            # The archived VM reference covers Nov 15; it is not a comparable
+            # numerical benchmark for the newly approved common interval.
+            for tag in ("a", "b"):
+                if not (0 < actual["U_" + tag] <= actual["W_" + tag] and
+                        actual["C_" + tag] == actual["W_" + tag] - actual["U_" + tag]):
+                    raise ValueError("STOP: common-interval P3 identity failed")
+            differences.append({"preset": actual["id"], "scope": "Oct 1 - Nov 14",
+                                "check": "common-interval identity; old Nov 15 VM totals not comparable"})
+            continue
         for key in ("W_a", "W_b", "U_a", "U_b"):
             error = abs(actual[key] / expected[key] - 1) * 100 if expected[key] else (0 if not actual[key] else float("inf"))
             differences.append({"preset": actual["id"], "field": key, "actual": actual[key], "reference": expected[key], "error_pct": error})
@@ -115,13 +134,37 @@ def main():
     presets = build_presets(daily, present)
     differences = validate_presets(presets)
     checks = reference["method_checks"]
-    checks["sensor_addition"]["mean_E"] = {"E_R": .520, "E_S": .216, "E_C": .086}
+    checks["sensor_addition"]["mean_E"] = {"E_R": .403, "E_S": .252, "E_C": .086}
+    checks["sensor_addition"]["mean_E_interval"] = "2018->2019 through 2024->2025"
+    checks["sensor_addition"]["mean_E_formula"] = "mean(abs(J[t] - J[t-1])) over successive seasons"
+    checks["sensor_addition"]["provenance"] = "Archived reference-implementation results; not rerun on canonical data"
+    checks["benchmark_2021"]["provenance"] = "Archived reference-implementation results; not rerun on canonical data"
     checks["sensor_addition"]["J_R_range"] = [2.15, 5.44]
     checks["sensor_addition"]["J_S_range"] = [.11, 1.77]
     out = {"schema": "audit-app v1", "status": "FROZEN - repo pipeline",
            "window": reference["window"], "grid": reference["grid"],
            "sensors_present": present, "presets": presets, "daily": daily,
            "method_checks": checks}
+    retrieval = json.loads((BASE / "data/processed/coverage_retrieval.json").read_text())
+    manifest = json.loads((BASE / "data/raw/manifest.json").read_text())
+    out["retrieved_at_utc"] = retrieval["retrieved_at_utc"]
+    out["retrieval_timestamp_scope"] = "2026 Nov 10-15 NRT re-pull; earlier retrieval timestamps unavailable"
+    out["requested_interval"] = {"start_mm_dd": "10-01", "end_mm_dd": "11-15", "days": 46}
+    out["bbox"] = [73.8, 27.6, 77.6, 32.6]
+    out["dataset_counts"] = {"retrieved_detections": sum(e["rows"] for e in manifest),
+                             "standardized_verified_detections": len(df)}
+    out["daily_unit"] = "recorded cell-days; single-sensor series overlap and must never be stacked as components of W"
+    out["grid_spec"] = {"type": "equirectangular", "origin_lon_lat": [73.8, 27.6],
+                        "reference_latitude": 30.1, "earth_radius_km": 6371.0088, "cell_km": 1, "index": "floor"}
+    out["coverage"] = {
+        str(year): {"status": "verified through cutoff; NRT provisional" if year == 2026 else "archived retrieved records",
+                    "cutoff": f"{year}-11-14" if year == 2026 else f"{year}-11-15",
+                    "unverified_dates": ["2026-11-15"] if year == 2026 else [],
+                    "unverified_representation": "null; not yet retrieved; excluded from totals",
+                    "sources": sorted({e["source"] for e in manifest if e["season"] == year}),
+                    "product": "NRT" if year == 2026 else "SP"}
+        for year in range(2001, 2027)
+    }
     path.write_text(json.dumps(out, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
     (BASE / "data/processed/audit_preset_verification.json").write_text(json.dumps(differences, indent=2) + "\n")
     print(json.dumps(presets, indent=2), flush=True)

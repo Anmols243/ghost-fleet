@@ -81,7 +81,7 @@ Never use the word "agreement" for a small gap.
 
 ### 4c. Interruption (P3)
 
-"Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
+"Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −19.0%; Terra+Aqua+Suomi NPP+NOAA-20, −19.0%. Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
 
 ### 4d. Comparison unavailable
 
@@ -114,7 +114,7 @@ Actual-fire change is not measured."
 | 3 | "Satellites caused 449.8 points of fake fires" | S3 subline: "No causal attribution"; conclusion template: "the difference is not a causal attribution." |
 | 4 | "The app corrects the fire record" | Approved claim: "It does not estimate the change in actual burning." No corrected number exists anywhere in the app. |
 | 5 | "Terra+Aqua is the true series" | Panel title says "Same named satellites", a selection description, not a truth claim; warning repeats not-a-corrected-count. |
-| 6 | "2026 fires fell 20.7%" | P3 uses the interruption template: the record is interrupted mid-season; 2026 is labelled a data snapshot everywhere. |
+| 6 | "2026 fires fell 19.0%" | P3 uses the interruption template: the record is interrupted mid-season; 2026 is labelled a data snapshot everywhere. |
 | 7 | "S-NPP died / was switched off" | Copy says only "data delivery ceased" / "delivery ended", a statement about the data record. |
 | 8 | "A small gap means the trend is real" | Template 4b: "A small selection gap does not prove that either percentage measures actual fire activity." The word "agreement" is banned. |
 | 9 | "Zero fires on that day" | Zero is defined in the measurement contract as "no detections in these retrieved records", never as no fires. |
@@ -224,7 +224,7 @@ to answer.
   "conclusion_templates": {
     "gap_ge_10pp": "Recorded change, Punjab + Haryana, {a} → {b}: all included satellites, {w}%; {shared_label}, {u}%; difference, {d} percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.",
     "gap_lt_10pp": "Recorded change, Punjab + Haryana, {a} → {b}: all included satellites, {w}%; {shared_label}, {u}%; difference, {d} percentage points. A small selection gap does not prove that either percentage measures actual fire activity. Neither percentage is a corrected estimate of fire activity. Actual-fire change is not measured.",
-    "interruption": "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.",
+    "interruption": "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −19.0%; Terra+Aqua+Suomi NPP+NOAA-20, −19.0%. Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.",
     "unavailable": "Comparison unavailable for the selected seasons. At least one selected season has an incomplete satellite pull in the retrieved records. Actual-fire change is not measured."
   },
   "microcopy": {

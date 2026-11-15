@@ -113,58 +113,7 @@
   },
   {
     "preset": "snpp_cessation",
-    "field": "W_a",
-    "actual": 18031,
-    "reference": 17950,
-    "error_pct": 0.4512534818941427
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "W_b",
-    "actual": 14296,
-    "reference": 14263,
-    "error_pct": 0.23136787492112898
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "U_a",
-    "actual": 18031,
-    "reference": 17950,
-    "error_pct": 0.4512534818941427
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "U_b",
-    "actual": 14296,
-    "reference": 14263,
-    "error_pct": 0.23136787492112898
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "C_a",
-    "actual": 0,
-    "reference": 0,
-    "error_pct_of_W": 0.0
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "C_b",
-    "actual": 0,
-    "reference": 0,
-    "error_pct_of_W": 0.0
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "W_ratio",
-    "actual": 0.7928567467139925,
-    "reference": 0.7945961002785515,
-    "error_pct": 0.21889782292529025
-  },
-  {
-    "preset": "snpp_cessation",
-    "field": "U_ratio",
-    "actual": 0.7928567467139925,
-    "reference": 0.7945961002785515,
-    "error_pct": 0.21889782292529025
+    "scope": "Oct 1 - Nov 14",
+    "check": "common-interval identity; old Nov 15 VM totals not comparable"
   }
 ]

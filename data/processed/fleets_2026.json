@@ -388,10 +388,11 @@
         {
           "date": "2026-11-15",
           "day_index": 46,
-          "events": 0,
+          "events": null,
           "median": 612.5,
           "p90": 3380.5,
-          "critical": false
+          "critical": null,
+          "coverage": "not yet retrieved"
         }
       ]
     },
@@ -789,10 +790,11 @@
         {
           "date": "2026-11-15",
           "day_index": 46,
-          "events": 0,
+          "events": null,
           "median": 612.5,
           "p90": 3380.5,
-          "critical": false
+          "critical": null,
+          "coverage": "not yet retrieved"
         }
       ]
     },
@@ -1174,10 +1176,11 @@
         {
           "date": "2026-11-15",
           "day_index": 46,
-          "events": 0,
+          "events": null,
           "median": 612.5,
           "p90": 3380.5,
-          "critical": false
+          "critical": null,
+          "coverage": "not yet retrieved"
         }
       ]
     },
@@ -1560,10 +1563,11 @@
         {
           "date": "2026-11-15",
           "day_index": 46,
-          "events": 0,
+          "events": null,
           "median": 612.5,
           "p90": 3380.5,
-          "critical": false
+          "critical": null,
+          "coverage": "not yet retrieved"
         }
       ]
     },
@@ -1948,12 +1952,15 @@
         {
           "date": "2026-11-15",
           "day_index": 46,
-          "events": 0,
+          "events": null,
           "median": 612.5,
           "p90": 3380.5,
-          "critical": false
+          "critical": null,
+          "coverage": "not yet retrieved"
         }
       ]
     }
-  }
+  },
+  "status": "ARCHIVED method-check result; canonical app data is frontend/audit.json",
+  "cutoff": "2026-11-14"
 }

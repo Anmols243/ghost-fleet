@@ -1,0 +1,42 @@
+{
+  "cutoff": "2026-11-14",
+  "before_raw": {
+    "MODIS_NRT": {
+      "2026-11-10": 258,
+      "2026-11-11": 731,
+      "2026-11-13": 312
+    },
+    "VIIRS_NOAA20_NRT": {
+      "2026-11-10": 463,
+      "2026-11-11": 185,
+      "2026-11-12": 120,
+      "2026-11-13": 97,
+      "2026-11-14": 103
+    },
+    "VIIRS_SNPP_NRT": {}
+  },
+  "after_raw": {
+    "MODIS_NRT": {
+      "2026-11-10": 258,
+      "2026-11-11": 731,
+      "2026-11-13": 312,
+      "2026-11-14": 41,
+      "2026-11-15": 1
+    },
+    "VIIRS_NOAA20_NRT": {
+      "2026-11-10": 463,
+      "2026-11-11": 185,
+      "2026-11-12": 120,
+      "2026-11-13": 97,
+      "2026-11-14": 122
+    },
+    "VIIRS_SNPP_NRT": {}
+  },
+  "event_neighbors": {
+    "2026-11-12": 100,
+    "2026-11-13": 325,
+    "2026-11-14": 134,
+    "2026-11-15": null
+  },
+  "interpretation": "Nov14 increased from89 to134 cell-days and falls within Nov12-13 range100-325; complete-looking retrieved snapshot, not proof of orbital/cloud completeness."
+}

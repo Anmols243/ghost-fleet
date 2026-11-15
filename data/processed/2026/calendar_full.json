@@ -1,34 +1,9 @@
 {
   "season": 2026,
   "timezone": "UTC",
-  "baseline_seasons": [
-    2001,
-    2002,
-    2003,
-    2004,
-    2005,
-    2006,
-    2007,
-    2008,
-    2009,
-    2010,
-    2011,
-    2012,
-    2013,
-    2014,
-    2015,
-    2016,
-    2017,
-    2018,
-    2019,
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025
-  ],
   "snpp_historical_only": true,
+  "cutoff": "2026-11-14",
+  "total": 14341,
   "days": [
     {
       "date": "2026-10-01",
@@ -36,7 +11,8 @@
       "events": 69,
       "median": 59.0,
       "p90": 180.8,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-02",
@@ -44,7 +20,8 @@
       "events": 132,
       "median": 100.0,
       "p90": 240.40000000000012,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-03",
@@ -52,7 +29,8 @@
       "events": 112,
       "median": 103.0,
       "p90": 260.6,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-04",
@@ -60,7 +38,8 @@
       "events": 104,
       "median": 117.0,
       "p90": 335.4000000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-05",
@@ -68,7 +47,8 @@
       "events": 95,
       "median": 124.0,
       "p90": 390.00000000000006,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-06",
@@ -76,7 +56,8 @@
       "events": 81,
       "median": 138.0,
       "p90": 393.6,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-07",
@@ -84,7 +65,8 @@
       "events": 130,
       "median": 214.0,
       "p90": 379.8,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-08",
@@ -92,7 +74,8 @@
       "events": 101,
       "median": 224.0,
       "p90": 494.2000000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-09",
@@ -100,7 +83,8 @@
       "events": 113,
       "median": 237.0,
       "p90": 526.2,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-10",
@@ -108,7 +92,8 @@
       "events": 120,
       "median": 264.0,
       "p90": 649.6,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-11",
@@ -116,7 +101,8 @@
       "events": 15,
       "median": 325.0,
       "p90": 770.6000000000004,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-12",
@@ -124,7 +110,8 @@
       "events": 60,
       "median": 282.0,
       "p90": 786.4000000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-13",
@@ -132,7 +119,8 @@
       "events": 139,
       "median": 430.0,
       "p90": 728.0000000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-14",
@@ -140,7 +128,8 @@
       "events": 135,
       "median": 382.0,
       "p90": 967.2000000000002,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-15",
@@ -148,7 +137,8 @@
       "events": 24,
       "median": 340.0,
       "p90": 1073.4,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-16",
@@ -156,7 +146,8 @@
       "events": 36,
       "median": 494.0,
       "p90": 1091.6000000000004,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-17",
@@ -164,7 +155,8 @@
       "events": 162,
       "median": 492.0,
       "p90": 1140.0,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-18",
@@ -172,7 +164,8 @@
       "events": 480,
       "median": 545.0,
       "p90": 1066.2,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-19",
@@ -180,7 +173,8 @@
       "events": 312,
       "median": 442.0,
       "p90": 1441.2000000000003,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-20",
@@ -188,7 +182,8 @@
       "events": 191,
       "median": 660.0,
       "p90": 1763.0000000000005,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-21",
@@ -196,7 +191,8 @@
       "events": 223,
       "median": 657.0,
       "p90": 1798.8000000000002,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-22",
@@ -204,7 +200,8 @@
       "events": 212,
       "median": 501.0,
       "p90": 2209.0000000000005,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-23",
@@ -212,7 +209,8 @@
       "events": 312,
       "median": 711.0,
       "p90": 2035.0,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-24",
@@ -220,7 +218,8 @@
       "events": 199,
       "median": 443.0,
       "p90": 2120.8,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-25",
@@ -228,7 +227,8 @@
       "events": 248,
       "median": 825.0,
       "p90": 2424.6000000000004,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-26",
@@ -236,7 +236,8 @@
       "events": 352,
       "median": 669.0,
       "p90": 2930.0000000000005,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-27",
@@ -244,7 +245,8 @@
       "events": 246,
       "median": 899.0,
       "p90": 3074.2000000000003,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-28",
@@ -252,7 +254,8 @@
       "events": 449,
       "median": 791.0,
       "p90": 3964.4000000000024,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-29",
@@ -260,7 +263,8 @@
       "events": 610,
       "median": 1244.0,
       "p90": 3433.8,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-30",
@@ -268,7 +272,8 @@
       "events": 393,
       "median": 997.0,
       "p90": 4062.0000000000005,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-10-31",
@@ -276,7 +281,8 @@
       "events": 659,
       "median": 957.0,
       "p90": 5025.8,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-01",
@@ -284,7 +290,8 @@
       "events": 494,
       "median": 1148.0,
       "p90": 4592.2,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-02",
@@ -292,7 +299,8 @@
       "events": 422,
       "median": 1041.0,
       "p90": 5013.400000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-03",
@@ -300,7 +308,8 @@
       "events": 907,
       "median": 906.0,
       "p90": 4924.200000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-04",
@@ -308,7 +317,8 @@
       "events": 388,
       "median": 1014.0,
       "p90": 6202.000000000002,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-05",
@@ -316,7 +326,8 @@
       "events": 745,
       "median": 1297.0,
       "p90": 6536.000000000002,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-06",
@@ -324,7 +335,8 @@
       "events": 518,
       "median": 683.0,
       "p90": 6268.000000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-07",
@@ -332,7 +344,8 @@
       "events": 304,
       "median": 572.0,
       "p90": 6740.4000000000015,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-08",
@@ -340,7 +353,8 @@
       "events": 1761,
       "median": 818.0,
       "p90": 4936.800000000003,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-09",
@@ -348,7 +362,8 @@
       "events": 397,
       "median": 1019.0,
       "p90": 4120.400000000001,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-10",
@@ -356,7 +371,8 @@
       "events": 614,
       "median": 518.0,
       "p90": 4987.4000000000015,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-11",
@@ -364,7 +380,8 @@
       "events": 718,
       "median": 651.0,
       "p90": 4123.6,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-12",
@@ -372,7 +389,8 @@
       "events": 100,
       "median": 329.0,
       "p90": 2609.4000000000005,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-13",
@@ -380,23 +398,26 @@
       "events": 325,
       "median": 365.0,
       "p90": 3256.8000000000006,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-14",
       "day_index": 45,
-      "events": 89,
+      "events": 134,
       "median": 141.0,
       "p90": 1910.2000000000003,
-      "critical": false
+      "critical": false,
+      "coverage": "verified through cutoff"
     },
     {
       "date": "2026-11-15",
       "day_index": 46,
-      "events": 0,
+      "events": null,
       "median": 302.0,
       "p90": 2638.8000000000025,
-      "critical": false
+      "critical": null,
+      "coverage": "not yet retrieved"
     }
   ]
 }
