@@ -478,7 +478,7 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Tests: backend 24/24 and frontend 38/38 green. Initial root-cwd Python
   collection failed after directory relocation; diagnosing-bugs confirmed the
   documented backend cwd resolves imports, with no code changes.
-- Status: IN PROGRESS until reviewed green commit; SHA recorded in next task entry.
+- Status: DONE. Commit: 35f056c (24 Python + 38 frontend tests green).
 - Interrupted submission-checklist draft remains preserved in stash; pulled main's
   checklist and progress history take precedence and were not overwritten.
 
@@ -500,7 +500,7 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - UI: separate optional load; CSV + JSON downloads; wide table scrolls locally.
 - Audit: checkout byte hash 3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a unchanged;
   canonical LF hash faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae unchanged.
-- Status: IN PROGRESS until review/commit; exact SHA finalized in the next entry.
+- Status: DONE. Commit: f6fac96 (27 Python + 40 frontend tests green).
 
 - A review: standards 0 hard findings; spec 0 implementation findings.
   Native/browser smoke could not run (browser host unavailable; window activation
@@ -530,7 +530,7 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   timing.json records parquet, audit and generator source hashes.
 - Audit: original byte and LF hashes unchanged. Existing system copy narrowed
   its one-file statement to comparison numbers, acknowledging optional sidecars.
-- Status: IN PROGRESS until reviewed commit; exact SHA finalized in next entry.
+- Status: DONE. Commit: 58ad31f (29 Python + 41 frontend tests green).
 
 - B review: standards 0 findings; spec 0 findings. Both reviewers separately
   recomputed the timing object in memory from canonical parquet/audit: every
@@ -559,7 +559,7 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Reproduce: cd backend; ../.venv/Scripts/python.exe scripts/transitions.py.
   Separately versioned JSON records ledger, audit and generator dependency hashes.
 - Audit: original checkout byte and canonical LF hashes unchanged.
-- Status: IN PROGRESS until reviewed commit; exact SHA finalized in completion entry.
+- Status: DONE. Commit: 8bbc60c (33 Python + 42 frontend tests green).
 
 - C review: standards 0 findings; spec 0 findings. Both reviewers independently
   summed frozen audit daily subsets directly, without calling the generator.
@@ -569,3 +569,29 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Final reproducibility run (2026-11-15 19:50 IST): reran ledger, timing and
   transitions generators in order. All JSONs and ledger.csv byte-identical;
   audit.json checkout bytes untouched. No source or acceptance values tuned.
+
+## Freeze 2 - release evidence index
+
+- Phase/task: Freeze 2 implementation record, 2026-11-15 19:52 IST.
+  Model: GPT-6.1 Sol; effort not exposed.
+- Amendment: 35f056c. A: f6fac96. B: 58ad31f. C: 8bbc60c.
+- Tested code/data release: 8bbc60c. Backend 33/33; frontend 42/42, green after
+  byte-identical regeneration of all optional JSONs and ledger CSV.
+- A: all supplied W totals and frozen subset daily counts match exactly.
+  B: supplied precise timing checks pass; reviewers rebuilt the complete object.
+  C: all 25 exact rows pass; reviewers independently summed frozen daily arrays.
+- Source provenance: all sidecar source hashes checked; no secrets staged, no
+  legacy pipeline logic edited. Existing untracked root data/ remains untouched.
+- audit.json before/after (exact checkout bytes):
+  3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a.
+  Canonical LF/Git content before/after:
+  faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae.
+- Implementation status: DONE, all three additions green and committed before
+  22:00 IST. No addition excluded for a failed supplied numeric check.
+- Release checks still open: Arlo's sign-off on this exact release is not recorded;
+  existing independent reference values and agent cross-checks are not claimed as
+  his execution of this release. Browser smoke was unavailable in this session;
+  automated DOM/loader and preset evidence tests passed. Public deployment of the
+  new appendices has not been verified. Apply the 22:00 exclusion rule to anything
+  still lacking the required release reproduction then; this entry is not that seal.
+- Changes are local commits; no push requested for this Freeze 2 task.
