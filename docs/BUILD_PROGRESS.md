@@ -651,4 +651,6 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Skills: code-review, verification-before-completion; diagnosing-bugs for
   a PowerShell path-syntax error. Documentation/storage setup, no implementation.
 - Tests: isolation/hash/content checks green; Python 33/33, frontend 42/42 green.
-- Status: IN PROGRESS until reviewed commit; exact SHA finalized in next entry.
+- Status: DONE (amendment/isolation only). Task commit: 45b1de1.
+  Standards and spec reviews: 0 findings; 33 Python / 42 frontend tests green.
+  Geographic implementation, independent approval and deployment remain unstarted.
