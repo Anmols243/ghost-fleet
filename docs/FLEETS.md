@@ -1,3 +1,5 @@
+> **STATUS 2026-11-15: background analysis.** The shipped product is the Fire Trend Audit (docs/AUDIT_SPEC.md). Fleet material appears in the app only as the S-NPP cessation case study.
+
 # Fleet comparison for 2026
 
 Run `.venv/Scripts/python.exe scripts/fleets.py` after harmonization.
