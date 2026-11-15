@@ -89,27 +89,42 @@
     }), 'no retained daytime observations'));
   }
 
+  var SCOPE = 'Punjab–Haryana — frozen study rectangle only. Region selection does not recompute this appendix.';
+  function facts(pairs) {
+    var list = element('dl'); list.className = 'sys-facts tr-facts';
+    pairs.forEach(function (pair) {
+      var row = element('div'); row.className = 'sys-row';
+      row.appendChild(element('dt', pair[0])); row.appendChild(element('dd', pair[1]));
+      list.appendChild(row);
+    });
+    return list;
+  }
   function renderTransitions(section, data) {
-    section.appendChild(element('p', data.boundary));
-    section.appendChild(element('p', data.selection_rule + ' ' + data.window_rule));
-    section.appendChild(element('p', 'W and U are recorded cell-days under the displayed satellite selections. '
-      + 'Percentages use the earlier count in their own column as denominator. C = W − U.'));
+    section.appendChild(facts([
+      ['Scope', SCOPE],
+      ['Comparability', data.boundary],
+      ['Pairs', data.selection_rule],
+      ['Window', data.window_rule],
+      ['Units', 'W and U are recorded cell-days under the displayed satellite selections. '
+        + 'Percentages use the earlier count in their own column as denominator. C = W − U.']]));
     function percent(value) { return (value > 0 ? '+' : '') + value.toFixed(1) + '%'; }
-    section.appendChild(table(['Pair', 'Shared satellites', 'Common window', 'W_a', 'W_b',
+    var grid = table(['Pair', 'Shared satellites', 'Common window', 'W_a', 'W_b',
       'W change (% of W_a)', 'U_a', 'U_b', 'U change (% of U_a)',
       'Difference (pp)', 'C_a', 'C_b', 'Note'], data.rows.map(function (r) {
       return [r.a + ' → ' + r.b, r.shared_label,
         'Oct 1–Nov ' + Number(r.comparison_end_mm_dd.slice(3)) + ' (' + r.days + ' days)',
         r.W_a, r.W_b, percent(r.change_W_pct), r.U_a, r.U_b, percent(r.change_U_pct),
         r.diff_pp.toFixed(1), r.C_a, r.C_b, r.note];
-    })));
+    }));
+    grid.className += ' tr-table';
+    section.appendChild(grid);
   }
 
   function render(file, data, item) {
     // Construct off-DOM: malformed data cannot leave a partial section visible.
     var section = element('section'); section.id = item.id;
     section.appendChild(element('h2', item.title));
-    section.appendChild(element('p', 'Punjab–Haryana — frozen study rectangle only. Region selection does not recompute this appendix.'));
+    if (item.id !== 'transitions') section.appendChild(element('p', SCOPE));
     if (item.id === 'ledger') renderLedger(section, data);
     else if (item.id === 'timing') renderTiming(section, data);
     else if (item.id === 'transitions') renderTransitions(section, data);

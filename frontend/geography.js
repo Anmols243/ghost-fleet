@@ -247,6 +247,8 @@
             var title = document.createElementNS('http://www.w3.org/2000/svg', 'title'); title.textContent = region.label;
             rect.appendChild(title); extents.appendChild(rect);
           });
+          var lifted = extents.querySelector('.is-selected');
+          if (lifted) extents.appendChild(lifted);
           var region = data.rectangles.find(r => r.id === selected);
           document.getElementById('geography-current').textContent = region.label +
             ' · bounds [west, south, east, north]: ' + region.bounds.join(', ');
