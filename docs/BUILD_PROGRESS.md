@@ -406,3 +406,29 @@ footer-only rule; they fetch nothing on load.
 Checks: node tests 34/34 (8 in system.test.js: hrefs only to this repo, linked files exist,
 cell-days equal an independent sum, null data gives no counts). Banned-word grep clean;
 360px scrollWidth 360/360. Backend not modified. Status: DONE. Not pushed.
+
+## Frontend Phase 5 (navigation and first read): OWNER-REQUESTED
+
+2026-11-15 IST - Claude Code (Opus 5.5). Usability only; no section 4 string, conclusion
+rendering, number, download logic or audit.json change.
+Added: orientation strip above the coverage block (step highlight: start on step 1, step 2
+after a preset is picked, step 3 after the fleet switch is used); helper line under the
+fleet switch; sticky mini-result under the app bar once the headline scrolls away (preset
+name, active fleet label, headline string from the same headlineText() the headline uses,
+link to the FINDING); second download button at the end of the comparison calling the same
+action as the rail button; scroll-spy on the app bar nav (smooth scroll was already on and
+is off under reduced motion; the mini bar has no transition under reduced motion); one-line
+W/U/C explainer under the headline joined from the table's own selection labels (table now
+uses the same selectionLabels()).
+Added strings, verbatim, for owner review:
+  "1 · Pick a period" / "2 · Compare both fleets" / "3 · Download the evidence" (owner text)
+  "Switching changes only which satellites are counted: all included satellites, or only the satellites present in both periods."
+  "Go to the finding"
+  W/U/C explainer separator " · " (labels themselves are the existing table labels)
+Checks: node tests 38/38 (4 new in nav.test.js: shared headline string, same download
+action, explainer from table labels, added strings keep the wording law). Banned-word and
+hardcoded-number greps clean; audit.json blob faee77ab... untouched. Smoke at 1280 and
+390: steps advance 1 to 2 to 3, mini bar shows +455.2% when the headline is off screen and
+hides when back, mini top equals app bar bottom (62/62, 71/71, no overlap), two download
+buttons with the same label enabled, scroll-spy marks Method checks, no horizontal scroll.
+Reduced motion verified from the CSS rules only, not by emulation. Status: DONE. Not pushed.

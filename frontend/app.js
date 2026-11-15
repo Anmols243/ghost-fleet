@@ -29,6 +29,9 @@
     noaa21: 'No NOAA-21 data are in the comparison',
     warning: 'This percentage is not a corrected fire count. It uses only the satellites present in both periods.',
     footer: 'Actual-fire change: not measured',
+    steps: ['1 · Pick a period', '2 · Compare both fleets', '3 · Download the evidence'],
+    switchHelp: 'Switching changes only which satellites are counted: all included satellites, or only the satellites present in both periods.',
+    miniLink: 'Go to the finding',
     disclosure: 'We tested one proposed MODIS-sensitivity correction in the 2021 season. It failed the benchmark. The current app does not use that correction as a trusted measurement. It retains it in Method checks as a tested and failed method.',
     unavailable: 'Comparison unavailable for the selected seasons. At least one selected season has an incomplete satellite pull in the retrieved records. Actual-fire change is not measured.'
   };
@@ -393,6 +396,21 @@
       seasons: seasons.length, presets: Array.isArray(a.presets) ? a.presets.length : 0, schema: a.schema };
   }
 
+  // The rendered headline string. The headline and the sticky mini-result both use it.
+  function headlineText(p, view) {
+    var v = view === 'shared' ? pctChange(p.U_a, p.U_b) : pctChange(p.W_a, p.W_b);
+    return v === null ? 'n/a' : fmtPct(v) + '%';
+  }
+  // Selection labels of the U/C/W table. The one-line explainer joins the same strings.
+  function selectionLabels(p) {
+    return {
+      W: 'W: all included satellites',
+      U: 'U: ' + sharedLabel(p.shared, '+') + ' (same named satellites)',
+      C: 'C = W - U: recorded only by satellites not present in both periods'
+    };
+  }
+  function wucLine(p) { var l = selectionLabels(p); return [l.W, l.U, l.C].join(' · '); }
+
   function buildEvidence(p, a) {
     var report = buildReport(p, a), s = presetSeries(p, a.daily);
     if (!report || !s) return null;
@@ -405,13 +423,13 @@
     label: label, sharedLabel: sharedLabel, COPY: COPY,
     presetSeries: presetSeries, cumulative: cumulative, heatColor: heatColor, heatDark: heatDark, strata: strata, caseFacts: caseFacts,
     methodFacts: methodFacts, limitations: limitations, seasonText: seasonText, buildCsv: buildCsv, buildReport: buildReport,
-    buildEvidence: buildEvidence, systemCounts: systemCounts, subsetKey: subsetKey, fmtNum: fmtNum
+    buildEvidence: buildEvidence, systemCounts: systemCounts, headlineText: headlineText, selectionLabels: selectionLabels, wucLine: wucLine, subsetKey: subsetKey, fmtNum: fmtNum
   };
   if (typeof module !== 'undefined' && module.exports) { module.exports = api; }
   if (typeof document === 'undefined') return;
 
   /* ---------- DOM ---------- */
-  var state = { audit: null, preset: 0, view: 'all', lastPct: null };
+  var state = { audit: null, preset: 0, view: 'all', lastPct: null, pickedPreset: false, pickedFleet: false, download: null };
   var root;
 
   function h(tag, attrs) {
@@ -798,6 +816,7 @@
   }
   function downloadBlock(p, a) {
     revokeAll();
+    state.download = null;
     var ev = buildEvidence(p, a);
     if (!ev) {
       return h('div', { class: 'dl-wrap', id: 'evidence' },
@@ -807,10 +826,11 @@
     var rUrl = blobUrl(ev.report, 'text/markdown;charset=utf-8'), cUrl = blobUrl(ev.csv, 'text/csv;charset=utf-8');
     var rName = ev.base + '-report.md', cName = ev.base + '-daily.csv';
     var btn = h('button', { type: 'button', class: 'download', 'aria-describedby': 'dl-note', text: COPY.download });
-    btn.addEventListener('click', function () {
+    state.download = function () {
       saveFile(rName, rUrl);
       setTimeout(function () { saveFile(cName, cUrl); }, 300);
-    });
+    };
+    btn.addEventListener('click', function () { state.download(); });
     return h('div', { class: 'dl-wrap', id: 'evidence' }, btn,
       h('p', { id: 'dl-note', class: 'dl-note' }, 'Two files: a readable report (.md) and a daily CSV. Also available one at a time: ',
         h('a', { href: rUrl, download: rName, text: 'report (.md)' }), ' and ',
@@ -850,10 +870,61 @@
     a.presets.forEach(function (pp, i) {
       var b = h('button', { type: 'button', class: 'tab', 'aria-pressed': String(i === state.preset),
         text: (PRESET_TABS[pp.id] || pp.id) + (typeof pp.a === 'number' && typeof pp.b === 'number' ? ' (' + pp.a + '→' + pp.b + ')' : '') });
-      b.addEventListener('click', function () { state.preset = i; render(); });
+      b.addEventListener('click', function () { state.preset = i; state.pickedPreset = true; render(); });
       tabs.appendChild(b);
     });
     return tabs;
+  }
+
+  function renderSteps() {
+    var el = document.getElementById('steps');
+    if (!el) return;
+    clear(el);
+    var cur = !state.pickedPreset ? 0 : (!state.pickedFleet ? 1 : 2);
+    var ol = h('ol', { class: 'steps-list' });
+    COPY.steps.forEach(function (t, i) {
+      ol.appendChild(h('li', { class: 'step' + (i < cur ? ' step-done' : '') + (i === cur ? ' step-now' : ''), 'aria-current': i === cur ? 'step' : null, text: t }));
+    });
+    el.appendChild(ol);
+  }
+
+  var miniObs = null;
+  function renderMini(p, view, title) {
+    var bar = document.getElementById('mini');
+    if (!bar) return;
+    clear(bar);
+    bar.appendChild(h('span', { class: 'mini-p', text: (PRESET_TABS[p.id] || p.id) + ' (' + p.a + '→' + p.b + ')' }));
+    bar.appendChild(h('span', { class: 'mini-f', text: title }));
+    bar.appendChild(h('strong', { class: 'mini-v', text: headlineText(p, view) }));
+    bar.appendChild(h('a', { class: 'mini-a', href: '#finding-h', text: COPY.miniLink }));
+    var head = document.querySelector('#compare .headline');
+    if (miniObs) miniObs.disconnect();
+    if (!head || !window.IntersectionObserver) return;
+    miniObs = new IntersectionObserver(function (es) {
+      var e = es[0];
+      bar.classList.toggle('mini-on', !e.isIntersecting && e.boundingClientRect.top < 0);
+    }, { rootMargin: '-' + barTop() + 'px 0px 0px 0px' });
+    miniObs.observe(head);
+  }
+  function barTop() { var t = document.querySelector('.top'); return t ? t.offsetHeight : 0; }
+
+  function scrollSpy() {
+    if (!window.IntersectionObserver) return;
+    var links = {};
+    Array.prototype.forEach.call(document.querySelectorAll('.nav a[href^="#"]'), function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    var obs = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting || !links[e.target.id]) return;
+        Object.keys(links).forEach(function (k) { links[k].classList.remove('nav-on'); links[k].removeAttribute('aria-current'); });
+        links[e.target.id].classList.add('nav-on');
+        links[e.target.id].setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    ['comparison', 'case-study', 'method', 'system'].forEach(function (id) { var el = document.getElementById(id); if (el) obs.observe(el); });
+  }
+  function placeMini() {
+    var bar = document.getElementById('mini');
+    if (bar) bar.style.top = barTop() + 'px';
   }
 
   function render() {
@@ -889,7 +960,7 @@
     var sw = h('div', { class: 'switch', role: 'group', 'aria-label': 'Satellite selection' });
     [['all', 'All included satellites'], ['shared', 'Same named satellites']].forEach(function (o) {
       var b = h('button', { type: 'button', class: 'switch-btn', 'aria-pressed': String(view === o[0]), text: o[1] });
-      b.addEventListener('click', function () { state.view = o[0]; render(); });
+      b.addEventListener('click', function () { state.view = o[0]; state.pickedFleet = true; render(); });
       sw.appendChild(b);
     });
 
@@ -897,7 +968,8 @@
     var denomWho = isAll ? 'all included satellites' : sLabel;
     var result = h('div', { class: 'result' },
       h('p', { class: 'result-title', text: resultTitle }),
-      h('p', { class: 'headline', 'aria-live': 'polite', text: pct === null ? 'n/a' : fmtPct(pct) + '%' }),
+      h('p', { class: 'headline', 'aria-live': 'polite', text: headlineText(p, view) }),
+      h('p', { class: 'wuc', text: wucLine(p) }),
       h('p', { class: 'denom', text: 'recorded cell-days, ' + denomWho + ', relative to the ' + p.a + ' count of ' + fmtInt(base) }),
       h('p', { class: 'result-sub', text: p.a + ' → ' + p.b + ': ' + fmtInt(base) + ' → ' + fmtInt(isAll ? p.W_b : p.U_b) + ' recorded cell-days' }),
       diff === null ? null : h('p', { class: 'gap', text: 'Difference between the two views: ' + fmtDiff(diff) + ' percentage points (selection difference, not a causal attribution).' }),
@@ -943,9 +1015,9 @@
         h('th', { scope: 'col', class: 'num', text: String(p.b) }),
         h('th', { scope: 'col', class: 'num', text: 'Change' }))),
       h('tbody', null,
-        row('W: all included satellites', isAll ? 'hl' : '', p.W_a, p.W_b),
-        row('U: ' + sLabel + ' (same named satellites)', isAll ? '' : 'hl', p.U_a, p.U_b),
-        row('C = W - U: recorded only by satellites not present in both periods', 'accent', p.C_a, p.C_b)));
+        row(selectionLabels(p).W, isAll ? 'hl' : '', p.W_a, p.W_b),
+        row(selectionLabels(p).U, isAll ? '' : 'hl', p.U_a, p.U_b),
+        row(selectionLabels(p).C, 'accent', p.C_a, p.C_b)));
 
     var finding = h('section', { class: 'finding', 'aria-labelledby': 'finding-h' },
       h('p', { class: 'kicker', id: 'finding-h', text: 'FINDING' }),
@@ -955,6 +1027,7 @@
 
     rail.appendChild(tabs);
     rail.appendChild(sw);
+    rail.appendChild(h('p', { class: 'switch-help', text: COPY.switchHelp }));
     rail.appendChild(chips);
     rail.appendChild(dlWrap);
     rail.appendChild(h('p', { class: 'footer-line', text: COPY.footer }));
@@ -963,6 +1036,11 @@
     if (snapshot) stage.appendChild(snapshot);
     figs.forEach(function (f) { stage.appendChild(f); });
     stage.appendChild(h('div', { class: 'table-wrap' }, table));
+    var dl2 = h('button', { type: 'button', class: 'download download-2', text: COPY.download, disabled: !state.download });
+    dl2.addEventListener('click', function () { if (state.download) state.download(); });
+    stage.appendChild(h('div', { class: 'dl-end' }, dl2));
+    renderSteps();
+    renderMini(p, view, resultTitle);
   }
 
   function init() {
@@ -983,6 +1061,9 @@
         renderCase(a);
         renderMethod(a);
         renderSystem(a);
+        scrollSpy();
+        placeMini();
+        window.addEventListener('resize', placeMini);
       })
       .catch(function (e) {
         showError('Could not load audit.json (' + e.message + ').');
