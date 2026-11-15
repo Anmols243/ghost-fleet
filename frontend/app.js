@@ -453,6 +453,16 @@
       render();
     }
   };
+  // Preset and fleet clicks re-render. If a regional view throws, reset to the frozen
+  // comparison through the geography controller so no regional label stays on screen.
+  function rerender() {
+    try { render(); }
+    catch (e) {
+      if (!state.region) throw e;
+      var ui = window.GhostFleetUI;
+      if (ui.onRegionError) ui.onRegionError(); else ui.selectGeography(null);
+    }
+  }
   var root;
 
   function h(tag, attrs) {
@@ -894,7 +904,7 @@
     a.presets.forEach(function (pp, i) {
       var b = h('button', { type: 'button', class: 'tab', 'aria-pressed': String(i === state.preset),
         text: (PRESET_TABS[pp.id] || pp.id) + (typeof pp.a === 'number' && typeof pp.b === 'number' ? ' (' + pp.a + '→' + pp.b + ')' : '') });
-      b.addEventListener('click', function () { state.preset = i; state.pickedPreset = true; render(); });
+      b.addEventListener('click', function () { state.preset = i; state.pickedPreset = true; rerender(); });
       tabs.appendChild(b);
     });
     return tabs;
@@ -987,7 +997,7 @@
     var sw = h('div', { class: 'switch', role: 'group', 'aria-label': 'Satellite selection' });
     [['all', 'All included satellites'], ['shared', 'Same named satellites']].forEach(function (o) {
       var b = h('button', { type: 'button', class: 'switch-btn', 'aria-pressed': String(view === o[0]), text: o[1] });
-      b.addEventListener('click', function () { state.view = o[0]; state.pickedFleet = true; render(); });
+      b.addEventListener('click', function () { state.view = o[0]; state.pickedFleet = true; rerender(); });
       sw.appendChild(b);
     });
 

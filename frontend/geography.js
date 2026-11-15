@@ -149,7 +149,7 @@
         else { options.choices(true, data, selected); options.notice(''); }
       } catch (_) { if (current === generation) fail(); }
     }
-    return { select: select, refresh: refresh, selected: function () { return selected; } };
+    return { select: select, refresh: refresh, fail: fail, selected: function () { return selected; } };
   }
   async function loadTrusted(fetcher, cryptoApi) {
     var response = await fetcher('india.json', { cache: 'no-cache' });
@@ -248,6 +248,7 @@
             ' · bounds [west, south, east, north]: ' + region.bounds.join(', ');
         }
       });
+      bridge.onRegionError = function () { controller.fail(); };
       svg.addEventListener('click', function (event) {
         if (!currentData) return;
         var box = svg.getBoundingClientRect();

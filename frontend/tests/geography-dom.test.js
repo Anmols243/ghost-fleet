@@ -100,3 +100,75 @@ test('an optional ready callback exception cannot fail hero initialization', asy
   assert.ok(env.document.querySelector('.finding-text'));
   assert.doesNotMatch(env.document.querySelector('#app').textContent, /Could not load audit.json/);
 });
+
+const click = (window, el) => el.dispatchEvent(new window.Event('click'));
+
+test('every region x preset x fleet view renders its own conclusion, no S-NPP snapshot, matching report', async () => {
+  const env = await mounted();
+  const {document, window} = env;
+  for (const id of ['full_extent', 'northwest', 'northeast', 'central', 'western', 'peninsular']) {
+    click(window, document.querySelector('[data-region-id="' + id + '"]'));
+    const label = document.querySelector('[data-region-id="' + id + '"]').textContent;
+    for (let t = 0; t < 3; t++) {
+      click(window, document.querySelectorAll('.tab')[t]);
+      for (let v = 0; v < 2; v++) {
+        click(window, document.querySelectorAll('.switch-btn')[v]);
+        const finding = document.querySelector('.finding-text').textContent;
+        assert.ok(finding.startsWith('Recorded change, ' + label + ','), id + ' ' + t + ' ' + v);
+        assert.doesNotMatch(finding, /recorded cell-days run|NOAA-20 continues/);
+        assert.equal(document.querySelectorAll('.snapshot').length, 0);
+        assert.ok(document.querySelector('.result-title').textContent.startsWith(label));
+        const report = await env.blobs.get(document.querySelector('#evidence a').getAttribute('href')).text();
+        assert.ok(report.includes(finding));
+        const csvLink = document.querySelectorAll('#evidence a')[1];
+        const csv = await env.blobs.get(csvLink.getAttribute('href')).text();
+        assert.ok(csv.includes(finding));
+      }
+    }
+    click(window, document.querySelectorAll('.tab')[0]);
+  }
+});
+
+test('map clicks pick the smallest containing rectangle with one highlight and pressed state', async () => {
+  const env = await mounted();
+  const {document, window} = env;
+  const geo = require('../geography.js');
+  const svg = document.querySelector('#geography-map');
+  svg.getBoundingClientRect = () => ({left: 0, top: 0, width: 630, height: 660});
+  const at = (lon, lat) => { const [x, y] = geo.project(lon, lat); const e = new window.Event('click'); e.clientX = x; e.clientY = y; svg.dispatchEvent(e); };
+  for (const [lon, lat, id] of [[75.5, 30, 'hero'], [80, 28, 'northwest'], [95, 10, 'full_extent'], [78, 12, 'peninsular'], [93, 25, 'northeast']]) {
+    at(lon, lat);
+    assert.equal(document.querySelectorAll('.geo-extent.is-selected').length, 1);
+    assert.equal(document.querySelector('.geo-extent.is-selected').getAttribute('data-extent-id'), id);
+    const pressed = [...document.querySelectorAll('[data-region-id]')].filter(b => b.getAttribute('aria-pressed') === 'true');
+    assert.deepEqual(pressed.map(b => b.getAttribute('data-region-id')), [id]);
+  }
+  assert.equal(document.querySelectorAll('.geo-extent').length, 7);
+  assert.equal(document.querySelectorAll('#geography-map clipPath, #geography-map mask').length, 0);
+});
+
+test('a region render error after a preset switch visibly resets to the hero, never a mislabelled view', async () => {
+  const app = require('../app.js');
+  const hero = JSON.parse(fs.readFileSync(path.join(__dirname, '../audit.json'), 'utf8'));
+  const env = await mounted();
+  const {document, window} = env;
+  click(window, document.querySelector('[data-region-id="central"]'));
+  window.GhostFleetUI.api.presetSeries = () => { throw new Error('injected'); };
+  click(window, document.querySelectorAll('.tab')[1]);
+  assert.equal(document.querySelector('#h-comparison').textContent, '1.0 / COMPARISON');
+  assert.equal(document.querySelector('.finding-text').textContent,
+    app.buildConclusion(hero.presets[1], hero.coverage, hero.daily));
+  assert.equal(document.querySelector('#geography-status').hidden, false);
+  assert.equal(document.querySelector('#docket').hidden, false);
+});
+
+test('inline outline path is the local licensed GeoJSON through the same projection', () => {
+  const geo = require('../geography.js');
+  const g = JSON.parse(fs.readFileSync(path.join(__dirname, '../assets/india-outline.geojson'), 'utf8'));
+  const ring = (g.features ? g.features[0] : g).geometry.coordinates[0];
+  const d = ring.map((c, i) => { const [x, y] = geo.project(c[0], c[1]); return (i ? 'L' : 'M') + x.toFixed(3) + ',' + y.toFixed(3); }).join(' ');
+  const html = fs.readFileSync(path.join(__dirname, '../index.html'), 'utf8');
+  const inline = /id="geography-outline"[^>]*\sd="([^"]+)"/.exec(html)[1];
+  assert.equal(inline.replace(/ Z$/, ''), d);
+  assert.ok(fs.readFileSync(path.join(__dirname, '../assets/INDIA_OUTLINE_LICENSE.md'), 'utf8').includes('Natural Earth'));
+});
