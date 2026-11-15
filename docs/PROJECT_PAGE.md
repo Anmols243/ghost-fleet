@@ -33,7 +33,7 @@ Qualification: this is a difference between selections of the retrieved records,
 
 October 1-November 14 in both seasons. All included satellites (W): **17,712 to 14,341, -19.0%**, relative to the 2025 all-included-satellite count of 17,712. Shared satellites (Terra+Aqua+Suomi NPP+NOAA-20; U): **17,712 to 14,341, -19.0%**, relative to the 2025 shared-satellite count of 17,712. C is **0 to 0 recorded cell-days**.
 
-Qualification: the two seasonal views coincide because the same satellites are included in both periods, so their decomposition cannot expose the within-season interruption. S-NPP data delivery ceased on November 2, 2026; its recorded cell-days are zero from November 3 while NOAA-20 continues. November 15 is excluded from this comparison; in the 2026 daily series it is unverified, not yet retrieved, and represented as null. Actual-fire change is not measured.
+Qualification: the two seasonal views coincide because the same satellites are included in both periods, so their decomposition cannot expose the within-season interruption. S-NPP data delivery ceased on November 2, 2026; its recorded cell-days are zero from November 3 while NOAA-20 continues. This snapshot exposes an interruption that users must consider when interpreting the seasonal record. November 15 is excluded from this comparison; in the 2026 daily series it is unverified, not yet retrieved, and represented as null. Actual-fire change is not measured.
 
 ## Validation disclosure
 
@@ -71,8 +71,16 @@ sample size is visible beside each estimate. JSON is downloadable from the app.
 
 ## Limitations
 
+A zero selection gap does not establish comparability: this calculation cannot expose changes within the shared fleet.
+
+The adjacent-season appendix shows all adjacent pairs with absolute W/U counts
+beside their percentage changes, using the common verified window for each pair.
+Within-fleet changes in timing, sensitivity and condition are not controlled by
+the selection accounting; retained-detection timing is shown separately. These
+comparisons are not stitched into a continuous series. Actual-fire change is not measured.
+
 - The 2026 NRT snapshot is provisional, with a verified cutoff of November 14. November 15 is unverified / not yet retrieved, excluded from totals and shown as null.
-- NOAA-21 is configured but has no data in the comparison.
+- NOAA-21 dates describe different things: FIRMS archive coverage is listed from March 2023; the original product announcement said January 2024. Entry into this retrieved comparison is absent: no NOAA-21 data were pulled. These dates do not define a fleet transition in this app.
 - S-NPP data delivery ceased November 2, 2026. Its absence later in the season is a record interruption, not evidence of absent burning.
 - Grid-convention sensitivity is archived in the repo. The cause of the difference between implementations remains unknown; equal seasonal row counts do not establish a record-level exact match.
 - A zero means no recorded cell-days in these retrieved records, not that no fires occurred. Coverage and cloud effects limit interpretation.

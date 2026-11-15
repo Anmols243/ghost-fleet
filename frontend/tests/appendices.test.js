@@ -66,3 +66,19 @@ test('loaded timing appendix shows the binding caption and a visible n column', 
   assert.match(output, /4969/);
   assert.match(output, /no retained daytime observations/);
 });
+
+test('loaded transition table shows all pairs, counts, boundary and common cutoff', async () => {
+  const main = await renderedAppendices();
+  const section = main.children.find(item => item.id === 'transitions');
+  assert.ok(section, 'transition section renders when its own file loads');
+  function text(node) { return node.textContent + ' ' + node.children.map(text).join(' '); }
+  const output = text(section);
+  assert.ok(output.includes('A zero selection gap does not establish comparability: this calculation cannot expose changes within the shared fleet.'));
+  assert.match(output, /Small base: 2001 W = 1,192/);
+  assert.match(output, /2025 → 2026/);
+  assert.match(output, /Oct 1–Nov 14 \(45 days\)/);
+  assert.match(output, /17712/);
+  assert.match(output, /14341/);
+  assert.match(output, /W change \(% of W_a\)/);
+  assert.equal((output.match(/20\d\d → 20\d\d/g) || []).length, 25);
+});

@@ -1,0 +1,880 @@
+{
+  "schema": "adjacent-transitions v1",
+  "rows": [
+    {
+      "a": 2001,
+      "b": 2002,
+      "shared": [
+        "MODIS_TERRA"
+      ],
+      "shared_label": "Terra",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 1192,
+      "U_a": 1192,
+      "C_a": 0,
+      "W_b": 8979,
+      "U_b": 2031,
+      "C_b": 6948,
+      "days": 46,
+      "change_W_pct": 653.3,
+      "change_U_pct": 70.4,
+      "diff_pp": 582.9,
+      "note": "Small base: 2001 W = 1,192 recorded cell-days."
+    },
+    {
+      "a": 2002,
+      "b": 2003,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 8979,
+      "U_a": 8979,
+      "C_a": 0,
+      "W_b": 9731,
+      "U_b": 9731,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 8.4,
+      "change_U_pct": 8.4,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2003,
+      "b": 2004,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 9731,
+      "U_a": 9731,
+      "C_a": 0,
+      "W_b": 8890,
+      "U_b": 8890,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -8.6,
+      "change_U_pct": -8.6,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2004,
+      "b": 2005,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 8890,
+      "U_a": 8890,
+      "C_a": 0,
+      "W_b": 14771,
+      "U_b": 14771,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 66.2,
+      "change_U_pct": 66.2,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2005,
+      "b": 2006,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 14771,
+      "U_a": 14771,
+      "C_a": 0,
+      "W_b": 9870,
+      "U_b": 9870,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -33.2,
+      "change_U_pct": -33.2,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2006,
+      "b": 2007,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 9870,
+      "U_a": 9870,
+      "C_a": 0,
+      "W_b": 14258,
+      "U_b": 14258,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 44.5,
+      "change_U_pct": 44.5,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2007,
+      "b": 2008,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 14258,
+      "U_a": 14258,
+      "C_a": 0,
+      "W_b": 13121,
+      "U_b": 13121,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -8.0,
+      "change_U_pct": -8.0,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2008,
+      "b": 2009,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 13121,
+      "U_a": 13121,
+      "C_a": 0,
+      "W_b": 12218,
+      "U_b": 12218,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -6.9,
+      "change_U_pct": -6.9,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2009,
+      "b": 2010,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 12218,
+      "U_a": 12218,
+      "C_a": 0,
+      "W_b": 12009,
+      "U_b": 12009,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -1.7,
+      "change_U_pct": -1.7,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2010,
+      "b": 2011,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 12009,
+      "U_a": 12009,
+      "C_a": 0,
+      "W_b": 13581,
+      "U_b": 13581,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 13.1,
+      "change_U_pct": 13.1,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2011,
+      "b": 2012,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA"
+      ],
+      "shared_label": "Terra+Aqua",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 13581,
+      "U_a": 13581,
+      "C_a": 0,
+      "W_b": 75396,
+      "U_b": 14303,
+      "C_b": 61093,
+      "days": 46,
+      "change_W_pct": 455.2,
+      "change_U_pct": 5.3,
+      "diff_pp": 449.8,
+      "note": ""
+    },
+    {
+      "a": 2012,
+      "b": 2013,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 75396,
+      "U_a": 75396,
+      "C_a": 0,
+      "W_b": 68754,
+      "U_b": 68754,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -8.8,
+      "change_U_pct": -8.8,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2013,
+      "b": 2014,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 68754,
+      "U_a": 68754,
+      "C_a": 0,
+      "W_b": 77260,
+      "U_b": 77260,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 12.4,
+      "change_U_pct": 12.4,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2014,
+      "b": 2015,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 77260,
+      "U_a": 77260,
+      "C_a": 0,
+      "W_b": 65425,
+      "U_b": 65425,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -15.3,
+      "change_U_pct": -15.3,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2015,
+      "b": 2016,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 65425,
+      "U_a": 65425,
+      "C_a": 0,
+      "W_b": 90197,
+      "U_b": 90197,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 37.9,
+      "change_U_pct": 37.9,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2016,
+      "b": 2017,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 90197,
+      "U_a": 90197,
+      "C_a": 0,
+      "W_b": 54291,
+      "U_b": 54291,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -39.8,
+      "change_U_pct": -39.8,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2017,
+      "b": 2018,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 54291,
+      "U_a": 54291,
+      "C_a": 0,
+      "W_b": 108035,
+      "U_b": 60491,
+      "C_b": 47544,
+      "days": 46,
+      "change_W_pct": 99.0,
+      "change_U_pct": 11.4,
+      "diff_pp": 87.6,
+      "note": ""
+    },
+    {
+      "a": 2018,
+      "b": 2019,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 108035,
+      "U_a": 108035,
+      "C_a": 0,
+      "W_b": 80634,
+      "U_b": 80634,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -25.4,
+      "change_U_pct": -25.4,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2019,
+      "b": 2020,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 80634,
+      "U_a": 80634,
+      "C_a": 0,
+      "W_b": 128563,
+      "U_b": 128563,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 59.4,
+      "change_U_pct": 59.4,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2020,
+      "b": 2021,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 128563,
+      "U_a": 128563,
+      "C_a": 0,
+      "W_b": 137465,
+      "U_b": 137465,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": 6.9,
+      "change_U_pct": 6.9,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2021,
+      "b": 2022,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 137465,
+      "U_a": 137465,
+      "C_a": 0,
+      "W_b": 84493,
+      "U_b": 84493,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -38.5,
+      "change_U_pct": -38.5,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2022,
+      "b": 2023,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 84493,
+      "U_a": 84493,
+      "C_a": 0,
+      "W_b": 56395,
+      "U_b": 56395,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -33.3,
+      "change_U_pct": -33.3,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2023,
+      "b": 2024,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 56395,
+      "U_a": 56395,
+      "C_a": 0,
+      "W_b": 22905,
+      "U_b": 22905,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -59.4,
+      "change_U_pct": -59.4,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2024,
+      "b": 2025,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-15",
+      "W_a": 22905,
+      "U_a": 22905,
+      "C_a": 0,
+      "W_b": 18031,
+      "U_b": 18031,
+      "C_b": 0,
+      "days": 46,
+      "change_W_pct": -21.3,
+      "change_U_pct": -21.3,
+      "diff_pp": 0.0,
+      "note": ""
+    },
+    {
+      "a": 2025,
+      "b": 2026,
+      "shared": [
+        "MODIS_TERRA",
+        "MODIS_AQUA",
+        "VIIRS_SNPP",
+        "VIIRS_NOAA20"
+      ],
+      "shared_label": "Terra+Aqua+Suomi NPP+NOAA-20",
+      "comparison_start_mm_dd": "10-01",
+      "comparison_end_mm_dd": "11-14",
+      "W_a": 17712,
+      "U_a": 17712,
+      "C_a": 0,
+      "W_b": 14341,
+      "U_b": 14341,
+      "C_b": 0,
+      "days": 45,
+      "change_W_pct": -19.0,
+      "change_U_pct": -19.0,
+      "diff_pp": 0.0,
+      "note": "Interruption case; common verified cutoff in both periods."
+    }
+  ],
+  "boundary": "A zero selection gap does not establish comparability: this calculation cannot expose changes within the shared fleet.",
+  "selection_rule": "All adjacent-season pairs; no stitched continuous series.",
+  "window_rule": "Intersection of both verified seasonal windows; percentages use unrounded integer counts; difference computed before rounding.",
+  "unit": "recorded cell-days",
+  "coverage": {
+    "2001": {
+      "status": "archived retrieved records",
+      "cutoff": "2001-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2002": {
+      "status": "archived retrieved records",
+      "cutoff": "2002-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2003": {
+      "status": "archived retrieved records",
+      "cutoff": "2003-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2004": {
+      "status": "archived retrieved records",
+      "cutoff": "2004-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2005": {
+      "status": "archived retrieved records",
+      "cutoff": "2005-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2006": {
+      "status": "archived retrieved records",
+      "cutoff": "2006-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2007": {
+      "status": "archived retrieved records",
+      "cutoff": "2007-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2008": {
+      "status": "archived retrieved records",
+      "cutoff": "2008-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2009": {
+      "status": "archived retrieved records",
+      "cutoff": "2009-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2010": {
+      "status": "archived retrieved records",
+      "cutoff": "2010-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2011": {
+      "status": "archived retrieved records",
+      "cutoff": "2011-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2012": {
+      "status": "archived retrieved records",
+      "cutoff": "2012-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2013": {
+      "status": "archived retrieved records",
+      "cutoff": "2013-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2014": {
+      "status": "archived retrieved records",
+      "cutoff": "2014-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2015": {
+      "status": "archived retrieved records",
+      "cutoff": "2015-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2016": {
+      "status": "archived retrieved records",
+      "cutoff": "2016-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2017": {
+      "status": "archived retrieved records",
+      "cutoff": "2017-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2018": {
+      "status": "archived retrieved records",
+      "cutoff": "2018-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2019": {
+      "status": "archived retrieved records",
+      "cutoff": "2019-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2020": {
+      "status": "archived retrieved records",
+      "cutoff": "2020-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2021": {
+      "status": "archived retrieved records",
+      "cutoff": "2021-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2022": {
+      "status": "archived retrieved records",
+      "cutoff": "2022-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2023": {
+      "status": "archived retrieved records",
+      "cutoff": "2023-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2024": {
+      "status": "archived retrieved records",
+      "cutoff": "2024-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2025": {
+      "status": "archived retrieved records",
+      "cutoff": "2025-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2026": {
+      "status": "verified through cutoff; NRT provisional",
+      "cutoff": "2026-11-14",
+      "unverified_dates": [
+        "2026-11-15"
+      ],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_NRT",
+        "VIIRS_NOAA20_NRT",
+        "VIIRS_SNPP_NRT"
+      ],
+      "product": "NRT"
+    }
+  },
+  "sources": {
+    "sha256": {
+      "backend/scripts/appendix_common.py": "de51a53466aaba9988e0d93668ea92f303d276c7219a12122dafd6efe32ba71f",
+      "backend/scripts/transitions.py": "60b823808bac6d3e9c324946c251a08371eb3d1997aa516e08bc5e482228e798",
+      "frontend/ledger.json": "5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255",
+      "frontend/audit.json": "faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae",
+      "backend/scripts/audit.py": "686942dbae339b99d9042e35ecd15c5de24726307c309f2d73e5113d2eaeaf23",
+      "backend/scripts/ledger.py": "aff10eb2a2f0f4c15435fa9f5f999a44dede9096425db8395e01fa4f399e38e8"
+    },
+    "hash_convention": "LF for text; exact bytes for binary",
+    "reproduce": "cd backend && python scripts/transitions.py"
+  }
+}

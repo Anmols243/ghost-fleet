@@ -4,7 +4,9 @@
   var FILES = [{ file: 'ledger.json', schema: 'observation-ledger v1', id: 'ledger',
     title: 'Daily observation ledger' },
     { file: 'timing.json', schema: 'acquisition-timing v1', id: 'timing',
-      title: 'Acquisition-time appendix' }];
+      title: 'Acquisition-time appendix' },
+    { file: 'transitions.json', schema: 'adjacent-transitions v1', id: 'transitions',
+      title: 'All adjacent-season transitions' }];
 
   function loadAppendices(fetcher, files, render) {
     return Promise.all(files.map(async function (item) {
@@ -87,12 +89,29 @@
     }), 'no retained daytime observations'));
   }
 
+  function renderTransitions(section, data) {
+    section.appendChild(element('p', data.boundary));
+    section.appendChild(element('p', data.selection_rule + ' ' + data.window_rule));
+    section.appendChild(element('p', 'W and U are recorded cell-days under the displayed satellite selections. '
+      + 'Percentages use the earlier count in their own column as denominator. C = W − U.'));
+    function percent(value) { return (value > 0 ? '+' : '') + value.toFixed(1) + '%'; }
+    section.appendChild(table(['Pair', 'Shared satellites', 'Common window', 'W_a', 'W_b',
+      'W change (% of W_a)', 'U_a', 'U_b', 'U change (% of U_a)',
+      'Difference (pp)', 'C_a', 'C_b', 'Note'], data.rows.map(function (r) {
+      return [r.a + ' → ' + r.b, r.shared_label,
+        'Oct 1–Nov ' + Number(r.comparison_end_mm_dd.slice(3)) + ' (' + r.days + ' days)',
+        r.W_a, r.W_b, percent(r.change_W_pct), r.U_a, r.U_b, percent(r.change_U_pct),
+        r.diff_pp.toFixed(1), r.C_a, r.C_b, r.note];
+    })));
+  }
+
   function render(file, data, item) {
     // Construct off-DOM: malformed data cannot leave a partial section visible.
     var section = element('section'); section.id = item.id;
     section.appendChild(element('h2', item.title));
     if (item.id === 'ledger') renderLedger(section, data);
     else if (item.id === 'timing') renderTiming(section, data);
+    else if (item.id === 'transitions') renderTransitions(section, data);
     download(section, file, 'Download appendix data (JSON)');
     section.appendChild(element('p', 'Actual-fire change is not measured.'));
     document.querySelector('main').appendChild(section);

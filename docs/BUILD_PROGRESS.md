@@ -536,3 +536,36 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   recomputed the timing object in memory from canonical parquet/audit: every
   output field and all four provenance hashes match. This is agent reproduction,
   not a claim that Arlo has executed this new release.
+
+## Freeze 2 C - every adjacent-season transition
+
+- B completion: 58ad31f, DONE; backend 29/29 + frontend 41/41 green. B's supplied
+  timing checks reproduced within tolerance and reviewers rebuilt every output field.
+- Prerequisites: A f6fac96 and B 58ad31f green and committed before C began.
+- Phase/task: C, all 25 adjacent-season pairs, no endpoint headline or pair stitching.
+- Time: 2026-11-15 19:47 IST. Model: GPT-6.1 Sol; effort not exposed.
+- TDD: missing generator red then common-window fixture green; incomplete ledger
+  red then explicit rejection green; missing exact-reference guard red then green;
+  missing rendered transition section red then all rows/boundary/window/counts green.
+- Full suite: backend 33/33, frontend 42/42 green.
+- All 25 section 4 rows match exactly: W/U counts, C, displayed changes and gaps.
+  Differences use unrounded changes (P1 449.8, not subtraction of display values).
+  Final row is Oct 1-Nov 14 in BOTH years, W=U 17712->14341, -19.0%, C=0, 45 days.
+- The boundary sentence and 2001 small-base note are visible beside the table.
+  Missing/unverified daily ledger entries inside a comparison fail generation.
+- Project page: ledger/timing deliverables, exact timing caption and boundary,
+  separate NOAA-21 coverage/announcement/pull-entry statements, and exact S-NPP
+  snapshot qualification. No causal attribution or actual-fire estimate added.
+- Reproduce: cd backend; ../.venv/Scripts/python.exe scripts/transitions.py.
+  Separately versioned JSON records ledger, audit and generator dependency hashes.
+- Audit: original checkout byte and canonical LF hashes unchanged.
+- Status: IN PROGRESS until reviewed commit; exact SHA finalized in completion entry.
+
+- C review: standards 0 findings; spec 0 findings. Both reviewers independently
+  summed frozen audit daily subsets directly, without calling the generator.
+  All 25 rows, identities, unrounded gaps and common-window counts match exactly;
+  all six source hashes match. This is agent cross-checking, not Arlo sign-off.
+
+- Final reproducibility run (2026-11-15 19:50 IST): reran ledger, timing and
+  transitions generators in order. All JSONs and ledger.csv byte-identical;
+  audit.json checkout bytes untouched. No source or acceptance values tuned.
