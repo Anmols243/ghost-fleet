@@ -52,6 +52,14 @@ The dataset covers **26 seasons, 2001–2026**. The refreshed frozen dataset con
 
 Confidence rules retain VIIRS nominal and high confidence and MODIS confidence **≥50**. FRP is never summed across sensors. The full requested seasonal window is October 1–November 15; coverage metadata governs which dates are verified and included.
 
+## Observed-data ledger
+
+The daily observation ledger is a reusable observed-data export and a partial
+response to the challenge brief. Download CSV or JSON from the app: date,
+satellite selection, recorded cell-days, coverage status, product and comparison
+inclusion. It preserves unverified days as null and does not stitch comparisons
+into a continuous series.
+
 ## Limitations
 
 - The 2026 NRT snapshot is provisional, with a verified cutoff of November 14. November 15 is unverified / not yet retrieved, excluded from totals and shown as null.

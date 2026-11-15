@@ -465,7 +465,7 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 ## Freeze 2 - contract amendment
 
 - Phase/task: Freeze 2 step 0, authorize isolated appendices before integration.
-- Time: 2026-11-15 19:36 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Time: 2026-11-15 19:34 IST. Model: GPT-6.1 Sol; effort not exposed.
 - Base release: f001216. Freeze deadline: 22:00 IST, 2026-11-15.
 - Statistics/checks declared in FREEZE2_BUILD_PACK sections 1-4 before results inspected.
   Source hashes and generators required; optional loads cannot gate presets.
@@ -481,3 +481,27 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Status: IN PROGRESS until reviewed green commit; SHA recorded in next task entry.
 - Interrupted submission-checklist draft remains preserved in stash; pulled main's
   checklist and progress history take precedence and were not overwritten.
+
+## Freeze 2 A - daily observation ledger
+
+- Amendment completion: 35f056c, DONE; backend 24/24 + frontend 38/38 green.
+- Phase/task: A, observed-data export, reproducible union aggregation and isolated UI.
+- Time: 2026-11-15 19:38 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Tests: TDD red missing generator, green single-cell union/null coverage; red
+  missing shared selection, green common-window inclusion; optional-loader red
+  missing module then green. Full suite: backend 27/27, frontend 40/40.
+- Reproduction: cd backend; ../.venv/Scripts/python.exe scripts/ledger.py.
+  1,334 rows; all 26 season W totals match pack section 4 exactly; every exported
+  selection matches every frozen daily entry; all hero W/U totals match exactly.
+  CSV nulls are empty fields accompanied by unverified status, never numeric zero.
+- Sources: standardized parquet, frozen audit, harmonize and generator hashes in
+  ledger.json. This run reuses Arlo's independent acceptance values; it is not a
+  fresh independent execution by Arlo. Dataset remains the frozen retrieved sample.
+- UI: separate optional load; CSV + JSON downloads; wide table scrolls locally.
+- Audit: checkout byte hash 3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a unchanged;
+  canonical LF hash faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae unchanged.
+- Status: IN PROGRESS until review/commit; exact SHA finalized in the next entry.
+
+- A review: standards 0 hard findings; spec 0 implementation findings.
+  Native/browser smoke could not run (browser host unavailable; window activation
+  failed). Automated loader isolation is verified; no visual check is claimed.
