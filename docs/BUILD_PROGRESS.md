@@ -677,3 +677,32 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Checks: preflight structure, 14 pairs, no raw CSVs and five hash checks green;
   full suites green: Python 33/33, frontend 42/42. Base commit: a1a1530.
 - Stop-evidence commit: 0a9945d. Standards/spec reviews: 0 findings.
+
+## Geographic extension - cessation resolution and second preflight STOP
+
+- Time: 2026-11-15 20:48 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Owner resolution: reclassify post-2026-11-02 15:40 UTC S-NPP as
+  known missing product data -- expected cessation (official notice; hero canon).
+  This matches frozen P3; cessation is no longer a blocker. No hero data changed.
+- Original stop record and progress entry preserved: preflight.stop-1.json is the
+  exact original preflight.json bytes; current manifest links its hash and prior
+  commits 0a9945d / 0a24e10. Current manifest records resolution plus a new stop.
+- New finding: NASA MODAPS S-NPP log lists pre-cessation global gaps, including
+  Oct 12 22:00-Oct 13 11:48 UTC and Oct 17 07:06-07:30 UTC, 2026.
+  Therefore the requested no-additional-S-NPP-gaps confirmation cannot be given.
+- Aqua log also lists Nov 3 09:20-10:10 UTC; Terra log lists Nov 11
+  19:55-20:45 UTC. These are global production outages. Their impact on the
+  FIRMS full rectangle has not been established or quantified; clean regional
+  availability cannot be asserted. Source URLs and update dates are in manifest.
+- Status: BLOCKED under owner's any-second-anomaly stop rule. No further pull
+  or keyed API request; other availability checks remain incomplete, not clean.
+  Archive NOAA-20 is applicable only in 2018/2025, plus NRT in 2026, not earlier
+  requested seasons. No source dropped/substituted and no window shortened.
+- Downloaded rows remain 0 for each of 2011/2012/2017/2018/2025/2026;
+  available observation counts remain unknown/null. No chunk requests.
+- All five frozen files unchanged. Existing input data and generators untouched.
+- Skills: code-review and verification-before-completion; evidence only, no code.
+- Manifest: extensions/india/data/manifests/preflight.json; preserved original:
+  extensions/india/data/manifests/preflight.stop-1.json.
+- Checks: history/classification/isolation/frozen hashes green; Python 33/33 and
+  frontend 42/42 green. Original stop is retained unchanged in prior commits.
