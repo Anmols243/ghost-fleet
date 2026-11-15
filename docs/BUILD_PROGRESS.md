@@ -595,3 +595,19 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   new appendices has not been verified. Apply the 22:00 exclusion rule to anything
   still lacking the required release reproduction then; this entry is not that seal.
 - Changes are local commits; no push requested for this Freeze 2 task.
+
+## Freeze 2 - publication integration
+
+- Time: 2026-11-15 19:56 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Phase/task: integrate origin/main before the owner-requested normal push.
+- Fetched incoming commit c00510c (SUBMISSION_PLAN.md only), merged without
+  rewriting the five local Freeze 2 task SHAs. Incoming plan preserved exactly.
+- Tested implementation: 8bbc60c, carried through local record commit 738d5e0.
+  Full post-merge checks: backend 33/33, frontend 42/42 green; audit bytes and
+  canonical LF/Git content unchanged. No raw files or secrets staged.
+- Review: spec 0 integration findings; standards 0 merge correctness findings.
+  Inherited upstream copy at SUBMISSION_PLAN.md line 60 attributes the gap to
+  a satellite arrival and lacks the required actual-fire concluding sentence.
+  This pre-existing wording is recorded, not silently rewritten by a push task.
+- Prior local-only note is superseded by the owner's explicit push request.
+- Status: IN PROGRESS pending merge commit; its SHA is finalized next.
