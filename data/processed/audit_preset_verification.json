@@ -1,0 +1,170 @@
+[
+  {
+    "preset": "viirs_transition",
+    "field": "W_a",
+    "actual": 13581,
+    "reference": 13521,
+    "error_pct": 0.44375416019524216
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "W_b",
+    "actual": 75396,
+    "reference": 74703,
+    "error_pct": 0.9276735874061304
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "U_a",
+    "actual": 13581,
+    "reference": 13521,
+    "error_pct": 0.44375416019524216
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "U_b",
+    "actual": 14303,
+    "reference": 14255,
+    "error_pct": 0.33672395650647946
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "C_a",
+    "actual": 0,
+    "reference": 0,
+    "error_pct_of_W": 0.0
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "C_b",
+    "actual": 61093,
+    "reference": 60448,
+    "error_pct_of_W": 0.8554830494986472
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "W_ratio",
+    "actual": 5.5515794124144024,
+    "reference": 5.5249611715109825,
+    "error_pct": 0.4817815017537974
+  },
+  {
+    "preset": "viirs_transition",
+    "field": "U_ratio",
+    "actual": 1.0531625064428245,
+    "reference": 1.0542859255972192,
+    "error_pct": 0.1065573510106721
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "W_a",
+    "actual": 54291,
+    "reference": 54060,
+    "error_pct": 0.42730299667037563
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "W_b",
+    "actual": 108035,
+    "reference": 106893,
+    "error_pct": 1.0683580777038681
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "U_a",
+    "actual": 54291,
+    "reference": 54060,
+    "error_pct": 0.42730299667037563
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "U_b",
+    "actual": 60491,
+    "reference": 60101,
+    "error_pct": 0.6489076720853193
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "C_a",
+    "actual": 0,
+    "reference": 0,
+    "error_pct_of_W": 0.0
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "C_b",
+    "actual": 47544,
+    "reference": 46792,
+    "error_pct_of_W": 0.6960707178229277
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "W_ratio",
+    "actual": 1.9899246652299645,
+    "reference": 1.9773029966703664,
+    "error_pct": 0.6383274885463752
+  },
+  {
+    "preset": "noaa20_transition",
+    "field": "U_ratio",
+    "actual": 1.1141994068998544,
+    "reference": 1.1117462079171292,
+    "error_pct": 0.22066178101216583
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "W_a",
+    "actual": 18031,
+    "reference": 17950,
+    "error_pct": 0.4512534818941427
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "W_b",
+    "actual": 14296,
+    "reference": 14263,
+    "error_pct": 0.23136787492112898
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "U_a",
+    "actual": 18031,
+    "reference": 17950,
+    "error_pct": 0.4512534818941427
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "U_b",
+    "actual": 14296,
+    "reference": 14263,
+    "error_pct": 0.23136787492112898
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "C_a",
+    "actual": 0,
+    "reference": 0,
+    "error_pct_of_W": 0.0
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "C_b",
+    "actual": 0,
+    "reference": 0,
+    "error_pct_of_W": 0.0
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "W_ratio",
+    "actual": 0.7928567467139925,
+    "reference": 0.7945961002785515,
+    "error_pct": 0.21889782292529025
+  },
+  {
+    "preset": "snpp_cessation",
+    "field": "U_ratio",
+    "actual": 0.7928567467139925,
+    "reference": 0.7945961002785515,
+    "error_pct": 0.21889782292529025
+  }
+]

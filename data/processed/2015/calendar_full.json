@@ -1,0 +1,402 @@
+{
+  "season": 2015,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2015-10-01",
+      "day_index": 1,
+      "events": 137,
+      "median": 59.0,
+      "p90": 180.8,
+      "critical": false
+    },
+    {
+      "date": "2015-10-02",
+      "day_index": 2,
+      "events": 145,
+      "median": 100.0,
+      "p90": 240.40000000000012,
+      "critical": false
+    },
+    {
+      "date": "2015-10-03",
+      "day_index": 3,
+      "events": 245,
+      "median": 103.0,
+      "p90": 244.60000000000008,
+      "critical": true
+    },
+    {
+      "date": "2015-10-04",
+      "day_index": 4,
+      "events": 435,
+      "median": 105.0,
+      "p90": 291.4000000000001,
+      "critical": true
+    },
+    {
+      "date": "2015-10-05",
+      "day_index": 5,
+      "events": 264,
+      "median": 121.0,
+      "p90": 390.00000000000006,
+      "critical": false
+    },
+    {
+      "date": "2015-10-06",
+      "day_index": 6,
+      "events": 208,
+      "median": 135.0,
+      "p90": 393.6,
+      "critical": false
+    },
+    {
+      "date": "2015-10-07",
+      "day_index": 7,
+      "events": 239,
+      "median": 194.0,
+      "p90": 379.8,
+      "critical": false
+    },
+    {
+      "date": "2015-10-08",
+      "day_index": 8,
+      "events": 527,
+      "median": 171.0,
+      "p90": 453.40000000000003,
+      "critical": true
+    },
+    {
+      "date": "2015-10-09",
+      "day_index": 9,
+      "events": 587,
+      "median": 235.0,
+      "p90": 464.60000000000014,
+      "critical": true
+    },
+    {
+      "date": "2015-10-10",
+      "day_index": 10,
+      "events": 612,
+      "median": 235.0,
+      "p90": 649.6,
+      "critical": false
+    },
+    {
+      "date": "2015-10-11",
+      "day_index": 11,
+      "events": 347,
+      "median": 274.0,
+      "p90": 770.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2015-10-12",
+      "day_index": 12,
+      "events": 282,
+      "median": 258.0,
+      "p90": 786.4000000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-10-13",
+      "day_index": 13,
+      "events": 347,
+      "median": 430.0,
+      "p90": 728.0000000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-10-14",
+      "day_index": 14,
+      "events": 293,
+      "median": 382.0,
+      "p90": 967.2000000000002,
+      "critical": false
+    },
+    {
+      "date": "2015-10-15",
+      "day_index": 15,
+      "events": 724,
+      "median": 336.0,
+      "p90": 1073.4,
+      "critical": false
+    },
+    {
+      "date": "2015-10-16",
+      "day_index": 16,
+      "events": 494,
+      "median": 487.0,
+      "p90": 1091.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2015-10-17",
+      "day_index": 17,
+      "events": 827,
+      "median": 489.0,
+      "p90": 1140.0,
+      "critical": false
+    },
+    {
+      "date": "2015-10-18",
+      "day_index": 18,
+      "events": 693,
+      "median": 517.0,
+      "p90": 1066.2,
+      "critical": false
+    },
+    {
+      "date": "2015-10-19",
+      "day_index": 19,
+      "events": 417,
+      "median": 442.0,
+      "p90": 1441.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2015-10-20",
+      "day_index": 20,
+      "events": 1289,
+      "median": 575.0,
+      "p90": 1763.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-10-21",
+      "day_index": 21,
+      "events": 827,
+      "median": 550.0,
+      "p90": 1798.8000000000002,
+      "critical": false
+    },
+    {
+      "date": "2015-10-22",
+      "day_index": 22,
+      "events": 1360,
+      "median": 426.0,
+      "p90": 2209.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-10-23",
+      "day_index": 23,
+      "events": 1142,
+      "median": 676.0,
+      "p90": 2035.0,
+      "critical": false
+    },
+    {
+      "date": "2015-10-24",
+      "day_index": 24,
+      "events": 1897,
+      "median": 441.0,
+      "p90": 2120.8,
+      "critical": false
+    },
+    {
+      "date": "2015-10-25",
+      "day_index": 25,
+      "events": 869,
+      "median": 620.0,
+      "p90": 2424.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2015-10-26",
+      "day_index": 26,
+      "events": 124,
+      "median": 669.0,
+      "p90": 2930.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-10-27",
+      "day_index": 27,
+      "events": 621,
+      "median": 899.0,
+      "p90": 3074.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2015-10-28",
+      "day_index": 28,
+      "events": 986,
+      "median": 618.0,
+      "p90": 3964.4000000000024,
+      "critical": false
+    },
+    {
+      "date": "2015-10-29",
+      "day_index": 29,
+      "events": 1879,
+      "median": 1199.0,
+      "p90": 3433.8,
+      "critical": false
+    },
+    {
+      "date": "2015-10-30",
+      "day_index": 30,
+      "events": 2963,
+      "median": 658.0,
+      "p90": 4062.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-10-31",
+      "day_index": 31,
+      "events": 4573,
+      "median": 768.0,
+      "p90": 5025.8,
+      "critical": false
+    },
+    {
+      "date": "2015-11-01",
+      "day_index": 32,
+      "events": 2607,
+      "median": 1091.0,
+      "p90": 4592.2,
+      "critical": false
+    },
+    {
+      "date": "2015-11-02",
+      "day_index": 33,
+      "events": 1916,
+      "median": 646.0,
+      "p90": 5013.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-11-03",
+      "day_index": 34,
+      "events": 3877,
+      "median": 906.0,
+      "p90": 4924.200000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-11-04",
+      "day_index": 35,
+      "events": 3954,
+      "median": 726.0,
+      "p90": 6202.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2015-11-05",
+      "day_index": 36,
+      "events": 2215,
+      "median": 1066.0,
+      "p90": 6536.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2015-11-06",
+      "day_index": 37,
+      "events": 2017,
+      "median": 669.0,
+      "p90": 6268.000000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-11-07",
+      "day_index": 38,
+      "events": 1803,
+      "median": 558.0,
+      "p90": 6740.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2015-11-08",
+      "day_index": 39,
+      "events": 2520,
+      "median": 818.0,
+      "p90": 4936.800000000003,
+      "critical": false
+    },
+    {
+      "date": "2015-11-09",
+      "day_index": 40,
+      "events": 2768,
+      "median": 973.0,
+      "p90": 4120.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2015-11-10",
+      "day_index": 41,
+      "events": 4550,
+      "median": 518.0,
+      "p90": 4854.200000000002,
+      "critical": false
+    },
+    {
+      "date": "2015-11-11",
+      "day_index": 42,
+      "events": 3877,
+      "median": 651.0,
+      "p90": 4082.4000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-11-12",
+      "day_index": 43,
+      "events": 1984,
+      "median": 320.0,
+      "p90": 2609.4000000000005,
+      "critical": false
+    },
+    {
+      "date": "2015-11-13",
+      "day_index": 44,
+      "events": 1488,
+      "median": 344.0,
+      "p90": 3256.8000000000006,
+      "critical": false
+    },
+    {
+      "date": "2015-11-14",
+      "day_index": 45,
+      "events": 1957,
+      "median": 101.0,
+      "p90": 1741.2000000000003,
+      "critical": true
+    },
+    {
+      "date": "2015-11-15",
+      "day_index": 46,
+      "events": 1539,
+      "median": 171.0,
+      "p90": 2587.2000000000025,
+      "critical": false
+    }
+  ]
+}

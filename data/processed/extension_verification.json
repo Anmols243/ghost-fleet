@@ -1,0 +1,210 @@
+[
+  {
+    "season": 2001,
+    "raw": 1365,
+    "standardized": 1205,
+    "reference": 1205,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2002,
+    "raw": 10723,
+    "standardized": 9122,
+    "reference": 9122,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2003,
+    "raw": 11870,
+    "standardized": 9871,
+    "reference": 9871,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2004,
+    "raw": 10736,
+    "standardized": 9033,
+    "reference": 9033,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2005,
+    "raw": 17895,
+    "standardized": 15032,
+    "reference": 15032,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2006,
+    "raw": 11880,
+    "standardized": 10032,
+    "reference": 10032,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2007,
+    "raw": 17196,
+    "standardized": 14554,
+    "reference": 14554,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2008,
+    "raw": 16093,
+    "standardized": 13332,
+    "reference": 13332,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2009,
+    "raw": 15191,
+    "standardized": 12419,
+    "reference": 12419,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2010,
+    "raw": 15065,
+    "standardized": 12187,
+    "reference": 12187,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2011,
+    "raw": 16932,
+    "standardized": 13787,
+    "reference": 13787,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2012,
+    "raw": 97558,
+    "standardized": 91469,
+    "reference": 91469,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2013,
+    "raw": 89062,
+    "standardized": 83154,
+    "reference": 83154,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2014,
+    "raw": 100774,
+    "standardized": 95045,
+    "reference": 95045,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2015,
+    "raw": 83466,
+    "standardized": 79134,
+    "reference": 79134,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2016,
+    "raw": 121434,
+    "standardized": 111222,
+    "reference": 111222,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2017,
+    "raw": 71042,
+    "standardized": 65173,
+    "reference": 65173,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2018,
+    "raw": 145264,
+    "standardized": 138067,
+    "reference": 138067,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2019,
+    "raw": 109670,
+    "standardized": 104296,
+    "reference": 104296,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2020,
+    "raw": 185680,
+    "standardized": 169520,
+    "reference": 169520,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2021,
+    "raw": 195766,
+    "standardized": 182998,
+    "reference": 182998,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2022,
+    "raw": 113206,
+    "standardized": 107240,
+    "reference": 107240,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2023,
+    "raw": 73147,
+    "standardized": 69561,
+    "reference": 69561,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2024,
+    "raw": 29545,
+    "standardized": 27238,
+    "reference": 27238,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2025,
+    "raw": 22943,
+    "standardized": 21279,
+    "reference": 21279,
+    "difference_pct": 0.0,
+    "pass": true
+  },
+  {
+    "season": 2026,
+    "raw": 17816,
+    "standardized": 16193,
+    "reference": 16193,
+    "difference_pct": 0.0,
+    "pass": true
+  }
+]

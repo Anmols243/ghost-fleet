@@ -1,0 +1,5 @@
+{
+  "viirs_transition": "Recorded change, Punjab + Haryana, 2011 → 2012: all included satellites, +455.2%; Terra+Aqua, +5.3%; difference, 449.8 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.",
+  "noaa20_transition": "Recorded change, Punjab + Haryana, 2017 → 2018: all included satellites, +99.0%; Terra+Aqua+Suomi NPP, +11.4%; difference, 87.6 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.",
+  "snpp_cessation": "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
+}

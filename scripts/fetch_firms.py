@@ -22,6 +22,10 @@ def sources_for_season(season, *, current_year=None):
         current_year = datetime.now(timezone.utc).year
     if season == current_year:
         return ("MODIS_NRT", "VIIRS_NOAA20_NRT", "VIIRS_SNPP_NRT")
+    if season < 2012:
+        return ("MODIS_SP",)
+    if season < 2018:
+        return ("MODIS_SP", "VIIRS_SNPP_SP")
     return SOURCES
 
 
@@ -43,7 +47,7 @@ def chunk_ranges(start, end, days=10):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--season", type=int, choices=range(2020, 2027))
+    parser.add_argument("--season", type=int, choices=range(2001, 2027))
     args = parser.parse_args()
     key = dotenv_values(ROOT / ".env").get("FIRMS_MAP_KEY")
     if not key:

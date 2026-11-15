@@ -5,19 +5,21 @@ alongside docs/AUDIT_SPEC.md (design + gates) and docs/COPY_PACK.md
 (final copy). Where this brief amends either, this brief wins for the
 build; record any conflict in docs/BUILD_PROGRESS.md.
 
-## 1. Data — schema frozen, values reference until freeze
+## 1. Data - frozen repo values and calibrated validation gate
 
-- The app reads ONE file: `frontend/audit.json` (schema "audit-app v1":
-  sensors_present, presets, daily, method_checks). Nothing else.
-- A REFERENCE version (VM implementation) is committed at that path so
-  the frontend can be built immediately. Its values are provisional.
-- Freeze: Codex regenerates the same schema from THIS repo's pipeline
-  (port of the VM audit logic), diffs presets against AUDIT_SPEC
-  references (tolerance: totals 1.5%, changes 2 pp), replaces
-  frontend/audit.json wholesale in one commit marked FREEZE in
-  BUILD_PROGRESS.md, and records the frozen preset values there.
-- After the freeze commit, NO number in the app, page, or demo may come
-  from anywhere except the frozen file.
+- The app reads ONE file: frontend/audit.json, schema "audit-app v1";
+  status "FROZEN - repo pipeline". The repo pipeline is canonical.
+- Compare to the pinned original VM reference, never to previous generated output.
+- W and U are measured quantities: each total must be within 1.5% relative.
+- Ratios W_b/W_a and U_b/U_a must each be within 1.5% relative.
+- C is derived: verify C = W - U exactly per period, and
+  |C_repo - C_ref| <= 1.5% of that period's repo W.
+- Percentage-point tolerances are superseded: they mis-scale for large ratios.
+  Arlo accepted the 2026-11-15 amplification case: P1 totals +0.44/+0.93%,
+  W ratio +0.48%, change +2.66 pp. P2 C_b differs by 752, 0.70% of repo W_b.
+- Freeze all app data together; record values, acceptance lines and the frozen
+  commit SHA in BUILD_PROGRESS.md. All dependent number strings come from the
+  frozen file and must change everywhere or nowhere.
 
 ## 2. Deploy — decided
 
@@ -36,35 +38,18 @@ build; record any conflict in docs/BUILD_PROGRESS.md.
 - Layout: one stacked column of panels at every width. Mobile is the
   same stack — there is no separate mobile design pass.
 
-## 4. Conclusion lines — acceptance tests
+## 4. Conclusion lines - frozen acceptance tests
 
-Gaps are computed from the UNROUNDED integer counts in audit.json;
-percentages round only at render. (Example: P2's gap is 86.6 pp from
-counts, not 86.5 from subtracting rounded labels.)
-COPY_PACK templates are amended: the shared fleet is rendered as
-{shared_label} = the preset's shared satellites joined with "+", using
-chip names Terra / Aqua / Suomi NPP / NOAA-20 — never hardcoded.
-Expected lines from the REFERENCE values (regenerate and re-lock after
-freeze; the app output must match the locked lines character-for-
-character for all three presets):
+Compute percentage changes and diff_pp from unrounded integer counts, then
+round only for display. Build shared_label from the preset's shared satellites
+using Terra / Aqua / Suomi NPP / NOAA-20 joined by "+".
+The following lines are rendered from frontend/audit.json and locked verbatim:
 
-P1: "Recorded change, Punjab + Haryana, 2011 → 2012: all included
-satellites, +452.5%; Terra+Aqua, +5.4%; difference, 447.1 percentage
-points. Neither percentage is a corrected estimate of fire activity,
-and the difference is not a causal attribution. Actual-fire change is
-not measured."
-P2: "Recorded change, Punjab + Haryana, 2017 → 2018: all included
-satellites, +97.7%; Terra+Aqua+Suomi NPP, +11.2%; difference, 86.6
-percentage points. Neither percentage is a corrected estimate of fire
-activity, and the difference is not a causal attribution. Actual-fire
-change is not measured."
-P3 (interruption template, corrected): "Recorded change, Punjab +
-Haryana, 2025 → 2026: all included satellites, −20.5%; Terra+Aqua+
-Suomi NPP+NOAA-20, −20.5%. The two views coincide because the same
-four satellites are included in both seasons, so the decomposition
-cannot show the interruption. The included-satellite record is
-interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from
-3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
+P1: "Recorded change, Punjab + Haryana, 2011 → 2012: all included satellites, +455.2%; Terra+Aqua, +5.3%; difference, 449.8 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured."
+
+P2: "Recorded change, Punjab + Haryana, 2017 → 2018: all included satellites, +99.0%; Terra+Aqua+Suomi NPP, +11.4%; difference, 87.6 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured."
+
+P3: "Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured."
 
 ## 5. P3 case-study labelling
 
@@ -101,8 +86,8 @@ Source: Astra's replies to the user after the copy pack. Current score
 no copy was changed. These amendments change STAGING and PRIORITY
 only — AUDIT_SPEC gates and COPY_PACK copy stand.
 
-1. **One result, staged as a change.** Never present +452.5% and
-   +5.4% as two rival headlines. The comparison is ONE result whose
+1. **One result, staged as a change.** Never present +455.2% and
+   +5.3% as two rival headlines. The comparison is ONE result whose
    value depends on the fleet selection: open on all included
    satellites, then switch the same comparison — same panel, same
    colour scale — to the same named satellites and let the figure
@@ -114,7 +99,7 @@ only — AUDIT_SPEC gates and COPY_PACK copy stand.
 2. **The exceptional test (quality bar above the gates).** A
    genuinely unprepared viewer who watches only the 30-second demo —
    no README, no project page — must be unable to walk away
-   believing actual fires rose 452.5%. If the demo needs a document
+   believing actual fires rose 455.2%. If the demo needs a document
    to explain it, the demo has failed.
 3. **Gate 7 is the critical path.** Astra scores Presentation 2/5
    and ties submission and résumé readiness to a finished demo

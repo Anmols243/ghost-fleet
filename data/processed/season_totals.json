@@ -1,5 +1,81 @@
 [
   {
+    "season": 2001,
+    "events": 1192
+  },
+  {
+    "season": 2002,
+    "events": 8979
+  },
+  {
+    "season": 2003,
+    "events": 9731
+  },
+  {
+    "season": 2004,
+    "events": 8890
+  },
+  {
+    "season": 2005,
+    "events": 14771
+  },
+  {
+    "season": 2006,
+    "events": 9870
+  },
+  {
+    "season": 2007,
+    "events": 14258
+  },
+  {
+    "season": 2008,
+    "events": 13121
+  },
+  {
+    "season": 2009,
+    "events": 12218
+  },
+  {
+    "season": 2010,
+    "events": 12009
+  },
+  {
+    "season": 2011,
+    "events": 13581
+  },
+  {
+    "season": 2012,
+    "events": 75396
+  },
+  {
+    "season": 2013,
+    "events": 68754
+  },
+  {
+    "season": 2014,
+    "events": 77260
+  },
+  {
+    "season": 2015,
+    "events": 65425
+  },
+  {
+    "season": 2016,
+    "events": 90197
+  },
+  {
+    "season": 2017,
+    "events": 54291
+  },
+  {
+    "season": 2018,
+    "events": 108035
+  },
+  {
+    "season": 2019,
+    "events": 80634
+  },
+  {
     "season": 2020,
     "events": 128563
   },

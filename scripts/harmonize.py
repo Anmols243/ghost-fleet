@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-SEASONS = tuple(range(2020, 2027))
+SEASONS = tuple(range(2001, 2027))
 ROOT = Path(__file__).resolve().parents[1]
 
 

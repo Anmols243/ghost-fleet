@@ -34,3 +34,16 @@ def test_sources_for_season_uses_nrt_only_for_current_season():
     assert fetch_firms.sources_for_season(2026, current_year=2027) == (
         "MODIS_SP", "VIIRS_NOAA20_SP", "VIIRS_SNPP_SP"
     )
+
+
+def test_archive_sources_follow_sensor_availability():
+    for year in range(2001, 2012):
+        assert fetch_firms.sources_for_season(year, current_year=2026) == ("MODIS_SP",)
+    for year in range(2012, 2018):
+        assert fetch_firms.sources_for_season(year, current_year=2026) == (
+            "MODIS_SP", "VIIRS_SNPP_SP"
+        )
+    for year in (2018, 2019):
+        assert set(fetch_firms.sources_for_season(year, current_year=2026)) == {
+            "MODIS_SP", "VIIRS_SNPP_SP", "VIIRS_NOAA20_SP"
+        }

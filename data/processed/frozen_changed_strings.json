@@ -1,0 +1,392 @@
+[
+  {
+    "file": "README.md",
+    "line": 13,
+    "text": "2011 → 2012, the season Suomi NPP joined: all included satellites **+455.2%**; Terra + Aqua only **+5.3%**; difference **449.8 percentage points**. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution."
+  },
+  {
+    "file": "README.md",
+    "line": 30,
+    "text": "- 26 seasons, 2001–2026; 1,601,319 detections retrieved; 1,482,163 after the team's disclosed confidence rules (VIIRS nominal+high; MODIS confidence ≥ 50)."
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 62,
+    "text": "Gate: W/U totals and W/U ratios within 1.5% relative; C = W - U exactly and"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 63,
+    "text": "its reference deviation <=1.5% of that period's repo W (BUILD_BRIEF section 1)."
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 65,
+    "text": "P1 viirs_transition - 2011 vs 2012:"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 66,
+    "text": "  W: 13,581 -> 75,396 (+455.2%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 67,
+    "text": "  U: 13,581 -> 14,303 (+5.3%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 68,
+    "text": "  C: 0 -> 61,093; difference 449.8 pp."
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 70,
+    "text": "P2 noaa20_transition - 2017 vs 2018:"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 71,
+    "text": "  W: 54,291 -> 108,035 (+99.0%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 72,
+    "text": "  U: 54,291 -> 60,491 (+11.4%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 73,
+    "text": "  C: 0 -> 47,544; difference 87.6 pp."
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 75,
+    "text": "P3 snpp_cessation - 2025 vs 2026:"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 76,
+    "text": "  W: 18,031 -> 14,296 (-20.7%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 77,
+    "text": "  U: 18,031 -> 14,296 (-20.7%)"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 78,
+    "text": "  C: 0 -> 0; difference 0.0 pp."
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 80,
+    "text": "P3 is the within-season interruption case: S-NPP is in both seasonal"
+  },
+  {
+    "file": "docs/AUDIT_SPEC.md",
+    "line": 82,
+    "text": "interruption; S-NPP detections end on 2 Nov and are zero from 3 Nov."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 8,
+    "text": "## 1. Data - frozen repo values and calibrated validation gate"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 10,
+    "text": "- The app reads ONE file: frontend/audit.json, schema \"audit-app v1\";"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 13,
+    "text": "- W and U are measured quantities: each total must be within 1.5% relative."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 14,
+    "text": "- Ratios W_b/W_a and U_b/U_a must each be within 1.5% relative."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 16,
+    "text": "  |C_repo - C_ref| <= 1.5% of that period's repo W."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 18,
+    "text": "  Arlo accepted the 2026-11-15 amplification case: P1 totals +0.44/+0.93%,"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 19,
+    "text": "  W ratio +0.48%, change +2.66 pp. P2 C_b differs by 752, 0.70% of repo W_b."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 41,
+    "text": "## 4. Conclusion lines - frozen acceptance tests"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 44,
+    "text": "round only for display. Build shared_label from the preset's shared satellites"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 45,
+    "text": "using Terra / Aqua / Suomi NPP / NOAA-20 joined by \"+\"."
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 48,
+    "text": "P1: \"Recorded change, Punjab + Haryana, 2011 → 2012: all included satellites, +455.2%; Terra+Aqua, +5.3%; difference, 449.8 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.\""
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 50,
+    "text": "P2: \"Recorded change, Punjab + Haryana, 2017 → 2018: all included satellites, +99.0%; Terra+Aqua+Suomi NPP, +11.4%; difference, 87.6 percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.\""
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 52,
+    "text": "P3: \"Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.\""
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 89,
+    "text": "1. **One result, staged as a change.** Never present +455.2% and"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 90,
+    "text": "   +5.3% as two rival headlines. The comparison is ONE result whose"
+  },
+  {
+    "file": "docs/BUILD_BRIEF.md",
+    "line": 102,
+    "text": "   believing actual fires rose 455.2%. If the demo needs a document"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 37,
+    "text": "| 00–03 | \"The recorded count rose 455.2%.\" |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 38,
+    "text": "| 03–07 | \"Using only Terra and Aqua, it rose 5.3%.\" |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 39,
+    "text": "| 07–10 | \"The difference is 449.8 percentage points.\" |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 53,
+    "text": "- **S1.** \"All included satellites: +455.2% detections\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 54,
+    "text": "- **S2.** \"Terra + Aqua: +5.3% detections\" — subline: \"Not a corrected fire count\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 55,
+    "text": "- **S3.** \"Selection gap: 449.8 percentage points\" — subline: \"No causal attribution\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 68,
+    "text": "{w}%; {shared_label}, {u}%; difference, {d} percentage points. Neither"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 75,
+    "text": "{w}%; {shared_label}, {u}%; difference, {d} percentage points. A small"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 84,
+    "text": "\"Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 112,
+    "text": "| 1 | \"Fires rose 455.2% in 2012\" | Every percentage is labelled \"detections\" / \"recorded change\"; conclusion line ends \"Actual-fire change is not measured.\" |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 113,
+    "text": "| 2 | \"The real rise was only 5.3%\" | Shared panel carries the permanent warning: \"This percentage is not a corrected fire count.\" S2 subline repeats it. |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 114,
+    "text": "| 3 | \"Satellites caused 449.8 points of fake fires\" | S3 subline: \"No causal attribution\"; conclusion template: \"the difference is not a causal attribution.\" |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 117,
+    "text": "| 6 | \"2026 fires fell 20.7%\" | P3 uses the interruption template: the record is interrupted mid-season; 2026 is labelled a data snapshot everywhere. |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 121,
+    "text": "| 10 | \"449.8 is the error in the official count\" | The gap is a difference between two selections of the same retrieved records; no official count is estimated or corrected anywhere. |"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 147,
+    "text": "455.2% or that 5.3% is the true/corrected change; the follow-up answer"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 150,
+    "text": "Fail: treating 5.3% as the true or corrected fire change (automatic"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 151,
+    "text": "fail); or reporting 455.2% as a change in actual fires; or being unable"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 168,
+    "text": "      \"t\": \"00-03\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 169,
+    "text": "      \"line\": \"The recorded count rose 455.2%.\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 172,
+    "text": "      \"t\": \"03-07\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 173,
+    "text": "      \"line\": \"Using only Terra and Aqua, it rose 5.3%.\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 176,
+    "text": "      \"t\": \"07-10\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 177,
+    "text": "      \"line\": \"The difference is 449.8 percentage points.\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 180,
+    "text": "      \"t\": \"10-15\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 184,
+    "text": "      \"t\": \"15-19\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 188,
+    "text": "      \"t\": \"19-24\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 189,
+    "text": "      \"line\": \"In the current season, S-NPP data delivery ceased on 2 November, while NOAA-20 continued.\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 192,
+    "text": "      \"t\": \"24-29\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 196,
+    "text": "      \"t\": \"29-30\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 202,
+    "text": "      \"n\": 1,"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 203,
+    "text": "      \"headline\": \"All included satellites: +455.2% detections\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 206,
+    "text": "      \"n\": 2,"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 207,
+    "text": "      \"headline\": \"Terra + Aqua: +5.3% detections\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 211,
+    "text": "      \"n\": 3,"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 212,
+    "text": "      \"headline\": \"Selection gap: 449.8 percentage points\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 216,
+    "text": "      \"n\": 4,"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 220,
+    "text": "      \"n\": 5,"
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 221,
+    "text": "      \"headline\": \"S-NPP delivery ended 2 Nov 2026\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 225,
+    "text": "    \"gap_ge_10pp\": \"Recorded change, Punjab + Haryana, {a} → {b}: all included satellites, {w}%; {shared_label}, {u}%; difference, {d} percentage points. Neither percentage is a corrected estimate of fire activity, and the difference is not a causal attribution. Actual-fire change is not measured.\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 226,
+    "text": "    \"gap_lt_10pp\": \"Recorded change, Punjab + Haryana, {a} → {b}: all included satellites, {w}%; {shared_label}, {u}%; difference, {d} percentage points. A small selection gap does not prove that either percentage measures actual fire activity. Neither percentage is a corrected estimate of fire activity. Actual-fire change is not measured.\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 227,
+    "text": "    \"interruption\": \"Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20.7%; Terra+Aqua+Suomi NPP+NOAA-20, −20.7%. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP contributions run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 240,
+    "text": "      \"NOAA-20\","
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 241,
+    "text": "      \"NOAA-21\""
+  },
+  {
+    "file": "docs/COPY_PACK.md",
+    "line": 244,
+    "text": "  \"test_notes\": \"Gate 7 scorecard fields: pass/fail, verbatim quote, time_to_answer. Automatic fail: treating 5.3% as the true or corrected fire change. Question: 'What does that number not tell us about the actual fires?' Expected substance: actual-fire change is not measured. Why not ask the app's own reviewer?\""
+  }
+]

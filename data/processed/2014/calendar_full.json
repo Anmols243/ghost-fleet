@@ -1,0 +1,402 @@
+{
+  "season": 2014,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2014-10-01",
+      "day_index": 1,
+      "events": 299,
+      "median": 59.0,
+      "p90": 173.8,
+      "critical": true
+    },
+    {
+      "date": "2014-10-02",
+      "day_index": 2,
+      "events": 157,
+      "median": 100.0,
+      "p90": 240.40000000000012,
+      "critical": false
+    },
+    {
+      "date": "2014-10-03",
+      "day_index": 3,
+      "events": 164,
+      "median": 103.0,
+      "p90": 260.6,
+      "critical": false
+    },
+    {
+      "date": "2014-10-04",
+      "day_index": 4,
+      "events": 195,
+      "median": 105.0,
+      "p90": 335.4000000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-10-05",
+      "day_index": 5,
+      "events": 372,
+      "median": 121.0,
+      "p90": 388.80000000000007,
+      "critical": false
+    },
+    {
+      "date": "2014-10-06",
+      "day_index": 6,
+      "events": 372,
+      "median": 135.0,
+      "p90": 369.60000000000014,
+      "critical": true
+    },
+    {
+      "date": "2014-10-07",
+      "day_index": 7,
+      "events": 381,
+      "median": 194.0,
+      "p90": 370.0,
+      "critical": true
+    },
+    {
+      "date": "2014-10-08",
+      "day_index": 8,
+      "events": 153,
+      "median": 224.0,
+      "p90": 494.2000000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-10-09",
+      "day_index": 9,
+      "events": 220,
+      "median": 237.0,
+      "p90": 526.2,
+      "critical": false
+    },
+    {
+      "date": "2014-10-10",
+      "day_index": 10,
+      "events": 302,
+      "median": 235.0,
+      "p90": 649.6,
+      "critical": false
+    },
+    {
+      "date": "2014-10-11",
+      "day_index": 11,
+      "events": 605,
+      "median": 274.0,
+      "p90": 742.6000000000005,
+      "critical": false
+    },
+    {
+      "date": "2014-10-12",
+      "day_index": 12,
+      "events": 1038,
+      "median": 258.0,
+      "p90": 700.8000000000002,
+      "critical": true
+    },
+    {
+      "date": "2014-10-13",
+      "day_index": 13,
+      "events": 671,
+      "median": 386.0,
+      "p90": 728.0000000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-10-14",
+      "day_index": 14,
+      "events": 53,
+      "median": 382.0,
+      "p90": 967.2000000000002,
+      "critical": false
+    },
+    {
+      "date": "2014-10-15",
+      "day_index": 15,
+      "events": 330,
+      "median": 340.0,
+      "p90": 1073.4,
+      "critical": false
+    },
+    {
+      "date": "2014-10-16",
+      "day_index": 16,
+      "events": 884,
+      "median": 487.0,
+      "p90": 1014.0000000000008,
+      "critical": false
+    },
+    {
+      "date": "2014-10-17",
+      "day_index": 17,
+      "events": 1168,
+      "median": 489.0,
+      "p90": 1061.6000000000001,
+      "critical": true
+    },
+    {
+      "date": "2014-10-18",
+      "day_index": 18,
+      "events": 868,
+      "median": 517.0,
+      "p90": 1066.2,
+      "critical": false
+    },
+    {
+      "date": "2014-10-19",
+      "day_index": 19,
+      "events": 1041,
+      "median": 417.0,
+      "p90": 1441.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2014-10-20",
+      "day_index": 20,
+      "events": 677,
+      "median": 575.0,
+      "p90": 1763.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2014-10-21",
+      "day_index": 21,
+      "events": 1437,
+      "median": 550.0,
+      "p90": 1798.8000000000002,
+      "critical": false
+    },
+    {
+      "date": "2014-10-22",
+      "day_index": 22,
+      "events": 1455,
+      "median": 426.0,
+      "p90": 2209.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2014-10-23",
+      "day_index": 23,
+      "events": 1451,
+      "median": 676.0,
+      "p90": 2035.0,
+      "critical": false
+    },
+    {
+      "date": "2014-10-24",
+      "day_index": 24,
+      "events": 1329,
+      "median": 441.0,
+      "p90": 2120.8,
+      "critical": false
+    },
+    {
+      "date": "2014-10-25",
+      "day_index": 25,
+      "events": 1364,
+      "median": 620.0,
+      "p90": 2424.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2014-10-26",
+      "day_index": 26,
+      "events": 1598,
+      "median": 559.0,
+      "p90": 2930.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2014-10-27",
+      "day_index": 27,
+      "events": 1630,
+      "median": 842.0,
+      "p90": 3074.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2014-10-28",
+      "day_index": 28,
+      "events": 2497,
+      "median": 618.0,
+      "p90": 3964.4000000000024,
+      "critical": false
+    },
+    {
+      "date": "2014-10-29",
+      "day_index": 29,
+      "events": 1741,
+      "median": 1199.0,
+      "p90": 3433.8,
+      "critical": false
+    },
+    {
+      "date": "2014-10-30",
+      "day_index": 30,
+      "events": 3469,
+      "median": 658.0,
+      "p90": 4062.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2014-10-31",
+      "day_index": 31,
+      "events": 2699,
+      "median": 768.0,
+      "p90": 5025.8,
+      "critical": false
+    },
+    {
+      "date": "2014-11-01",
+      "day_index": 32,
+      "events": 4227,
+      "median": 1091.0,
+      "p90": 4592.2,
+      "critical": false
+    },
+    {
+      "date": "2014-11-02",
+      "day_index": 33,
+      "events": 5075,
+      "median": 646.0,
+      "p90": 4743.800000000001,
+      "critical": true
+    },
+    {
+      "date": "2014-11-03",
+      "day_index": 34,
+      "events": 2667,
+      "median": 906.0,
+      "p90": 4924.200000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-11-04",
+      "day_index": 35,
+      "events": 3394,
+      "median": 726.0,
+      "p90": 6202.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2014-11-05",
+      "day_index": 36,
+      "events": 4584,
+      "median": 1066.0,
+      "p90": 6536.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2014-11-06",
+      "day_index": 37,
+      "events": 5406,
+      "median": 669.0,
+      "p90": 6268.000000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-11-07",
+      "day_index": 38,
+      "events": 4475,
+      "median": 558.0,
+      "p90": 6740.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2014-11-08",
+      "day_index": 39,
+      "events": 1496,
+      "median": 818.0,
+      "p90": 4936.800000000003,
+      "critical": false
+    },
+    {
+      "date": "2014-11-09",
+      "day_index": 40,
+      "events": 2141,
+      "median": 973.0,
+      "p90": 4120.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2014-11-10",
+      "day_index": 41,
+      "events": 2895,
+      "median": 518.0,
+      "p90": 4987.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2014-11-11",
+      "day_index": 42,
+      "events": 2741,
+      "median": 651.0,
+      "p90": 4123.6,
+      "critical": false
+    },
+    {
+      "date": "2014-11-12",
+      "day_index": 43,
+      "events": 2763,
+      "median": 320.0,
+      "p90": 2307.4,
+      "critical": true
+    },
+    {
+      "date": "2014-11-13",
+      "day_index": 44,
+      "events": 2377,
+      "median": 344.0,
+      "p90": 3256.8000000000006,
+      "critical": false
+    },
+    {
+      "date": "2014-11-14",
+      "day_index": 45,
+      "events": 1153,
+      "median": 101.0,
+      "p90": 1910.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2014-11-15",
+      "day_index": 46,
+      "events": 1246,
+      "median": 171.0,
+      "p90": 2638.8000000000025,
+      "critical": false
+    }
+  ]
+}

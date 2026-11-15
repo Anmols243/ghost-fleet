@@ -1,0 +1,402 @@
+{
+  "season": 2016,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2016-10-01",
+      "day_index": 1,
+      "events": 182,
+      "median": 59.0,
+      "p90": 173.8,
+      "critical": true
+    },
+    {
+      "date": "2016-10-02",
+      "day_index": 2,
+      "events": 89,
+      "median": 101.0,
+      "p90": 240.40000000000012,
+      "critical": false
+    },
+    {
+      "date": "2016-10-03",
+      "day_index": 3,
+      "events": 85,
+      "median": 111.0,
+      "p90": 260.6,
+      "critical": false
+    },
+    {
+      "date": "2016-10-04",
+      "day_index": 4,
+      "events": 54,
+      "median": 117.0,
+      "p90": 335.4000000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-10-05",
+      "day_index": 5,
+      "events": 147,
+      "median": 121.0,
+      "p90": 390.00000000000006,
+      "critical": false
+    },
+    {
+      "date": "2016-10-06",
+      "day_index": 6,
+      "events": 268,
+      "median": 135.0,
+      "p90": 393.6,
+      "critical": false
+    },
+    {
+      "date": "2016-10-07",
+      "day_index": 7,
+      "events": 273,
+      "median": 194.0,
+      "p90": 379.8,
+      "critical": false
+    },
+    {
+      "date": "2016-10-08",
+      "day_index": 8,
+      "events": 249,
+      "median": 171.0,
+      "p90": 494.2000000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-10-09",
+      "day_index": 9,
+      "events": 371,
+      "median": 235.0,
+      "p90": 526.2,
+      "critical": false
+    },
+    {
+      "date": "2016-10-10",
+      "day_index": 10,
+      "events": 737,
+      "median": 235.0,
+      "p90": 618.0,
+      "critical": true
+    },
+    {
+      "date": "2016-10-11",
+      "day_index": 11,
+      "events": 881,
+      "median": 274.0,
+      "p90": 577.0000000000001,
+      "critical": true
+    },
+    {
+      "date": "2016-10-12",
+      "day_index": 12,
+      "events": 820,
+      "median": 258.0,
+      "p90": 700.8000000000002,
+      "critical": true
+    },
+    {
+      "date": "2016-10-13",
+      "day_index": 13,
+      "events": 625,
+      "median": 386.0,
+      "p90": 728.0000000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-10-14",
+      "day_index": 14,
+      "events": 888,
+      "median": 336.0,
+      "p90": 967.2000000000002,
+      "critical": false
+    },
+    {
+      "date": "2016-10-15",
+      "day_index": 15,
+      "events": 1109,
+      "median": 336.0,
+      "p90": 901.6000000000004,
+      "critical": true
+    },
+    {
+      "date": "2016-10-16",
+      "day_index": 16,
+      "events": 1397,
+      "median": 487.0,
+      "p90": 806.4000000000003,
+      "critical": true
+    },
+    {
+      "date": "2016-10-17",
+      "day_index": 17,
+      "events": 1939,
+      "median": 489.0,
+      "p90": 1061.6000000000001,
+      "critical": true
+    },
+    {
+      "date": "2016-10-18",
+      "day_index": 18,
+      "events": 1095,
+      "median": 517.0,
+      "p90": 1015.8000000000001,
+      "critical": true
+    },
+    {
+      "date": "2016-10-19",
+      "day_index": 19,
+      "events": 1633,
+      "median": 417.0,
+      "p90": 1246.4,
+      "critical": true
+    },
+    {
+      "date": "2016-10-20",
+      "day_index": 20,
+      "events": 1131,
+      "median": 575.0,
+      "p90": 1763.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2016-10-21",
+      "day_index": 21,
+      "events": 1657,
+      "median": 550.0,
+      "p90": 1798.8000000000002,
+      "critical": false
+    },
+    {
+      "date": "2016-10-22",
+      "day_index": 22,
+      "events": 2496,
+      "median": 426.0,
+      "p90": 1877.2000000000007,
+      "critical": true
+    },
+    {
+      "date": "2016-10-23",
+      "day_index": 23,
+      "events": 1869,
+      "median": 676.0,
+      "p90": 2035.0,
+      "critical": false
+    },
+    {
+      "date": "2016-10-24",
+      "day_index": 24,
+      "events": 1699,
+      "median": 441.0,
+      "p90": 2120.8,
+      "critical": false
+    },
+    {
+      "date": "2016-10-25",
+      "day_index": 25,
+      "events": 1706,
+      "median": 620.0,
+      "p90": 2424.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2016-10-26",
+      "day_index": 26,
+      "events": 3106,
+      "median": 559.0,
+      "p90": 2525.6000000000004,
+      "critical": true
+    },
+    {
+      "date": "2016-10-27",
+      "day_index": 27,
+      "events": 2781,
+      "median": 842.0,
+      "p90": 3074.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2016-10-28",
+      "day_index": 28,
+      "events": 3035,
+      "median": 618.0,
+      "p90": 3944.0000000000023,
+      "critical": false
+    },
+    {
+      "date": "2016-10-29",
+      "day_index": 29,
+      "events": 2108,
+      "median": 1199.0,
+      "p90": 3433.8,
+      "critical": false
+    },
+    {
+      "date": "2016-10-30",
+      "day_index": 30,
+      "events": 1241,
+      "median": 658.0,
+      "p90": 4062.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2016-10-31",
+      "day_index": 31,
+      "events": 4925,
+      "median": 768.0,
+      "p90": 4885.000000000001,
+      "critical": true
+    },
+    {
+      "date": "2016-11-01",
+      "day_index": 32,
+      "events": 4516,
+      "median": 1091.0,
+      "p90": 4476.6,
+      "critical": true
+    },
+    {
+      "date": "2016-11-02",
+      "day_index": 33,
+      "events": 3639,
+      "median": 646.0,
+      "p90": 5013.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-11-03",
+      "day_index": 34,
+      "events": 3276,
+      "median": 906.0,
+      "p90": 4924.200000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-11-04",
+      "day_index": 35,
+      "events": 3386,
+      "median": 726.0,
+      "p90": 6202.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2016-11-05",
+      "day_index": 36,
+      "events": 3463,
+      "median": 1066.0,
+      "p90": 6536.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2016-11-06",
+      "day_index": 37,
+      "events": 5261,
+      "median": 669.0,
+      "p90": 6268.000000000001,
+      "critical": false
+    },
+    {
+      "date": "2016-11-07",
+      "day_index": 38,
+      "events": 7283,
+      "median": 558.0,
+      "p90": 5682.600000000002,
+      "critical": true
+    },
+    {
+      "date": "2016-11-08",
+      "day_index": 39,
+      "events": 3488,
+      "median": 818.0,
+      "p90": 4936.800000000003,
+      "critical": false
+    },
+    {
+      "date": "2016-11-09",
+      "day_index": 40,
+      "events": 3995,
+      "median": 973.0,
+      "p90": 3718.400000000002,
+      "critical": true
+    },
+    {
+      "date": "2016-11-10",
+      "day_index": 41,
+      "events": 2292,
+      "median": 518.0,
+      "p90": 4987.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2016-11-11",
+      "day_index": 42,
+      "events": 4288,
+      "median": 651.0,
+      "p90": 3835.8,
+      "critical": true
+    },
+    {
+      "date": "2016-11-12",
+      "day_index": 43,
+      "events": 1829,
+      "median": 320.0,
+      "p90": 2609.4000000000005,
+      "critical": false
+    },
+    {
+      "date": "2016-11-13",
+      "day_index": 44,
+      "events": 1168,
+      "median": 344.0,
+      "p90": 3256.8000000000006,
+      "critical": false
+    },
+    {
+      "date": "2016-11-14",
+      "day_index": 45,
+      "events": 821,
+      "median": 101.0,
+      "p90": 1910.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2016-11-15",
+      "day_index": 46,
+      "events": 896,
+      "median": 171.0,
+      "p90": 2638.8000000000025,
+      "critical": false
+    }
+  ]
+}

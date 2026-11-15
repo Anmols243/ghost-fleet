@@ -1,0 +1,402 @@
+{
+  "season": 2010,
+  "timezone": "UTC",
+  "baseline_seasons": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "snpp_historical_only": true,
+  "days": [
+    {
+      "date": "2010-10-01",
+      "day_index": 1,
+      "events": 34,
+      "median": 69.0,
+      "p90": 180.8,
+      "critical": false
+    },
+    {
+      "date": "2010-10-02",
+      "day_index": 2,
+      "events": 4,
+      "median": 101.0,
+      "p90": 240.40000000000012,
+      "critical": false
+    },
+    {
+      "date": "2010-10-03",
+      "day_index": 3,
+      "events": 42,
+      "median": 111.0,
+      "p90": 260.6,
+      "critical": false
+    },
+    {
+      "date": "2010-10-04",
+      "day_index": 4,
+      "events": 3,
+      "median": 117.0,
+      "p90": 335.4000000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-10-05",
+      "day_index": 5,
+      "events": 24,
+      "median": 124.0,
+      "p90": 390.00000000000006,
+      "critical": false
+    },
+    {
+      "date": "2010-10-06",
+      "day_index": 6,
+      "events": 19,
+      "median": 138.0,
+      "p90": 393.6,
+      "critical": false
+    },
+    {
+      "date": "2010-10-07",
+      "day_index": 7,
+      "events": 12,
+      "median": 214.0,
+      "p90": 379.8,
+      "critical": false
+    },
+    {
+      "date": "2010-10-08",
+      "day_index": 8,
+      "events": 112,
+      "median": 224.0,
+      "p90": 494.2000000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-10-09",
+      "day_index": 9,
+      "events": 31,
+      "median": 237.0,
+      "p90": 526.2,
+      "critical": false
+    },
+    {
+      "date": "2010-10-10",
+      "day_index": 10,
+      "events": 225,
+      "median": 264.0,
+      "p90": 649.6,
+      "critical": false
+    },
+    {
+      "date": "2010-10-11",
+      "day_index": 11,
+      "events": 25,
+      "median": 325.0,
+      "p90": 770.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2010-10-12",
+      "day_index": 12,
+      "events": 197,
+      "median": 282.0,
+      "p90": 786.4000000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-10-13",
+      "day_index": 13,
+      "events": 61,
+      "median": 430.0,
+      "p90": 728.0000000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-10-14",
+      "day_index": 14,
+      "events": 125,
+      "median": 382.0,
+      "p90": 967.2000000000002,
+      "critical": false
+    },
+    {
+      "date": "2010-10-15",
+      "day_index": 15,
+      "events": 217,
+      "median": 340.0,
+      "p90": 1073.4,
+      "critical": false
+    },
+    {
+      "date": "2010-10-16",
+      "day_index": 16,
+      "events": 116,
+      "median": 494.0,
+      "p90": 1091.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2010-10-17",
+      "day_index": 17,
+      "events": 489,
+      "median": 492.0,
+      "p90": 1140.0,
+      "critical": false
+    },
+    {
+      "date": "2010-10-18",
+      "day_index": 18,
+      "events": 92,
+      "median": 545.0,
+      "p90": 1066.2,
+      "critical": false
+    },
+    {
+      "date": "2010-10-19",
+      "day_index": 19,
+      "events": 341,
+      "median": 442.0,
+      "p90": 1441.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2010-10-20",
+      "day_index": 20,
+      "events": 26,
+      "median": 660.0,
+      "p90": 1763.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2010-10-21",
+      "day_index": 21,
+      "events": 127,
+      "median": 657.0,
+      "p90": 1798.8000000000002,
+      "critical": false
+    },
+    {
+      "date": "2010-10-22",
+      "day_index": 22,
+      "events": 129,
+      "median": 501.0,
+      "p90": 2209.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2010-10-23",
+      "day_index": 23,
+      "events": 126,
+      "median": 711.0,
+      "p90": 2035.0,
+      "critical": false
+    },
+    {
+      "date": "2010-10-24",
+      "day_index": 24,
+      "events": 441,
+      "median": 443.0,
+      "p90": 2120.8,
+      "critical": false
+    },
+    {
+      "date": "2010-10-25",
+      "day_index": 25,
+      "events": 94,
+      "median": 825.0,
+      "p90": 2424.6000000000004,
+      "critical": false
+    },
+    {
+      "date": "2010-10-26",
+      "day_index": 26,
+      "events": 719,
+      "median": 559.0,
+      "p90": 2930.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2010-10-27",
+      "day_index": 27,
+      "events": 104,
+      "median": 899.0,
+      "p90": 3074.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2010-10-28",
+      "day_index": 28,
+      "events": 618,
+      "median": 791.0,
+      "p90": 3964.4000000000024,
+      "critical": false
+    },
+    {
+      "date": "2010-10-29",
+      "day_index": 29,
+      "events": 7,
+      "median": 1244.0,
+      "p90": 3433.8,
+      "critical": false
+    },
+    {
+      "date": "2010-10-30",
+      "day_index": 30,
+      "events": 214,
+      "median": 997.0,
+      "p90": 4062.0000000000005,
+      "critical": false
+    },
+    {
+      "date": "2010-10-31",
+      "day_index": 31,
+      "events": 719,
+      "median": 957.0,
+      "p90": 5025.8,
+      "critical": false
+    },
+    {
+      "date": "2010-11-01",
+      "day_index": 32,
+      "events": 246,
+      "median": 1148.0,
+      "p90": 4592.2,
+      "critical": false
+    },
+    {
+      "date": "2010-11-02",
+      "day_index": 33,
+      "events": 1234,
+      "median": 646.0,
+      "p90": 5013.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-11-03",
+      "day_index": 34,
+      "events": 159,
+      "median": 907.0,
+      "p90": 4924.200000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-11-04",
+      "day_index": 35,
+      "events": 1014,
+      "median": 726.0,
+      "p90": 6202.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2010-11-05",
+      "day_index": 36,
+      "events": 191,
+      "median": 1297.0,
+      "p90": 6536.000000000002,
+      "critical": false
+    },
+    {
+      "date": "2010-11-06",
+      "day_index": 37,
+      "events": 669,
+      "median": 683.0,
+      "p90": 6268.000000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-11-07",
+      "day_index": 38,
+      "events": 515,
+      "median": 572.0,
+      "p90": 6740.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2010-11-08",
+      "day_index": 39,
+      "events": 145,
+      "median": 920.0,
+      "p90": 4936.800000000003,
+      "critical": false
+    },
+    {
+      "date": "2010-11-09",
+      "day_index": 40,
+      "events": 973,
+      "median": 1019.0,
+      "p90": 4120.400000000001,
+      "critical": false
+    },
+    {
+      "date": "2010-11-10",
+      "day_index": 41,
+      "events": 107,
+      "median": 614.0,
+      "p90": 4987.4000000000015,
+      "critical": false
+    },
+    {
+      "date": "2010-11-11",
+      "day_index": 42,
+      "events": 669,
+      "median": 651.0,
+      "p90": 4123.6,
+      "critical": false
+    },
+    {
+      "date": "2010-11-12",
+      "day_index": 43,
+      "events": 50,
+      "median": 329.0,
+      "p90": 2609.4000000000005,
+      "critical": false
+    },
+    {
+      "date": "2010-11-13",
+      "day_index": 44,
+      "events": 365,
+      "median": 344.0,
+      "p90": 3256.8000000000006,
+      "critical": false
+    },
+    {
+      "date": "2010-11-14",
+      "day_index": 45,
+      "events": 101,
+      "median": 141.0,
+      "p90": 1910.2000000000003,
+      "critical": false
+    },
+    {
+      "date": "2010-11-15",
+      "day_index": 46,
+      "events": 78,
+      "median": 302.0,
+      "p90": 2638.8000000000025,
+      "critical": false
+    }
+  ]
+}

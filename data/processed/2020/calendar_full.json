@@ -2,6 +2,25 @@
   "season": 2020,
   "timezone": "UTC",
   "baseline_seasons": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
     2021,
     2022,
     2023,
@@ -15,56 +34,56 @@
       "date": "2020-10-01",
       "day_index": 1,
       "events": 318,
-      "median": 141.5,
-      "p90": 172.5,
+      "median": 59.0,
+      "p90": 173.8,
       "critical": true
     },
     {
       "date": "2020-10-02",
       "day_index": 2,
       "events": 386,
-      "median": 145.0,
-      "p90": 322.5,
+      "median": 100.0,
+      "p90": 177.20000000000005,
       "critical": true
     },
     {
       "date": "2020-10-03",
       "day_index": 3,
       "events": 408,
-      "median": 130.0,
-      "p90": 291.0,
+      "median": 103.0,
+      "p90": 229.00000000000006,
       "critical": true
     },
     {
       "date": "2020-10-04",
       "day_index": 4,
       "events": 566,
-      "median": 156.5,
-      "p90": 331.0,
+      "median": 105.0,
+      "p90": 291.4000000000001,
       "critical": true
     },
     {
       "date": "2020-10-05",
       "day_index": 5,
       "events": 445,
-      "median": 115.5,
-      "p90": 419.0,
+      "median": 121.0,
+      "p90": 370.8,
       "critical": true
     },
     {
       "date": "2020-10-06",
       "day_index": 6,
       "events": 479,
-      "median": 195.0,
-      "p90": 334.0,
+      "median": 135.0,
+      "p90": 348.0000000000001,
       "critical": true
     },
     {
       "date": "2020-10-07",
       "day_index": 7,
       "events": 474,
-      "median": 179.5,
-      "p90": 367.5,
+      "median": 194.0,
+      "p90": 370.0,
       "critical": true
     },
     {
@@ -72,111 +91,111 @@
       "day_index": 8,
       "events": 535,
       "median": 171.0,
-      "p90": 415.0,
+      "p90": 453.40000000000003,
       "critical": true
     },
     {
       "date": "2020-10-09",
       "day_index": 9,
       "events": 612,
-      "median": 179.5,
-      "p90": 327.0,
+      "median": 235.0,
+      "p90": 464.60000000000014,
       "critical": true
     },
     {
       "date": "2020-10-10",
       "day_index": 10,
       "events": 745,
-      "median": 150.5,
-      "p90": 466.5,
+      "median": 235.0,
+      "p90": 618.0,
       "critical": true
     },
     {
       "date": "2020-10-11",
       "day_index": 11,
       "events": 951,
-      "median": 229.0,
-      "p90": 413.5,
+      "median": 274.0,
+      "p90": 577.0000000000001,
       "critical": true
     },
     {
       "date": "2020-10-12",
       "day_index": 12,
       "events": 937,
-      "median": 302.0,
-      "p90": 588.0,
+      "median": 258.0,
+      "p90": 700.8000000000002,
       "critical": true
     },
     {
       "date": "2020-10-13",
       "day_index": 13,
       "events": 795,
-      "median": 421.0,
-      "p90": 675.0,
+      "median": 386.0,
+      "p90": 678.2,
       "critical": true
     },
     {
       "date": "2020-10-14",
       "day_index": 14,
       "events": 1429,
-      "median": 351.0,
-      "p90": 729.0,
+      "median": 336.0,
+      "p90": 893.4,
       "critical": true
     },
     {
       "date": "2020-10-15",
       "day_index": 15,
       "events": 1282,
-      "median": 331.5,
-      "p90": 1400.0,
-      "critical": false
+      "median": 336.0,
+      "p90": 901.6000000000004,
+      "critical": true
     },
     {
       "date": "2020-10-16",
       "day_index": 16,
       "events": 1230,
-      "median": 289.5,
-      "p90": 1190.5,
+      "median": 487.0,
+      "p90": 806.4000000000003,
       "critical": true
     },
     {
       "date": "2020-10-17",
       "day_index": 17,
       "events": 1915,
-      "median": 214.5,
-      "p90": 650.5,
+      "median": 489.0,
+      "p90": 1061.6000000000001,
       "critical": true
     },
     {
       "date": "2020-10-18",
       "day_index": 18,
       "events": 1978,
-      "median": 376.0,
-      "p90": 673.0,
+      "median": 517.0,
+      "p90": 1015.8000000000001,
       "critical": true
     },
     {
       "date": "2020-10-19",
       "day_index": 19,
       "events": 1665,
-      "median": 454.5,
-      "p90": 1076.0,
+      "median": 417.0,
+      "p90": 1246.4,
       "critical": true
     },
     {
       "date": "2020-10-20",
       "day_index": 20,
       "events": 1899,
-      "median": 430.5,
-      "p90": 1325.0,
+      "median": 575.0,
+      "p90": 1497.8000000000002,
       "critical": true
     },
     {
       "date": "2020-10-21",
       "day_index": 21,
       "events": 2178,
-      "median": 512.5,
-      "p90": 1459.5,
+      "median": 550.0,
+      "p90": 1705.0,
       "critical": true
     },
     {
@@ -184,199 +203,199 @@
       "day_index": 22,
       "events": 2291,
       "median": 426.0,
-      "p90": 2024.5,
+      "p90": 1877.2000000000007,
       "critical": true
     },
     {
       "date": "2020-10-23",
       "day_index": 23,
       "events": 2276,
-      "median": 534.5,
-      "p90": 1980.0,
+      "median": 676.0,
+      "p90": 1986.2,
       "critical": true
     },
     {
       "date": "2020-10-24",
       "day_index": 24,
       "events": 2342,
-      "median": 428.5,
-      "p90": 1588.5,
+      "median": 441.0,
+      "p90": 2055.2000000000003,
       "critical": true
     },
     {
       "date": "2020-10-25",
       "day_index": 25,
       "events": 3411,
-      "median": 427.0,
-      "p90": 1440.0,
+      "median": 620.0,
+      "p90": 2220.6000000000004,
       "critical": true
     },
     {
       "date": "2020-10-26",
       "day_index": 26,
       "events": 3148,
-      "median": 848.5,
-      "p90": 1799.5,
+      "median": 559.0,
+      "p90": 2525.6000000000004,
       "critical": true
     },
     {
       "date": "2020-10-27",
       "day_index": 27,
       "events": 3495,
-      "median": 920.5,
-      "p90": 1650.0,
+      "median": 842.0,
+      "p90": 2936.2000000000003,
       "critical": true
     },
     {
       "date": "2020-10-28",
       "day_index": 28,
       "events": 4584,
-      "median": 645.5,
-      "p90": 2788.5,
+      "median": 618.0,
+      "p90": 3014.6,
       "critical": true
     },
     {
       "date": "2020-10-29",
       "day_index": 29,
       "events": 3508,
-      "median": 1485.0,
-      "p90": 3058.0,
+      "median": 1199.0,
+      "p90": 3166.2000000000007,
       "critical": true
     },
     {
       "date": "2020-10-30",
       "day_index": 30,
       "events": 5992,
-      "median": 1118.5,
-      "p90": 3550.5,
+      "median": 658.0,
+      "p90": 3892.6,
       "critical": true
     },
     {
       "date": "2020-10-31",
       "day_index": 31,
       "events": 5330,
-      "median": 1548.5,
-      "p90": 4994.5,
+      "median": 768.0,
+      "p90": 4784.200000000001,
       "critical": true
     },
     {
       "date": "2020-11-01",
       "day_index": 32,
       "events": 4896,
-      "median": 2178.5,
-      "p90": 4120.5,
+      "median": 1091.0,
+      "p90": 4400.400000000001,
       "critical": true
     },
     {
       "date": "2020-11-02",
       "day_index": 33,
       "events": 5421,
-      "median": 1377.0,
-      "p90": 5066.5,
+      "median": 646.0,
+      "p90": 4743.800000000001,
       "critical": true
     },
     {
       "date": "2020-11-03",
       "day_index": 34,
       "events": 4692,
-      "median": 1954.0,
-      "p90": 4704.0,
+      "median": 906.0,
+      "p90": 4779.000000000001,
       "critical": false
     },
     {
       "date": "2020-11-04",
       "day_index": 35,
       "events": 7158,
-      "median": 1561.0,
-      "p90": 5123.5,
+      "median": 726.0,
+      "p90": 5212.600000000001,
       "critical": true
     },
     {
       "date": "2020-11-05",
       "day_index": 36,
       "events": 7253,
-      "median": 2626.5,
-      "p90": 7428.0,
-      "critical": false
+      "median": 1066.0,
+      "p90": 5746.400000000001,
+      "critical": true
     },
     {
       "date": "2020-11-06",
       "day_index": 37,
       "events": 6617,
-      "median": 1413.0,
-      "p90": 5247.0,
+      "median": 669.0,
+      "p90": 5683.800000000001,
       "critical": true
     },
     {
       "date": "2020-11-07",
       "day_index": 38,
       "events": 7072,
-      "median": 1978.5,
-      "p90": 6175.0,
+      "median": 558.0,
+      "p90": 5682.600000000002,
       "critical": true
     },
     {
       "date": "2020-11-08",
       "day_index": 39,
       "events": 5804,
-      "median": 1655.5,
-      "p90": 5981.5,
-      "critical": false
+      "median": 818.0,
+      "p90": 3576.8,
+      "critical": true
     },
     {
       "date": "2020-11-09",
       "day_index": 40,
       "events": 4204,
-      "median": 1315.0,
-      "p90": 5399.5,
-      "critical": false
+      "median": 973.0,
+      "p90": 3593.0000000000014,
+      "critical": true
     },
     {
       "date": "2020-11-10",
       "day_index": 41,
       "events": 5620,
-      "median": 623.0,
-      "p90": 5800.0,
-      "critical": false
+      "median": 518.0,
+      "p90": 4416.8,
+      "critical": true
     },
     {
       "date": "2020-11-11",
       "day_index": 42,
       "events": 3774,
-      "median": 839.0,
-      "p90": 6856.5,
+      "median": 651.0,
+      "p90": 4123.6,
       "critical": false
     },
     {
       "date": "2020-11-12",
       "day_index": 43,
       "events": 2379,
-      "median": 1266.5,
-      "p90": 5548.0,
+      "median": 320.0,
+      "p90": 2537.8000000000006,
       "critical": false
     },
     {
       "date": "2020-11-13",
       "day_index": 44,
       "events": 3982,
-      "median": 1984.0,
-      "p90": 5360.0,
-      "critical": false
+      "median": 344.0,
+      "p90": 2750.800000000001,
+      "critical": true
     },
     {
       "date": "2020-11-14",
       "day_index": 45,
       "events": 1364,
-      "median": 236.0,
-      "p90": 3792.0,
+      "median": 101.0,
+      "p90": 1910.2000000000003,
       "critical": false
     },
     {
       "date": "2020-11-15",
       "day_index": 46,
       "events": 723,
-      "median": 481.0,
-      "p90": 3380.5,
+      "median": 171.0,
+      "p90": 2638.8000000000025,
       "critical": false
     }
   ]
