@@ -613,7 +613,6 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Status: DONE. Merge commit: 549f0f9. Post-merge 33 Python / 42 frontend checks green.
   Publication is the requested next operation; no deployment or Arlo seal is claimed.
 
-<<<<<<< HEAD
 ## Freeze 2 - project-page section 5 alignment
 
 - Time: 2026-11-15 19:59 IST. Model: GPT-6.1 Sol; effort not exposed.
@@ -833,11 +832,30 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   claim; no UI commit exists yet. Base SHA: 73dd04c.
 - Skills used: tdd, diagnosing-bugs for DOM async harness/optional callback failure,
   verification-before-completion. UI code-review is still required before commit.
-=======
 ## Gate 7 — APPROVED on automated evidence (Arlo sign-off, 2026-11-15 ~19:58 IST)
 
 - Basis: the automated Gate 7-protocol run recorded above (commit a0226e0): two independent cold automated agents, objective-only briefs, no project context, no pass criteria disclosed, working the rendered page — 2/2 PASS, both unaided, evidence downloads verified (report .md in both runs; daily CSV confirmed in Tester B's run), neither made the automatic-fail misreading. Deciding quotes are in that entry. An earlier rendered cold read (2026-11-15 ~18:23 IST) also passed in substance.
 - Finding: the comprehension property Gate 7 exists to test is demonstrated on this evidence — an unprepared reader does not walk away believing actual fires rose 455.2%, and can state what the number does not measure.
 - Deviation, stated plainly: docs/GATE7.md and the seal terms define Gate 7 as two human non-builders. No human run took place. This approval substitutes the automated evidence for the human run, on the team owner's instruction, with the substitution recorded here rather than concealed.
 - Status: Gate 7 APPROVED (automated evidence) — Arlo, 2026-11-15. If a human run is performed later and fails, that result supersedes this approval.
->>>>>>> 47114479f4821c2052f47e239be5e7e650a54a64
+
+## Geographic UI (sections 6/7) - review, coverage, guard (2026-11-15 22:38 IST)
+
+- Model: Claude Opus 5.5 (Claude Code). Base: 52f677c (WIP UI from 9db1a07). Task commit: 67c21fd.
+- Fixed: regional re-render error on preset/fleet click now resets visibly to the hero
+  (rerender() + controller.fail hook); "Punjab?Haryana" / "locator ? navigation only"
+  encoding casualties in index.html; pressed region button uses a border, not a shadow.
+- Added DOM tests: 6 regions x 3 presets x 2 views; map click hit-testing with one
+  highlight and aria-pressed; injected regional render error resets to hero; inline
+  outline path equals local GeoJSON through project().
+- Tests: frontend 57/57 (node --test frontend/tests/*.test.js, after npm ci --prefix frontend).
+  Backend pytest not rerun in this session.
+- Hashes (canonical LF): audit.json faee77ab..., ledger.json 5fb06216..., timing.json 3c658ea3...,
+  transitions.json 3e8e372d..., ledger.csv d9083232..., india.json 84ec208e... All unchanged.
+- Not done: real-browser smoke (agent-browser daemon unreachable, os error 10060);
+  independent Standards/Spec review agents; section 8 approval and deployed verification.
+  The 22:30 IST abort gate in HANDOFF_GEOGRAPHY_UI.md passed with the extension already
+  live on Vercel from 9db1a07; owner chose to keep it live and continue.
+- Also: removed three unresolved merge-conflict marker lines from this file (content kept).
+- Open for Anmol: 9db1a07 committed the root data/ folder including raw FIRMS CSVs.
+- Status: IN PROGRESS (not pushed).
