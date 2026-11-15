@@ -654,3 +654,25 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Status: DONE (amendment/isolation only). Task commit: 45b1de1.
   Standards and spec reviews: 0 findings; 33 Python / 42 frontend tests green.
   Geographic implementation, independent approval and deployment remain unstarted.
+
+## Geographic extension - section 3 preflight STOP
+
+- Time: 2026-11-15 20:38 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Task: availability/missing-data preflight before any full-rectangle area pull.
+- Status: BLOCKED. Required VIIRS_SNPP_NRT has known missing product delivery
+  inside the required Oct 1-Nov 14, 2026 interval. NOAA Update #3 (issued Oct 30)
+  identifies cessation Nov 2 at 15:40 UTC. The immediate stop rule was applied.
+- Evidence: https://www.nesdis.noaa.gov/news/update-3-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-october-30-2026-1400-utc
+- No area CSV requested, no key read, no source dropped/substituted and no window
+  shortened. All six seasons have zero downloaded rows; available observation
+  counts are unknown, not zero. Remaining availability checks are explicitly
+  incomplete, not certified available. Nov 15, 2026 stays excluded/unverified.
+- Manifest: extensions/india/data/manifests/preflight.json. Lists all 14 required
+  source/season pairs, requested intervals, one known-missing blocker, unknown
+  completeness elsewhere and no chunk manifests (zero chunk requests).
+- All five frozen export hashes remain unchanged before/after, recorded in the
+  manifest. Canonical inputs and all existing generators remain untouched.
+- Scope: stop evidence only; no fetch implementation or extension release claim.
+  Skills: code-review and verification-before-completion; no implementation/TDD.
+- Checks: preflight structure, 14 pairs, no raw CSVs and five hash checks green;
+  full suites green: Python 33/33, frontend 42/42. Base commit: a1a1530.

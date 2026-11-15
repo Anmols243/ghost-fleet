@@ -1,0 +1,225 @@
+{
+  "schema": "india-pull-preflight v1",
+  "status": "BLOCKED",
+  "checked_at_utc": "2026-11-15T15:08:37.523425+00:00",
+  "base_commit": "a1a1530358bb4222abca1ddd99a9f56ab02a9af9",
+  "bbox_west_south_east_north": [
+    68.0,
+    6.5,
+    97.5,
+    37.5
+  ],
+  "max_days_per_request": 5,
+  "area_data_pull_started": false,
+  "chunk_manifests": [],
+  "required_source_seasons": [
+    {
+      "season": 2011,
+      "source": "MODIS_SP",
+      "requested_start": "2011-10-01",
+      "requested_end": "2011-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2012,
+      "source": "MODIS_SP",
+      "requested_start": "2012-10-01",
+      "requested_end": "2012-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2012,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2012-10-01",
+      "requested_end": "2012-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2017,
+      "source": "MODIS_SP",
+      "requested_start": "2017-10-01",
+      "requested_end": "2017-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2017,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2017-10-01",
+      "requested_end": "2017-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "MODIS_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2018,
+      "source": "VIIRS_NOAA20_SP",
+      "requested_start": "2018-10-01",
+      "requested_end": "2018-11-15",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "MODIS_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "VIIRS_SNPP_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2025,
+      "source": "VIIRS_NOAA20_SP",
+      "requested_start": "2025-10-01",
+      "requested_end": "2025-11-14",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2026,
+      "source": "MODIS_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    },
+    {
+      "season": 2026,
+      "source": "VIIRS_SNPP_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "known_missing_product_interval",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "known_missing"
+    },
+    {
+      "season": 2026,
+      "source": "VIIRS_NOAA20_NRT",
+      "requested_start": "2026-10-01",
+      "requested_end": "2026-11-14",
+      "availability_check": "not_completed_stop_gate_triggered",
+      "area_api_availability_verified": false,
+      "chunk_requests": 0,
+      "downloaded_rows": 0,
+      "observation_row_count": null,
+      "completeness": "unknown"
+    }
+  ],
+  "anomalies": [
+    {
+      "code": "REQUIRED_SOURCE_KNOWN_INCOMPLETE",
+      "source": "VIIRS_SNPP_NRT",
+      "season": 2026,
+      "cessation_utc": "2026-11-02T15:40:00Z",
+      "affected_required_interval": "2026-11-02T15:40:00Z through 2026-11-14T23:59:59Z",
+      "evidence": "https://www.nesdis.noaa.gov/news/update-3-cessation-of-suomi-national-polar-orbiting-partnership-s-npp-data-users-november-02-2026-1540-utc-and-decommissioning-issued-october-30-2026-1400-utc",
+      "notice_issued": "2026-10-30",
+      "decision": "Stop before data pull under section 3. No source removal, substitution, shortened interval or completeness claim."
+    }
+  ],
+  "summary": {
+    "retrieved": {
+      "chunks": 0,
+      "rows": 0
+    },
+    "known_missing": "S-NPP product delivery ceased inside the required 2026 comparison window.",
+    "zero_detections": "Not observed or inferred; no area CSV was requested.",
+    "unknown_completeness": "All other source/season checks remain incomplete because the immediate stop gate triggered.",
+    "available_counts": "Unknown for every season; downloaded_rows=0 describes work performed only."
+  },
+  "unverified_excluded_dates": [
+    "2026-11-15"
+  ],
+  "credential_handling": "Stopped before credential loading or keyed API requests; no key stored.",
+  "frozen_sha256_before": {
+    "audit.json": "3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a",
+    "ledger.json": "5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255",
+    "timing.json": "3c658ea3a623265549fcafd9ce9049960de4692e0366bcb1c4dd56eef7330fd0",
+    "transitions.json": "3e8e372d69c3ae915182d5d6c8fc7c8c6faeaf470362d68b0e0c84a95e936218",
+    "ledger.csv": "d9083232d71b42763673febd4a6357f4b06c78de7b2db8b277fb4aa52483d8ef"
+  },
+  "frozen_sha256_after": {
+    "audit.json": "3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a",
+    "ledger.json": "5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255",
+    "timing.json": "3c658ea3a623265549fcafd9ce9049960de4692e0366bcb1c4dd56eef7330fd0",
+    "transitions.json": "3e8e372d69c3ae915182d5d6c8fc7c8c6faeaf470362d68b0e0c84a95e936218",
+    "ledger.csv": "d9083232d71b42763673febd4a6357f4b06c78de7b2db8b277fb4aa52483d8ef"
+  }
+}
