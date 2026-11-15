@@ -1,0 +1,160 @@
+# Ghost Fleet — Fire Trend Audit: specification & plan of record
+
+Status: CANONICAL from 2026-11-15 06:00 IST. This document supersedes the
+product framing in docs/TEAM_BRIEF.md wherever they conflict. The pipeline
+docs (METHOD.md, PIPELINE_AUDIT.md, HARMONIZATION.md, DETECTABILITY.md,
+DEGRADATION.md, FLEETS.md) remain accurate descriptions of the data work.
+
+## What the product is now
+
+Ghost Fleet — Fire Trend Audit. User: an analyst or journalist deciding
+what they can responsibly say about a change in reported fire activity.
+Workflow: choose two seasons → compare the recorded change with ALL
+satellites vs with only the satellites present in BOTH periods → inspect
+the difference, decomposed exactly. Output: a comparison the user can
+inspect, reproduce, and cite — never a "corrected" fire number.
+
+Design approved by independent review (GPT-6 Astra, 2026-11-15) with a
+fixed bar: meet the 8 gates in this document by 18:00 IST today and the
+delivered version is endorsed at 20/25 as a great, bounded project.
+
+## The accounting identity (the whole method)
+
+For two periods A and B, same mask, grid, date and confidence rules:
+- W = cell-day events observed by ALL satellites present in the period
+- U = cell-day events observed by the satellites present in BOTH periods
+- C = W − U (cell-days seen only by a satellite present in one period)
+- Recorded change = % change in W. Shared-satellite change = % change in U.
+- The difference between them is a composition difference. It is NOT a
+  causal "instrument effect", and U is NOT a correction for real sensor
+  differences. Say "shared satellites", never "same eyes".
+
+## Language law (no exceptions in app, page, video, README)
+
+- BANNED: "MODIS-equivalent", "harmonised/homogenised", "continuous
+  record", "same-eyes" (unless immediately qualified "experimental /
+  rule-filtered" inside Method checks), any claim of change in ACTUAL
+  burning or emissions, "satellite died" (say "data delivery ceased").
+- Every percentage carries its denominator definition next to it.
+- "1,601,319 detections" describes dataset size only — never evidence
+  about fire.
+- Zero on a calendar means "no detections in these retrieved records".
+
+## Approved claim (use verbatim)
+
+"Ghost Fleet — Fire Trend Audit compares active-fire cell-days between
+Punjab–Haryana burning seasons using the same geographic mask, grid, date
+rules, and confidence criteria. It shows the recorded change for all
+included satellites, the change for satellites present in both periods,
+and the difference between them. It does not estimate the change in
+actual burning."
+
+Validation disclosure (use verbatim):
+"We tested one proposed MODIS-sensitivity correction in the 2021 season.
+It failed the benchmark. The current app does not use that correction as
+a trusted measurement. It retains it in Method checks as a tested and
+failed method."
+
+## The three preset comparisons (frozen; VM reference values)
+
+Presets are FIXED. Reference values below are from the VM implementation
+(manifest cross-validated row-for-row with the repo pipeline; event
+totals may differ ~1% by cell rounding). Codex: port scripts/audit.py
+logic into this repo, regenerate audit.json from THIS pipeline, diff
+against these references (tolerance: totals within 1.5%, changes within
+2 pp), freeze the repo values, and record the frozen values in
+docs/BUILD_PROGRESS.md. The frontend renders ONLY the frozen audit.json.
+
+P1 viirs_transition — 2011 vs 2012 (S-NPP joins):
+  W: 13,521 → 74,703 (+452.5%) · U (MODIS Terra+Aqua): 13,521 → 14,255
+  (+5.4%) · composition difference 447.1 pp
+P2 noaa20_transition — 2017 vs 2018 (NOAA-20 joins):
+  W: 54,060 → 106,893 (+97.7%) · U (Terra+Aqua+S-NPP): 54,060 → 60,101
+  (+11.2%) · difference 86.5 pp
+P3 snpp_cessation — 2025 vs 2026 (S-NPP delivery ceases 2 Nov 2026):
+  Season decomposition is 0 pp by construction (S-NPP is present in both
+  seasons' fleets). This preset is the WITHIN-SEASON interruption case:
+  daily view must show S-NPP's contribution to 2026 events running
+  Oct 1 – Nov 2 and zero from Nov 3, while NOAA-20 continues. An
+  unqualified 2025-vs-2026 comparison silently compares a 4-satellite
+  season against a season whose fleet shrank mid-way.
+
+Gate 6 (audit reveals something) is met by P1 and P2 (≥10 pp) and by
+P3's documented feed interruption.
+
+## Data contract for the frontend
+
+audit.json: {sensors_present: {season: [sensors]}, daily: {season:
+{subset_key: [46 daily counts]}}, presets: [ {id, a, b, label, W_a, W_b,
+U_a, U_b, C_a, C_b, fleet_a, fleet_b, shared, change_W_pct, change_U_pct,
+diff_pp} ]}. Subset keys join sensor names with "+", e.g.
+"MODIS_TERRA+MODIS_AQUA". Daily arrays are Oct 1 – Nov 15 (46 days).
+The browser loads audit.json only — never raw detections.
+
+## App structure (static, no login, desktop + mobile)
+
+1. Compare view (default): preset selector (P1/P2/P3) → paired daily
+   calendars for W and U on IDENTICAL colour scales, cumulative curves,
+   U/C/W table, fleet composition chips for both periods, and the
+   conclusion line (deterministic rule: state recorded change, shared
+   change, difference; if |diff| ≥ 10 pp or interruption present, the
+   statement "requires qualification" + the qualifying sentence).
+2. Case study panel: S-NPP 2026 — daily stacked contribution by sensor,
+   cessation line at Nov 2/3, "data delivery ceased" wording.
+3. Method checks panel (one click from everywhere): (a) 2021 benchmark —
+   ratio MAE 323 / total error −12.4% vs degradation MAE 1,162 /
+   +202.1% vs actual MODIS 13,216 events on held-out Oct 24 – Nov 15;
+   verdict: degradation FAILED, retained as experimental only.
+   (b) Sensor-addition test 2012–2025 (S-NPP only, frozen rules):
+   mean year-to-year steadiness of the addition excess E — raw 0.520,
+   degraded 0.216, ratio control 0.086; levels J remain large for all
+   (raw ≈ +424–540%, degraded ≈ +117–177%): steadier is not accurate.
+   (c) Known limitations: NOAA-21 configured but absent from the pull
+   (2026 fleet is MODIS + NOAA-20 + S-NPP to Nov 2); 2026 is NRT and
+   provisional, season labelled through Nov 15 with data as retrieved;
+   two implementations differ ~1% on event totals (cell rounding).
+4. Evidence download: per preset, a readable report (txt/md) + daily CSV
+   (date, W, U, C for both periods), generated in the browser from
+   audit.json. Must reproduce the screen exactly.
+
+Cut (do not build): map view, p90/critical-day alerts, animations,
+backend, any new data pull, any sixth view.
+
+## The 8 gates (Astra's fixed bar — all by 18:00 IST)
+
+1. Complete public workflow, no login, desktop + mobile, all 3 presets,
+   comparison → evidence download unaided.
+2. Measurement contract explicit and identical everywhere; incomplete
+   pulls flagged; 2026 cutoff/NRT/missing satellites visible.
+3. Exact arithmetic: independent aggregation reproduces U, C, W for all
+   presets; downloads match screen.
+4. No implied causality anywhere in copy or UI.
+5. No hidden method outcome: 2021 failure + sensor-addition results one
+   click away; degradation labelled experimental.
+6. Audit reveals something: P1/P2 ≥10 pp + P3 interruption, with the
+   statement requiring qualification shown.
+7. Usability: two non-builders each complete a preset task in ≤2 min
+   (find recorded change, find the qualification, download evidence)
+   and correctly state the app does NOT measure change in actual fires.
+   Record answers + times in docs/BUILD_PROGRESS.md.
+8. Submission-ready by 18:00: app + project page + demo (≤30 s video or
+   ≤7 slides) public; NASA sources, AI-use disclosure, limitations,
+   repo link present; every headline traces to frozen output.
+
+## Schedule (IST, today)
+
+06–08 freeze definitions + presets; regenerate + freeze audit.json.
+08–12 frontend: compare view, case study, method checks, downloads.
+12:00 SCOPE FREEZE — no new features after this.
+12–14 project page copy (approved claim + disclosure verbatim).
+14–15 two uncoached user checks; fix biggest comprehension failures.
+15–16 demo (5 slides or ≤30 s: headline claim → both views → the gap →
+   S-NPP cessation → download the evidence).
+16–17 upload page + demo; verify public access signed-out.
+17–18 gate check against this document; submit.
+18–20 buffer — defects only.
+
+## Roles
+
+Shabeeh: frontend + deploy + demo capture. Anmol: data freeze, project
+page, user checks, submission. Arlo (VM): reference numbers, cross-checks.
