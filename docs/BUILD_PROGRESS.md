@@ -812,8 +812,9 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   No fetch/network/API key required. Manifest file hashes checked before ingest.
 - Skills: tdd, code-review, verification-before-completion. No mismatch arose,
   so no input-revision/retrieval/filtering/implementation stop diagnosis required.
-- Status: IN PROGRESS pending final artifact review and commit SHA. Section 8
-  independent approval, navigation integration and deployment are still pending.
+- Status: DONE (sections 2/4/5 generation). Task commit: f897b17.
+  Python 45/45 and frontend 42/42 green; both reviews 0 findings. Section 8
+  independent approval, navigation integration and deployment remain pending.
 - Final artifact review: standards 0 findings, spec 0 findings. Own-math/set
   recomputation repeated against final candidate: all 5943 assertions pass;
   all source hashes current, both output copies identical, five frozen files
