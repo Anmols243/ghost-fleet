@@ -765,4 +765,6 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   102 outage entries/source hashes, per-comparison metadata and frozen input hashes
   verified. Original NASA HTML snapshots retain upstream blank lines at EOF;
   formatting checks exclude only those exact source snapshots. No data edited.
-- Status: IN PROGRESS pending final green checks, artifact review and commit SHA.
+- Status: DONE (section 3 retrieval only). Task commit: ee9bbba.
+  Standards review: 0 outstanding findings. Spec review: 0 outstanding findings.
+  Python 42/42 and frontend 42/42 green. Extension release is not approved.
