@@ -454,3 +454,20 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
 .geo-scope, .geo-attribution { font-size: 13px; }
 #geography-status { border: 2px solid var(--accent); padding: 12px; }
 @media (max-width: 600px) { .geo-layout { grid-template-columns: 1fr; } .geo-map { max-width: 300px; margin: auto; } }
+
+/* Geography panel sits on the dark desk: match the rail tabs and switch. */
+@media screen {
+  .geography-panel { border-color: #F5F1E844; color: var(--paper); }
+  .geo-choices { gap: 0; }
+  .geo-choices button { background: #1A1A1A; color: var(--paper); border: 1px solid #F5F1E844; margin: 0 0 -1px; padding: 12px 14px 12px 18px; font-family: var(--mono); font-size: 12px; line-height: 1.35; font-weight: 400; }
+  .geo-choices button:hover:not([aria-pressed="true"]) { background: #262626; }
+  .geo-choices button[aria-pressed="true"] { background: var(--paper); color: var(--ink); border: 1px solid var(--paper); box-shadow: inset 7px 0 0 var(--accent); font-weight: 700; }
+  #geography-refresh { margin-top: 12px; background: transparent; color: var(--paper); border: 1px solid #F5F1E866; font-family: var(--mono); font-size: 12px; }
+  #geography-refresh:hover { background: #262626; }
+  .geo-outline { stroke: #F5F1E899; }
+  .geo-extent { stroke: #F5F1E8CC; }
+  .geo-extent.is-selected { stroke: var(--accent); }
+  .geo-scope, .geo-attribution { color: #F5F1E8CC; }
+  .geo-attribution a { color: var(--paper); text-decoration-color: currentColor; }
+  .foot a { text-decoration-color: var(--paper); }
+}
