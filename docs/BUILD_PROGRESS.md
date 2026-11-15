@@ -296,3 +296,23 @@ hardcoded-number grep empty; banned-word grep empty; no external requests;
 Code review (low) findings fixed: snapshot dates derived from data, load-time
 field validation extended, false "1 Oct" start guarded, dead parameter removed.
 Commit locator: git log -1 -- frontend/app.js. Status: DONE. Not pushed. Not deployed.
+
+## Frontend Phase 2 (craft): figures, case study, method checks, downloads
+
+2026-11-15 IST - Claude Code, Sonnet 5.5 (medium effort), per the build plan.
+Added Fig. 1 paired calendars (shared square-root heat scale, ghost-cell hatching,
+unverified and excluded cells distinct without colour, legend, click readout, daily
+table), Fig. 2 cumulative curves with the C gap, section 2.0 case study (fleet strata,
+single-sensor daily strips, cessation line, all derived from audit.json), Appendix A
+method checks rendered from method_checks, and the evidence download (report .md and
+daily CSV, pure generator, same state as the screen).
+Checks: node --test frontend/tests/conclusion.test.js and evidence.test.js 26 passed
+(CSV column sums equal preset W/U/C for all 3 presets, P3 has 45 rows, report holds the
+exact FINDING string, malformed data gives no numbers). Blob files fetched in the
+browser and parsed: sums and FINDING match the screen for P1, P2, P3. Malformed
+scratch copy (null W_b, missing predictor, tampered daily) and a missing audit.json
+show error states with no fabricated numbers. audit.json sha256 unchanged
+(3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a). Banned-word,
+hardcoded-number and external-request greps clean. 360px: no horizontal scroll.
+Code review (low): 4 findings (unguarded coverage fields), fixed.
+Commit locator: git log -1 -- frontend/app.js. Status: DONE. Not pushed. Not deployed.

@@ -88,7 +88,7 @@ button { font: inherit; color: inherit; }
 .snapshot p:last-child { margin: 0; font-size: 14px; }
 
 /* figures */
-.fig { margin: 0 0 20px; border: 1px dashed var(--grey); padding: 12px; }
+.fig { margin: 0 0 24px; border-top: 2px solid var(--ink); padding: 10px 0 0; }
 .fig figcaption { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
 
 /* table */
@@ -125,4 +125,82 @@ button { font: inherit; color: inherit; }
   .chip-head { width: 100%; }
   .ruled { font-size: 13px; }
   .ruled .num { white-space: normal; }
+}
+
+/* Fig. 1 calendars */
+.cal-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 28px; margin: 10px 0; }
+.cal-head { margin: 0 0 4px; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+.cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
+.cal-wd { font-family: var(--mono); font-size: 10px; color: var(--grey); text-align: center; }
+.cell { position: relative; display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 1px solid var(--rule); background: var(--paper); overflow: hidden; cursor: pointer; text-align: left; }
+.cell-n { position: absolute; left: 2px; top: 1px; font-family: var(--mono); font-size: 9px; line-height: 1; z-index: 2; }
+.cell-dark { color: var(--paper); border-color: transparent; }
+.cell-mon { position: absolute; right: 2px; bottom: 1px; font-family: var(--mono); font-size: 8px; text-transform: uppercase; z-index: 2; background: var(--paper); color: var(--ink); padding: 0 2px; }
+.ghost { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: repeating-linear-gradient(45deg, var(--ink) 0 1.5px, transparent 1.5px 5px); border-top: 1px solid var(--ink); }
+.ghost-out { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; background: var(--paper); border: 1px dashed var(--ink); }
+.cell-unv { background: repeating-linear-gradient(45deg, var(--grey) 0 1px, var(--paper) 1px 4px); border: 1px dashed var(--ink); }
+.cell-excl { background: var(--paper); border: 1px dotted var(--grey); color: var(--grey); }
+.cell-mark { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 14px; font-weight: 700; z-index: 2; }
+.readout { min-height: 3em; margin: 8px 0; padding: 8px 10px; border-left: 3px solid var(--accent); font-family: var(--mono); font-size: 12px; }
+.legend { font-size: 12px; }
+.legend p { margin: 4px 0; font-family: var(--mono); }
+.lg-scale { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; font-family: var(--mono); font-size: 11px; }
+.lg-bar { display: block; height: 12px; border: 1px solid var(--ink); }
+.lg-row { display: flex; gap: 8px; align-items: center; }
+.lg-sw { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border: 1px solid var(--ink); background: var(--paper); font-weight: 700; }
+.lg-ghost { background: repeating-linear-gradient(45deg, var(--ink) 0 1.5px, transparent 1.5px 5px); }
+.lg-out { border-style: dashed; }
+.lg-unv { background: repeating-linear-gradient(45deg, var(--grey) 0 1px, var(--paper) 1px 4px); border-style: dashed; }
+.lg-excl { border-style: dotted; color: var(--grey); }
+.daily { margin-top: 12px; border: 1px solid var(--rule); }
+.daily summary { cursor: pointer; padding: 8px 10px; font-family: var(--mono); font-size: 12px; }
+.daily-scroll { max-height: 420px; overflow: auto; }
+.daily .ruled { font-size: 12px; }
+.muted { color: var(--grey); font-size: 12px; }
+
+/* Fig. 2 chart */
+.chart, .strip { display: block; width: 100%; height: auto; max-width: 760px; }
+.ax-t { font-family: var(--mono); font-size: 10px; fill: var(--grey); }
+.ax-c { font-family: var(--mono); font-size: 10px; font-weight: 700; fill: var(--accent); }
+.ax-grid { stroke: var(--rule); stroke-width: 1; }
+.ax-base { stroke: var(--ink); stroke-width: 1; }
+.gap-fill { fill: var(--accent); fill-opacity: 0.22; stroke: none; }
+.ln { fill: none; stroke-linejoin: round; }
+.ln-a { stroke: var(--grey); }
+.ln-b { stroke: var(--ink); }
+.ln-u { stroke-dasharray: 5 3; }
+.ln-sel { stroke-width: 2.6; }
+.ln-off { stroke-width: 1.2; opacity: 0.6; }
+.curve-key { margin: 8px 0 0; padding: 0; list-style: none; font-family: var(--mono); font-size: 12px; }
+.curve-key li { margin: 3px 0; }
+.k-sw { display: inline-block; width: 26px; height: 0; vertical-align: middle; margin-right: 4px; border-top: 3px solid var(--ink); }
+.k-bd { border-top-style: dashed; }
+.k-as { border-top-color: var(--grey); }
+.k-ad { border-top-color: var(--grey); border-top-style: dashed; }
+.k-gap { height: 10px; border: 0; background: var(--accent); opacity: 0.35; }
+.fig-note { margin: 8px 0 0; font-family: var(--mono); font-size: 12px; color: var(--grey); }
+.fig-cap { margin: 0 0 6px; font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* case study */
+.strata { margin-bottom: 24px; border-top: 2px solid var(--ink); padding-top: 10px; }
+.st-axis { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 11px; color: var(--grey); margin-bottom: 6px; }
+.st-row { margin-bottom: 8px; }
+.st-name { margin: 0 0 3px; font-size: 13px; }
+.st-track { position: relative; height: 12px; border-bottom: 1px solid var(--rule); }
+.st-bar { position: absolute; top: 0; bottom: 0; background: var(--ink); }
+.st-empty { background: transparent; border: 1px dashed var(--grey); }
+.strip-wrap { margin-bottom: 10px; }
+.strip-name { margin: 6px 0 0; font-family: var(--mono); font-size: 12px; font-weight: 700; }
+.bar { fill: var(--ink); }
+.cess { stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 4 3; }
+
+/* method checks */
+.mc-h { margin: 20px 0 6px; font-family: var(--mono); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+.stamp { display: inline-block; margin: 12px 0; padding: 8px 12px; border: 3px solid var(--accent); color: var(--accent); font-family: var(--mono); font-weight: 700; letter-spacing: 0.06em; transform: rotate(-1deg); }
+.lim { padding-left: 20px; }
+.lim li { margin-bottom: 6px; }
+.dl-note a { color: inherit; }
+
+@media (max-width: 720px) {
+  .cal-pair { grid-template-columns: 1fr; }
 }
