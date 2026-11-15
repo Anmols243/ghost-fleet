@@ -480,7 +480,7 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
 .geo-outline { fill: var(--geo-face, url(#geo-hatch)); stroke: var(--geo-edge, var(--ink)); stroke-linejoin: round; }
 .geo-slab { --geo-face: #C9C2B2; --geo-edge: #C9C2B2; }
 .geo-slab .geo-slab-base { --geo-edge: var(--grey); }
-.geo-extent.is-selected { fill: var(--accent); fill-opacity: 0.14; }
+.geo-extent.is-selected { fill: none; }
 .tr-facts { margin: 0 0 14px; border-top-color: var(--paper); }
 .tr-facts .sys-row { border-bottom-color: #F5F1E844; }
 .tr-facts dt { background: #1A1A1A; color: #F5F1E8CC; }
@@ -501,9 +501,26 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
   .geo-outline { --geo-edge-top: #F5F1E8B3; stroke: var(--geo-edge, #F5F1E8B3); }
   .geo-slab { --geo-face: #34312C; --geo-edge: #34312C; }
   .geo-slab .geo-slab-base { --geo-edge: #6B6B66; }
-  .geo-extent.is-selected { fill-opacity: 0.18; }
 }
 @media print {
   .geo-slab { display: none; }
   .tr-table th, .tr-table td, .tr-facts dt, .tr-facts dd { background: none !important; color: #111 !important; position: static; }
 }
+
+/* Locator heat grid: recorded cell-days per 0.5-degree bin, log scale shared across seasons. */
+.geo-bin { pointer-events: none; }
+.geo-heat[hidden] { display: none; }
+.geo-seasons { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 10px; }
+.geo-seasons button { min-height: 36px; padding: 6px 12px; font-family: var(--mono); font-size: 12px; border: 1px solid var(--rule-2); background: var(--paper); color: var(--ink); cursor: pointer; }
+.geo-seasons button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
+.geo-legend { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font-family: var(--mono); font-size: 11px; }
+.geo-ramp { flex: 1; height: 10px; min-width: 60px; background: linear-gradient(90deg, #3A1C12, #E8490F, #F5F1E8); }
+.geo-heat-caption { font-size: 12px; line-height: 1.45; margin: 0; }
+@media screen {
+  .geo-outline { --geo-face: #1A1816; }
+  .geo-seasons button { background: #1A1A1A; color: var(--paper); border-color: #F5F1E844; }
+  .geo-seasons button:hover:not([aria-pressed="true"]) { background: #262626; }
+  .geo-seasons button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .geo-heat-caption, .geo-legend { color: #F5F1E8CC; }
+}
+@media print { .geo-seasons { display: none; } }

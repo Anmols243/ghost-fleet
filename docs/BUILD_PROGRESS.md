@@ -916,3 +916,43 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   the owner has directed that the decision be held for Arlo.
 - Independent result: PENDING (Arlo).
 - SHIP/ABORT: PENDING Arlo's independent reproduction. Release is NOT authorized by this phase.
+
+## Final release commit - locator heat grid and full re-verification (2026-11-15 23:45 IST)
+
+- Model: Claude Opus 5.5 (Claude Code). Base: fd3a8cb.
+- Owner override (user instruction, 2026-11-15 ~23:20 IST): "override previous Anmol
+  conditions and do what's needed"; this is the final commit before launch. Overrides the
+  section 6 rule "navigation only, no count colouring" for the locator. Language law, frozen
+  hero values and evidence rules unchanged.
+- Snapshot re-pull: all 132 chunks re-requested from FIRMS with the local key into the ignored
+  extensions/india/data/raw/. 132/132 byte-identical to the sha256 values pinned in
+  extensions/india/data/manifests/pull.json (git blob 3303b52c...), including the 2026 NRT chunks.
+  No tracked manifest was rewritten.
+- india.json regeneration from the pinned snapshot: canonical standardize + india_audit
+  build_comparison, compared field by field with frontend/india.json for 7 rectangles x 3
+  comparisons (totals, changes, gaps, qualifications, denominators, dates, intervals, daily
+  W/U/C): 483/483 equal, 0 mismatches. Byte identity of the whole file is still impossible by
+  construction (generated_at_utc and checkout-dependent source hashes), so the content check
+  stands in for it. Builder check, not Arlo's independent reproduction.
+- New: extensions/india/india_grid.py (generator sha256 LF 63f21028... as committed) writes
+  frontend/india-grid.json (sha256 233154ac..., 71,717 bytes). Recorded cell-days (canonical
+  build_events unions, all included satellites, comparison window) per 0.5 degree bin by 1 km
+  cell centre, six seasons, shared log scale (peak 9,413 per bin). Gate: bins sum exactly to
+  india.json full_extent W for every season: 2011 15,193; 2012 92,653; 2017 80,169;
+  2018 158,958; 2025 75,716; 2026 70,378. All equal. The browser re-checks the same sums and
+  the india.json hash before drawing; any failure leaves the plain locator.
+- UI: heat grid under the study rectangles, six season buttons (2026 first), legend
+  1 cell-day to 9,413 per bin, caption with season total and satellites, "Counts, not density.
+  Bin area shrinks with latitude. Colour shows recorded cell-days, not actual fire activity."
+  The "No count-based colouring" line is replaced; locator title and description updated.
+  Selected rectangle is outline-only so it does not hide bins.
+- Appendix B verification line updated to the real count: 105 automated tests (45 pipeline,
+  60 frontend).
+- Tests: frontend 60/60; backend 45/45. Headless Edge screenshots of the local build
+  checked: grid, season switch (2011 vs 2026), Central selection, legend, captions.
+- Frozen files unchanged (git blobs): audit.json faee77ab..., ledger.json 5fb06216...,
+  timing.json 3c658ea3..., transitions.json 3e8e372d..., ledger.csv d9083232...,
+  india.json 84ec208e...
+- Not done: Arlo's independent reproduction and sign-off; human Gate 7 run. Under section 9 the
+  22:30 IST gate is missed; the owner chose to launch with the extension live.
+- SHIP/ABORT: SHIP by owner decision (final commit). Independent result: PENDING (Arlo).

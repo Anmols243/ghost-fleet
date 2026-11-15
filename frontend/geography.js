@@ -1,4 +1,4 @@
-/* Optional geographic extension. Only india.json is fetched; hero never awaits it. */
+/* Optional geographic extension. india.json and india-grid.json are fetched; hero never awaits either. */
 (function () {
   'use strict';
   var DATA_SHA256 = '84ec208e58718fcabeab40d974273f9a401b948dadc582e585861ad529a46b41';
@@ -111,6 +111,39 @@
       'Measurement and provenance metadata:\n```json\n' + JSON.stringify(metadata, null, 2) + '\n```\n';
     return { base: 'ghost-fleet-' + region.id + '-' + p.id, report: report, csv: csv.join('\n') + '\n' };
   }
+  /* ---------- recorded cell-day grid on the locator ---------- */
+  var RAMP = [[0x3A, 0x1C, 0x12], [0xE8, 0x49, 0x0F], [0xF5, 0xF1, 0xE8]];
+  // Log scale shared across seasons: 1 cell-day is the darkest step, the peak bin the lightest.
+  function heatColour(n, max) {
+    var t = max > 1 ? Math.log(n) / Math.log(max) : 1;
+    t = Math.max(0, Math.min(1, t));
+    var seg = t < 0.5 ? 0 : 1, u = seg ? (t - 0.5) * 2 : t * 2;
+    var a = RAMP[seg], b = RAMP[seg + 1];
+    return '#' + [0, 1, 2].map(function (i) {
+      return Math.round(a[i] + (b[i] - a[i]) * u).toString(16).padStart(2, '0');
+    }).join('');
+  }
+  // Each season's bins must sum exactly to the full-rectangle W in the trusted india.json.
+  function validateGrid(grid, data) {
+    if (!grid || grid.schema !== 'india-grid v1' || grid.bin_deg !== 0.5 || !equal(grid.bounds, [68, 6.5, 97.5, 37.5]))
+      throw new Error('Unexpected grid');
+    if (!grid.provenance || grid.provenance.india_json_sha256 !== DATA_SHA256) throw new Error('Grid not derived from this india.json');
+    var full = data.rectangles.find(function (r) { return r.id === 'full_extent'; });
+    var expected = {};
+    full.comparisons.forEach(function (p) { expected[p.a] = p.W_a; expected[p.b] = p.W_b; });
+    if (!equal(Object.keys(grid.seasons).sort(), Object.keys(expected).map(String).sort())) throw new Error('Grid seasons');
+    var peak = 0;
+    Object.keys(grid.seasons).forEach(function (year) {
+      var s = grid.seasons[year], sum = 0;
+      s.cells.forEach(function (c) {
+        if (!count(c[0]) || !count(c[1]) || !count(c[2]) || c[2] === 0 || c[0] >= grid.cols || c[1] >= grid.rows) throw new Error('Grid cell');
+        sum += c[2]; peak = Math.max(peak, c[2]);
+      });
+      if (sum !== s.total || sum !== expected[year]) throw new Error('Grid total differs from india.json');
+    });
+    if (grid.scale.max !== peak) throw new Error('Grid scale');
+    return true;
+  }
   // Linear locator transform; it is not the analytical grid/projection.
   function project(lon, lat) { return [20 + (lon - 68) * 20, 20 + (37.5 - lat) * 20]; }
   function hitTest(lon, lat, rectangles) {
@@ -203,7 +236,7 @@
   }
   var api = { validateData: validateData, CONTRACT: CONTRACT, DATA_SHA256: DATA_SHA256,
     regionalConclusion: regionalConclusion, regionalEvidence: regionalEvidence,
-    project: project, hitTest: hitTest, createController: createController, loadTrusted: loadTrusted,
+    project: project, hitTest: hitTest, heatColour: heatColour, validateGrid: validateGrid, createController: createController, loadTrusted: loadTrusted,
     regionContext: regionContext };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   if (typeof document !== 'undefined' && window.GhostFleetUI) {
@@ -265,7 +298,47 @@
         if (id) controller.select(id);
       });
       document.getElementById('geography-refresh').addEventListener('click', function () { controller.refresh(); });
-      controller.refresh();
+      controller.refresh().then(loadHeat);
+
+      // Recorded cell-day grid: optional, independent of the comparison; a failure leaves the plain locator.
+      function loadHeat() {
+        var layer = document.getElementById('geography-grid'), box = document.getElementById('geography-heat');
+        if (!layer || !box || !currentData) return;
+        var trusted = currentData;
+        fetch('india-grid.json', { cache: 'no-cache' }).then(function (r) {
+          if (!r.ok) throw new Error('grid unavailable');
+          return r.json();
+        }).then(function (grid) {
+          validateGrid(grid, trusted);
+          var years = Object.keys(grid.seasons).sort(), seasonBox = document.getElementById('geography-seasons');
+          function show(year) {
+            var s = grid.seasons[year], ns = 'http://www.w3.org/2000/svg';
+            layer.replaceChildren();
+            s.cells.forEach(function (c) {
+              var rect = document.createElementNS(ns, 'rect');
+              rect.setAttribute('x', 20 + c[0] * 10 + 0.6); rect.setAttribute('y', 20 + c[1] * 10 + 0.6);
+              rect.setAttribute('width', 8.8); rect.setAttribute('height', 8.8);
+              rect.setAttribute('fill', heatColour(c[2], grid.scale.max));
+              rect.setAttribute('class', 'geo-bin');
+              layer.appendChild(rect);
+            });
+            Array.prototype.forEach.call(seasonBox.children, function (b) { b.setAttribute('aria-pressed', String(b.dataset.year === year)); });
+            document.getElementById('geography-heat-caption').textContent = year + ', Oct 1 through ' +
+              (s.interval[1].slice(5) === '11-14' ? 'Nov 14' : 'Nov 15') + ': ' + s.total.toLocaleString('en-US') +
+              ' recorded cell-days, all included satellites (' + s.satellites.map(function (x) { return LABELS[x]; }).join('+') +
+              '), per 0.5° bin. Seasons with more satellites record more cell-days. ' + grid.caveat;
+          }
+          seasonBox.replaceChildren();
+          years.forEach(function (year) {
+            var b = element('button', year); b.type = 'button'; b.dataset.year = year;
+            b.addEventListener('click', function () { show(year); });
+            seasonBox.appendChild(b);
+          });
+          document.getElementById('geography-scale-max').textContent = grid.scale.max.toLocaleString('en-US') + ' per bin';
+          show(years[years.length - 1]);
+          box.hidden = false;
+        }).catch(function () { layer.replaceChildren(); box.hidden = true; });
+      }
     });
   }
 })();

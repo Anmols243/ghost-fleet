@@ -135,3 +135,26 @@ test('regional conclusions use readable dates and the hero minus sign', () => {
   const ne = data.rectangles.find((r) => r.id === 'northeast');
   assert.match(geo.regionalConclusion(ne, ne.comparisons[0]), /Terra\+Aqua, \u221212\.7%/);
 });
+
+test('locator grid: bins sum exactly to full-rectangle W for every season and tampering is rejected', () => {
+  const grid = JSON.parse(fs.readFileSync(path.join(__dirname, '../india-grid.json'), 'utf8'));
+  assert.equal(geo.validateGrid(grid, data), true);
+  const full = data.rectangles.find((r) => r.id === 'full_extent');
+  for (const p of full.comparisons) {
+    for (const t of ['a', 'b']) {
+      const sum = grid.seasons[p[t]].cells.reduce((s, c) => s + c[2], 0);
+      assert.equal(sum, p['W_' + t], p[t] + ' bin sum');
+    }
+  }
+  const bad = JSON.parse(JSON.stringify(grid)); bad.seasons['2012'].cells[0][2] += 1;
+  assert.throws(() => geo.validateGrid(bad, data));
+  const wrongSource = JSON.parse(JSON.stringify(grid)); wrongSource.provenance.india_json_sha256 = '0'.repeat(64);
+  assert.throws(() => geo.validateGrid(wrongSource, data));
+  assert.match(grid.caveat, /not actual fire activity/);
+});
+
+test('locator grid colour scale runs dark to accent to paper on a shared log scale', () => {
+  assert.equal(geo.heatColour(1, 9413), '#3a1c12');
+  assert.equal(geo.heatColour(9413, 9413), '#f5f1e8');
+  assert.equal(geo.heatColour(Math.round(Math.sqrt(9413)), 9413), '#e8490f');
+});

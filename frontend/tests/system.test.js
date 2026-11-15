@@ -32,7 +32,7 @@ test('section carries the two dataset totals, and they match audit.json', () => 
 });
 
 test('no number outside the allowed list appears in the section', () => {
-  const allowed = new Set(['1,601,380', '1,482,211', '26', '2001', '2025', '2026', '1', '5', '50', '9,568', '24', '2026']);
+  const allowed = new Set(['1,601,380', '1,482,211', '26', '2001', '2025', '2026', '1', '5', '50', '105', '45', '60', '9,568', '2026']);
   const stripped = text.replace(/[0-9a-f]{64}/g, ' ').replace(/sha256/g, ' ');
   const found = (stripped.match(/\d[\d,]*/g) || []).map((s) => s.replace(/,$/, ''));
   found.forEach((n) => assert.ok(allowed.has(n), 'unexpected number ' + n));

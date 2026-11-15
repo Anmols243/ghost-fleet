@@ -10,6 +10,7 @@ Candidate under test: https://ghost-fleet-chads2.vercel.app/ at the commit recor
 |---|---|---|
 | Deployed india.json | sha256 84ec208e58718fcabeab40d974273f9a401b948dadc582e585861ad529a46b41, equal to the file Arlo approves | `curl -s <url>/india.json | sha256sum` |
 | Deployed audit.json | faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae | same |
+| Deployed india-grid.json | sha256 233154ac55becd3486e6f271e3243720479216893d2c8fcaad80b3f1e29ee39c; each season sums to the full-rectangle W | same |
 | geography.js DATA_SHA256 / MANIFEST_SHA256 | 84ec208e... / 3303b52c... | grep the deployed file |
 | Pull manifest (git blob) | 3303b52cfd5e4614c25fe7dd305acebd73fe1761cb0a61710b75a534c53ac550 | `git show HEAD:extensions/india/data/manifests/pull.json | sha256sum` |
 | Freeze 2 files (git blobs) | ledger.json 5fb06216..., timing.json 3c658ea3..., transitions.json 3e8e372d..., ledger.csv d9083232... | `git show HEAD:frontend/<f> | sha256sum` |
@@ -88,6 +89,7 @@ hero rows must render the frozen section 4 conclusions byte-for-byte, with the o
 - [ ] Tab reaches every rectangle button in order; Enter and Space select; focus ring visible on the dark desk.
 - [ ] Map click selects the smallest containing rectangle (overlaps resolve by area, ties by id); click outside every rectangle keeps the current selection.
 - [ ] Seven extents drawn, one highlighted; no clipPath or mask; outline labelled as context, not the counting mask.
+- [ ] Heat grid: six season buttons, 2026 shown first; caption total equals the full-rectangle W for that season; legend reads 1 cell-day to the peak per bin; grid missing or invalid leaves the plain locator.
 - [ ] Qualification sentence shown beside the selector and present in every regional report.
 - [ ] Feature label reads "Geographic extension: three predefined comparisons across six selected seasons."
 - [ ] Case study, Appendix A and Appendix B keep their "Frozen study rectangle only" scope notes under every regional selection.
