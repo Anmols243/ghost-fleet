@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-11-15.** This pitch describes the pre-pivot concept. The project is now Ghost Fleet — Fire Trend Audit. Canonical: docs/AUDIT_SPEC.md · Build: docs/BUILD_BRIEF.md · Copy: docs/COPY_PACK.md. Kept for provenance.
+
 # Demo script — 30 seconds (record Sun)
 
 _Corrected 14 Nov from the VM pre-read on the real pull: the peak day
