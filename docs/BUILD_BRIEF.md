@@ -93,3 +93,38 @@ output). Mean steadiness E stands: raw 0.520, degraded 0.216, ratio
 - The conclusion line is rendered by rule from audit.json, never
   hand-typed into HTML. The shared warning under the shared-satellite
   panel is always visible, never dismissible (per COPY_PACK).
+
+## Amendments — Astra post-copy-pack findings (2026-11-15, ~06:50 IST)
+
+Source: Astra's replies to the user after the copy pack. Current score
+17/25; the 20/25 commitment for all 8 gates is unchanged; no gate and
+no copy was changed. These amendments change STAGING and PRIORITY
+only — AUDIT_SPEC gates and COPY_PACK copy stand.
+
+1. **One result, staged as a change.** Never present +452.5% and
+   +5.4% as two rival headlines. The comparison is ONE result whose
+   value depends on the fleet selection: open on all included
+   satellites, then switch the same comparison — same panel, same
+   colour scale — to the same named satellites and let the figure
+   change. In the demo, the fleet chips visibly change between the
+   two numbers (per COPY_PACK narration timing). In the slides,
+   S1 → S2 is a transition of one comparison, not two claims. The
+   paired calendars and the U/C/W table remain as evidence below
+   the headline.
+2. **The exceptional test (quality bar above the gates).** A
+   genuinely unprepared viewer who watches only the 30-second demo —
+   no README, no project page — must be unable to walk away
+   believing actual fires rose 452.5%. If the demo needs a document
+   to explain it, the demo has failed.
+3. **Gate 7 is the critical path.** Astra scores Presentation 2/5
+   and ties submission and résumé readiness to a finished demo
+   passing Gate 7. Run Gate 7 as soon as the compare view is
+   clickable — do not wait for Method checks or the download. Demo
+   capture happens AFTER Gate 7 fixes, not before.
+4. **Validity points are in the evidence, not the argument.**
+   Validity is 3/5 pending demonstrated implementation: the evidence
+   download reproducing the screen exactly, and the Method checks
+   panel, are score-bearing — never cut them to save time. If time
+   compresses, cut in this order: the P3 panel's chart first (keep
+   the cessation line and the daily counts), never the download or
+   Method checks.
