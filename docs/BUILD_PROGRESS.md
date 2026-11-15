@@ -706,3 +706,4 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   extensions/india/data/manifests/preflight.stop-1.json.
 - Checks: history/classification/isolation/frozen hashes green; Python 33/33 and
   frontend 42/42 green. Original stop is retained unchanged in prior commits.
+- Resolution/second-stop evidence commit: a72e079. Standards/spec reviews: 0 findings.
