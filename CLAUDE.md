@@ -50,3 +50,13 @@ record", "same-eyes" (outside qualified Method-checks context), or any
 claim about change in actual burning. Say "shared satellites" and
 "S-NPP data delivery ceased". Every percentage shows its denominator.
 Frontend renders only the frozen audit.json. Scope freeze at 12:00 IST.
+
+## CONTEXT PACK 2026-11-15 — read these FIRST, in order
+
+@docs/AUDIT_SPEC.md
+@docs/BUILD_BRIEF.md
+@docs/COPY_PACK.md
+
+AUDIT_SPEC is the plan of record; BUILD_BRIEF holds the binding build decisions (data freeze, deploy, acceptance lines); COPY_PACK is final copy — use it unchanged. TEAM_BRIEF.md and METHOD.md are pre-pivot history except METHOD's measurement contract (grid, window, confidence rules), which stays in force.
+
+OLD CODE: do not delete and do not extend the pre-pivot machinery. fetch_firms.py + harmonize.py are load-bearing. degrade.py, fleets.py, detectability.py and docs/DEGRADATION.md, FLEETS.md, PIPELINE_AUDIT.md are Method-checks evidence — the degradation method FAILED its held-out 2021 benchmark and is never a measurement. PITCH.md, DEMO_SCRIPT.md, TEAM_BRIEF.md are superseded framing. The only new pipeline code is scripts/audit.py producing frontend/audit.json, the app's only data file.
