@@ -34,8 +34,8 @@ Remains: the UI must show the qualification beside each result.
 
 ## Gate 7 — Usability
 Gate: two non-builders each complete a preset task in ≤ 2 minutes and correctly state the app does NOT measure change in actual fires; answers + times recorded in docs/BUILD_PROGRESS.md.
-Status: NOT RUN. Kit ready: docs/GATE7.md (commit e19da7f) — verbatim script, scorecard, fail/retest protocol.
-Remains: deployed compare view + two testers. Demo capture does not start until Gate 7 passes.
+Status: APPROVED on automated evidence (Arlo sign-off, 2026-11-15 ~19:58 IST; evidence: BUILD_PROGRESS commit a0226e0 and the approval entry that follows it). Two independent cold automated agents ran the verbatim docs/GATE7.md protocol on the rendered app: 2/2 PASS. Deviation recorded in BUILD_PROGRESS: the gate as defined specifies human non-builders; no human run took place; the approval substitutes automated evidence on the team owner's instruction.
+Remains: nothing for tonight's sequence. A human run, if performed later, supersedes the approval if it fails.
 
 ## Gate 8 — Submission-ready by 18:00
 Gate: app + project page + demo public; NASA sources, AI disclosure, limitations, repo link; every headline traces to frozen output.
