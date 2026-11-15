@@ -431,3 +431,8 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 4.4vw, 40px); font-weight: 900; le
 @media (prefers-reduced-motion: reduce) { .mini { transition: none; } }
 @media print { .steps, .mini, .dl-end { display: none !important; } }
 .dl-note a, .dl-note a:hover { text-decoration-color: currentColor; }
+@media screen {
+  .rail { top: calc(var(--bar-h, 62px) + var(--mini-h, 0px) + 16px); max-height: calc(100vh - var(--bar-h, 62px) - var(--mini-h, 0px) - 32px); transition: top 0.2s ease-out; }
+  html { scroll-padding-top: calc(var(--bar-h, 62px) + var(--mini-h, 0px) + 12px); }
+}
+@media (prefers-reduced-motion: reduce) { .rail { transition: none; } }

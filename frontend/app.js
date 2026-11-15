@@ -902,7 +902,9 @@
     if (!head || !window.IntersectionObserver) return;
     miniObs = new IntersectionObserver(function (es) {
       var e = es[0];
-      bar.classList.toggle('mini-on', !e.isIntersecting && e.boundingClientRect.top < 0);
+      var on = !e.isIntersecting && e.boundingClientRect.top < 0;
+      bar.classList.toggle('mini-on', on);
+      document.documentElement.style.setProperty('--mini-h', (on ? bar.offsetHeight : 0) + 'px');
     }, { rootMargin: '-' + barTop() + 'px 0px 0px 0px' });
     miniObs.observe(head);
   }
@@ -925,6 +927,7 @@
   function placeMini() {
     var bar = document.getElementById('mini');
     if (bar) bar.style.top = barTop() + 'px';
+    document.documentElement.style.setProperty('--bar-h', barTop() + 'px');
   }
 
   function render() {

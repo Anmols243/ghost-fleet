@@ -439,3 +439,10 @@ Reduced motion verified from the CSS rules only, not by emulation. Status: DONE.
 in their own text colour instead of vermilion. Removed the footer AI-assistance line from
 the app; the AI-use disclosure remains in docs/PROJECT_PAGE.md (Gate 8 lists it for the
 submission). Node tests 38/38. Status: DONE. Not pushed.
+
+## Frontend: fix rail clipped under the mini-result bar
+
+2026-11-15 IST - Claude Code (Opus 5.5). Owner-reported. The sticky rail now offsets by the
+app bar height plus the mini-result height (CSS variables set from JS), so the rail starts
+below the mini bar (1900px check: mini bottom 111, rail top 127). Anchor scroll padding uses
+the same offset. Node tests 38/38. Status: DONE. Not pushed.
