@@ -29,3 +29,7 @@ those edits remains active.
 Verification at this reconciliation: `.venv/Scripts/python.exe -m pytest -q`
 passed all 16 tests; `git diff --check` passed. These fresh checks validate the
 current checkout, not a checkout of every historical commit.
+
+## 2026-11-15 ~07:00 IST — Astra post-copy-pack scorecard (reported by user, read back by Arlo)
+
+Current score 17/25 — Impact 4, Creativity 4, Validity 3, Relevance 4, Presentation 2. The 20/25 commitment stands if all 8 gates pass; the remaining gap is demonstrated execution and comprehension, not more data or another idea. Hackathon/résumé readiness per Astra: not yet — it turns on a finished demo passing Gate 7. Build consequences (staging: one result shown as a change; Gate 7 as critical path; evidence download + Method checks are score-bearing) are recorded as binding amendments in docs/BUILD_BRIEF.md.
