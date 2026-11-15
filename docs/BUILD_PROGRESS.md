@@ -676,3 +676,4 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   Skills: code-review and verification-before-completion; no implementation/TDD.
 - Checks: preflight structure, 14 pairs, no raw CSVs and five hash checks green;
   full suites green: Python 33/33, frontend 42/42. Base commit: a1a1530.
+- Stop-evidence commit: 0a9945d. Standards/spec reviews: 0 findings.
