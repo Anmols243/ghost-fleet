@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "checks": 73,
+  "mismatches": [],
+  "rule": "Exact equality; no tolerance, substitution or frozen-row repair"
+}

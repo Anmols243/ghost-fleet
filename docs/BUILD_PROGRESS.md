@@ -768,3 +768,53 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Status: DONE (section 3 retrieval only). Task commit: ee9bbba.
   Standards review: 0 outstanding findings. Spec review: 0 outstanding findings.
   Python 42/42 and frontend 42/42 green. Extension release is not approved.
+
+## Geographic extension - sections 2/4/5 generation and exact hero gate
+
+- Time: 2026-11-15 21:21 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Task: new backend/scripts/india_audit.py reuses canonical standardize,
+  build_events and compare_periods. Existing production modules are unmodified.
+- Predicate declared before generation: west <= lon <= east AND south <= lat <=
+  north, inclusive. Shared edges may belong to multiple rectangles. Standardized
+  detection coordinates filtered before any cell-day union. All seven exact
+  labels/bounds retained. Full extent computed directly, not regional summation.
+- Canonical grid retained: origin 73.8/27.6, reference 30.1, radius 6371.0088,
+  mathematical floor including negative indices; physical cell dimensions vary.
+- Frozen named sensor sets copied before regional outcomes, including named
+  sensors with zero retained regional detections. C computed as W set minus U;
+  U subset W checked for each period. Daily and total counts, dates/intervals,
+  selections, products, known missing, uncertainty and provenance included.
+- Zero denominator: that view's percentage and dependent gap null. Gap uses
+  unrounded changes; round only display. Qualifications and denominators carried
+  with every comparison. No FRP sums, administrative mask or national-count claim.
+- 692393 new-pull raw rows -> 634171 standardized rows, isolated parquet only.
+  Frozen standardized input and all five frozen hero/Freeze2 files unchanged.
+- EXACT hero gate PASSED: 73 checks; daily W/U/C, totals, selections, dates,
+  intervals and displayed changes/gaps identical. P1 13581->75396 W,
+  13581->14303 U, C 0->61093, +455.2/+5.3/449.8 pp. P2 54291->108035 W,
+  54291->60491 U, C 0->47544, +99.0/+11.4/87.6 pp. P3 W=U17712->14341,
+  -19.0%, C0, Oct 1-Nov 14 both years. No frozen rows substituted or tolerance.
+- All 21 rectangle/comparison rows generated after hero pass. Missing Nov 15,
+  2026 stays explicit null/unverified/excluded. No new regional cessation-date
+  narrative inferred from hero. Known outages and expected cessation disclosed.
+- Supplementary review independently used own floor-grid math/sets/counters,
+  not production functions: all 21 comparisons / 5943 assertions agreed on the
+  first numerical candidate. Final qualification regeneration preserves counts;
+  final artifact provenance is checked separately. This is not Arlo sign-off.
+- TDD red/green: inclusive boundaries and negative cells; union accounting;
+  zero baseline nulls; zero-baseline qualification; equal-total/different-daily
+  mismatch rejected. Full suites: Python 45/45, frontend 42/42 green.
+- Output: frontend/india.json and identical isolated outputs/india.json, plus
+  outputs/compatibility.json. Status CANDIDATE, not independent-release-approved;
+  existing frontend workflow does not read it or change hero source files.
+- Candidate exact-byte sha256: 84ec208e58718fcabeab40d974273f9a401b948dadc582e585861ad529a46b41.
+- Reproduce: cd backend; ../.venv/Scripts/python.exe scripts/india_audit.py.
+  No fetch/network/API key required. Manifest file hashes checked before ingest.
+- Skills: tdd, code-review, verification-before-completion. No mismatch arose,
+  so no input-revision/retrieval/filtering/implementation stop diagnosis required.
+- Status: IN PROGRESS pending final artifact review and commit SHA. Section 8
+  independent approval, navigation integration and deployment are still pending.
+- Final artifact review: standards 0 findings, spec 0 findings. Own-math/set
+  recomputation repeated against final candidate: all 5943 assertions pass;
+  all source hashes current, both output copies identical, five frozen files
+  and canonical standardized input unchanged. No Arlo release sign-off claimed.
