@@ -626,3 +626,29 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Copy checks green; full suites: Python 33/33 and frontend 42/42 green.
 - Status: DONE. Task commit: 2ac9125; Python 33/33 and frontend 42/42 green.
   Standards review: 0 findings. Spec review: 0 findings.
+
+## Geographic extension - amendment and isolation
+
+- Time: 2026-11-15 20:19 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Phase/task: record owner override, india.json contract, complete section 2
+  labels/bounds/fixed-grid requirements, section 8 independent/deployed checks,
+  21:00 safe submission priority and strict 22:30 abort. No extension implemented.
+- Original untracked docs/india-extension-prompt.md moved without byte changes
+  to requested docs/INDIA_EXTENSION_PROMPT.md and included in this commit.
+- Rollback source candidate: f246dbe. Existing canonical inputs preserved;
+  standardized parquet sha256 8e06f6c4e5d75e786cd3ef1ad1ab0f3f9059ae0d4182cc47c7ed70dc9facb654.
+- Isolated location: extensions/india/data/{raw,manifests,standardized,outputs}/.
+  Placeholders tracked; bulk extension data ignored. Existing wildcard root is
+  backend/data/raw/*.csv; no new location lies within it. No generator rerun.
+- Five exact-checkout-byte SHA-256 baselines (before = after this setup):
+  - audit.json: 3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a
+  - ledger.json: 5fb062165d3b8943e04aab94c1d56ad1bef01ee67690f1ff1738ac9d70e16255
+  - timing.json: 3c658ea3a623265549fcafd9ce9049960de4692e0366bcb1c4dd56eef7330fd0
+  - transitions.json: 3e8e372d69c3ae915182d5d6c8fc7c8c6faeaf470362d68b0e0c84a95e936218
+  - ledger.csv: d9083232d71b42763673febd4a6357f4b06c78de7b2db8b277fb4aa52483d8ef
+- audit.json canonical LF hash remains faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae;
+  exact checkout hash above differs only because of Windows line endings.
+- Skills: code-review, verification-before-completion; diagnosing-bugs for
+  a PowerShell path-syntax error. Documentation/storage setup, no implementation.
+- Tests: isolation/hash/content checks green; Python 33/33, frontend 42/42 green.
+- Status: IN PROGRESS until reviewed commit; exact SHA finalized in next entry.

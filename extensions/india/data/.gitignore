@@ -1,0 +1,13 @@
+*/
+!raw/
+!manifests/
+!standardized/
+!outputs/
+raw/*
+!raw/.gitkeep
+manifests/*
+!manifests/.gitkeep
+standardized/*
+!standardized/.gitkeep
+outputs/*
+!outputs/.gitkeep

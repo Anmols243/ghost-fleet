@@ -136,3 +136,132 @@ This Windows checkout uses CRLF: its byte sha256 is
 These identify the same Git content; preserve both the Git blob and checkout bytes.
 No hero values, coverage rules or language law change. The owner-requested
 appendix integration is an exception to section 7's frontend ownership boundary.
+
+## Geographic-extension amendment - owner override (2026-11-15)
+
+Authority: docs/INDIA_EXTENSION_PROMPT.md sections 1-2 and 8-9, explicitly
+requested by the owner. This overrides earlier geographic-expansion and
+navigation-map cuts, and permits a new generator reusing established functions.
+It does not override frozen hero measurements, language law or evidence rules.
+The optional, separately versioned frontend/india.json must not gate hero startup.
+Keep the original hero as default, with its existing sources and downloads.
+A missing, malformed or invalid extension must leave the hero functional;
+never display hero values under a regional label. Existing appendices remain
+scoped to the frozen study rectangle.
+
+The existing release safe-submits at 21:00 IST first; do not delay it for this
+extension. Include Freeze 2 appendices only with independent sign-off and verified
+deployment. Preserve rollback candidate f246dbe and its canonical inputs. This
+amendment does not claim that deployment or submission has been verified.
+
+Isolation: extensions/india/data/{raw,manifests,standardized,outputs}/ only for new
+inputs and work products. None is inside backend/data/raw/*.csv, the current
+wildcard ingestion path. Never repoint or rerun existing generators against new
+inputs; never overwrite frontend/audit.json, ledger.json, timing.json,
+transitions.json or ledger.csv. Record exact-byte before/after hashes in
+BUILD_PROGRESS.md; canonical text hashes may additionally be recorded with
+an explicit newline convention. Do not add extension pulls or keys to Git.
+Only a validated published output may later become frontend/india.json.
+
+Binding geographic labels, bounds, coordinate filtering and fixed-grid contract
+(reproduced from prompt section 2; no generation is authorized by this setup task):
+
+
+Coordinates are [west, south, east, north].
+
+Implement these seven selector entries:
+
+| ID | Visible label | Bounds |
+|---|---|---|
+| hero | Punjab–Haryana — frozen study rectangle | [73.8, 27.6, 77.6, 32.6] |
+| full_extent | India & surrounding area — full rectangle | [68.0, 6.5, 97.5, 37.5] |
+| northwest | Northwest / Indo-Gangetic study rectangle | [68.0, 24.0, 88.5, 37.5] |
+| northeast | Northeast study rectangle | [88.5, 21.5, 97.5, 30.0] |
+| central | Central rectangle | [74.0, 17.5, 88.5, 24.0] |
+| western | Western rectangle | [68.0, 17.5, 74.0, 24.0] |
+| peninsular | Peninsular study rectangle | [72.5, 6.5, 88.5, 17.5] |
+
+These are analyst-selected rectangular extents, not administrative
+boundaries, ecological classifications or a partition of India.
+
+Show this qualification beside the geographic selector and include it in
+downloads:
+
+"Study rectangles may include neighbouring countries and do not partition
+India. The full-rectangle result is computed directly, not by adding regional
+results."
+
+Never label the full-rectangle counts as India's national counts.
+
+Define the coordinate inclusion predicate before generation and use it
+identically in production and independent checks. Preserve the canonical hero
+boundary convention. Document shared-edge membership; do not imply
+disjointness.
+
+Filter standardized detection coordinates to each rectangle BEFORE
+constructing its cell-day unions. Do not select regions by clipping
+already-aggregated cell centroids.
+
+Keep the existing grid unchanged for every rectangle:
+
+- Origin: longitude 73.8, latitude 27.6.
+- Reference latitude: 30.1°.
+- Earth radius and formulas: exactly as in the canonical pipeline.
+- Cell indices: mathematical floor, including negative coordinates.
+
+Do not re-anchor the grid at each rectangle's southwest corner or replace
+floor with truncation. Do not substitute an equal-area projection tonight.
+
+Disclose that this is the canonical fixed grid, approximately 1 km at its
+reference latitude; physical cell dimensions vary across the expanded latitude
+range. Do not report equal-area density comparisons between regions.
+
+Binding independent and deployed release checks (prompt section 8):
+
+
+Green builder tests alone do not authorize release.
+
+Arlo independently reproduces the exact release from the pinned new input
+snapshot without calling the production aggregation functions.
+
+Required checks:
+
+- Manifest covers every required source/chunk; no unresolved retrieval
+  anomaly.
+- Confidence filtering, date windows, rectangle membership and grid
+  assignment agree.
+- Every daily W/U/C value and total agrees exactly for all seven rectangles
+  × three comparisons.
+- All percentage and gap displays reproduce from unrounded counts.
+- U is a subset of W at cell-day level; C is the actual set difference.
+- Zero denominators and null observations remain unavailable.
+- Hero compatibility passes exactly.
+- Frozen hero and Freeze 2 file hashes are unchanged.
+- Independent boundary fixtures cover points inside/outside/on rectangle
+  edges, negative grid indices, overlapping sensor detections, missing chunks
+  and legitimate zero counts.
+- Full-rectangle results are recomputed directly, never assembled from
+  subregions.
+
+Record input hashes, generator/checker versions, output hash, tested commit
+and Arlo's explicit sign-off.
+
+Then verify the deployed candidate:
+
+- All seven selections × all three cases on desktop and mobile.
+- Correct captions, map selection, keyboard controls and no clipping.
+- Correct exported reports and CSVs.
+- Failure injection for missing/malformed india.json leaves the hero
+  functional.
+- No external application requests or uncaught errors.
+- Deployed data hash matches the independently approved file.
+- Frozen hero conclusions and downloads remain unchanged.
+
+Abort gate: by 22:30 IST on 2026-11-15 the extension must be retrieved,
+computed, independently reproduced, explicitly approved by Arlo, deployed and
+verified at the deployed URL. Builder tests, a push or queued deployment alone
+never pass. If any required check is incomplete, ship no extension, restore the
+verified safe release and record ABORT plus reason. Do not extend the deadline
+or weaken the checks. Record pinned input hashes, manifest summary, checker and
+generator versions, output hash, tested commit, sign-off, URL and SHIP/ABORT.
+No geographic results, availability checks or release approval are claimed here.
