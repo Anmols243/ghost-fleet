@@ -116,3 +116,23 @@ only — AUDIT_SPEC gates and COPY_PACK copy stand.
    compresses, cut in this order: the P3 panel's chart first (keep
    the cessation line and the daily counts), never the download or
    Method checks.
+
+## Freeze 2 contract amendment (2026-11-15, before integration)
+
+The three-preset hero contract remains frozen. Separately versioned optional
+appendices are now authorized by docs/FREEZE2_BUILD_PACK.md: ledger.json,
+timing.json and transitions.json, each with source hashes and a reproducible
+generator. This supersedes the ONE-file restriction only for these appendices.
+Their statistics and acceptance checks are defined in that pack before inspection;
+independent acceptance values are attributed to Arlo, not a new independent run.
+Each appendix renders only after its own file loads. Presets never depend on it.
+Record the exact release checked in BUILD_PROGRESS.md. Freeze is 22:00 IST today:
+anything not finished, reproduced and committed then is excluded.
+
+Frozen audit.json: canonical LF sha256
+faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae.
+This Windows checkout uses CRLF: its byte sha256 is
+3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a.
+These identify the same Git content; preserve both the Git blob and checkout bytes.
+No hero values, coverage rules or language law change. The owner-requested
+appendix integration is an exception to section 7's frontend ownership boundary.

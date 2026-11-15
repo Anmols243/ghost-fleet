@@ -461,3 +461,23 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   - Deciding quote: “neither percentage is a corrected estimate of fire activity… actual-fire change is not measured.”
 - Findings: neither tester made the automatic-fail misreading; both evidence files are downloadable (the main button surfaces one file at a time; the separate report/CSV links resolve it); the “?” markers in the 2026 charts were resolved by their caption without assistance; the page rendered fully for both testers.
 - Status: automated run 2/2 PASS. Human Gate 7: NOT RUN — remains open per docs/GATE7.md and the seal terms.
+
+## Freeze 2 - contract amendment
+
+- Phase/task: Freeze 2 step 0, authorize isolated appendices before integration.
+- Time: 2026-11-15 19:36 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Base release: f001216. Freeze deadline: 22:00 IST, 2026-11-15.
+- Statistics/checks declared in FREEZE2_BUILD_PACK sections 1-4 before results inspected.
+  Source hashes and generators required; optional loads cannot gate presets.
+  Arlo's supplied acceptance values are independent reference results; comparing
+  repo outputs against them is not a fresh independent execution.
+- Hash clarification: pack hash faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae
+  is canonical LF content. Windows CRLF checkout byte hash is
+  3b7d0234af40f8b7a12c2fd98e13762ea9efbee678d721d73f640bedc8f4746a.
+  Preserve both; no audit.json edits authorized.
+- Tests: backend 24/24 and frontend 38/38 green. Initial root-cwd Python
+  collection failed after directory relocation; diagnosing-bugs confirmed the
+  documented backend cwd resolves imports, with no code changes.
+- Status: IN PROGRESS until reviewed green commit; SHA recorded in next task entry.
+- Interrupted submission-checklist draft remains preserved in stash; pulled main's
+  checklist and progress history take precedence and were not overwritten.
