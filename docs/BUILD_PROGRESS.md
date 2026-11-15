@@ -240,3 +240,11 @@ Status: verified, committing; actual correction SHA recorded in following entry.
 Locked P3 acceptance line:
 
 Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −19.0%; Terra+Aqua+Suomi NPP+NOAA-20, −19.0%. Both periods cover Oct 1 through Nov 14; Nov 15 is excluded from this comparison, and 2026 Nov 15 is unverified, not yet retrieved. The two views coincide because the same four satellites are included in both seasons, so the decomposition cannot show the interruption. The included-satellite record is interrupted: S-NPP recorded cell-days run 1 Oct – 2 Nov, and zero from 3 Nov, while NOAA-20 continues. Actual-fire change is not measured.
+
+### Coverage correction commit recorded
+
+2026-11-15 11:00:47 IST - Correction SHA: `a7d9cc141ebc96fb130c74b32c2f11f67a19adae`.
+Status: DONE. 24 tests passed; standards/spec reviews passed after correcting
+the stale J ranges to match the archived amended values. P1/P2 unchanged.
+Common-interval P3 W=U:17,712->14,341 (-19.0%), C0/0.
+Evidence and acceptance line recorded above. Normal push authorized.
