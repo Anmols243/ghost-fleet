@@ -195,3 +195,15 @@ Recorded change, Punjab + Haryana, 2025 → 2026: all included satellites, −20
 The original VM numbers remain only in the immutable validation reference,
 reference regression fixtures, historical reference implementation, and prior
 progress entries. Canonical app copy is regenerated everywhere.
+
+## FREEZE commit recorded - DONE
+
+2026-11-15 10:32:07 IST - Frozen commit: `b9bb718cd15d69014c32e9fd1cfef0b24fa7f752`.
+Status: DONE for archive extension, canonical audit freeze, gate amendments,
+and all dependent numerical copy. Tests: 22 passed; independent subset checks,
+acceptance lines, JSON copy consistency, and staged credential/scope checks passed.
+Code review: standards and spec passed under the explicit Arlo gate decision.
+All 26 standardized season totals match VM exactly. The full preset table,
+locked acceptance lines, gate rationale, and file/line inventory are above.
+App: frontend/audit.json, status FROZEN - repo pipeline.
+No raw CSV or .env committed. Push: authorized, normal push pending this log commit.
