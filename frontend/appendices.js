@@ -2,7 +2,9 @@
 (function () {
   'use strict';
   var FILES = [{ file: 'ledger.json', schema: 'observation-ledger v1', id: 'ledger',
-    title: 'Daily observation ledger' }];
+    title: 'Daily observation ledger' },
+    { file: 'timing.json', schema: 'acquisition-timing v1', id: 'timing',
+      title: 'Acquisition-time appendix' }];
 
   function loadAppendices(fetcher, files, render) {
     return Promise.all(files.map(async function (item) {
@@ -25,7 +27,7 @@
     return node;
   }
 
-  function table(headers, rows) {
+  function table(headers, rows, missingLabel) {
     var wrap = element('div');
     wrap.className = 'table-wrap appendix-table';
     var result = element('table');
@@ -38,7 +40,8 @@
     rows.forEach(function (row) {
       var line = element('tr');
       row.forEach(function (value) {
-        line.appendChild(element('td', value === null ? 'unverified / not yet retrieved' : String(value)));
+        line.appendChild(element('td', value === null ?
+          (missingLabel || 'unverified / not yet retrieved') : String(value)));
       });
       body.appendChild(line);
     });
@@ -72,11 +75,24 @@
     section.appendChild(details);
   }
 
+  function renderTiming(section, data) {
+    section.appendChild(element('p', data.caption));
+    section.appendChild(element('p', data.statistic));
+    section.appendChild(element('p', 'Small samples matter: n is shown for each satellite and season. '
+      + 'All times are UTC; the seasonal window starts Oct 1 and ends at the displayed cutoff.'));
+    section.appendChild(table(['Season', 'Satellite', 'Cutoff', 'Median UTC', 'Q1 UTC', 'Q3 UTC',
+      'n (retained daytime detections)', 'Represented days'], data.rows.map(function (r) {
+      return [r.season, r.satellite, r.cutoff, r.median_utc, r.q1_utc, r.q3_utc,
+        r.n, r.represented_days];
+    }), 'no retained daytime observations'));
+  }
+
   function render(file, data, item) {
     // Construct off-DOM: malformed data cannot leave a partial section visible.
     var section = element('section'); section.id = item.id;
     section.appendChild(element('h2', item.title));
-    renderLedger(section, data);
+    if (item.id === 'ledger') renderLedger(section, data);
+    else if (item.id === 'timing') renderTiming(section, data);
     download(section, file, 'Download appendix data (JSON)');
     section.appendChild(element('p', 'Actual-fire change is not measured.'));
     document.querySelector('main').appendChild(section);

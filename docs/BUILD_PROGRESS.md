@@ -505,3 +505,34 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - A review: standards 0 hard findings; spec 0 implementation findings.
   Native/browser smoke could not run (browser host unavailable; window activation
   failed). Automated loader isolation is verified; no visual check is claimed.
+
+## Freeze 2 B - acquisition-time appendix
+
+- A completion: f6fac96, DONE; backend 27/27 + frontend 40/40 green. All supplied
+  ledger checks reproduced exactly from canonical standardized input.
+- Phase/task: B, per-season daytime MODIS acquisition-time distributions.
+- Time: 2026-11-15 19:42 IST. Model: GPT-6.1 Sol; effort not exposed.
+- TDD: missing generator red, UTC median/quartile/n/day/cutoff fixture green;
+  missing timing section red, actual renderer caption/n/missing-data check green.
+- Full suite: backend 29/29, frontend 41/41 green. A mistargeted Node command from
+  backend could not find frontend tests; rerunning from repo root passed.
+- Pack checks: Aqua 2002-2022 medians all within 08:08-08:18; supplied later
+  medians and quartiles within tolerance; 2020 Aqua n=13504 and days=44 exact.
+  Terra 2022-2026 medians and n match the supplied exact rows. Earlier Terra
+  medians range 05:48-06:00; the pack only gives an approximate early-era summary,
+  not the full per-season reference table, so no unavailable exact match is claimed.
+- 2026 Aqua refreshed repo: median 10:30, Q1 10:21, Q3 10:38, n=4969, days=33.
+  Archived pre-correction reference: 10:30 [10:21-10:36], n=4940, days=32.
+  These differences are disclosed; no smoothing or drift/count attribution.
+- Binding caption copied verbatim. Sample size is a table column; no observations
+  is null, not zero. Optional load and errors remain independent of presets.
+- Reproduce: cd backend; ../.venv/Scripts/python.exe scripts/timing.py.
+  timing.json records parquet, audit and generator source hashes.
+- Audit: original byte and LF hashes unchanged. Existing system copy narrowed
+  its one-file statement to comparison numbers, acknowledging optional sidecars.
+- Status: IN PROGRESS until reviewed commit; exact SHA finalized in next entry.
+
+- B review: standards 0 findings; spec 0 findings. Both reviewers separately
+  recomputed the timing object in memory from canonical parquet/audit: every
+  output field and all four provenance hashes match. This is agent reproduction,
+  not a claim that Arlo has executed this new release.

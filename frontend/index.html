@@ -69,7 +69,7 @@
       <div class="sys-row"><dt>Retrieval</dt><dd>1,601,380 detections retrieved; 1,482,211 retained after confidence rules (VIIRS nominal + high; MODIS confidence ≥ 50). 26 seasons, 2001–2026.</dd></div>
       <div class="sys-row"><dt>Access rules handled</dt><dd>FIRMS area API in 5-day chunks; archive (SP) products for 2001–2025, near-real-time (NRT) for 2026.</dd></div>
       <div class="sys-row"><dt>Harmonization</dt><dd>Detections grouped into ~1 km cell-days by union — a cell-day counts once no matter how many satellites saw it. FRP is never summed across sensors.</dd></div>
-      <div class="sys-row"><dt>Freeze</dt><dd>audit.json sha256 faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae — frozen; every number on this page renders from that file.</dd></div>
+      <div class="sys-row"><dt>Freeze</dt><dd>audit.json sha256 faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae — frozen; comparison numbers render from that file. Optional appendices use separately sourced files.</dd></div>
       <div class="sys-row"><dt>Verification</dt><dd>An independent re-aggregation from the raw archive reproduced all 9,568 daily counts exactly. 50 automated tests (24 pipeline, 26 frontend) cover the decomposition, the downloads, and malformed-data behaviour.</dd></div>
       <div class="sys-row"><dt>Stack</dt><dd>Python pipeline (pandas); this page is vanilla JS + inline SVG with zero external requests and no backend.</dd></div>
     </dl>

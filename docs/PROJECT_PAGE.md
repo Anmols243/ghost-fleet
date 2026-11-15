@@ -60,6 +60,15 @@ satellite selection, recorded cell-days, coverage status, product and comparison
 inclusion. It preserves unverified days as null and does not stitch comparisons
 into a continuous series.
 
+## Acquisition-time appendix
+
+The timing of retained daytime detections changes across this record. This summary does not measure orbital drift or the effect of drift on counts.
+
+For Terra and Aqua separately, the appendix reports each season's UTC median,
+interquartile range, retained daytime detection count n and represented days.
+Missing observations stay null. The displayed window respects the verified cutoff;
+sample size is visible beside each estimate. JSON is downloadable from the app.
+
 ## Limitations
 
 - The 2026 NRT snapshot is provisional, with a verified cutoff of November 14. November 15 is unverified / not yet retrieved, excluded from totals and shown as null.

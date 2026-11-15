@@ -1,0 +1,1033 @@
+{
+  "schema": "acquisition-timing v1",
+  "caption": "The timing of retained daytime detections changes across this record. This summary does not measure orbital drift or the effect of drift on counts.",
+  "rows": [
+    {
+      "season": 2001,
+      "satellite": "MODIS_AQUA",
+      "start": "2001-10-01",
+      "cutoff": "2001-11-15",
+      "median_minutes_utc": null,
+      "q1_minutes_utc": null,
+      "q3_minutes_utc": null,
+      "median_utc": null,
+      "q1_utc": null,
+      "q3_utc": null,
+      "n": null,
+      "represented_days": null
+    },
+    {
+      "season": 2001,
+      "satellite": "MODIS_TERRA",
+      "start": "2001-10-01",
+      "cutoff": "2001-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 365.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:05:00",
+      "n": 1205,
+      "represented_days": 31
+    },
+    {
+      "season": 2002,
+      "satellite": "MODIS_AQUA",
+      "start": "2002-10-01",
+      "cutoff": "2002-11-15",
+      "median_minutes_utc": 490.0,
+      "q1_minutes_utc": 483.0,
+      "q3_minutes_utc": 501.0,
+      "median_utc": "08:10:00",
+      "q1_utc": "08:03:00",
+      "q3_utc": "08:21:00",
+      "n": 7066,
+      "represented_days": 42
+    },
+    {
+      "season": 2002,
+      "satellite": "MODIS_TERRA",
+      "start": "2002-10-01",
+      "cutoff": "2002-11-15",
+      "median_minutes_utc": 355.0,
+      "q1_minutes_utc": 343.0,
+      "q3_minutes_utc": 361.0,
+      "median_utc": "05:55:00",
+      "q1_utc": "05:43:00",
+      "q3_utc": "06:01:00",
+      "n": 2056,
+      "represented_days": 36
+    },
+    {
+      "season": 2003,
+      "satellite": "MODIS_AQUA",
+      "start": "2003-10-01",
+      "cutoff": "2003-11-15",
+      "median_minutes_utc": 489.0,
+      "q1_minutes_utc": 481.0,
+      "q3_minutes_utc": 501.0,
+      "median_utc": "08:09:00",
+      "q1_utc": "08:01:00",
+      "q3_utc": "08:21:00",
+      "n": 7958,
+      "represented_days": 43
+    },
+    {
+      "season": 2003,
+      "satellite": "MODIS_TERRA",
+      "start": "2003-10-01",
+      "cutoff": "2003-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 360.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:00:00",
+      "n": 1911,
+      "represented_days": 37
+    },
+    {
+      "season": 2004,
+      "satellite": "MODIS_AQUA",
+      "start": "2004-10-01",
+      "cutoff": "2004-11-15",
+      "median_minutes_utc": 490.0,
+      "q1_minutes_utc": 483.0,
+      "q3_minutes_utc": 502.0,
+      "median_utc": "08:10:00",
+      "q1_utc": "08:03:00",
+      "q3_utc": "08:22:00",
+      "n": 7609,
+      "represented_days": 42
+    },
+    {
+      "season": 2004,
+      "satellite": "MODIS_TERRA",
+      "start": "2004-10-01",
+      "cutoff": "2004-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 347.0,
+      "q3_minutes_utc": 365.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:47:00",
+      "q3_utc": "06:05:00",
+      "n": 1419,
+      "represented_days": 35
+    },
+    {
+      "season": 2005,
+      "satellite": "MODIS_AQUA",
+      "start": "2005-10-01",
+      "cutoff": "2005-11-15",
+      "median_minutes_utc": 488.0,
+      "q1_minutes_utc": 476.0,
+      "q3_minutes_utc": 500.0,
+      "median_utc": "08:08:00",
+      "q1_utc": "07:56:00",
+      "q3_utc": "08:20:00",
+      "n": 12361,
+      "represented_days": 45
+    },
+    {
+      "season": 2005,
+      "satellite": "MODIS_TERRA",
+      "start": "2005-10-01",
+      "cutoff": "2005-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 365.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:05:00",
+      "n": 2669,
+      "represented_days": 40
+    },
+    {
+      "season": 2006,
+      "satellite": "MODIS_AQUA",
+      "start": "2006-10-01",
+      "cutoff": "2006-11-15",
+      "median_minutes_utc": 491.0,
+      "q1_minutes_utc": 479.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:11:00",
+      "q1_utc": "07:59:00",
+      "q3_utc": "08:24:00",
+      "n": 8309,
+      "represented_days": 45
+    },
+    {
+      "season": 2006,
+      "satellite": "MODIS_TERRA",
+      "start": "2006-10-01",
+      "cutoff": "2006-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 365.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:05:00",
+      "n": 1720,
+      "represented_days": 34
+    },
+    {
+      "season": 2007,
+      "satellite": "MODIS_AQUA",
+      "start": "2007-10-01",
+      "cutoff": "2007-11-15",
+      "median_minutes_utc": 491.0,
+      "q1_minutes_utc": 479.0,
+      "q3_minutes_utc": 503.0,
+      "median_utc": "08:11:00",
+      "q1_utc": "07:59:00",
+      "q3_utc": "08:23:00",
+      "n": 11754,
+      "represented_days": 46
+    },
+    {
+      "season": 2007,
+      "satellite": "MODIS_TERRA",
+      "start": "2007-10-01",
+      "cutoff": "2007-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:06:00",
+      "n": 2800,
+      "represented_days": 43
+    },
+    {
+      "season": 2008,
+      "satellite": "MODIS_AQUA",
+      "start": "2008-10-01",
+      "cutoff": "2008-11-15",
+      "median_minutes_utc": 494.0,
+      "q1_minutes_utc": 487.0,
+      "q3_minutes_utc": 506.0,
+      "median_utc": "08:14:00",
+      "q1_utc": "08:07:00",
+      "q3_utc": "08:26:00",
+      "n": 10872,
+      "represented_days": 45
+    },
+    {
+      "season": 2008,
+      "satellite": "MODIS_TERRA",
+      "start": "2008-10-01",
+      "cutoff": "2008-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 348.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:48:00",
+      "q3_utc": "06:06:00",
+      "n": 2459,
+      "represented_days": 38
+    },
+    {
+      "season": 2009,
+      "satellite": "MODIS_AQUA",
+      "start": "2009-10-01",
+      "cutoff": "2009-11-15",
+      "median_minutes_utc": 495.0,
+      "q1_minutes_utc": 488.0,
+      "q3_minutes_utc": 507.0,
+      "median_utc": "08:15:00",
+      "q1_utc": "08:08:00",
+      "q3_utc": "08:27:00",
+      "n": 10229,
+      "represented_days": 42
+    },
+    {
+      "season": 2009,
+      "satellite": "MODIS_TERRA",
+      "start": "2009-10-01",
+      "cutoff": "2009-11-15",
+      "median_minutes_utc": 348.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 360.0,
+      "median_utc": "05:48:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:00:00",
+      "n": 2190,
+      "represented_days": 37
+    },
+    {
+      "season": 2010,
+      "satellite": "MODIS_AQUA",
+      "start": "2010-10-01",
+      "cutoff": "2010-11-15",
+      "median_minutes_utc": 492.0,
+      "q1_minutes_utc": 486.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:12:00",
+      "q1_utc": "08:06:00",
+      "q3_utc": "08:24:00",
+      "n": 10963,
+      "represented_days": 44
+    },
+    {
+      "season": 2010,
+      "satellite": "MODIS_TERRA",
+      "start": "2010-10-01",
+      "cutoff": "2010-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 347.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:47:00",
+      "q3_utc": "06:06:00",
+      "n": 1216,
+      "represented_days": 37
+    },
+    {
+      "season": 2011,
+      "satellite": "MODIS_AQUA",
+      "start": "2011-10-01",
+      "cutoff": "2011-11-15",
+      "median_minutes_utc": 497.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 503.0,
+      "median_utc": "08:17:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:23:00",
+      "n": 11690,
+      "represented_days": 45
+    },
+    {
+      "season": 2011,
+      "satellite": "MODIS_TERRA",
+      "start": "2011-10-01",
+      "cutoff": "2011-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 360.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:00:00",
+      "n": 2097,
+      "represented_days": 38
+    },
+    {
+      "season": 2012,
+      "satellite": "MODIS_AQUA",
+      "start": "2012-10-01",
+      "cutoff": "2012-11-15",
+      "median_minutes_utc": 497.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:17:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:24:00",
+      "n": 13049,
+      "represented_days": 45
+    },
+    {
+      "season": 2012,
+      "satellite": "MODIS_TERRA",
+      "start": "2012-10-01",
+      "cutoff": "2012-11-15",
+      "median_minutes_utc": 353.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 365.0,
+      "median_utc": "05:53:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:05:00",
+      "n": 1450,
+      "represented_days": 36
+    },
+    {
+      "season": 2013,
+      "satellite": "MODIS_AQUA",
+      "start": "2013-10-01",
+      "cutoff": "2013-11-15",
+      "median_minutes_utc": 492.0,
+      "q1_minutes_utc": 486.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:12:00",
+      "q1_utc": "08:06:00",
+      "q3_utc": "08:24:00",
+      "n": 11344,
+      "represented_days": 38
+    },
+    {
+      "season": 2013,
+      "satellite": "MODIS_TERRA",
+      "start": "2013-10-01",
+      "cutoff": "2013-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:06:00",
+      "n": 1203,
+      "represented_days": 32
+    },
+    {
+      "season": 2014,
+      "satellite": "MODIS_AQUA",
+      "start": "2014-10-01",
+      "cutoff": "2014-11-15",
+      "median_minutes_utc": 492.0,
+      "q1_minutes_utc": 486.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:12:00",
+      "q1_utc": "08:06:00",
+      "q3_utc": "08:24:00",
+      "n": 12911,
+      "represented_days": 43
+    },
+    {
+      "season": 2014,
+      "satellite": "MODIS_TERRA",
+      "start": "2014-10-01",
+      "cutoff": "2014-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:06:00",
+      "n": 1917,
+      "represented_days": 36
+    },
+    {
+      "season": 2015,
+      "satellite": "MODIS_AQUA",
+      "start": "2015-10-01",
+      "cutoff": "2015-11-15",
+      "median_minutes_utc": 498.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:18:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:24:00",
+      "n": 9332,
+      "represented_days": 44
+    },
+    {
+      "season": 2015,
+      "satellite": "MODIS_TERRA",
+      "start": "2015-10-01",
+      "cutoff": "2015-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:06:00",
+      "n": 980,
+      "represented_days": 34
+    },
+    {
+      "season": 2016,
+      "satellite": "MODIS_AQUA",
+      "start": "2016-10-01",
+      "cutoff": "2016-11-15",
+      "median_minutes_utc": 491.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:11:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:24:00",
+      "n": 14382,
+      "represented_days": 43
+    },
+    {
+      "season": 2016,
+      "satellite": "MODIS_TERRA",
+      "start": "2016-10-01",
+      "cutoff": "2016-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:06:00",
+      "n": 1399,
+      "represented_days": 39
+    },
+    {
+      "season": 2017,
+      "satellite": "MODIS_AQUA",
+      "start": "2017-10-01",
+      "cutoff": "2017-11-15",
+      "median_minutes_utc": 497.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:17:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:24:00",
+      "n": 7970,
+      "represented_days": 41
+    },
+    {
+      "season": 2017,
+      "satellite": "MODIS_TERRA",
+      "start": "2017-10-01",
+      "cutoff": "2017-11-15",
+      "median_minutes_utc": 360.0,
+      "q1_minutes_utc": 348.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "06:00:00",
+      "q1_utc": "05:48:00",
+      "q3_utc": "06:06:00",
+      "n": 518,
+      "represented_days": 30
+    },
+    {
+      "season": 2018,
+      "satellite": "MODIS_AQUA",
+      "start": "2018-10-01",
+      "cutoff": "2018-11-15",
+      "median_minutes_utc": 498.0,
+      "q1_minutes_utc": 486.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:18:00",
+      "q1_utc": "08:06:00",
+      "q3_utc": "08:24:00",
+      "n": 10213,
+      "represented_days": 41
+    },
+    {
+      "season": 2018,
+      "satellite": "MODIS_TERRA",
+      "start": "2018-10-01",
+      "cutoff": "2018-11-15",
+      "median_minutes_utc": 355.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 361.0,
+      "median_utc": "05:55:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:01:00",
+      "n": 912,
+      "represented_days": 37
+    },
+    {
+      "season": 2019,
+      "satellite": "MODIS_AQUA",
+      "start": "2019-10-01",
+      "cutoff": "2019-11-15",
+      "median_minutes_utc": 491.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 503.0,
+      "median_utc": "08:11:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:23:00",
+      "n": 7903,
+      "represented_days": 38
+    },
+    {
+      "season": 2019,
+      "satellite": "MODIS_TERRA",
+      "start": "2019-10-01",
+      "cutoff": "2019-11-15",
+      "median_minutes_utc": 348.0,
+      "q1_minutes_utc": 341.0,
+      "q3_minutes_utc": 360.0,
+      "median_utc": "05:48:00",
+      "q1_utc": "05:41:00",
+      "q3_utc": "06:00:00",
+      "n": 644,
+      "represented_days": 27
+    },
+    {
+      "season": 2020,
+      "satellite": "MODIS_AQUA",
+      "start": "2020-10-01",
+      "cutoff": "2020-11-15",
+      "median_minutes_utc": 497.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 504.0,
+      "median_utc": "08:17:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:24:00",
+      "n": 13504,
+      "represented_days": 44
+    },
+    {
+      "season": 2020,
+      "satellite": "MODIS_TERRA",
+      "start": "2020-10-01",
+      "cutoff": "2020-11-15",
+      "median_minutes_utc": 354.0,
+      "q1_minutes_utc": 342.0,
+      "q3_minutes_utc": 366.0,
+      "median_utc": "05:54:00",
+      "q1_utc": "05:42:00",
+      "q3_utc": "06:06:00",
+      "n": 1138,
+      "represented_days": 38
+    },
+    {
+      "season": 2021,
+      "satellite": "MODIS_AQUA",
+      "start": "2021-10-01",
+      "cutoff": "2021-11-15",
+      "median_minutes_utc": 498.0,
+      "q1_minutes_utc": 485.0,
+      "q3_minutes_utc": 510.0,
+      "median_utc": "08:18:00",
+      "q1_utc": "08:05:00",
+      "q3_utc": "08:30:00",
+      "n": 13777,
+      "represented_days": 40
+    },
+    {
+      "season": 2021,
+      "satellite": "MODIS_TERRA",
+      "start": "2021-10-01",
+      "cutoff": "2021-11-15",
+      "median_minutes_utc": 349.0,
+      "q1_minutes_utc": 343.0,
+      "q3_minutes_utc": 361.0,
+      "median_utc": "05:49:00",
+      "q1_utc": "05:43:00",
+      "q3_utc": "06:01:00",
+      "n": 1679,
+      "represented_days": 36
+    },
+    {
+      "season": 2022,
+      "satellite": "MODIS_AQUA",
+      "start": "2022-10-01",
+      "cutoff": "2022-11-15",
+      "median_minutes_utc": 498.0,
+      "q1_minutes_utc": 492.0,
+      "q3_minutes_utc": 509.0,
+      "median_utc": "08:18:00",
+      "q1_utc": "08:12:00",
+      "q3_utc": "08:29:00",
+      "n": 8487,
+      "represented_days": 40
+    },
+    {
+      "season": 2022,
+      "satellite": "MODIS_TERRA",
+      "start": "2022-10-01",
+      "cutoff": "2022-11-15",
+      "median_minutes_utc": 336.0,
+      "q1_minutes_utc": 334.0,
+      "q3_minutes_utc": 346.0,
+      "median_utc": "05:36:00",
+      "q1_utc": "05:34:00",
+      "q3_utc": "05:46:00",
+      "n": 396,
+      "represented_days": 19
+    },
+    {
+      "season": 2023,
+      "satellite": "MODIS_AQUA",
+      "start": "2023-10-01",
+      "cutoff": "2023-11-15",
+      "median_minutes_utc": 517.0,
+      "q1_minutes_utc": 509.0,
+      "q3_minutes_utc": 524.0,
+      "median_utc": "08:37:00",
+      "q1_utc": "08:29:00",
+      "q3_utc": "08:44:00",
+      "n": 6475,
+      "represented_days": 39
+    },
+    {
+      "season": 2023,
+      "satellite": "MODIS_TERRA",
+      "start": "2023-10-01",
+      "cutoff": "2023-11-15",
+      "median_minutes_utc": 324.0,
+      "q1_minutes_utc": 314.0,
+      "q3_minutes_utc": 335.0,
+      "median_utc": "05:24:00",
+      "q1_utc": "05:14:00",
+      "q3_utc": "05:35:00",
+      "n": 104,
+      "represented_days": 23
+    },
+    {
+      "season": 2024,
+      "satellite": "MODIS_AQUA",
+      "start": "2024-10-01",
+      "cutoff": "2024-11-15",
+      "median_minutes_utc": 544.0,
+      "q1_minutes_utc": 530.0,
+      "q3_minutes_utc": 550.0,
+      "median_utc": "09:04:00",
+      "q1_utc": "08:50:00",
+      "q3_utc": "09:10:00",
+      "n": 3140,
+      "represented_days": 36
+    },
+    {
+      "season": 2024,
+      "satellite": "MODIS_TERRA",
+      "start": "2024-10-01",
+      "cutoff": "2024-11-15",
+      "median_minutes_utc": 304.0,
+      "q1_minutes_utc": 293.0,
+      "q3_minutes_utc": 311.0,
+      "median_utc": "05:04:00",
+      "q1_utc": "04:53:00",
+      "q3_utc": "05:11:00",
+      "n": 49,
+      "represented_days": 16
+    },
+    {
+      "season": 2025,
+      "satellite": "MODIS_AQUA",
+      "start": "2025-10-01",
+      "cutoff": "2025-11-15",
+      "median_minutes_utc": 582.0,
+      "q1_minutes_utc": 572.0,
+      "q3_minutes_utc": 594.0,
+      "median_utc": "09:42:00",
+      "q1_utc": "09:32:00",
+      "q3_utc": "09:54:00",
+      "n": 3522,
+      "represented_days": 38
+    },
+    {
+      "season": 2025,
+      "satellite": "MODIS_TERRA",
+      "start": "2025-10-01",
+      "cutoff": "2025-11-15",
+      "median_minutes_utc": 274.0,
+      "q1_minutes_utc": 254.0,
+      "q3_minutes_utc": 274.0,
+      "median_utc": "04:34:00",
+      "q1_utc": "04:14:00",
+      "q3_utc": "04:34:00",
+      "n": 23,
+      "represented_days": 11
+    },
+    {
+      "season": 2026,
+      "satellite": "MODIS_AQUA",
+      "start": "2026-10-01",
+      "cutoff": "2026-11-14",
+      "median_minutes_utc": 630.0,
+      "q1_minutes_utc": 621.0,
+      "q3_minutes_utc": 638.0,
+      "median_utc": "10:30:00",
+      "q1_utc": "10:21:00",
+      "q3_utc": "10:38:00",
+      "n": 4969,
+      "represented_days": 33
+    },
+    {
+      "season": 2026,
+      "satellite": "MODIS_TERRA",
+      "start": "2026-10-01",
+      "cutoff": "2026-11-14",
+      "median_minutes_utc": 250.0,
+      "q1_minutes_utc": 246.0,
+      "q3_minutes_utc": 252.0,
+      "median_utc": "04:10:00",
+      "q1_utc": "04:06:00",
+      "q3_utc": "04:12:00",
+      "n": 55,
+      "represented_days": 13
+    }
+  ],
+  "statistic": "Retained daytime (D) detections per MODIS satellite per season; UTC minute-of-day median and linear-interpolated quartiles. Missing observations are null; detection-weighted, not pass-weighted.",
+  "coverage": {
+    "2001": {
+      "status": "archived retrieved records",
+      "cutoff": "2001-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2002": {
+      "status": "archived retrieved records",
+      "cutoff": "2002-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2003": {
+      "status": "archived retrieved records",
+      "cutoff": "2003-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2004": {
+      "status": "archived retrieved records",
+      "cutoff": "2004-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2005": {
+      "status": "archived retrieved records",
+      "cutoff": "2005-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2006": {
+      "status": "archived retrieved records",
+      "cutoff": "2006-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2007": {
+      "status": "archived retrieved records",
+      "cutoff": "2007-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2008": {
+      "status": "archived retrieved records",
+      "cutoff": "2008-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2009": {
+      "status": "archived retrieved records",
+      "cutoff": "2009-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2010": {
+      "status": "archived retrieved records",
+      "cutoff": "2010-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2011": {
+      "status": "archived retrieved records",
+      "cutoff": "2011-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP"
+      ],
+      "product": "SP"
+    },
+    "2012": {
+      "status": "archived retrieved records",
+      "cutoff": "2012-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2013": {
+      "status": "archived retrieved records",
+      "cutoff": "2013-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2014": {
+      "status": "archived retrieved records",
+      "cutoff": "2014-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2015": {
+      "status": "archived retrieved records",
+      "cutoff": "2015-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2016": {
+      "status": "archived retrieved records",
+      "cutoff": "2016-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2017": {
+      "status": "archived retrieved records",
+      "cutoff": "2017-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2018": {
+      "status": "archived retrieved records",
+      "cutoff": "2018-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2019": {
+      "status": "archived retrieved records",
+      "cutoff": "2019-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2020": {
+      "status": "archived retrieved records",
+      "cutoff": "2020-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2021": {
+      "status": "archived retrieved records",
+      "cutoff": "2021-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2022": {
+      "status": "archived retrieved records",
+      "cutoff": "2022-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2023": {
+      "status": "archived retrieved records",
+      "cutoff": "2023-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2024": {
+      "status": "archived retrieved records",
+      "cutoff": "2024-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2025": {
+      "status": "archived retrieved records",
+      "cutoff": "2025-11-15",
+      "unverified_dates": [],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_SP",
+        "VIIRS_NOAA20_SP",
+        "VIIRS_SNPP_SP"
+      ],
+      "product": "SP"
+    },
+    "2026": {
+      "status": "verified through cutoff; NRT provisional",
+      "cutoff": "2026-11-14",
+      "unverified_dates": [
+        "2026-11-15"
+      ],
+      "unverified_representation": "null; not yet retrieved; excluded from totals",
+      "sources": [
+        "MODIS_NRT",
+        "VIIRS_NOAA20_NRT",
+        "VIIRS_SNPP_NRT"
+      ],
+      "product": "NRT"
+    }
+  },
+  "sources": {
+    "sha256": {
+      "backend/scripts/appendix_common.py": "de51a53466aaba9988e0d93668ea92f303d276c7219a12122dafd6efe32ba71f",
+      "backend/scripts/timing.py": "1216540528960a767d1d303a5ec450dc14ee2f12aca23fa87742a7e8feb27900",
+      "backend/data/processed/standardized.parquet": "8e06f6c4e5d75e786cd3ef1ad1ab0f3f9059ae0d4182cc47c7ed70dc9facb654",
+      "frontend/audit.json": "faee77abdc0570326ebe43567cbb1ead19d184646565945a0cd460faf44555ae"
+    },
+    "hash_convention": "LF for text; exact bytes for binary",
+    "reproduce": "cd backend && python scripts/timing.py"
+  }
+}
