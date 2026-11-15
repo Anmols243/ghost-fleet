@@ -1,3 +1,5 @@
+> **PIVOT — 2026-11-15 06:00 IST: this project is now "Ghost Fleet — Fire Trend Audit".**
+> The same-eyes / MODIS-equivalent framing below is SUPERSEDED — the degradation method failed its 2021 held-out benchmark and is retained only as an experimental Method check. The plan of record is **docs/AUDIT_SPEC.md** (Astra-approved design, 8 gates, frozen presets, approved claim wording). Read AUDIT_SPEC first; where this brief and AUDIT_SPEC conflict, AUDIT_SPEC wins.
 # Ghost Fleet — Team Brief
 
 **Tagline:** Dead satellites, honest calendars.
