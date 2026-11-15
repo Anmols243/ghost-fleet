@@ -610,4 +610,5 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
   a satellite arrival and lacks the required actual-fire concluding sentence.
   This pre-existing wording is recorded, not silently rewritten by a push task.
 - Prior local-only note is superseded by the owner's explicit push request.
-- Status: IN PROGRESS pending merge commit; its SHA is finalized next.
+- Status: DONE. Merge commit: 549f0f9. Post-merge 33 Python / 42 frontend checks green.
+  Publication is the requested next operation; no deployment or Arlo seal is claimed.
