@@ -392,7 +392,7 @@
   if (typeof document === 'undefined') return;
 
   /* ---------- DOM ---------- */
-  var state = { audit: null, preset: 0, view: 'all' };
+  var state = { audit: null, preset: 0, view: 'all', lastPct: null };
   var root;
 
   function h(tag, attrs) {
@@ -780,6 +780,34 @@
         h('a', { href: cUrl, download: cName, text: 'daily values (.csv)' }), '. Both are generated in this browser from the numbers on screen.'));
   }
 
+  function compBars(p, isAll) {
+    var mx = Math.max(p.W_a, p.W_b);
+    function row(yr, W, U, C) {
+      var kids = [h('span', { class: 'bar-yr', text: String(yr) }),
+        h('span', { class: 'bar-track', 'aria-hidden': 'true' },
+          h('span', { class: 'bar-u', style: 'width:' + (mx > 0 ? U / mx * 100 : 0).toFixed(2) + '%' }),
+          C > 0 ? h('span', { class: isAll ? 'bar-c' : 'bar-c bar-c-out', style: 'width:' + (mx > 0 ? C / mx * 100 : 0).toFixed(2) + '%' }) : null),
+        h('span', { class: 'bar-n', text: fmtInt(isAll ? W : U) })];
+      return h('div', { class: 'bar-row' }, kids[0], kids[1], kids[2]);
+    }
+    return h('div', { class: 'bars', role: 'img',
+      'aria-label': 'Recorded cell-days, ' + (isAll ? 'all included satellites' : 'same named satellites') + ': ' + p.a + ' ' + fmtInt(isAll ? p.W_a : p.U_a) + ', ' + p.b + ' ' + fmtInt(isAll ? p.W_b : p.U_b) + '. Same scale in both views.' },
+      row(p.a, p.W_a, p.U_a, p.C_a), row(p.b, p.W_b, p.U_b, p.C_b));
+  }
+
+  function countTo(el, from, to) {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || from === null || to === null || from === to || !window.requestAnimationFrame) return;
+    var final = fmtPct(to) + '%', t0 = null, dur = 520;
+    function step(ts) {
+      if (t0 === null) t0 = ts;
+      var k = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = k < 1 ? fmtPct(from + (to - from) * e) + '%' : final;
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
   function presetTabs(a) {
     var tabs = h('div', { class: 'tabs', role: 'group', 'aria-label': 'Preset comparison' });
     a.presets.forEach(function (pp, i) {
@@ -795,10 +823,14 @@
     var a = state.audit, p = a.presets[state.preset], view = state.view;
     var panel = document.getElementById('compare');
     clear(panel);
+    panel.className = 'console';
+    var rail = h('aside', { class: 'rail', 'aria-label': 'Comparison controls' });
+    var stage = h('div', { class: 'stage' });
+    panel.appendChild(rail); panel.appendChild(stage);
 
     if (!presetValid(p)) {
-      panel.appendChild(h('div', { class: 'controls' }, presetTabs(a)));
-      panel.appendChild(h('div', { class: 'state state-error', role: 'alert' },
+      rail.appendChild(presetTabs(a));
+      stage.appendChild(h('div', { class: 'state state-error', role: 'alert' },
         h('p', { class: 'kicker', text: 'COMPARISON UNAVAILABLE' }),
         h('p', { text: COPY.unavailable })));
       coverageStrip(a, p || {});
@@ -832,7 +864,10 @@
       h('p', { class: 'denom', text: 'recorded cell-days, ' + denomWho + ', relative to the ' + p.a + ' count of ' + fmtInt(base) }),
       h('p', { class: 'result-sub', text: p.a + ' → ' + p.b + ': ' + fmtInt(base) + ' → ' + fmtInt(isAll ? p.W_b : p.U_b) + ' recorded cell-days' }),
       diff === null ? null : h('p', { class: 'gap', text: 'Difference between the two views: ' + fmtDiff(diff) + ' percentage points (selection difference, not a causal attribution).' }),
+      compBars(p, isAll),
       !isAll ? h('p', { class: 'warning', role: 'note', text: COPY.warning }) : null);
+    countTo(result.querySelector('.headline'), state.lastPct, pct);
+    state.lastPct = pct;
 
     var chips = h('div', { class: 'chips' },
       chipRow(String(p.a), p.fleet_a, p.shared, view),
@@ -881,15 +916,16 @@
 
     var dlWrap = downloadBlock(p, a);
 
-    panel.appendChild(h('div', { class: 'controls' }, tabs, sw));
-    panel.appendChild(result);
-    panel.appendChild(chips);
-    if (snapshot) panel.appendChild(snapshot);
-    figs.forEach(function (f) { panel.appendChild(f); });
-    panel.appendChild(h('div', { class: 'table-wrap' }, table));
-    panel.appendChild(finding);
-    panel.appendChild(dlWrap);
-    panel.appendChild(h('p', { class: 'footer-line', text: COPY.footer }));
+    rail.appendChild(tabs);
+    rail.appendChild(sw);
+    rail.appendChild(chips);
+    rail.appendChild(dlWrap);
+    rail.appendChild(h('p', { class: 'footer-line', text: COPY.footer }));
+    stage.appendChild(result);
+    stage.appendChild(finding);
+    if (snapshot) stage.appendChild(snapshot);
+    figs.forEach(function (f) { stage.appendChild(f); });
+    stage.appendChild(h('div', { class: 'table-wrap' }, table));
   }
 
   function init() {

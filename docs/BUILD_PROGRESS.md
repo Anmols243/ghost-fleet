@@ -363,3 +363,21 @@ reviewed (P1, P3, shared view); no horizontal scroll at 390px.
 Not verified: the print stylesheet (print media emulation did not take effect in the
 browser tool, so it was written but not seen); no real-device check.
 Status: DONE. Not pushed. Not deployed (Vercel redeploys on push).
+
+## Frontend Phase 4b (app console): owner-requested redesign of the layout
+
+2026-11-15 IST - Claude Code, Sonnet 5.5. Owner asked for a more app-like look. This
+relaxes the build plan's "one stacked column / no structure change" for desktop only
+(mobile stays one column). No copy, number or language-law change.
+Changes: sticky app bar with section nav; ink status docket with a live LED; dark desk
+with paper sheets; two-column console on desktop (sticky left rail: preset cards, fleet
+switch, chips, download, footer line; right stage: headline, composition bars of W/U/C
+for both periods on one scale, FINDING as an inverted ink block, snapshot, figures, table);
+headline counts to the new value on fleet or preset switch (off under reduced motion);
+coverage as a 3-column field grid; case-study strips in two columns. Mobile order: preset
+tabs, fleet switch, result, chips, download.
+Checks: 26/26 node tests; banned-word, hardcoded-number and external-url greps clean;
+deployed-equivalent local run: 3 presets x both views show the frozen values, P3 CSV has
+45 rows, download enabled, no horizontal scroll at 1440px and 390px; committed audit.json
+blob hash faee77ab... unchanged (app.js, index.html, app.css only).
+Not verified: print stylesheet against the new layout, real device. Status: DONE. Not pushed.
