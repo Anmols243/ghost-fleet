@@ -612,3 +612,16 @@ the same offset. Node tests 38/38. Status: DONE. Not pushed.
 - Prior local-only note is superseded by the owner's explicit push request.
 - Status: DONE. Merge commit: 549f0f9. Post-merge 33 Python / 42 frontend checks green.
   Publication is the requested next operation; no deployment or Arlo seal is claimed.
+
+## Freeze 2 - project-page section 5 alignment
+
+- Time: 2026-11-15 19:59 IST. Model: GPT-6.1 Sol; effort not exposed.
+- Task: align PROJECT_PAGE with FREEZE2_BUILD_PACK section 5. Explicit ledger
+  deliverable and exact field names; separate NOAA-21 coverage/announcement/pull
+  disclosures; within-fleet changes uncontrolled, retained-detection timing only shown.
+- Binding timing caption, boundary sentence and S-NPP snapshot sentence were
+  already present and remain verbatim. No new numeric tokens, altered approved
+  claim/disclosure, warning/alert/timely claim or frozen audit change.
+- Skills: code-review and verification-before-completion; documentation only.
+- Copy checks green; full suites: Python 33/33 and frontend 42/42 green.
+- Status: IN PROGRESS pending reviewed commit; exact task SHA finalized next.

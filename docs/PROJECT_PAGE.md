@@ -54,11 +54,11 @@ Confidence rules retain VIIRS nominal and high confidence and MODIS confidence *
 
 ## Observed-data ledger
 
-The daily observation ledger is a reusable observed-data export and a partial
-response to the challenge brief. Download CSV or JSON from the app: date,
-satellite selection, recorded cell-days, coverage status, product and comparison
-inclusion. It preserves unverified days as null and does not stitch comparisons
-into a continuous series.
+Deliverable: a downloadable daily observation ledger (CSV and JSON), a reusable
+observed-data export and partial response to the challenge brief. Its fields are
+`date`, `satellite_selection`, `recorded_cell_days`, `coverage_status`, `product`
+and `comparison_inclusion`. Download it from the app. Unverified days stay null;
+comparisons are not stitched into a continuous series.
 
 ## Acquisition-time appendix
 
@@ -75,12 +75,12 @@ A zero selection gap does not establish comparability: this calculation cannot e
 
 The adjacent-season appendix shows all adjacent pairs with absolute W/U counts
 beside their percentage changes, using the common verified window for each pair.
-Within-fleet changes in timing, sensitivity and condition are not controlled by
-the selection accounting; retained-detection timing is shown separately. These
+Within-fleet changes (timing, sensitivity, condition) are not controlled by
+the selection accounting; the appendix only shows retained-detection timing. These
 comparisons are not stitched into a continuous series. Actual-fire change is not measured.
 
 - The 2026 NRT snapshot is provisional, with a verified cutoff of November 14. November 15 is unverified / not yet retrieved, excluded from totals and shown as null.
-- NOAA-21 dates describe different things: FIRMS archive coverage is listed from March 2023; the original product announcement said January 2024. Entry into this retrieved comparison is absent: no NOAA-21 data were pulled. These dates do not define a fleet transition in this app.
+- NOAA-21 disclosure: FIRMS archive coverage is listed from March 2023; the original announcement said January 2024; entry into this pull is absent. These are separate coverage, announcement and pull-entry disclosures, not a single fleet-transition date. No NOAA-21 data are included in the comparison.
 - S-NPP data delivery ceased November 2, 2026. Its absence later in the season is a record interruption, not evidence of absent burning.
 - Grid-convention sensitivity is archived in the repo. The cause of the difference between implementations remains unknown; equal seasonal row counts do not establish a record-level exact match.
 - A zero means no recorded cell-days in these retrieved records, not that no fires occurred. Coverage and cloud effects limit interpretation.
